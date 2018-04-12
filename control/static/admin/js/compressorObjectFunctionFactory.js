@@ -477,7 +477,7 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 }
 
 //Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
-getNewObjectOfCompressor.prototype.myStatus = function(state){	
+getNewObjectOfReceiver.prototype.myStatus = function(state){	
 	console.log('привет из Resiver');
 	console.log(state);
 
@@ -681,7 +681,7 @@ getNewObjectInsideMotoGate.prototype.myStatus = function(state){
 
 //-----------------------------------------------------------------------------------------------------------------------
 //Конструктор объектов ресивер
-function getNewObjectOfReceiver(objectFromSvg,name){
+function getNewObjectOfPumpGroup(objectFromSvg,name){
 
 	this.name 					= name;	
 	this.receiver				= objectFromSvg.querySelector('.status');
@@ -879,8 +879,8 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 }
 
 //Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
-getNewObjectOfCompressor.prototype.myStatus = function(state){	
-	console.log('привет из Resiver');
+getNewObjectOfPumpGroup.prototype.myStatus = function(state){	
+	console.log('привет из PumpGroup');
 	console.log(state);
 
 	if(this.s!=state.s){
