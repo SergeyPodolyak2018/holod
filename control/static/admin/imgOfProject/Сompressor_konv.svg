@@ -769,9 +769,9 @@ viewBox="0 0 42000 32000"
     <text x="29196" y="10072"  class="fil1 fnt0">mm</text>
    </g>
    <rect class="fil0 str11" x="28675" y="10401" width="139" height="3259"/>
-   <ellipse id="LevelSensor2" class="fil0 str11" cx="29198" cy="10829" rx="169" ry="172"/>
-   <ellipse id="LevelSensor3" class="fil0 str11" cx="29198" cy="11648" rx="169" ry="172"/>
-   <ellipse class="levelSensor1 fil0 str11" cx="28266" cy="10829" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str11" cx="29198" cy="10829" rx="169" ry="172"/>
+   <ellipse class="LevelSensor3 fil0 str11" cx="29198" cy="11648" rx="169" ry="172"/>
+   <ellipse class="LevelSensor1 fil0 str11" cx="28266" cy="10829" rx="169" ry="172"/>
    <line class="fil2 str11" x1="28675" y1="10507" x2="27711" y2= "10507" />
    <line class="fil2 str11" x1="28675" y1="13457" x2="27711" y2= "13457" />
    <g class="motoGate">
@@ -830,9 +830,9 @@ viewBox="0 0 42000 32000"
     <text x="23063" y="17034"  class="fil1 fnt0">mm</text>
    </g>
    <rect class="fil0 str11" x="22542" y="17364" width="139" height="3259"/>
-   <ellipse id="LevelSensor2_49" class="fil0 str11" cx="23065" cy="17792" rx="169" ry="172"/>
-   <ellipse id="LevelSensor3_50" class="fil0 str11" cx="23065" cy="18611" rx="169" ry="172"/>
-   <ellipse class="levelSensor1 fil0 str11" cx="22132" cy="17792" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str11" cx="23065" cy="17792" rx="169" ry="172"/>
+   <ellipse class="LevelSensor3 fil0 str11" cx="23065" cy="18611" rx="169" ry="172"/>
+   <ellipse class="LevelSensor1 fil0 str11" cx="22132" cy="17792" rx="169" ry="172"/>
    <line class="fil2 str11" x1="24192" y1="17477" x2="22680" y2= "17477" />
    <line class="fil2 str11" x1="24450" y1="20420" x2="22680" y2= "20420" />
    <g class="motoGate">
@@ -1082,8 +1082,8 @@ viewBox="0 0 42000 32000"
   </g>
   <g class="jar jar-F0-J1">
    <rect class="status fil7 str0" x="2255" y="12365" width="4855" height="2166" rx="893" ry="840"/>
-   <ellipse class="levelSensor1 fil0 str11" cx="1338" cy="12693" rx="169" ry="172"/>
-   <ellipse class="levelSensor2 fil0 str11" cx="1338" cy="14133" rx="169" ry="172"/>
+   <ellipse class="LevelSensor1 fil0 str11" cx="1338" cy="12693" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str11" cx="1338" cy="14133" rx="169" ry="172"/>
    <rect class="fil0 str11" x="1751" y="12379" width="139" height="2566"/>
    <polyline class="fil2 str11" points="1820,12379 1820,12061 3057,12061 3057,12365 "/>
    <polyline class="fil2 str11" points="1890,14797 3057,14797 3057,14529 "/>
@@ -1093,8 +1093,8 @@ viewBox="0 0 42000 32000"
   </g>
   <g class="jar jar-F0-J2">
    <rect class="status fil7 str0" x="2267" y="16805" width="4855" height="2166" rx="893" ry="840"/>
-   <ellipse class="levelSensor1 fil0 str11" cx="1350" cy="17133" rx="169" ry="172"/>
-   <ellipse class="levelSensor2 fil0 str11" cx="1350" cy="18573" rx="169" ry="172"/>
+   <ellipse class="LevelSensor1 fil0 str11" cx="1350" cy="17133" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str11" cx="1350" cy="18573" rx="169" ry="172"/>
    <rect class="fil0 str11" x="1764" y="16819" width="139" height="2566"/>
    <polyline class="fil2 str11" points="1833,16819 1833,16501 3070,16501 3070,16805 "/>
    <polyline class="fil2 str11" points="1903,19237 3070,19237 3070,18969 "/>
@@ -1106,8 +1106,8 @@ viewBox="0 0 42000 32000"
   <text x="3217" y="18406"  class="fil1 fnt4">ресивер</text>
   <g class="jar jar-F0-J3">
    <rect class="status fil7 str0" x="2255" y="22432" width="4855" height="2166" rx="893" ry="840"/>
-   <ellipse class="levelSensor1 fil0 str11" cx="1338" cy="22761" rx="169" ry="172"/>
-   <ellipse class="levelSensor2 fil0 str11" cx="1338" cy="24201" rx="169" ry="172"/>
+   <ellipse class="LevelSensor1 fil0 str11" cx="1338" cy="22761" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str11" cx="1338" cy="24201" rx="169" ry="172"/>
    <rect class="fil0 str11" x="1751" y="22447" width="139" height="2566"/>
    <polyline class="fil2 str11" points="1820,22447 1820,22129 3057,22129 3057,22433 "/>
    <polyline class="fil2 str11" points="1890,24865 3057,24865 3057,24597 "/>

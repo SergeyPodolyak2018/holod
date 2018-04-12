@@ -10,7 +10,7 @@ var ports			= 80;										//создаём порт
 var knex = require('knex')({									//построитель запросов к базе данных
   client: 'mysql',
   connection: {
-    host 	 : '192.168.0.102',
+    host 	 : '192.168.15.22',
     user 	 : 'e_holod',
     password : '12345',
     database : 'e_holod'

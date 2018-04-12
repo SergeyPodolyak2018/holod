@@ -2,7 +2,7 @@
 	//global variables
 var global_start_function=0;
 var сurrent_grafic=0;   
-var header_menu={};                              //global variable to manipulate header menu
+var header_menu={};                           //global variable to manipulate header menu
 var title_dsfvasdc;                           // tool tip on the object
 var link_global_object;                       //object with oll lines 
 var global_object_status={};                  //object of staus of all elements
@@ -13,20 +13,26 @@ var global_object_oll_kylt_from_server='';    //oll kylt from servere in one obj
 var global_kylt_from_server_formated={};      //formated list of kylt to use in future in different menu
 //var element_type_number={'hiter':2,'cooler':3,'gate':1,'zadvijka':4,'silos':14,'dryer':16,'separator':17,'gate':18,'vent':6,'tube':7,'car':15,'enable':19,'zadvijkaGroup':23,'current':100,'kylt':101, 'analog_dat':102};//существующие типы элементов
 
-const element_type_number={'hiter':2,'cooler':3,'gate':1,'box':4,'compressor':5,'receiver':6,'pumpGroup':7,'jar':7,'refrigerator':8};//существующие типы элементов
-const svg_type_id=["flor0","flor1","flor2","flor3","flor4"];//существующие типы элементов
-const structura={"flor0":['compressor','receiver','pumpGroup','jar','refrigerator'],
-                "flor1":['hiter','cooler','gate','box'],
-                 "flor2":['hiter','cooler','gate','box'],
-                 "flor3":['hiter','cooler','gate','box'],
-                 "flor4":['hiter','cooler','gate','box'],
-                };
+const element_type_number= {'hiter':2,'cooler':3,'gate':1,'box':4,'compressor':5,'receiver':6,'pumpGroup':7,'jar':8,'refrigerator':9};//существующие типы элементов
+
+const svg_type_id        = ["flor0","flor1","flor2","flor3","flor4"];//существующие типы элементов
+
+const structura          = {"flor0":['compressor','receiver','pumpGroup','jar','refrigerator'],
+                            "flor1":['hiter','cooler','gate','box'],
+                            "flor2":['hiter','cooler','gate','box'],
+                            "flor3":['hiter','cooler','gate','box'],
+                            "flor4":['hiter','cooler','gate','box'],
+                          };
 var globalObject={};
 
 var flors={"1":null,"2":null,"3":null,"4":null};
+
 var worker2=null;//воркер для глобального пользования
+
 var globalObjectSatusOfUser;
+
 var pressTimerForeHoldOnIpadOreIphone;
+
 
 //Function thet hide status of user
 function statusOfuser(user){
@@ -294,6 +300,15 @@ function createGlobalObject(){
                         globalObject[flor][key]=new getNewObjectOfBox(oneTypeObjects[j],key);
                         // statements_4
                         break;
+                    case 'compressor':
+                        globalObject[flor][key]=new getNewObjectOfCompressor(oneTypeObjects[j],key);
+                        // statements_4
+                        break;
+                    case 'receiver':
+                        globalObject[flor][key]=new getNewObjectOfReceiver(oneTypeObjects[j],key);
+                        // statements_4
+                        break;
+                        
                     default:
                         // statements_def
                         break;
