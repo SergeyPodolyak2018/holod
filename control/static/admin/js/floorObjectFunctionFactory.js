@@ -6,7 +6,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 	this.autoElements 	= objectFromSvg.getElementsByClassName(name);
 	this.manualElements = objectFromSvg.getElementsByClassName(name+'-manual');
 	this.iconAlarm = objectFromSvg.getElementsByClassName('icon');	
-	this.window_sensors = document.getElementById('hiter_sensors');
+	this.window_sensors = document.getElementsByClassName('hiter_sensors')[0].cloneNode(true);
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
     this.e 		= 0;		//ошибка
@@ -149,7 +149,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.coolerTemperature3 = objectFromSvg.getElementsByClassName(name+'-T3-text');	//статус
 	this.iconAlarm 			= objectFromSvg.getElementsByClassName('attention-'+name);
 	this.iconRemont 		= objectFromSvg.getElementsByClassName('remont-'+name);
-	this.window_sensors 	= document.getElementById('coller_sensors');
+	this.window_sensors 	= document.getElementsByClassName('coller_sensors')[0].cloneNode(true);
 	this.intervalLockation;	  
 	this.s 		= 0;																	//статус       
     this.e 		= 0;																	//ошибка
@@ -409,7 +409,7 @@ function getNewObjectOfGate(objectFromSvg,name){
 	this.autoElements 	= objectFromSvg.getElementsByClassName(name);	
 	this.gate 			= objectFromSvg;
 	this.iconAlarm 		= objectFromSvg.getElementsByClassName('icon');
-	this.window_sensors = document.getElementById('gate_sensors');
+	this.window_sensors = document.getElementsByClassName('gate_sensors')[0].cloneNode(true);
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
     this.e 		= 0;		//ошибка
@@ -486,12 +486,12 @@ getNewObjectOfGate.prototype.myStatus = function(state){
 		this.e=state.e;
 		this.setEror();
 	}
-	if(this.i_po!=state.i_po){
-		this.i_po=state.i_po;
+	if(this.sensors.i_po!=state.i_po){
+		this.sensors.i_po=state.i_po;
 		//this.setStatus();
 	}	
-	if(this.q_km!=state.q_km){
-		this.q_km=state.q_km;
+	if(this.sensors.q_km!=state.q_km){
+		this.sensors.q_km=state.q_km;
 		//this.setStatus();
 	}
 
@@ -613,7 +613,12 @@ getNewObjectOfBox.prototype.myStatus = function(state){
 
 
 //-------------------------------------------------------------------------------------------------------
-function sensors_open(){	
+function sensors_open(){
+	document.getElementById('container').appendChild(this.window_sensors);
+	//this.window_sensors.classList.add('draggable');
+	$( this.window_sensors).draggable({
+  appendTo: "body"
+});
 	if(this.window_sensors.style.display == 'none'){
 		hidemenu();
 		this.window_sensors.style.display = 'block';
@@ -632,5 +637,6 @@ function sensors_close(){
 	if(this.window_sensors.style.display == 'block'){
 		this.window_sensors.style.display = 'none';
 		clearInterval(this.intervalLockation);
+		this.window_sensors.parentNode.removeChild(this.window_sensors);
 	}
 }
