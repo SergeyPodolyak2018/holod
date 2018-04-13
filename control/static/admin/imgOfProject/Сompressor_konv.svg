@@ -873,7 +873,7 @@ viewBox="0 0 42000 32000"
    <line class="fil2 str11" x1="24192" y1="17477" x2="24198" y2= "17816" />
    <line class="fil2 str11" x1="24450" y1="20420" x2="24450" y2= "20270" />
   </g>
-  <g class="pumpGroup pumpGroup-F0-P2">
+  <g class="pumpGroup pumpGroup-F0-P1">
    <g>
     <rect class="fil0 str0" x="34163" y="7817" width="1464" height="455" rx="123" ry="120"/>
     <g transform="matrix(1.00277 0 0 1 13157.7 -7828.53)">
@@ -970,9 +970,9 @@ viewBox="0 0 42000 32000"
      <path class="fil11" d="M40943 18562l-12 -162 0 -74 51 0 0 74 -12 162 -27 0zm-10 82l0 -61 47 0 0 61 -47 0z"/>
     </g>
    </g>
-   <rect class="F0-P2-select fil2 str0" x="36208" y="16313" width="5292" height="2687"/>
+   <rect class="F0-P1-select fil2 str0" x="36208" y="16313" width="5292" height="2687"/>
   </g>
-  <g class="pumpGroup pumpGroup-F0-P1">
+  <g class="pumpGroup pumpGroup-F0-P2">
    <g class="pump1">
     <circle class="fil0 str0" cx="33293" cy="22501" r="417"/>
     <polyline class="fil2 str0" points="32880,22493 33296,22909 33709,22548 "/>
@@ -1037,7 +1037,7 @@ viewBox="0 0 42000 32000"
     <text x="21834" y="24072"  class="fil1 fnt3">0</text>
     <text x="21942" y="24266"  class="fil1 fnt0">C</text>
    </g>
-   <rect class="F0-P1-select fil2 str0" x="32708" y="22000" width="5292" height="2687"/>
+   <rect class="F0-P2-select fil2 str0" x="32708" y="22000" width="5292" height="2687"/>
   </g>
   <g class="refrigerator refrigerator-F0-Rf1">
    <polygon class="status fil7 str0" points="2968,8742 2968,7481 3447,2902 5326,2902 5802,7481 5802,8723 "/>

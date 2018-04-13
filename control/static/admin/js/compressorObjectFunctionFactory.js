@@ -240,38 +240,7 @@ getNewObjectOfCompressor.prototype.myStatus = function(state){
 		this.i=state.i;
 		//this.setEror();
 	}
-	/*if(this.e!=state.e){
-		this.e=state.e;
-		this.setEror();
-	}
-	if(this.i_po!=state.aircva.i_po){
-		this.i_po=state.aircva.i_po;
-		//this.setStatus();
-	}	
-	if(this.i_au!=state.aircva.i_au){
-		this.i_au=state.aircva.i_au;
-		//this.setStatus();
-	}	
-	if(this.q_km!=state.aircva.q_km){
-		this.q_km=state.aircva.q_km;
-		//this.setStatus();
-	}
-	if(JSON.stringify(this.td)!==JSON.stringify(state.td)){
-        this.td=Object.assign({}, state.td);
-        this.setStatusTd();
-    }
-    if(JSON.stringify(this.airch)!==JSON.stringify(state.airch)){
-        this.airch=Object.assign({}, state.airch);
-        this.setStatusAirch();
-    }
-    if(JSON.stringify(this.aircvo1)!==JSON.stringify(state.aircva.aircvo1)){
-        this.aircvo1=Object.assign({}, state.aircva.aircvo1);
-        this.setStatusAircvo1();
-    }
-    if(JSON.stringify(this.aircvo2)!==JSON.stringify(state.aircva.aircvo2)){
-        this.aircvo2=Object.assign({}, state.aircva.aircvo2);
-        this.setStatusAircvo2();
-    }	*/
+	
 };
 getNewObjectOfCompressor.prototype.open_sensors = sensors_open;
 getNewObjectOfCompressor.prototype.close_sensors = sensors_close;
@@ -282,7 +251,7 @@ getNewObjectOfCompressor.prototype.close_sensors = sensors_close;
 function getNewObjectOfReceiver(objectFromSvg,name){
 
 	this.name 					= name;	
-	this.receiver				= objectFromSvg.querySelector('.status');
+	this.status 				= objectFromSvg.querySelector('.status');
 	this.pressureIndicator 		= objectFromSvg.getElementsByClassName('pressure1')[0];
 	this.levelIndicator 		= objectFromSvg.getElementsByClassName('level1')[0];
 	this.levelSensor1			= objectFromSvg.getElementsByClassName('LevelSensor1')[0];
@@ -308,138 +277,87 @@ function getNewObjectOfReceiver(objectFromSvg,name){
         		  "i_lel": "0.00"	//уровень
     			};    										
 
-	this.setStatusMain=function(){		
-		console.log('set setStatusMain');
+	this.setStatus=function(){		
+		console.log('set status Motogate');
+
 		switch (this.s) {
-			case 0:
-				  receiver.removeAttribute("style");
+			case 0:				
+				
+				  this.status.removeAttribute("style");
+				
 				break;
-			case 1:
-				  receiver.style.cssText='fill:#00ff00;'
+			case 1:				
+				
+				  this.status.style.cssText='fill:#00ff00;'
+				
 				break;
-			case 2:
-				  receiver.style.cssText='fill:#00ff00;'
+			case 2:				
+				
+				  this.status.style.cssText='fill:#00ff00;'
+				
 				break;
-			case 3:
-				  receiver.style.cssText='fill:#ff0000;'
+			case 3:				
+				
+				  this.status.style.cssText='fill:#ff0000;'
+				
 				break;	
 			default:
 				// statements_def
 				break;
 		}
-
 	}
+
 	this.setStatusIndicator=function(){		
 		console.log('set setStatusIndicator');
-		this.pressureIndicators.innerHTML 	= this.sensors.i_pre;
+		this.pressureIndicator.innerHTML 	= this.sensors.i_pre;
 		this.levelIndicator.innerHTML 		= this.sensors.i_lel;		
 		//this.set_sensores();
 	}
-	/*this.setStatusAirch=function(){		
-		console.log('set setStatusAirch');
-		this.set_sensores();
-		switch (this.airch.s) {
+
+	this.setLevelIndicator1=function(){		
+		
+		switch (this.sensors.i_l171) {
 			case 0:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
+				  this.levelSensor1.removeAttribute("style");
 				break;
 			case 1:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 2:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 3:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				break;	
+				  this.levelSensor1.style.cssText='fill:#ff0000;';
+				break;			
 			default:
 				// statements_def
 				break;
 		}
-	}*/
-	/*this.setStatusAircvo1=function(){		
-		console.log('set setStatusAircvo1');
-		this.set_sensores();
-		switch (this.aircvo1.s) {
+	}
+	this.setLevelIndicator2=function(){		
+		
+		switch (this.sensors.i_l172) {
 			case 0:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
+				  this.levelSensor2.removeAttribute("style");
 				break;
 			case 1:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 2:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 3:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				break;	
+				  this.levelSensor2.style.cssText='fill:#ff0000;';
+				break;			
 			default:
 				// statements_def
 				break;
 		}
-	}*/
-	/*this.setStatusAircvo2=function(){		
-		console.log('set setStatusAircvo2');
-		this.set_sensores();
-	}*/
+	}
 
-	/*this.set_sensores=function(){
-		console.log('привет из cooler set_sensores');
-		this.sensors.d1		=this.td.d1;		//set sensor
-		this.sensors.d2		=this.td.d2;		//set sensor
-		this.sensors.d3		=this.td.d3;		//set sensor
-		this.sensors.h_i_po	=this.airch.i_po;	//set sensor
-    	this.sensors.h_i_au	=this.airch.i_au;	//set sensor
-    	this.sensors.h_i_km	=this.airch.i_km;	//set sensor
-    	this.sensors.h_q_km	=this.airch.q_km;	//set sensor
-    	this.sensors.q_km	=this.q_km;			//set sensor
-    	this.sensors.i_au	=this.i_au;			//set sensor
-    	this.sensors.i_po	=this.i_po;			//set sensor
-    	this.sensors.v1_i_km=this.aircvo1.i_km;	//set sensor
-    	this.sensors.v2_i_km=this.aircvo2.i_km;	//set sensor
-
-		console.log(this.sensors);		
-	}*/
-
+	this.setLevelIndicator3=function(){		
+		
+		switch (this.sensors.i_l175) {
+			case 0:
+				  this.levelSensor3.style.cssText='fill:#ff0000;';
+				break;
+			case 1:
+				  this.levelSensor3.style.cssText='fill:#00ff00;';
+				break;			
+			default:
+				// statements_def
+				break;
+		}
+	}
+	
 	/*this.set_sensores_status=function(){
 		console.log('привет из cooler set_sensores_status');
 		let re=/d[0-9]/;		
@@ -459,20 +377,12 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 	this.setEror=function(){		
 		let maskNorm=2;
 		let maskRemont=4;
-		if((this.e & maskNorm)>0){			
-			iconAlarm.style.cssText='display:none;'			
+		if((this.i & maskNorm)>0){			
+			this.iconAlarm.style.cssText='display:none;'			
 		}else{			
-			iconAlarm.removeAttribute("style");			
+			this.iconAlarm.removeAttribute("style");			
 		}
-		/*if((this.e & maskRemont)>0){			
-			[...this.iconRemont].forEach(function(item, i, arr) {				  
-				item.removeAttribute("style");
-			});
-		}else{			
-			[...this.iconRemont].forEach(function(item, i, arr) {				  
-				item.style.cssText='display:none;'
-			});
-		}*/
+		
 	}
 }
 
@@ -481,11 +391,11 @@ getNewObjectOfReceiver.prototype.myStatus = function(state){
 	console.log('привет из Resiver');
 	console.log(state);
 
-	if(this.s!=state.s){
+	if(this.s!==state.s){
 		this.s=state.s;
-		this.setStatusMain();
+		this.setStatus();
 	}
-	if(this.i!=state.i){
+	if(this.i!==state.i){
 		this.i=state.i;
 		this.setEror();
 	}
@@ -496,7 +406,13 @@ getNewObjectOfReceiver.prototype.myStatus = function(state){
     }
 		this.sensors.i_l171 = state.i_l171;
 		this.sensors.i_l172 = state.i_l172;
-		this.sensors.i_l175 = state.i_l175;	
+		this.sensors.i_l175 = state.i_l175;
+
+		this.valve.myStatus(state.val); 			
+		this.motoValve.myStatus(state.valr);
+		this.setLevelIndicator1();
+		this.setLevelIndicator2();
+		this.setLevelIndicator3();	
 };
 getNewObjectOfReceiver.prototype.open_sensors = sensors_open;
 getNewObjectOfReceiver.prototype.close_sensors = sensors_close;
@@ -587,7 +503,7 @@ getNewObjectInsideGate.prototype.myStatus = function(state){
 //Конструктор объектов внутренних - motoклапан
 function getNewObjectInsideMotoGate(objectFromSvg){	
 	
-	this.gate		= objectFromSvg.getElementsByClassName('status');
+	this.status		= objectFromSvg.getElementsByClassName('status');
 	this.iconAlarm 	= objectFromSvg.getElementsByClassName('attention');	
 	this.position 	= objectFromSvg.getElementsByClassName('position1')[0];
 	this.s 		= 0;		//статус       
@@ -605,22 +521,22 @@ function getNewObjectInsideMotoGate(objectFromSvg){
 
 		switch (this.s) {
 			case 0:				
-				[...this.gate].forEach(function(item, i, arr) {
+				[...this.status].forEach(function(item, i, arr) {
 				  item.removeAttribute("style");
 				});
 				break;
 			case 1:				
-				[...this.gate].forEach(function(item, i, arr) {
+				[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#00ff00;'
 				});
 				break;
 			case 2:				
-				[...this.gate].forEach(function(item, i, arr) {
+				[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#00ff00;'
 				});
 				break;
 			case 3:				
-				[...this.gate].forEach(function(item, i, arr) {
+				[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#ff0000;'
 				});
 				break;	
@@ -652,7 +568,7 @@ function getNewObjectInsideMotoGate(objectFromSvg){
 
 	this.setStatusIndicator=function(){		
 		console.log('set setStatusIndicator');		
-		this.position.innerHTML 		= this.sensors.i_pos;
+		this.position.innerHTML = this.sensors.i_pos;
 		//this.set_sensores();
 	}
 }
@@ -680,19 +596,23 @@ getNewObjectInsideMotoGate.prototype.myStatus = function(state){
 };
 
 //-----------------------------------------------------------------------------------------------------------------------
-//Конструктор объектов ресивер
+//Конструктор объектов груповой насос
 function getNewObjectOfPumpGroup(objectFromSvg,name){
 
 	this.name 					= name;	
-	this.receiver				= objectFromSvg.querySelector('.status');
-	this.pressureIndicator 		= objectFromSvg.getElementsByClassName('pressure1')[0];
-	this.levelIndicator 		= objectFromSvg.getElementsByClassName('level1')[0];
-	this.levelSensor1			= objectFromSvg.getElementsByClassName('LevelSensor1')[0];
-	this.levelSensor2			= objectFromSvg.getElementsByClassName('LevelSensor2')[0];
-	this.levelSensor3			= objectFromSvg.getElementsByClassName('LevelSensor3')[0];
-	this.iconAlarm 				= objectFromSvg.querySelector('.attention');
-	this.valve 					= new getNewObjectInsideGate(objectFromSvg.getElementsByClassName('gate')[0]);
-	this.motoValve 				= new getNewObjectInsideMotoGate(objectFromSvg.getElementsByClassName('motoGate')[0]);
+	
+	this.temperatureIndicators	= { 'd1':objectFromSvg.getElementsByClassName('temperature1')[0],
+									'd2':objectFromSvg.getElementsByClassName('temperature2')[0],
+									'd3':objectFromSvg.getElementsByClassName('temperature3')[0],
+									'd4':objectFromSvg.getElementsByClassName('temperature4')[0],
+									'd5':objectFromSvg.getElementsByClassName('temperature5')[0],
+									'd6':objectFromSvg.getElementsByClassName('temperature6')[0],
+									'd7':objectFromSvg.getElementsByClassName('temperature7')[0],
+									'd8':objectFromSvg.getElementsByClassName('temperature8')[0]
+									};																				
+	
+	this.pump1 					= new getNewObjectInsidePump(objectFromSvg.getElementsByClassName('pump1')[0]);
+	this.pump2 					= new getNewObjectInsidePump(objectFromSvg.getElementsByClassName('pump2')[0]);
 
 	
 	
@@ -700,76 +620,79 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 
 	this.intervalLockation;	//хранилище циклической функции
 
-	this.s 		= 0;	 	//статус
-    this.i 		= 0;	 	//инфо     
 
-    this.sensors={"i_l171": 0,		//Датчик уровня аварийный
-        		  "i_l172": 0,		//Датчик уровня аварийный
-        		  "i_l175": 0,		//Датчик уровня аварийный
-        		  "i_pre": "0.00",	//давление
-        		  "i_lel": "0.00"	//уровень
+    this.sensors={"d1": "0.00",		//Индикатор температуры
+          		  "d2": "0.00",		//Индикатор температуры
+          		  "d3": "0.00",		//Индикатор температуры
+          		  "d4": "0.00",		//Индикатор температуры
+          		  "d5": "0.00",		//Индикатор температуры
+          		  "d6": "0.00",		//Индикатор температуры
+          		  "d7": "0.00",		//Индикатор температуры
+          		  "d8": "0.00" 		//Индикатор температуры
     			};    										
 
-	this.setStatusMain=function(){		
-		console.log('set setStatusMain');
-		switch (this.s) {
-			case 0:
-				  receiver.removeAttribute("style");
-				break;
-			case 1:
-				  receiver.style.cssText='fill:#00ff00;'
-				break;
-			case 2:
-				  receiver.style.cssText='fill:#00ff00;'
-				break;
-			case 3:
-				  receiver.style.cssText='fill:#ff0000;'
-				break;	
-			default:
-				// statements_def
-				break;
-		}
-
-	}
-	this.setStatusIndicator=function(){		
+	
+	this.setStatusIndicator=function(name){		
 		console.log('set setStatusIndicator');
-		this.pressureIndicators.innerHTML 	= this.sensors.i_pre;
-		this.levelIndicator.innerHTML 		= this.sensors.i_lel;		
-		//this.set_sensores();
+		this.temperatureIndicators[name].innerHTML 	= this.sensors[name];	
 	}
-	/*this.setStatusAirch=function(){		
-		console.log('set setStatusAirch');
-		this.set_sensores();
-		switch (this.airch.s) {
-			case 0:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
+	
+}
+
+//Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
+getNewObjectOfPumpGroup.prototype.myStatus = function(state){	
+	console.log('привет из PumpGroup');
+	console.log(state);
+	this.pump1.myStatus(state.pu1);
+	this.pump2.myStatus(state.pu2);
+	for(let i in state.td){
+		if (this.sensors[i] !== state.td[i]){
+			this.sensors[i] = state.td[i]
+			this.setStatusIndicator(i);
+		}
+	}	
+};
+getNewObjectOfPumpGroup.prototype.open_sensors = sensors_open;
+getNewObjectOfPumpGroup.prototype.close_sensors = sensors_close;
+//--------------------------------------------------------------------------------------------------------------------------------------
+//Конструктор объектов внутренних - motoклапан
+function getNewObjectInsidePump(objectFromSvg){	
+	
+	this.status		= objectFromSvg.getElementsByClassName('status');
+	this.iconAlarm 	= objectFromSvg.getElementsByClassName('attention')[0];	
+	this.pressure 	= objectFromSvg.getElementsByClassName('pressure1')[0];
+	
+    this.sensors={"s": 0,
+          		  "i": 0,
+          		  "i_po": 0,
+          		  "i_au": 0,
+          		  "i_km": 0,
+          		  "q_km": 0,
+          		  "i_tew": "0.00",
+          		  "i_pred": "0.00"
+    			};	
+
+	this.setStatus=function(){		
+		console.log('set status Motogate');
+
+		switch (this.sensors.s) {
+			case 0:				
+				[...this.status].forEach(function(item, i, arr) {
 				  item.removeAttribute("style");
 				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
 				break;
-			case 1:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
+			case 1:				
+				[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#00ff00;'
 				});
 				break;
-			case 2:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
+			case 2:				
+				[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#00ff00;'
 				});
 				break;
-			case 3:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
+			case 3:				
+				[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#ff0000;'
 				});
 				break;	
@@ -777,71 +700,112 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 				// statements_def
 				break;
 		}
-	}*/
-	/*this.setStatusAircvo1=function(){		
-		console.log('set setStatusAircvo1');
-		this.set_sensores();
-		switch (this.aircvo1.s) {
+
+	}
+
+	
+
+	this.setEror=function(){		
+		let maskNorm=2;
+		let maskRemont=4;
+		if((this.sensors.i & maskNorm)>0){
+			this.iconAlarm.style.cssText='display:none;';			
+		}else{
+			this.iconAlarm.removeAttribute("style");
+		}
+	}
+	this.getSensors=function(){		
+		return this.sensors;
+	}
+
+	this.setStatusIndicator=function(){		
+		console.log('set setStatusIndicator');		
+		this.pressure.innerHTML = this.sensors.i_pred;		
+	}
+}
+
+//Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
+getNewObjectInsidePump.prototype.myStatus = function(state){	
+	console.log('привет из InsidePump');
+	for(let i in state){
+		if(i=='s'){
+			if (this.sensors[i] !== state[i]){
+				this.sensors[i] = state[i];
+				this.setStatus();
+				continue;
+			}	
+		}
+		if(i=='i'){
+			if (this.sensors[i] !== state[i]){
+				this.sensors[i] = state[i];
+				this.setEror();
+				continue;
+			}	
+		}
+		if(i=='i_pred'){
+			if (this.sensors[i] !== state[i]){
+				this.sensors[i] = state[i];
+				this.setStatusIndicator();
+				continue;
+			}	
+		}
+		if (this.sensors[i] !== state[i]){			
+			this.sensors[i] = state[i]			
+		}
+	}
+};
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Конструктор объектов простой ресивер
+function getNewObjectOfJar(objectFromSvg,name){
+
+	this.name 					= name;
+
+	this.levelSensor 	 		= { 'i_lmax':objectFromSvg.getElementsByClassName('LevelSensor1')[0],
+									'i_lmin':objectFromSvg.getElementsByClassName('LevelSensor2')[0],
+									
+									};
+	
+	//this.window_sensors 	= document.getElementById('coller_sensors');
+
+	this.intervalLockation;	//хранилище циклической функции
+
+    this.sensors={"i_lmin": 0,
+          		  "i_lmax": 0
+    			};    										
+
+	
+
+	this.setStatusIndicator1=function(){		
+		console.log('set setStatusIndicator');
+		switch (this.sensors.i_lmax) {
 			case 0:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
+				  this.levelSensor.i_lmax.removeAttribute("style");
 				break;
 			case 1:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 2:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 3:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				break;	
+				  this.levelSensor.i_lmax.style.cssText='fill:#ff0000;';
+				break;			
 			default:
 				// statements_def
 				break;
 		}
-	}*/
-	/*this.setStatusAircvo2=function(){		
-		console.log('set setStatusAircvo2');
-		this.set_sensores();
-	}*/
-
-	/*this.set_sensores=function(){
-		console.log('привет из cooler set_sensores');
-		this.sensors.d1		=this.td.d1;		//set sensor
-		this.sensors.d2		=this.td.d2;		//set sensor
-		this.sensors.d3		=this.td.d3;		//set sensor
-		this.sensors.h_i_po	=this.airch.i_po;	//set sensor
-    	this.sensors.h_i_au	=this.airch.i_au;	//set sensor
-    	this.sensors.h_i_km	=this.airch.i_km;	//set sensor
-    	this.sensors.h_q_km	=this.airch.q_km;	//set sensor
-    	this.sensors.q_km	=this.q_km;			//set sensor
-    	this.sensors.i_au	=this.i_au;			//set sensor
-    	this.sensors.i_po	=this.i_po;			//set sensor
-    	this.sensors.v1_i_km=this.aircvo1.i_km;	//set sensor
-    	this.sensors.v2_i_km=this.aircvo2.i_km;	//set sensor
-
-		console.log(this.sensors);		
-	}*/
-
+	}
+	this.setStatusIndicator2=function(){		
+		console.log('set setStatusIndicator');
+		switch (this.sensors.i_lmin) {
+			case 0:
+				  this.levelSensor.i_lmin.removeAttribute("style");
+				break;
+			case 1:
+				  this.levelSensor.i_lmin.style.cssText='fill:#00ff00;'
+				break;
+			
+			default:
+				// statements_def
+				break;
+		}
+	}
+	
 	/*this.set_sensores_status=function(){
 		console.log('привет из cooler set_sensores_status');
 		let re=/d[0-9]/;		
@@ -858,47 +822,23 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 		}		
 	}*/
 
-	this.setEror=function(){		
-		let maskNorm=2;
-		let maskRemont=4;
-		if((this.e & maskNorm)>0){			
-			iconAlarm.style.cssText='display:none;'			
-		}else{			
-			iconAlarm.removeAttribute("style");			
-		}
-		/*if((this.e & maskRemont)>0){			
-			[...this.iconRemont].forEach(function(item, i, arr) {				  
-				item.removeAttribute("style");
-			});
-		}else{			
-			[...this.iconRemont].forEach(function(item, i, arr) {				  
-				item.style.cssText='display:none;'
-			});
-		}*/
-	}
+	
 }
 
 //Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
-getNewObjectOfPumpGroup.prototype.myStatus = function(state){	
-	console.log('привет из PumpGroup');
+getNewObjectOfJar.prototype.myStatus = function(state){	
+	console.log('привет из Resiver');
 	console.log(state);
 
-	if(this.s!=state.s){
-		this.s=state.s;
-		this.setStatusMain();
-	}
-	if(this.i!=state.i){
-		this.i=state.i;
-		this.setEror();
-	}
-	if(this.sensors.i_pre !== state.i_pre || this.sensors.i_lel !== state.i_lel){ 
-		this.sensors.i_pre = state.i_pre;
-		this.sensors.i_lel = state.i_lel;
-        this.setStatusIndicator();
+	if(this.sensors.i_lmin !== state.i_lmin){ 
+		this.sensors.i_lmin = state.i_lmin;		
+        this.setStatusIndicator2();
     }
-		this.sensors.i_l171 = state.i_l171;
-		this.sensors.i_l172 = state.i_l172;
-		this.sensors.i_l175 = state.i_l175;	
+    if(this.sensors.i_lmax !== state.i_lmax){ 
+		this.sensors.i_lmax = state.i_lmax;		
+        this.setStatusIndicator1();
+    }
+		
 };
 getNewObjectOfReceiver.prototype.open_sensors = sensors_open;
 getNewObjectOfReceiver.prototype.close_sensors = sensors_close;

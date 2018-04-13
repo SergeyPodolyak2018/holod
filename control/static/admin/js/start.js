@@ -308,6 +308,14 @@ function createGlobalObject(){
                         globalObject[flor][key]=new getNewObjectOfReceiver(oneTypeObjects[j],key);
                         // statements_4
                         break;
+                    case 'pumpGroup':
+                        globalObject[flor][key]=new getNewObjectOfPumpGroup(oneTypeObjects[j],key);
+                        // statements_4
+                        break;
+                    case 'jar':
+                        globalObject[flor][key]=new getNewObjectOfJar(oneTypeObjects[j],key);
+                        // statements_4
+                        break;
                         
                     default:
                         // statements_def

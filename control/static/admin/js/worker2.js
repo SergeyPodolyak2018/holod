@@ -26,6 +26,14 @@ get_status(event.data[0],event.data[1]); //Передать в функцию п
         var re5 = /hp/i;
         var re6 = /iv/i;
         var re7 = /airc(\d+)/i;
+        var re8 = /co(\d+)/i;
+        var re9 = /ve(\d+)/i;
+        var re10 = /pug(\d+)/i;
+        var re11 = /re(\d+)/i;
+
+
+
+
         for(let i in b.holod_db){
             let tempName='';
             if(typeof(b.holod_db[i])=="object" && i.match(re1)){
@@ -36,6 +44,23 @@ get_status(event.data[0],event.data[1]); //Передать в функцию п
                 for(let j in tempFlor){                                 
                     if(typeof(tempFlor[j])=="object" && j.match(re2)){
                         let localName='H'+j.match(re2)[1];
+                        tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempFlor[j];
+                    }
+
+                    if(typeof(tempFlor[j])=="object" && j.match(re8)){
+                        let localName='S'+j.match(re8)[1];
+                        tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempFlor[j];
+                    }
+                    if(typeof(tempFlor[j])=="object" && j.match(re9)){
+                        let localName='R'+j.match(re9)[1];
+                        tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempFlor[j];
+                    }
+                    if(typeof(tempFlor[j])=="object" && j.match(re10)){
+                        let localName='P'+j.match(re10)[1];
+                        tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempFlor[j];
+                    }
+                    if(typeof(tempFlor[j])=="object" && j.match(re11)){
+                        let localName='J'+j.match(re11)[1];
                         tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempFlor[j];
                     }
 
