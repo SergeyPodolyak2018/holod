@@ -263,9 +263,8 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 
 	
 	
-	//this.window_sensors 	= document.getElementById('coller_sensors');
-
-	this.intervalLockation;	//хранилище циклической функции
+	this.window_sensors = document.getElementsByClassName('receiver_sensors')[0].cloneNode(true);
+	this.intervalLockation;
 
 	this.s 		= 0;	 	//статус
     this.i 		= 0;	 	//инфо     
@@ -358,21 +357,46 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 		}
 	}
 	
-	/*this.set_sensores_status=function(){
+	this.set_sensores_status=function(){
 		console.log('привет из cooler set_sensores_status');
-		let re=/d[0-9]/;		
+		let valveSensors = this.valve.getSensors();
+		let motoValveSensors = this.motoValve.getSensors();
+		let re1=/i_pre/;
+		let re2=/i_lel/;
+		let re3=/i_pos/;
+		let re4=/i_spos/;
+		
 		for (let i in this.sensors) {			
-			if(!i.match(re)){						
+			if(!i.match(re1) && !i.match(re2)){						
 				if (this.sensors[i] == 1) {
 					this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
 																					  '-webkit-box-shadow:0 0 25px #00FF00';                    
 	            }else{                   	
-	                this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#e9e9e9;box-shadow:0 0 25px #e9e9e9;'+
-	                																  '-webkit-box-shadow:0 0 25px #e9e9e9';
+	                this.window_sensors.getElementsByClassName(''+i)[0].removeAttribute("style");
 	            }
-	        }else{this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i]}
+	        }else{this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i];}
+		}
+
+		for (let i in valveSensors) {			
+								
+			if (valveSensors[i] == 1) {
+				this.window_sensors.getElementsByClassName('g-'+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
+																					  '-webkit-box-shadow:0 0 25px #00FF00';                    
+	        }else{                   	
+	            this.window_sensors.getElementsByClassName('g-'+i)[0].removeAttribute("style");
+	        }	        
+		}
+		for (let i in motoValveSensors) {			
+			if(!i.match(re3) && !i.match(re4)){						
+				if (motoValveSensors[i] == 1) {
+					this.window_sensors.getElementsByClassName('mg-'+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
+																					  '-webkit-box-shadow:0 0 25px #00FF00';                    
+	            }else{                   	
+	                this.window_sensors.getElementsByClassName('mg-'+i)[0].removeAttribute("style");
+	            }
+	        }else{this.window_sensors.getElementsByClassName('mg-'+i)[0].innerHTML=motoValveSensors[i]}
 		}		
-	}*/
+	}
 
 	this.setEror=function(){		
 		let maskNorm=2;
@@ -616,9 +640,8 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 
 	
 	
-	//this.window_sensors 	= document.getElementById('coller_sensors');
-
-	this.intervalLockation;	//хранилище циклической функции
+	this.window_sensors = document.getElementsByClassName('pumpGroup1_sensors')[0].cloneNode(true);
+	this.intervalLockation;
 
 
     this.sensors={"d1": "0.00",		//Индикатор температуры
@@ -635,6 +658,43 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 	this.setStatusIndicator=function(name){		
 		console.log('set setStatusIndicator');
 		this.temperatureIndicators[name].innerHTML 	= this.sensors[name];	
+	}
+
+	this.set_sensores_status=function(){
+		console.log('привет из PumpGroup set_sensores_status');
+		let pump1Sensors = this.pump1.getSensors();
+		let pump2Sensors = this.pump2.getSensors();
+		let re1=/i_tew/;
+		let re2=/i_pred/;
+		
+
+		for (let i in this.sensors) {
+	        this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i];
+		}		
+		for (let i in pump1Sensors) {			
+			if(i!=='s' && i!=='i'){
+				if(!i.match(re1) && !i.match(re2)){						
+					if (pump1Sensors[i] == 1) {
+						this.window_sensors.getElementsByClassName('p1-'+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
+																						  '-webkit-box-shadow:0 0 25px #00FF00';                    
+		            }else{                   	
+		                this.window_sensors.getElementsByClassName('p1-'+i)[0].removeAttribute("style");
+		            }
+		        }else{this.window_sensors.getElementsByClassName('p1-'+i)[0].innerHTML=pump1Sensors[i]}
+			}
+		}
+		for (let i in pump2Sensors) {
+			if(i!=='s' && i!=='i'){
+				if(!i.match(re1) && !i.match(re2)){						
+					if (pump1Sensors[i] == 1) {
+						this.window_sensors.getElementsByClassName('p2-'+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
+																						  '-webkit-box-shadow:0 0 25px #00FF00';                    
+		            }else{                   	
+		                this.window_sensors.getElementsByClassName('p2-'+i)[0].removeAttribute("style");
+		            }
+		        }else{this.window_sensors.getElementsByClassName('p2-'+i)[0].innerHTML=pump2Sensors[i]}
+			}
+		}		
 	}
 	
 }

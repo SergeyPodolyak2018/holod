@@ -294,19 +294,19 @@ var jsontable={
           "valr": {
             "s": 1,
             "i": 2,
-            "i_po": 0,
-            "i_e": 0,
-            "i_op": 0,
-            "i_cl": 0,
+            "i_po": 1,
+            "i_e": 1,
+            "i_op": 1,
+            "i_cl": 1,
             "i_pos": 22,
-            "i_spos": 0
+            "i_spos": 25
           },
           "val": {
             "s": 1,
             "i": 2,
-            "i_po": 0,
-            "i_au": 0,
-            "q_km": 0
+            "i_po": 1,
+            "i_au": 1,
+            "q_km": 1
           }
         },
         "ve2": {
@@ -341,10 +341,10 @@ var jsontable={
           "pu1": {
             "s": 1,
             "i": 2,
-            "i_po": 0,
+            "i_po": 1,
             "i_au": 0,
             "i_km": 0,
-            "q_km": 0,
+            "q_km": 1,
             "i_tew": "5.00",
             "i_pred": "5.00"
           },
@@ -352,11 +352,11 @@ var jsontable={
             "s": 1,
             "i": 2,
             "i_po": 0,
-            "i_au": 0,
+            "i_au": 1,
             "i_km": 0,
-            "q_km": 0,
-            "i_tew": "5.00",
-            "i_pred": "5.00"
+            "q_km": 1,
+            "i_tew": "55.00",
+            "i_pred": "55.00"
           },
           "tdc": 8,
           "td": {

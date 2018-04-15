@@ -333,6 +333,10 @@ a.menu_button{
     border:1px solid #494949!important;
     border-radius: 5px;
     -webkit-border-radius: 5px;
+    padding-right: 2px;
+    padding-left: 2px;
+    min-width: 85px;
+    background: #E5E5E6;
 }
 
 input{
