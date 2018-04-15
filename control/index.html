@@ -3111,6 +3111,11 @@
                                         <option value="2">Нагреватель</option>
                                         <option value="3">Клапан</option>
                                         <option value="4">Камера</option>
+                                        <option value="5">Компрессор</option>
+                                        <option value="6">Ресивер</option>
+                                        <option value="7">Насос груповой</option>
+                                        <option value="8">Линейный ресивер</option>
+                                        <option value="9">Конденсатор</option>
                                       </select>
                                     </td>
                                 </tr>
@@ -3474,7 +3479,7 @@
 
          </div>
 
-         <!--Окно всех датчиков-->
+         <!--Окно всех датчиков нагревателя-->
              <div class="hiter_sensors modal_box visible_datchiki" style="display: none">
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
                     <span>Датчики</span>
@@ -3498,8 +3503,8 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
-                            <tr><td class="i_km" style="background: #E5E5E6">Контактор</td></tr>
-                            <tr><td class="q_km" style="background: #E5E5E6">Обратная связь</td></tr>
+                            <tr><td class="i_km">Контактор</td></tr>
+                            <tr><td class="q_km">Обратная связь</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3528,8 +3533,8 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
-                            <tr><td class="i_km" style="background: #E5E5E6">Контактор</td></tr>
-                            <tr><td class="q_km" style="background: #E5E5E6">Обратная связь</td></tr>
+                            <tr><td class="i_km">Контактор</td></tr>
+                            <tr><td class="q_km">Обратная связь</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3582,8 +3587,8 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
-                            <tr><td class="h_i_km" style="background: #E5E5E6">Контактор</td></tr>
-                            <tr><td class="h_q_km" style="background: #E5E5E6">Обратная связь</td></tr>
+                            <tr><td class="h_i_km" >Контактор</td></tr>
+                            <tr><td class="h_q_km" >Обратная связь</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3605,9 +3610,9 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
-                            <tr><td class="v1_i_km" style="background: #E5E5E6">Контактор1</td></tr>
-                            <tr><td class="v2_i_km" style="background: #E5E5E6">Контактор2</td></tr>
-                            <tr><td class="q_km" style="background: #E5E5E6">Обратная связь</td></tr>
+                            <tr><td class="v1_i_km" >Контактор1</td></tr>
+                            <tr><td class="v2_i_km" >Контактор2</td></tr>
+                            <tr><td class="q_km" >Обратная связь</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3814,99 +3819,7 @@
                  </div>
              </div>
 
-             <!--_________________Датчики груповой насос2_______________________-->
-             <div class="pumpGroup2_sensors modal_box visible_datchiki" style="display: none">
-                 <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
-                    <span>Датчики</span>
-                    <span class="fool_name_of_device"></span>
-                    <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
-                 </div>
-                 <div style="clear: both;width: 100%">Датчики температуры</div>
-                 <div class="modsl modal_box_body" style="float:left">
-                     <table class="table" style="width: auto">
-                         <tbody>
-                           <tr>
-                              <td><div class="d1">0.00</div></td>
-                              <td>H211 вход</td>
-                              <td><div class="d2">0.00</div></td>
-                              <td>H211 выход</td>
-                           </tr>
-                           <tr>
-                              <td><div class="d3">0.00</div></td>
-                              <td>H212 вход</td>
-                              <td><div class="d4">0.00</div></td>
-                              <td>H212 выход</td>
-                           </tr>                                                    
-                         </tbody>                         
-                     </table>
-                 </div>                 
-                 <div class="modal_box_header" style="clear: both;width: 100%">Насос1</div>
-                 <div class="modsl modal_box_body" style="float:left">
-                     <table class="table" style="width: auto">
-                         <tbody>
-                           <tr>
-                              <td><div class="p1-i_tew">0.00</div></td>
-                              <td>Т обмоток</td>                              
-                           </tr>
-                           <tr>
-                              <td><div class="p1-i_pred">0.00</div></td>
-                              <td>Давление bar</td>                              
-                           </tr>
-                           <tr>
-                              <td><div class="datchik_lamp p1-i_po"></div></td>
-                              <td>Питание</td>
-                           </tr>
-                           <tr>
-                              <td><div class="datchik_lamp p1-i_au"></div></td>
-                              <td>Режим</td>
-                           </tr>                           
-                         </tbody>
-                     </table>
-                 </div>
-                 <div class="control" style="background: #0e0e0e;">
-                     <table style="width: auto">
-                         <tbody class="table_control">
-                            <tr><td class="p1-i_km" style="background: #E5E5E6">Контактор</td></tr>
-                            <tr><td class="p1-q_km" style="background: #E5E5E6">Обратная связь</td></tr>
-                         </tbody>
-                     </table>
-                 </div>
-                 <div class="modal_box_header" style="clear: both;width: 100%">Насос2</div>
-                 <div class="modsl modal_box_body" style="float:left">
-                     <table class="table" style="width: auto">
-                         <tbody>
-                           <tr>
-                              <td><div class="p2-i_tew">0.00</div></td>
-                              <td>Т обмоток</td>                              
-                           </tr>
-                           <tr>
-                              <td><div class="p2-i_pred">0.00</div></td>
-                              <td>Давление bar</td>                              
-                           </tr>
-                           <tr>
-                              <td><div class="datchik_lamp p2-i_po"></div></td>
-                              <td>Питание</td>
-                           </tr>
-                           <tr>
-                              <td><div class="datchik_lamp p2-i_au"></div></td>
-                              <td>Режим</td>
-                           </tr>                           
-                         </tbody>
-                     </table>
-                 </div>
-                 <div class="control" style="background: #0e0e0e;">
-                     <table style="width: auto">
-                         <tbody class="table_control">
-                            <tr><td class="p2-i_km" style="background: #E5E5E6">Контактор</td></tr>
-                            <tr><td class="p2-q_km" style="background: #E5E5E6">Обратная связь</td></tr>
-                         </tbody>
-                     </table>
-                 </div>
-                 <div style="clear: both;"></div>
-                 <div style="background: #0e0e0e;" >
-                     <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
-                 </div>
-             </div>
+             
 
 
              <!-- Див с сообщением о аварии на маршруте-->

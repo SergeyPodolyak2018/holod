@@ -63,7 +63,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 			if (this.sensors[i] == 1) {
 				this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;-webkit-box-shadow:0 0 25px #00FF00';                    
             }else{                   	
-                this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#e9e9e9;box-shadow:0 0 25px #e9e9e9;-webkit-box-shadow:0 0 25px #e9e9e9';
+                this.window_sensors.getElementsByClassName(''+i)[0].removeAttribute("style");
             }
 		}		
 	}
@@ -326,8 +326,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 					this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
 																					  '-webkit-box-shadow:0 0 25px #00FF00';                    
 	            }else{                   	
-	                this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#e9e9e9;box-shadow:0 0 25px #e9e9e9;'+
-	                																  '-webkit-box-shadow:0 0 25px #e9e9e9';
+	                this.window_sensors.getElementsByClassName(''+i)[0].removeAttribute("style");
 	            }
 	        }else{this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i]}
 		}		
@@ -454,8 +453,7 @@ function getNewObjectOfGate(objectFromSvg,name){
 				this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
 																				  '-webkit-box-shadow:0 0 25px #00FF00';                  
 	        }else{                   	
-	            this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#e9e9e9;box-shadow:0 0 25px #e9e9e9;'+
-	            																  '-webkit-box-shadow:0 0 25px #e9e9e9';
+	            this.window_sensors.getElementsByClassName(''+i)[0].removeAttribute("style");
 	        }        	
 		}		
 	}
