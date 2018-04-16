@@ -22,13 +22,13 @@ function Header_menu(userSatus){
 
 
 	function initialization(){
-		var SVG = document.getElementById("start_rout_button").getSVGDocument();
+		/*var SVG = document.getElementById("start_rout_button").getSVGDocument();
 		start_rout_button = SVG.getElementsByClassName('start_rout_button');
-		cancel_start_rout_button = SVG.getElementsByClassName('cancel_start_rout_button');
+		cancel_start_rout_button = SVG.getElementsByClassName('cancel_start_rout_button');*/
 
-		SVG = document.getElementById("stop_rout_button").getSVGDocument();
+		/*SVG = document.getElementById("stop_rout_button").getSVGDocument();
 		stop_rout_button = SVG.getElementsByClassName('stop_rout_button');
-		cancel_stop_rout_button = SVG.getElementsByClassName('cancel_stop_rout_button');
+		cancel_stop_rout_button = SVG.getElementsByClassName('cancel_stop_rout_button');*/
 
 		SVG = document.getElementById("extra_stop_button").getSVGDocument();
 		extra_stop_rout_button = SVG.getElementsByClassName('extra_stop_rout_button');
@@ -57,10 +57,10 @@ function Header_menu(userSatus){
 		exit_press = SVG.getElementsByClassName('exit_press');
 
 		if (userSatus==1 || userSatus==2){
-			set_function_click_on_button(start_rout_button,clic_on_source,1);
-			set_function_click_on_button(cancel_start_rout_button,hide_source_receiver,1);
-			set_function_click_on_button(stop_rout_button,clic_on_stop_source,1);
-			set_function_click_on_button(cancel_stop_rout_button,hide_source_receiver,1);
+			//set_function_click_on_button(start_rout_button,clic_on_source,1);
+			//set_function_click_on_button(cancel_start_rout_button,hide_source_receiver,1);
+			//set_function_click_on_button(stop_rout_button,clic_on_stop_source,1);
+			//set_function_click_on_button(cancel_stop_rout_button,hide_source_receiver,1);
 
 	        set_function_click_on_button(extra_stop_rout_button, clic_on_extra_stop_source,1);
 	        set_function_click_on_button(cancel_extra_stop_rout_button, hide_source_receiver,1);
@@ -93,8 +93,8 @@ function Header_menu(userSatus){
 
 		//set_function_click_on_button(stop_rout_button,clic_on_stop_source());
 
-		hide(cancel_start_rout_button);
-		hide(cancel_extra_stop_rout_button);
+		//hide(cancel_start_rout_button);
+		//hide(cancel_extra_stop_rout_button);
 
 
 
