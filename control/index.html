@@ -45,7 +45,7 @@
 
 
       <!--Запуск компрессора-->
-                <a href="#" class="button_with_SVG start_rout_linck"><object type="image/svg+xml" data="/static/admin/img/start_compressor_split.svg" id="start_rout_button" class="menu_button_typ2">
+                <a href="#" class="button_with_SVG start_rout_linck"><object type="image/svg+xml" data="/static/admin/img/start_compressor_split.svg" id="start_compressor_button" class="menu_button_typ2">
                           Your browser does not support SVG
                 </object></a>     
 
@@ -59,7 +59,7 @@
                           Your browser does not support SVG
              </object></a>
       <!--Просмотр уровней-->
-             <a href="#" class="button_with_SVG"><object type="image/svg+xml" data="/static/admin/img/layers_split.svg" id="ring_button" class="menu_button_typ2">
+             <a href="#" class="button_with_SVG" id="layer_SVG"><object type="image/svg+xml" data="/static/admin/img/layers_split.svg" id="layers_button" class="menu_button_typ2">
                           Your browser does not support SVG
              </object></a>
       <!--Архив-->
@@ -320,12 +320,7 @@
              <a href="#" class="menu_button" onclick="showmenu2(this,1)">Конфигурация        <span style="float: right;margin-right:-12px;">&#9658;</span></a>
              <a href="#" class="menu_button" onclick="showmenu2(this,2)">Культура            <span style="float: right;margin-right:-12px;">&#9658;</span></a>
              <a href="#" class="menu_button" onclick="showmenu2(this,3)">Настройки видимости <span style="float: right;margin-right:-12px;">&#9658;</span></a>
-             <a href="#" class="menu_button">О программе</a>
-             <a href="#" class="menu_button" onclick="showFlor(0)">Компрессорная</a>
-             <a href="#" class="menu_button" onclick="showFlor(1)">Первый этаж</a>
-             <a href="#" class="menu_button" onclick="showFlor(2)">Второй этаж</a>
-             <a href="#" class="menu_button" onclick="showFlor(3)">Третий этаж</a>
-             <a href="#" class="menu_button" onclick="showFlor(4)">Чертвертый этаж</a>
+             <a href="#" class="menu_button">О программе</a>             
          </div>
  <!-- Выпадающее меню настройки-->
          <div id="configuration" class="hiden">
@@ -348,6 +343,13 @@
              <a href="#" class="menu_button" onclick="showHideKylt()">Скрыть/Показать культ.</a>
              <a href="#" class="menu_button" onclick="showHideCurrent()">Скрыть/Показать токи</a>
              <a href="#" class="menu_button" onclick="showNamesOfKlapan()">Скрыть/Показать имена</a>
+         </div>
+         <div id="layers" class="hiden">
+             <a href="#" class="menu_button" onclick="showFlor(0)">Компрессорная</a>
+             <a href="#" class="menu_button" onclick="showFlor(1)">Первый этаж</a>
+             <a href="#" class="menu_button" onclick="showFlor(2)">Второй этаж</a>
+             <a href="#" class="menu_button" onclick="showFlor(3)">Третий этаж</a>
+             <a href="#" class="menu_button" onclick="showFlor(4)">Чертвертый этаж</a>
          </div>
 
 

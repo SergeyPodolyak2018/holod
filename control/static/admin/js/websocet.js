@@ -26,7 +26,8 @@ const socketCloseListener = (event) => {
   if (socket) {
     console.error('Disconnected.');
   }
-  socket = new WebSocket('ws://'+window.location.host+':8088',''+document.cookie.split('=')[1]);
+  //socket = new WebSocket('ws://'+window.location.host+':8088',''+document.cookie.split('=')[1]);
+  socket = new WebSocket('ws://'+window.location.host+':8088');
   socket.addEventListener('open', socketOpenListener);
   socket.addEventListener('message', socketMessageListener);
   socket.addEventListener('close', socketCloseListener);

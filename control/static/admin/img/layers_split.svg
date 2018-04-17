@@ -23,7 +23,7 @@ viewBox="0 0 6500 1905"
   <style type="text/css">
    <![CDATA[
     @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-    .fil0 {fill:#2B2A29}
+    .fil0 {fill:black}
     .fil3 {fill:black}
     .fil1 {fill:#BCBCBC}
     .fil2 {fill:#FAC814}
@@ -33,7 +33,7 @@ viewBox="0 0 6500 1905"
  </defs>
  <g id="Слой_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="layer_hide">
+  <g class="layer_hide">
    <rect class="fil0" x="11" y="-8" width="6494" height="1905"/>
    <text x="1884" y="1137"  class="fil1 fnt0">Кадры</text>
    <g>
@@ -47,7 +47,7 @@ viewBox="0 0 6500 1905"
     </g>
    </g>
   </g>
-  <g id="layer_show">
+  <g class="layer_show">
    <rect class="fil3" x="11" y="-8" width="6494" height="1905"/>
    <text x="1884" y="1137"  class="fil1 fnt0">Кадры</text>
    <g>

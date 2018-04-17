@@ -20,5 +20,6 @@ function showFlor (number) {
 			flors[i].classList.toggle('flor',false);
 			flors[i].classList.toggle('florHiden',true);		
 		}
-	}	
+	}
+	hidemenu();	
 }

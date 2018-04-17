@@ -17,6 +17,8 @@ function Header_menu(userSatus){
 	this.exit_not_press;
 	this.exit_press;
 	this.logotip;
+	this.layer_show;
+	this.layer_hide;
 	this.huy=5;
 
 
@@ -56,6 +58,10 @@ function Header_menu(userSatus){
 		exit_not_press = SVG.getElementsByClassName('exit_not_press');
 		exit_press = SVG.getElementsByClassName('exit_press');
 
+		SVG = document.getElementById("layers_button").getSVGDocument();	
+		this.layer_show = SVG.getElementsByClassName('layer_show');
+		this.layer_hide = SVG.getElementsByClassName('layer_hide');
+
 		if (userSatus==1 || userSatus==2){
 			//set_function_click_on_button(start_rout_button,clic_on_source,1);
 			//set_function_click_on_button(cancel_start_rout_button,hide_source_receiver,1);
@@ -87,6 +93,9 @@ function Header_menu(userSatus){
 		set_function_click_on_button(servise_open,hidemenu,1);
 
 		set_function_click_on_button(exit_not_press,logOut,1);
+
+		set_function_click_on_button(this.layer_show,showmenu3,1);
+		set_function_click_on_button(this.layer_hide,hidemenu,1);
 
 		
 		//set_function_click_on_button(cancel_start_rout_button,hide_source_receiver());
