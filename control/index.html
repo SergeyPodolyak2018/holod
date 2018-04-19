@@ -3828,133 +3828,87 @@
                  </div>
              </div>
         <!-- Окно настройки обогревателя -->        
-
-            <div id="settings_heater" class="draggable modal_box">
-                <form method="POST" id="form_heater_settings" name="form_heater_settings" action="javascript:void(null);" onsubmit="">
-                 <div id="settings_heater_header" class="modal_box_header">
-                     <div class="modal_box_header_inner">                                   
-                        <span>Настройки нагревателя</span>
-                        <span style="color:#ffa200; text-align:right;" class="fool_name_of_device">Конвеер пт-27</span>                                   
-                        <span ><a href="#"  onclick="setings_universal_close(3)" class="btn btn-default btn-back"><span></span></a></span>
-                     </div>
-                 </div>
-
-                <div id="settings_heater_content" class="modal_box_body">
-
-                    <div id="settings_heater_global">
-
-                        <table class="table" id="table_settings_heater_global"  cellspacing="1" cellpadding="1" border="0" style="margin-right: 0px;">
-                            <tr><td colspan="3" style="background-color:#0e0e0e; color: #ccc">Настройки</td></tr>
-                            <tr><td>Влево Q</td><td><input class="checkable_data_form adres_getable_Q" name="Adr_km" SIZE=4></td></tr>
-                            <tr><td>Влево I</td><td><input class="checkable_data_form adres_getable" name="Adr_obr_sv" SIZE=4></td></tr>
-                            <tr><td>Вправо Q</td><td><input class="checkable_data_form adres_getable_Q" name="Adr_km_R" SIZE=4></td></tr>
-                            <tr><td>Вправо I</td><td><input class="checkable_data_form adres_getable" name="Adr_obr_sv_R" SIZE=4></td></tr>
-                            <tr><td style="width: 111px;">Режим сим.</td><td> <select style="width: 98%" name="FlagsMachine_bit3"><option value="0">0</option><option value="1">1</option></select></td></tr>
-
-
-                        </table>
+<div class="pumpGroup2_sensors modal_box visible_datchiki draggable">
+<form method="POST" id="" name="" action="javascript:void(null);" onsubmit="">
+                 <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
+                    <div class="modal_box_header_inner">
+                      <span>Датчики</span>
+                      <span class="fool_name_of_device"></span>
+                      <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
                     </div>
-
-                    <div id="settings_heater_aditional" style="display: none;">
-
-                        <table class="table" id="table_settings_heater_aditional"  cellspacing="1" cellpadding="1" border="0" style="margin-right: 0px;">
-                             <tr><td colspan="2" style="background-color:#0e0e0e; color: #ccc">Настройки</td></tr>
+                 </div>
+                 <div style="clear: both;width: 100%"></div>
+                 
+                   <div class="modsl modal_box_body" style="float:left; width: 100%">
+                   <!-- <tr><td colspan="2" style="background-color:#0e0e0e; color: #ccc">Специальные настройки</td></tr>
                             <tr><td>Индекс уст-ва</td><td><input name="EquipIndex" SIZE=4 readonly></td></tr>
-                            <tr><td>Уст-во в работе</td><td><select style="width: 98%;" name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select></td></tr>
-                            <tr><td style="padding-right: 1px;">Местное управление</td><td><select style="width: 98%;" name="FlagsMachine_bit15"><option value="0">0</option><option value="1">1</option></select></td></tr>
+                            <tr><td>Уст-во в работе</td>
+                                <td><select style="width: 98%;" name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select></td></tr>
+                            <tr><td>Период ТО, ч</td><td><input class="checkable_data_form" name="StatisticsPeriod" SIZE=4></td></tr>
+                            <tr><td>Зона звук. сигнализации &nbsp;&nbsp;&nbsp;</td><td><input class="checkable_data_form" name="Bell_Zone" SIZE=4></td></tr> -->
+                       <!-- "i_po": 0,
+                        "i_au": 0,
+                        "i_km": 0,
+                        "q_km": 0 -->
 
-                     </table>
+                          <div style="display: block;float:left; width:70%;">
+                            <div style="display: block;float:left; width:100%;background: red">Натстройки</div>
+                            <div style="display: block;float:left; width:50%;">Управление</div>
+                            <div style="display: block;float:left; width:30%">
+                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div style="display: block;float:left; width:50%;">Контроль</div>
+                            <div style="display: block;float:left; width:30%">
+                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div style="display: block;float:left; width:50%;">В работе</div>
+                            <div style="display: block;float:left; width:30%">
+                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
+                            </div>                              
+                          </div>
+
+                          <div style="display: block;float:left; width:80%;">
+                            <div style="display: block;float:left; width:100%;background: red">Датчики</div>
+                            <div class="sensors_colum1">Исп</div>
+                            <div class="sensors_colum2">Название</div>
+                            <div class="sensors_colum3">Адрес</div>
+                            <div class="sensors_colum4">0/1</div>
+                            <div class="sensors_colum5">Фильтр</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum1">
+                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
+                            </div>
+                            <div class="sensors_colum2">
+                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
+                            </div>
+                            <div class="sensors_colum3">
+                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
+                            </div>
+                            <div class="sensors_colum4">
+                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
+                            </div>
+                            <div style="clear: both;"></div>                   
+                                                     
+                          </div>
+                                                    
+                          <div style="clear: both;"></div>
+                          
+                        
                     </div>
-
-                    <div id="settings_heater_sensors" style="float: left;">
-                        <table class="table" id="table_settings_heater_sensors" style="width: 98%;">
-                            <thead>
-                                    <tr><td colspan="6" style="background-color:#0e0e0e; color: #ccc">Датчики</td></tr>
-
-                                    <tr style="text-align: center">
-                                        <td>Исп.</td>
-                                        <td>Название</td>
-                                        <td>Адрес</td>
-                                        <td>0/1</td>
-                                        <td>Фильтр</td>
-
-                                    </tr>
-                            </thead>
-                                   <tr>
-                                       <td><select size="1" name="Type_dat0_bit0"  title="Hello World!"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input name="dat0_name" SIZE=10 readonly></td>
-                                       <td><input class="checkable_data_form adres_getable" name="Adr_dat0" SIZE=4  title="Адрес датчика"></td>
-                                       <td><select style="width: 100%;" name="Flags_dat0_bit3"  title="Датчик в норме = 0/1"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input class="checkable_data_form" name="Time_dat0" SIZE=4  title="время фильтрации мс"></td>
-
-                                   </tr>
-                                   <tr>
-                                       <td><select size="1" name="Type_dat1_bit0"  title="если 1, тогда датчик подключён"><option value="0"  title="Hello World!">0</option><option value="1"  title="Hello World!">1</option></select></td>
-                                       <td><input name="dat1_name" SIZE=10 readonly></td>
-                                       <td><input class="checkable_data_form adres_getable" name="Adr_dat1" SIZE=4  title="Адрес датчика"></td>
-                                       <td><select style="width: 100%;" name="Flags_dat1_bit3"  title="Датчик в норме = 0/1"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input class="checkable_data_form" name="Time_dat1" SIZE=4  title="время фильтрации мс"></td>
-
-                                   </tr>
-                                   <tr>
-                                       <td><select size="1" name="Type_dat2_bit0"  title="Hello World!"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input name="dat2_name" SIZE=10 readonly></td>
-                                       <td><input class="checkable_data_form adres_getable" name="Adr_dat2" SIZE=4  title="Адрес датчика"></td>
-                                       <td><select style="width: 100%;" name="Flags_dat2_bit3"  title="Датчик в норме = 0/1"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td></td>
-
-                                   </tr>
-                                   <tr>
-                                       <td><select size="1" name="Type_dat3_bit0"  title="если 1, тогда датчик подключён"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input name="dat3_name" SIZE=10 readonly></td>
-                                       <td><input class="checkable_data_form adres_getable" name="Adr_dat3" SIZE=4  title="Адрес датчика"></td>
-                                       <td><select style="width: 100%;" name="Flags_dat3_bit3"  title="Датчик в норме = 0/1"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td></td>
-
-                                   </tr>
-                                   <tr>
-                                       <td><select size="1" name="Type_dat4_bit0"  title="если 1, тогда датчик подключён"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input name="dat4_name" SIZE=10 readonly></td>
-                                       <td><input class="checkable_data_form adres_getable" name="Adr_dat4" SIZE=4  title="Адрес датчика"></td>
-                                       <td><select style="width: 100%;" name="Flags_dat4_bit3"  title="Датчик в норме = 0/1"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td></td>
-
-                                   </tr>
-                                   <tr>
-                                       <td><select size="1" name="Type_dat5_bit0"  title="если 1, тогда датчик подключён"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input name="dat5_name" SIZE=10 readonly></td>
-                                       <td><input class="checkable_data_form adres_getable" name="Adr_dat5" SIZE=4  title="Адрес датчика"></td>
-                                       <td><select style="width: 100%;" name="Flags_dat5_bit3"  title="Датчик в норме = 0/1"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td></td>
-                                   </tr>
-                                    <tr>
-                                       <td><select size="1" name="Type_dat6_bit0"  title="если 1, тогда датчик подключён"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input name="dat6_name" SIZE=10 readonly></td>
-                                       <td><input class="checkable_data_form adres_getable" name="Adr_dat6" SIZE=4  title="Адрес датчика"></td>
-                                       <td><select size="1" name="Flags_dat6_bit3"  title="Датчик в норме = 0/1"><option value="0">0</option><option value="1">1</option></select></td>
-                                       <td><input style="width: 100%;"class="checkable_data_form" name="Time_dat6" SIZE=4  title="время фильтрации мс"></td>
-                                   </tr>
-                     </table>
-                    </div>
-
-
+                 
+                 <div style="clear: both;"></div>
+                 <div style="background: #0e0e0e;" >
+                    <button class="modal_box_btn btn-close">Сохранить</button>
+                    <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
                  </div>
+                 </form>
+             </div>
 
-
-                 <div id="settings_heater_footer" >
-                     <!--<table width="100%" cellspacing="2" cellpadding="1" border="0">-->
-                                   <!--<tr>-->
-                                       <!--<td width="50%" style="text-align: left" ></td>-->
-
-                                   <!--</tr>-->
-
-                              <!--</table>-->
-
-                     <button style="float: right;" onclick="setings_universal_close(3)" class="modal_box_btn btn_push_right">Закрыть</button>
-                     <button style="float: right;" onclick="setings_universal_save(3)" class="modal_box_btn">Сохранить</button>
-                 </div>
-                </form>
-             </div>  
+            
              
 
 

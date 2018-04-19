@@ -668,3 +668,29 @@ a.menu_button:focus{
     top:40%;
     left:40%;
 }
+
+.sensors_colum1{
+    display     : block;
+    float       :left;
+    width       :15%;
+}
+.sensors_colum2{
+    display     : block;
+    float       :left;
+    width       :25%;
+}
+.sensors_colum3{
+    display     : block;
+    float       :left;
+    width       :25%;
+}
+.sensors_colum4{
+    display     : block;
+    float       :left;
+    width       :15%;
+}
+.sensors_colum5{
+    display     : block;
+    float       :left;
+    width       :20%;
+}
