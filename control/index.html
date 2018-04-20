@@ -3828,84 +3828,165 @@
                  </div>
              </div>
         <!-- Окно настройки обогревателя -->        
-<div class="pumpGroup2_sensors modal_box visible_datchiki draggable">
-<form method="POST" id="" name="" action="javascript:void(null);" onsubmit="">
+          <div class="heater_sensors modal_box visible_datchiki draggable">
+
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
                     <div class="modal_box_header_inner">
-                      <span>Датчики</span>
-                      <span class="fool_name_of_device"></span>
+                      <span>Настройки нагревателя</span>
+                      <span class="fool_name_of_device">чсаичсаисваи</span>
+                      <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
+                    </div>
+                 </div>
+                 <div style="clear: both;width: 100%"></div>
+                 <form method="POST" id="" name="hp" action="javascript:void(null);" onsubmit="">
+                   <div class="modsl modal_box_body" style="float:left; width: 100%">                   
+
+                          <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header">Натстройки</div>
+                            <div class="sensors_colum2">Управление</div>
+                            <div class="sensors_colum3">
+                              <input class="checkable_data_form adres_getable_Q" name="a_q_km" SIZE=4>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum2">Контроль</div>
+                            <div class="sensors_colum3">
+                              <input class="checkable_data_form adres_getable" name="a_i_km" SIZE=4>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum2">В работе</div>
+                            <div class="sensors_colum3">
+                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
+                            </div>                              
+                          </div>
+
+                          <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header" >Датчики</div>
+                            
+                            <div class="sensors_colum2">Питание</div>
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_po" SIZE=2  title="Адрес датчика"></div>
+                            
+                            <div style="clear: both;"></div>
+
+                            
+                            <div class="sensors_colum2">Режим</div>
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_au" SIZE=2  title="Адрес датчика"></div>
+                            <div style="clear: both;"></div> 
+                            
+                          </div>                                                    
+                          <div style="clear: both;"></div>
+                    </div>
+                 </form>
+                 <div style="clear: both;"></div>
+                 <div style="border-radius: 15px; margin-top: 10px" >
+                    <button class="modal_box_btn btn-close">Сохранить</button>
+                    <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
+                 </div>                 
+             </div>
+
+             <!-- Окно настройки охладителя -->        
+          <div class="heater_sensors modal_box visible_datchiki draggable">
+
+                 <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
+                    <div class="modal_box_header_inner">
+                      <span>Настройки охладителя</span>
+                      <span class="fool_name_of_device">чсаичсаисваи</span>
                       <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
                     </div>
                  </div>
                  <div style="clear: both;width: 100%"></div>
                  
-                   <div class="modsl modal_box_body" style="float:left; width: 100%">
-                   <!-- <tr><td colspan="2" style="background-color:#0e0e0e; color: #ccc">Специальные настройки</td></tr>
-                            <tr><td>Индекс уст-ва</td><td><input name="EquipIndex" SIZE=4 readonly></td></tr>
-                            <tr><td>Уст-во в работе</td>
-                                <td><select style="width: 98%;" name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select></td></tr>
-                            <tr><td>Период ТО, ч</td><td><input class="checkable_data_form" name="StatisticsPeriod" SIZE=4></td></tr>
-                            <tr><td>Зона звук. сигнализации &nbsp;&nbsp;&nbsp;</td><td><input class="checkable_data_form" name="Bell_Zone" SIZE=4></td></tr> -->
-                       <!-- "i_po": 0,
-                        "i_au": 0,
-                        "i_km": 0,
-                        "q_km": 0 -->
+                   <div class="" style="float:left; width: 50%">                   
+                      <form method="POST" id="" name="hp" action="javascript:void(null);" onsubmit="">
+                          <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
 
-                          <div style="display: block;float:left; width:70%;">
-                            <div style="display: block;float:left; width:100%;background: red">Натстройки</div>
-                            <div style="display: block;float:left; width:50%;">Управление</div>
-                            <div style="display: block;float:left; width:30%">
-                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
-                            </div>
-                            <div style="clear: both;"></div>
-
-                            <div style="display: block;float:left; width:50%;">Контроль</div>
-                            <div style="display: block;float:left; width:30%">
-                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
-                            </div>
-                            <div style="clear: both;"></div>
-
-                            <div style="display: block;float:left; width:50%;">В работе</div>
-                            <div style="display: block;float:left; width:30%">
-                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
-                            </div>                              
-                          </div>
-
-                          <div style="display: block;float:left; width:80%;">
-                            <div style="display: block;float:left; width:100%;background: red">Датчики</div>
-                            <div class="sensors_colum1">Исп</div>
-                            <div class="sensors_colum2">Название</div>
-                            <div class="sensors_colum3">Адрес</div>
-                            <div class="sensors_colum4">0/1</div>
-                            <div class="sensors_colum5">Фильтр</div>
-                            <div style="clear: both;"></div>
-                            <div class="sensors_colum1">
-                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
-                            </div>
-                            <div class="sensors_colum2">
-                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
-                            </div>
+                            <div class="sensors_header">Настройки</div>
+                            <div class="sensors_colum2">Управление</div>
                             <div class="sensors_colum3">
-                              <input class="checkable_data_form" name="Bell_Zone" SIZE=4>
+                              <input class="checkable_data_form adres_getable_Q" name="a_q_km" SIZE=4>
                             </div>
-                            <div class="sensors_colum4">
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum2">Контроль</div>
+                            <div class="sensors_colum3">
+                              <input class="checkable_data_form adres_getable" name="a_i_km" SIZE=4>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum2">В работе</div>
+                            <div class="sensors_colum3">
                               <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
-                            </div>
-                            <div style="clear: both;"></div>                   
-                                                     
+                            </div> 
+
                           </div>
-                                                    
+
+                          <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header" style="width: 100%">Вентиляторы</div>
+                            <div class="sensors_header" >Датчики</div>
+                            
+                            <div class="sensors_colum2">Питание</div>
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_po" SIZE=2  title="Адрес датчика"></div>
+                            
+                            <div style="clear: both;"></div>
+
+                            
+                            <div class="sensors_colum2">Режим</div>
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_au" SIZE=2  title="Адрес датчика"></div>
+                            <div style="clear: both;"></div> 
+                            
+                          </div>                                                    
                           <div style="clear: both;"></div>
-                          
-                        
+                      </form>    
+                    </div>
+
+                    <div class="" style="float:left; width: 50%">                   
+                      <form method="POST" id="" name="hp" action="javascript:void(null);" onsubmit="">
+                          <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
+
+                            <div class="sensors_header">Настройки</div>
+                            <div class="sensors_colum2">Управление</div>
+                            <div class="sensors_colum3">
+                              <input class="checkable_data_form adres_getable_Q" name="a_q_km" SIZE=4>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum2">Контроль</div>
+                            <div class="sensors_colum3">
+                              <input class="checkable_data_form adres_getable" name="a_i_km" SIZE=4>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum2">В работе</div>
+                            <div class="sensors_colum3">
+                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
+                            </div> 
+
+                          </div>
+
+                          <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header" >Датчики</div>
+                            
+                            <div class="sensors_colum2">Питание</div>
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_po" SIZE=2  title="Адрес датчика"></div>
+                            
+                            <div style="clear: both;"></div>
+
+                            
+                            <div class="sensors_colum2">Режим</div>
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_au" SIZE=2  title="Адрес датчика"></div>
+                            <div style="clear: both;"></div> 
+                            
+                          </div>                                                    
+                          <div style="clear: both;"></div>
+                      </form>    
                     </div>
                  
                  <div style="clear: both;"></div>
-                 <div style="background: #0e0e0e;" >
+                 <div style="border-radius: 15px; margin-top: 10px" >
                     <button class="modal_box_btn btn-close">Сохранить</button>
                     <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
-                 </div>
-                 </form>
+                 </div>                 
              </div>
 
             
