@@ -3828,7 +3828,7 @@
                  </div>
              </div>
         <!-- Окно настройки обогревателя -->        
-          <div class="heater_sensors modal_box visible_datchiki draggable">
+          <div class="heater_settings modal_box visible_datchiki draggable" style="display: none">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
                     <div class="modal_box_header_inner">
@@ -3857,7 +3857,7 @@
 
                             <div class="sensors_colum2">В работе</div>
                             <div class="sensors_colum3">
-                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
+                              <select name="flags_bit7"><option value="0">0</option><option value="1">1</option></select>
                             </div>                              
                           </div>
 
@@ -3880,13 +3880,13 @@
                  </form>
                  <div style="clear: both;"></div>
                  <div style="border-radius: 15px; margin-top: 10px" >
-                    <button class="modal_box_btn btn-close">Сохранить</button>
+                    <button class="modal_box_btn btn-save">Сохранить</button>
                     <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
                  </div>                 
              </div>
 
              <!-- Окно настройки охладителя -->        
-          <div class="heater_sensors modal_box visible_datchiki draggable">
+          <div class="coller_settings modal_box visible_datchiki" style="display: none">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
                     <div class="modal_box_header_inner">
@@ -3896,95 +3896,117 @@
                     </div>
                  </div>
                  <div style="clear: both;width: 100%"></div>
-                 
-                   <div class="" style="float:left; width: 50%">                   
-                      <form method="POST" id="" name="hp" action="javascript:void(null);" onsubmit="">
-                          <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
+                 <form method="POST" id="" name="airc" action="javascript:void(null);" onsubmit="">
+                   <div class="" style="float:left; width: 50%">
+                        <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px;">
+                            <div class="sensors_colum2">В работе</div>
+                            <div class="sensors_colum3">
+                              <select name="flags_bit7"><option value="0">0</option><option value="1">1</option></select>
+                            </div>
+                            <div style="clear: both;"></div>
+                            
+                              <div class="sensors_header">Датчики темперратуры</div>
+                              <div class="sensors_colum2">Датчик 1</div>
+                                <div class="sensors_colum3">
+                                  <input class="checkable_data_form adres_getable_Q" name="td[a_d1]" SIZE=4>
+                                </div>
+                              <div style="clear: both;"></div>
 
+                              <div class="sensors_colum2">Датчик 2</div>
+                              <div class="sensors_colum3">
+                                <input class="checkable_data_form adres_getable" name="td[a_d2]" SIZE=4>
+                              </div>
+                              <div style="clear: both;"></div>
+                              <div class="sensors_colum2">Датчик 3</div>
+                              <div class="sensors_colum3">
+                                <input class="checkable_data_form adres_getable" name="td[a_d3]" SIZE=4>
+                              </div>
+                            
+                            <div style="clear: both;"></div>
+                          </div>                                                                             
+                          <div style="clear: both;"></div>                          
+                    </div>
+                    
+                      <div class="" style="float:left; width: 50%">
+                                                 
+                            <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
+                              <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Тэн</div>
+                              <div class="sensors_header">Настройки</div>
+                              <div class="sensors_colum2">Управление</div>
+                              <div class="sensors_colum3">
+                                <input class="checkable_data_form adres_getable_Q" name="airch[a_q_km]" SIZE=4>
+                              </div>
+                              <div style="clear: both;"></div>
+
+                              <div class="sensors_colum2">Контроль</div>
+                              <div class="sensors_colum3">
+                                <input class="checkable_data_form adres_getable" name="airch[a_i_km]" SIZE=4>
+                              </div>
+                              <div style="clear: both;"></div>                            
+
+                            </div>
+
+                            <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
+                              <div class="sensors_header" >Датчики</div>                            
+                              <div class="sensors_colum2">Питание</div>
+                              <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="airch[a_i_po]" SIZE=2  title="Адрес датчика"></div>                            
+                              <div style="clear: both;"></div>
+                              
+                              <div class="sensors_colum2">Режим</div>
+                              <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="airch[a_i_au]" SIZE=2  title="Адрес датчика"></div>
+                              <div style="clear: both;"></div> 
+                              
+                            </div>
+                                                                            
+                            <div style="clear: both;"></div>                        
+                      </div>
+                    
+                    
+                    <div class="" style="float:left; width: 50%">
+                      
+                          <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Вентиляторы</div>
                             <div class="sensors_header">Настройки</div>
                             <div class="sensors_colum2">Управление</div>
                             <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable_Q" name="a_q_km" SIZE=4>
+                              <input class="checkable_data_form adres_getable_Q" name="aircva[a_q_km]" SIZE=4>
                             </div>
                             <div style="clear: both;"></div>
-
-                            <div class="sensors_colum2">Контроль</div>
-                            <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="a_i_km" SIZE=4>
-                            </div>
-                            <div style="clear: both;"></div>
-
-                            <div class="sensors_colum2">В работе</div>
-                            <div class="sensors_colum3">
-                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
-                            </div> 
-
                           </div>
 
                           <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
-                            <div class="sensors_header" style="width: 100%">Вентиляторы</div>
-                            <div class="sensors_header" >Датчики</div>
-                            
+                            <div class="sensors_header" >Датчики</div>                            
                             <div class="sensors_colum2">Питание</div>
-                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_po" SIZE=2  title="Адрес датчика"></div>
-                            
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[a_i_po]" SIZE=2  title="Адрес датчика"></div>                            
                             <div style="clear: both;"></div>
 
                             
                             <div class="sensors_colum2">Режим</div>
-                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_au" SIZE=2  title="Адрес датчика"></div>
-                            <div style="clear: both;"></div> 
-                            
-                          </div>                                                    
-                          <div style="clear: both;"></div>
-                      </form>    
-                    </div>
-
-                    <div class="" style="float:left; width: 50%">                   
-                      <form method="POST" id="" name="hp" action="javascript:void(null);" onsubmit="">
-                          <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
-
-                            <div class="sensors_header">Настройки</div>
-                            <div class="sensors_colum2">Управление</div>
-                            <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable_Q" name="a_q_km" SIZE=4>
-                            </div>
-                            <div style="clear: both;"></div>
-
-                            <div class="sensors_colum2">Контроль</div>
-                            <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="a_i_km" SIZE=4>
-                            </div>
-                            <div style="clear: both;"></div>
-
-                            <div class="sensors_colum2">В работе</div>
-                            <div class="sensors_colum3">
-                              <select name="FlagsMachine_bit7"><option value="0">0</option><option value="1">1</option></select>
-                            </div> 
-
+                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[a_i_au]" SIZE=2  title="Адрес датчика"></div>
+                            <div style="clear: both;"></div>                            
                           </div>
-
                           <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
-                            <div class="sensors_header" >Датчики</div>
                             
-                            <div class="sensors_colum2">Питание</div>
-                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_po" SIZE=2  title="Адрес датчика"></div>
+                              <div class="sensors_header" >Вентилятор 1</div>                            
+                              <div class="sensors_colum2">Обратная связь</div>
+                              <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[aircvo1[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
+                              <div style="clear: both;"></div>
                             
-                            <div style="clear: both;"></div>
-
+                          </div>
+                          <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
                             
-                            <div class="sensors_colum2">Режим</div>
-                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_au" SIZE=2  title="Адрес датчика"></div>
-                            <div style="clear: both;"></div> 
+                              <div class="sensors_header" >Вентилятор 2</div>                            
+                              <div class="sensors_colum2">Обратная связь</div>
+                              <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[aircvo2[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
+                              <div style="clear: both;"></div>
                             
-                          </div>                                                    
-                          <div style="clear: both;"></div>
-                      </form>    
-                    </div>
-                 
+                          </div>                                          
+                          <div style="clear: both;"></div>                          
+                    </div>                    
+                  </form>
                  <div style="clear: both;"></div>
                  <div style="border-radius: 15px; margin-top: 10px" >
-                    <button class="modal_box_btn btn-close">Сохранить</button>
+                    <button class="modal_box_btn btn-save">Сохранить</button>
                     <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
                  </div>                 
              </div>

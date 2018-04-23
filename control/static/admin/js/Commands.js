@@ -14,11 +14,21 @@ function start_stop_mex(name,command){
     console.log(flor);
     globalObject[flor][name].open_sensors();
   }
-function close_datchiki(name) {
+/*function close_datchiki(name) {
     let flor='flor'+parseInt(name.match(/F[0-9]/));
     globalObject[flor][name].close_sensors();
-  }
+  }*/
   
+//Фукция открыть закрыть настройки
+  function open_settings_window(name){
+    let flor='flor'+parseInt(name.match(/F([0-9]).*/)[1]);
+    console.log(flor);
+    globalObject[flor][name].open_settings();
+  }
+/*function close_settings(name) {
+    let flor='flor'+parseInt(name.match(/F[0-9]/));
+    globalObject[flor][name].close_sensors();
+  }*/
  //создатель менюшек для различных механизмов
 /*function menu_kreator(device_index,device_string_type,posX,posY){
 

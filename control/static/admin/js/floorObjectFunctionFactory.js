@@ -7,6 +7,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 	this.manualElements = objectFromSvg.getElementsByClassName(name+'-manual');
 	this.iconAlarm = objectFromSvg.getElementsByClassName('icon');	
 	this.window_sensors = document.getElementsByClassName('hiter_sensors')[0].cloneNode(true);
+	this.window_settings 	= document.getElementsByClassName('heater_settings')[0].cloneNode(true);
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
     this.e 		= 0;		//ошибка
@@ -131,7 +132,9 @@ getNewObjectOfHiter.prototype.myStatus = function(state){
 };
 getNewObjectOfHiter.prototype.open_sensors = sensors_open;
 getNewObjectOfHiter.prototype.close_sensors = sensors_close;
-
+getNewObjectOfHiter.prototype.open_settings = settings_open;
+getNewObjectOfHiter.prototype.close_settings = settings_close;
+getNewObjectOfHiter.prototype.save_settings = settings_save;
 
 //------------------------------------------------------------------------------------------------------------
 //Конструктор объектов охладитель
@@ -150,6 +153,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.iconAlarm 			= objectFromSvg.getElementsByClassName('attention-'+name);
 	this.iconRemont 		= objectFromSvg.getElementsByClassName('remont-'+name);
 	this.window_sensors 	= document.getElementsByClassName('coller_sensors')[0].cloneNode(true);
+	this.window_settings 	= document.getElementsByClassName('coller_settings')[0].cloneNode(true);
 	this.intervalLockation;	  
 	this.s 		= 0;																	//статус       
     this.e 		= 0;																	//ошибка
@@ -400,6 +404,10 @@ getNewObjectOfCooler.prototype.myStatus = function(state){
 };
 getNewObjectOfCooler.prototype.open_sensors = sensors_open;
 getNewObjectOfCooler.prototype.close_sensors = sensors_close;
+getNewObjectOfCooler.prototype.open_settings = settings_open;
+getNewObjectOfCooler.prototype.close_settings = settings_close;
+getNewObjectOfCooler.prototype.save_settings = settings_save;
+
 
 //------------------------------------------------------------------------------------------------------------
 //Конструктор объектов клапан
@@ -409,6 +417,7 @@ function getNewObjectOfGate(objectFromSvg,name){
 	this.gate 			= objectFromSvg;
 	this.iconAlarm 		= objectFromSvg.getElementsByClassName('icon');
 	this.window_sensors = document.getElementsByClassName('gate_sensors')[0].cloneNode(true);
+	this.window_settings 	= document.getElementsByClassName('heater_settings')[0].cloneNode(true);
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
     this.e 		= 0;		//ошибка
@@ -637,4 +646,116 @@ function sensors_close(){
 		clearInterval(this.intervalLockation);
 		this.window_sensors.parentNode.removeChild(this.window_sensors);
 	}
+}
+
+function settings_open(){
+	document.getElementById('container').appendChild(this.window_settings);
+	//this.window_sensors.classList.add('draggable');
+	$( this.window_settings).draggable({
+  appendTo: "body"
+});
+	if(this.window_settings.style.display == 'none'){
+		hidemenu();
+		this.window_settings.style.display = 'block';
+		this.window_settings.getElementsByClassName('fool_name_of_device')[0].innerHTML=this.name;
+		let objectContext=this;
+		prepareForm(this.window_settings);
+		[...this.window_settings.getElementsByClassName('btn-close')].forEach(function(item, i, arr) {
+			item.onclick= function(){objectContext.close_settings();};
+		});
+		[...this.window_settings.getElementsByClassName('btn-save')].forEach(function(item, i, arr) {
+			item.onclick= function(){objectContext.save_settings();};
+		});
+
+			
+		
+	}
+}
+
+function settings_close(){	
+	if(this.window_settings.style.display == 'block'){
+		this.window_settings.style.display = 'none';		
+		this.window_settings.parentNode.removeChild(this.window_settings);
+	}
+}
+
+
+
+function settings_save(){
+	    let form        = this.window_settings.getElementsByTagName('form')[0];	    
+	    let body        = JSON.stringify(formSettingsToJSON(form.elements));
+	    let url_string  = '/device_save_bd_settings/?name='+this.name;
+	    //console.log(body);
+ 		post_data_to_server(url_string,body,null,null);
+    	add_equipment_close();
+	    
+}
+
+
+const formSettingsToJSON = elements => [].reduce.call(elements, (data, element) => {
+	let re=/\[/;
+	let re1=/([aA-zZ0-9]{1,10})\[(.*)\]/;
+	if(element.name.match(re)){
+		let first=element.name.match(re1);		
+		if(first[2].match(re)){
+			let second=first[2].match(re1);			
+			if(second[1] in data[first[1]]){
+				data[first[1]][second[1]][second[2]] = element.value;
+			}else{
+				data[first[1]][second[1]]={}
+				data[first[1]][second[1]][second[2]] = element.value;
+			}			
+		}else{
+			if(first[1] in data){
+				data[first[1]][first[2]] = element.value;
+			}else{
+				data[first[1]]={}
+				data[first[1]][first[2]] = element.value;
+			}
+		}		
+	}else{
+		data[element.name] = element.value;
+	}  
+	  
+	  return data;
+	}, {});
+
+function prepareForm(form){
+	$(form.getElementsByClassName('checkable_data_form')).bind("change keyup input click blur ", function() {
+	    if (this.value.match(/[^0-9]/g)) {
+	        this.value = this.value.replace(/[^0-9]/g, '');
+	    }   
+    
+	});
+	$(form.getElementsByClassName('checkable_data_form')).bind("blur", function() {    
+	    if (this.value == '') {
+	        this.value = '0';
+	    }    
+	});
+
+	$(form.getElementsByClassName('adres_getable')).hover(function() {
+
+	    var abstrackt_value=$(this).val();
+	    if(abstrackt_value>=8){
+	    var a=Math.floor(abstrackt_value/8);
+
+	    var b=abstrackt_value%8;
+
+	    $(this).attr('title',"I"+a+'.'+b);
+	    }else{
+	        $(this).attr('title',"Канал датчика");
+	    }
+	});
+	$(form.getElementsByClassName('adres_getable_Q')).hover(function() {
+	    var abstrackt_value=$(this).val();
+	    if(abstrackt_value>=8){
+	    var a=Math.floor(abstrackt_value/8);
+
+	    var b=abstrackt_value%8;
+
+	    $(this).attr('title',"Q"+a+'.'+b);
+	    }else{
+	        $(this).attr('title',"Канал выхода");
+	    }
+	});
 }
