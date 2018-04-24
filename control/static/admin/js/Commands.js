@@ -23,7 +23,7 @@ function start_stop_mex(name,command){
   function open_settings_window(name){
     let flor='flor'+parseInt(name.match(/F([0-9]).*/)[1]);
     console.log(flor);
-    globalObject[flor][name].open_settings();
+    globalObject[flor][name].get_settings();
   }
 /*function close_settings(name) {
     let flor='flor'+parseInt(name.match(/F[0-9]/));

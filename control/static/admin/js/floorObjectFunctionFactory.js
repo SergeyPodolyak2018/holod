@@ -135,6 +135,7 @@ getNewObjectOfHiter.prototype.close_sensors = sensors_close;
 getNewObjectOfHiter.prototype.open_settings = settings_open;
 getNewObjectOfHiter.prototype.close_settings = settings_close;
 getNewObjectOfHiter.prototype.save_settings = settings_save;
+getNewObjectOfHiter.prototype.get_settings =settings_get;
 
 //------------------------------------------------------------------------------------------------------------
 //Конструктор объектов охладитель
@@ -407,6 +408,7 @@ getNewObjectOfCooler.prototype.close_sensors = sensors_close;
 getNewObjectOfCooler.prototype.open_settings = settings_open;
 getNewObjectOfCooler.prototype.close_settings = settings_close;
 getNewObjectOfCooler.prototype.save_settings = settings_save;
+getNewObjectOfCooler.prototype.get_settings =settings_get;
 
 
 //------------------------------------------------------------------------------------------------------------
@@ -417,7 +419,8 @@ function getNewObjectOfGate(objectFromSvg,name){
 	this.gate 			= objectFromSvg;
 	this.iconAlarm 		= objectFromSvg.getElementsByClassName('icon');
 	this.window_sensors = document.getElementsByClassName('gate_sensors')[0].cloneNode(true);
-	this.window_settings 	= document.getElementsByClassName('heater_settings')[0].cloneNode(true);
+	this.window_settings 	= document.getElementsByClassName('gate_settings')[0].cloneNode(true);
+
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
     this.e 		= 0;		//ошибка
@@ -506,6 +509,10 @@ getNewObjectOfGate.prototype.myStatus = function(state){
 
 getNewObjectOfGate.prototype.open_sensors 	= sensors_open;
 getNewObjectOfGate.prototype.close_sensors 	= sensors_close;
+getNewObjectOfGate.prototype.open_settings = settings_open;
+getNewObjectOfGate.prototype.close_settings = settings_close;
+getNewObjectOfGate.prototype.save_settings = settings_save;
+getNewObjectOfGate.prototype.get_settings =settings_get;
 //------------------------------------------------------------------------------------------------------------
 //Конструктор объектов Камера
 function getNewObjectOfBox(objectFromSvg,name){
@@ -517,6 +524,7 @@ function getNewObjectOfBox(objectFromSvg,name){
 	this.boxTemperature = objectFromSvg.getElementsByClassName(name+'-T1-text');
 	this.boxStausText	= objectFromSvg.getElementsByClassName(name+'-statusText');
 	this.boxStausFon	= objectFromSvg.getElementsByClassName(name+'-status');
+	this.window_settings 	= document.getElementsByClassName('box_settings')[0].cloneNode(true);
 	this.s	 	= 3;    //статус
     this.e	 	= 3;    //ошибка
     this.t	 	= '0';  //температура
@@ -617,6 +625,13 @@ getNewObjectOfBox.prototype.myStatus = function(state){
 	}
 	console.log('привет из Box');
 };
+getNewObjectOfBox.prototype.open_settings = settings_open;
+getNewObjectOfBox.prototype.close_settings = settings_close;
+getNewObjectOfBox.prototype.save_settings = settings_save;
+getNewObjectOfBox.prototype.get_settings =settings_get;
+
+
+
 
 
 //-------------------------------------------------------------------------------------------------------
@@ -648,12 +663,16 @@ function sensors_close(){
 	}
 }
 
-function settings_open(){
+
+function settings_open(response){
+	//JsonToformSettings(response.data);
+	//this.get_settings();
 	document.getElementById('container').appendChild(this.window_settings);
 	//this.window_sensors.classList.add('draggable');
 	$( this.window_settings).draggable({
-  appendTo: "body"
-});
+  		appendTo: "body"
+	});
+
 	if(this.window_settings.style.display == 'none'){
 		hidemenu();
 		this.window_settings.style.display = 'block';
@@ -665,9 +684,7 @@ function settings_open(){
 		});
 		[...this.window_settings.getElementsByClassName('btn-save')].forEach(function(item, i, arr) {
 			item.onclick= function(){objectContext.save_settings();};
-		});
-
-			
+		});		
 		
 	}
 }
@@ -684,11 +701,20 @@ function settings_close(){
 function settings_save(){
 	    let form        = this.window_settings.getElementsByTagName('form')[0];	    
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));
-	    let url_string  = '/device_save_bd_settings/?name='+this.name;
+	    let url_string  = '/device_save_settings/?name='+this.name;
 	    //console.log(body);
  		post_data_to_server(url_string,body,null,null);
-    	add_equipment_close();
+    	
 	    
+}
+function settings_get(){
+	    /*let form        = this.window_settings.getElementsByTagName('form')[0];	    
+	    let body        = JSON.stringify(formSettingsToJSON(form.elements));*/
+	    let url_string  = '/device_get_settings/?name='+this.name;
+	    let context =this;
+	    let callback 	= function(response){context.open_settings(response)};
+	    //console.log(body);
+ 		get_data_to_server(url_string,callback,null);
 }
 
 
@@ -759,3 +785,34 @@ function prepareForm(form){
 	    }
 	});
 }
+
+
+/*const JsonToformSettings = elements => {
+	let rezalt={};
+	let tempstring='';
+	
+	if(typeof elements=='object'){		
+		for (let i in elements){								
+			if (typeof elements[i]!='function'){					
+				b=b.concat(reverser(a[i]));
+			}
+		}
+		return b;
+	}else{				
+		return rezalt[];		
+	}
+
+	function concater(name,value,obj){
+		let concater=''
+		if(typeof value != 'object'){
+			obj[name]=value;
+		}else{
+			concater=concater
+		}
+		return obj;
+	}
+
+
+};*/
+
+	

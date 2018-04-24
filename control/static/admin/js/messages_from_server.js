@@ -27,7 +27,7 @@ function showMessageFromServer(response){
 	
 
 }
-function showAlarmMessage(color,message){
+function showAlarmMessage(color,response){
 	document.getElementById('message_from_server_content').style.backgroundColor = color;
 	document.getElementById('message_from_server_message').innerText = response.message;
 	document.getElementById('message_from_server').style.display = 'block';
