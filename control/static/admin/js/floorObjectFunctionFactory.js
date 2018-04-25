@@ -665,10 +665,8 @@ function sensors_close(){
 
 
 function settings_open(response){
-	//JsonToformSettings(response.data);
-	//this.get_settings();
-	document.getElementById('container').appendChild(this.window_settings);
-	//this.window_sensors.classList.add('draggable');
+	let prepareDataFromServer=JsonToformSettings(response.data);	
+	document.getElementById('container').appendChild(this.window_settings);	
 	$( this.window_settings).draggable({
   		appendTo: "body"
 	});
@@ -679,6 +677,19 @@ function settings_open(response){
 		this.window_settings.getElementsByClassName('fool_name_of_device')[0].innerHTML=this.name;
 		let objectContext=this;
 		prepareForm(this.window_settings);
+
+		let myForm=this.window_settings.getElementsByTagName('form')[0];
+		
+
+		for (let i  in prepareDataFromServer) {
+            try {
+                myForm.elements[i].value =prepareDataFromServer[i];
+            } catch (err) {
+               	console.log(err);                
+           }
+      	}
+
+
 		[...this.window_settings.getElementsByClassName('btn-close')].forEach(function(item, i, arr) {
 			item.onclick= function(){objectContext.close_settings();};
 		});
@@ -787,32 +798,34 @@ function prepareForm(form){
 }
 
 
-/*const JsonToformSettings = elements => {
-	let rezalt={};
-	let tempstring='';
-	
-	if(typeof elements=='object'){		
+const JsonToformSettings = elements => {	
+	let rezalt={};	
+	if(typeof elements=='object'){
 		for (let i in elements){								
-			if (typeof elements[i]!='function'){					
-				b=b.concat(reverser(a[i]));
+			if (typeof elements[i]=='object'){
+				let name1=''+i;
+				let name2='';					
+				concater(name1,name2,elements[i]);
+			}else{
+				rezalt[i]=elements[i];
 			}
 		}
-		return b;
+		
 	}else{				
-		return rezalt[];		
+		return rezalt;		
 	}
 
-	function concater(name,value,obj){
-		let concater=''
-		if(typeof value != 'object'){
-			obj[name]=value;
-		}else{
-			concater=concater
+	function concater(name1,name2,value){		
+		for(let i in value){
+			if (typeof value[i] != 'object'){
+				rezalt[name1+'['+i+']'+name2]=value[i];
+			}else{
+				concater(name1+'['+i,']'+name2,value[i]);
+			}
 		}
-		return obj;
+		
 	}
-
-
-};*/
+	return rezalt;
+};
 
 	
