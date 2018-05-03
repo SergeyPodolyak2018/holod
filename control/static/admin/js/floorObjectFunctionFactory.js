@@ -679,7 +679,7 @@ function settings_open(response){
 		prepareForm(this.window_settings);
 
 		let myForm=this.window_settings.getElementsByTagName('form')[0];
-		
+		console.log(prepareDataFromServer);
 
 		for (let i  in prepareDataFromServer) {
             try {
@@ -723,7 +723,7 @@ function settings_get(){
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));*/
 	    let url_string  = '/device_get_settings/?name='+this.name;
 	    let context =this;
-	    let callback 	= function(response){context.open_settings(response)};
+	    let callback = function(response){context.open_settings(response)};
 	    //console.log(body);
  		get_data_to_server(url_string,callback,null);
 }
@@ -798,7 +798,8 @@ function prepareForm(form){
 }
 
 
-const JsonToformSettings = elements => {	
+const JsonToformSettings = elements => {
+	console.log(elements);	
 	let rezalt={};	
 	if(typeof elements=='object'){
 		for (let i in elements){								

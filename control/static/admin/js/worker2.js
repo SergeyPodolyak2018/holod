@@ -30,6 +30,8 @@ get_status(event.data[0],event.data[1]); //Передать в функцию п
         var re9 = /ve(\d+)/i;
         var re10 = /pug(\d+)/i;
         var re11 = /re(\d+)/i;
+        var re12 = /cam_con/i;
+        
 
 
 
@@ -69,17 +71,17 @@ get_status(event.data[0],event.data[1]); //Передать в функцию п
                         let localName='B'+j.match(re3)[1];                                              
                         tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]={};
                         for (let k in tempCam) {                            
-                            if(typeof(tempCam[k])!=="object" && !k.match(re4)){
-                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName][k]=tempCam[k];
+                            if(typeof(tempCam[k])=="object" && k.match(re12)){
+                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName][k]=tempCam[k]; //определить что это управление камерой
                             }
                             if(typeof(tempCam[k])=="object" && k.match(re5)){
-                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName+'-'+'H'+1]=tempCam[k];
+                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName+'-'+'H'+1]=tempCam[k]; //определить что это нагреватель в камере
                             }
                             if(typeof(tempCam[k])=="object" && k.match(re6)){
-                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName+'-'+'G'+1]=tempCam[k];
+                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName+'-'+'G'+1]=tempCam[k]; //определить что это клапан в камере
                             }
                             if(typeof(tempCam[k])=="object" && k.match(re7)){
-                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName+'-'+'C'+k.match(re7)[1]]=tempCam[k];
+                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName+'-'+'C'+k.match(re7)[1]]=tempCam[k]; //определить что это охладитель в камере
                             }
                         }
                     }
