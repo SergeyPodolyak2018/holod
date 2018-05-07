@@ -17,7 +17,9 @@ const getDeviceAdress=(data)=>{
 			'aVessel':0,
 			'aPumpsGroup':0,
 			'aReceiver':0,
-			'aCapasitor':0
+			'aCapasitor':0,
+			'aCompControl':0,
+
 
 		}
 		let re1=/([a-zA-Z]{1,})/g;
@@ -80,6 +82,11 @@ const getDeviceAdress=(data)=>{
 			if(reRezName=='Rf'){
 				wayToTarget.aCapasitor=reIndex;
 				wayToTarget.EType=9;
+				continue;
+			}
+			if(reRezName=='M'){
+				wayToTarget.aCompControl=reIndex;
+				wayToTarget.EType=10;
 				continue;
 			}
 		}

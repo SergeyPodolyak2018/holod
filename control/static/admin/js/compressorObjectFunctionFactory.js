@@ -902,3 +902,95 @@ getNewObjectOfJar.prototype.myStatus = function(state){
 };
 getNewObjectOfReceiver.prototype.open_sensors = sensors_open;
 getNewObjectOfReceiver.prototype.close_sensors = sensors_close;
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Конструктор объектов управление компрессором
+function getNewObjectOfCManager(objectFromSvg,name){
+
+	this.name 					= name;
+	this.statusText 			= objectFromSvg.getElementsByClassName('text');
+	this.status 	 			= objectFromSvg.getElementsByClassName('status');
+
+	let SVG = document.getElementById("start_compressor_button").getSVGDocument();
+
+	this.statrtButton = SVG.getElementsByClassName('startCompressor');
+	this.stopButton = SVG.getElementsByClassName('stopCompressor');
+
+
+	
+	
+	//this.window_sensors 	= document.getElementById('coller_sensors');
+
+	this.intervalLockation;	//хранилище циклической функции
+	this.sensors={"s": 0,
+          		  "i": 0,          		  
+    			};	
+
+	this.setStatus=function(){		
+		console.log('set status CManager');
+
+		switch (this.sensors.s) {
+			case 0:				
+				[...this.status].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");
+				});
+				[...this.statusText].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");
+				  item.innerHTML = 'Остановлен';
+				});
+				break;
+			case 1:				
+				[...this.status].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#00ff00;'
+				});
+				[...this.statusText].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:black;';
+				  item.innerHTML = 'Вработе';
+				});
+				break;
+			case 2:				
+				[...this.status].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#ff0000;'
+				});
+				[...this.statusText].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:black;';
+				  item.innerHTML = 'Авария';
+				});
+				break;
+			case 3:				
+				[...this.status].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#ff0000;'
+				});
+				[...this.statusText].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:black;';
+				  item.innerHTML = 'Подготовка';
+				});
+				break;	
+			default:
+				// statements_def
+				break;
+		}
+	}	
+}
+
+//Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
+getNewObjectOfCManager.prototype.myStatus = function(state){	
+	console.log('привет из CManager');
+	for(let i in state){
+		if(i=='s'){
+			if (this.sensors[i] !== state[i]){
+				this.sensors[i] = state[i];
+				this.setStatus();
+				continue;
+			}	
+		}
+		if(i=='i'){
+			if (this.sensors[i] !== state[i]){
+				this.sensors[i] = state[i];
+				//this.setEror();
+				continue;
+			}	
+		}		
+	}
+};

@@ -31,6 +31,7 @@ get_status(event.data[0],event.data[1]); //Передать в функцию п
         var re10 = /pug(\d+)/i;
         var re11 = /re(\d+)/i;
         var re12 = /cam_con/i;
+        var re13 = /comp_con/i;
         
 
 
@@ -65,6 +66,10 @@ get_status(event.data[0],event.data[1]); //Передать в функцию п
                         let localName='J'+j.match(re11)[1];
                         tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempFlor[j];
                     }
+                    if(typeof(tempFlor[j])=="object" && j.match(re13)){
+                        let localName='M1';
+                        tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempFlor[j];
+                    }
 
                     if(typeof(tempFlor[j])=="object" && j.match(re3)){
                         let tempCam=tempFlor[j];
@@ -72,7 +77,7 @@ get_status(event.data[0],event.data[1]); //Передать в функцию п
                         tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]={};
                         for (let k in tempCam) {                            
                             if(typeof(tempCam[k])=="object" && k.match(re12)){
-                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName][k]=tempCam[k]; //определить что это управление камерой
+                                tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName]=tempCam[k]; //определить что это управление камерой
                             }
                             if(typeof(tempCam[k])=="object" && k.match(re5)){
                                 tempObject['flor'+i.match(re1)[1]][tempName+'-'+localName+'-'+'H'+1]=tempCam[k]; //определить что это нагреватель в камере

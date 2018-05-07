@@ -13,11 +13,11 @@ var global_object_oll_kylt_from_server='';    //oll kylt from servere in one obj
 var global_kylt_from_server_formated={};      //formated list of kylt to use in future in different menu
 //var element_type_number={'hiter':2,'cooler':3,'gate':1,'zadvijka':4,'silos':14,'dryer':16,'separator':17,'gate':18,'vent':6,'tube':7,'car':15,'enable':19,'zadvijkaGroup':23,'current':100,'kylt':101, 'analog_dat':102};//существующие типы элементов
 
-const element_type_number= {'hiter':2,'cooler':3,'gate':1,'box':4,'compressor':5,'receiver':6,'pumpGroup':7,'jar':8,'refrigerator':9};//существующие типы элементов
+const element_type_number= {'hiter':2,'cooler':3,'gate':1,'box':4,'compressor':5,'receiver':6,'pumpGroup':7,'jar':8,'refrigerator':9, 'CManager':10};//существующие типы элементов
 
 const svg_type_id        = ["flor0","flor1","flor2","flor3","flor4"];//существующие типы элементов
 
-const structura          = {"flor0":['compressor','receiver','pumpGroup','jar','refrigerator'],
+const structura          = {"flor0":['compressor','receiver','pumpGroup','jar','refrigerator','CManager'],
                             "flor1":['hiter','cooler','gate','box'],
                             "flor2":['hiter','cooler','gate','box'],
                             "flor3":['hiter','cooler','gate','box'],
@@ -314,6 +314,10 @@ function createGlobalObject(){
                         break;
                     case 'jar':
                         globalObject[flor][key]=new getNewObjectOfJar(oneTypeObjects[j],key);
+                        // statements_4
+                        break;
+                    case 'CManager':
+                        globalObject[flor][key]=new getNewObjectOfCManager(oneTypeObjects[j],key);
                         // statements_4
                         break;
                         

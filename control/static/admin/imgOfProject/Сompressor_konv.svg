@@ -44,29 +44,34 @@ viewBox="0 0 42000 32000"
    <glyph unicode="и" horiz-adv-x="558" d="M66 519.008l88 0 0 -395.843 244.504 395.843 94.5039 0 0 -519.008 -88 0 0 393.339 -244.173 -393.339 -94.8346 0 0 519.008z"/>
    <glyph unicode="M" horiz-adv-x="833" d="M75.0043 0l0 715.999 141.987 0 169.341 -506.831c15.6755,-47.1682 27.014,-82.4877 34.1573,-105.987 8.19207,25.9935 21.0046,64.3177 38.3525,114.831l172.317 497.987 126.85 0 0 -715.999 -91.0199 0 0 599.014 -208.997 -599.014 -85.3223 0 -206.673 610.012 0 -610.012 -90.9916 0z"/>
    <glyph unicode="е" horiz-adv-x="556" d="M420 168l91.0079 -12c-14.1732,-52.8346 -40.6772,-94 -79.3386,-123.165 -38.6614,-29.1654 -88,-43.8425 -148.173,-43.8425 -75.6693,0 -135.669,23.3386 -180,70.0157 -44.3307,46.4882 -66.4882,112 -66.4882,196.157 0,87.0079 22.3307,154.661 67.1654,202.661 44.8346,48.1732 102.992,72.1732 174.488,72.1732 69.1654,0 125.669,-23.4961 169.512,-70.6614 43.8268,-47.1654 65.8268,-113.512 65.8268,-199.008 0,-5.16535 -0.173228,-12.9921 -0.503937,-23.3228l-386.488 0c3.32283,-56.8346 19.3228,-100.504 48.3307,-130.677 28.8346,-30.1575 64.9921,-45.3228 108.157,-45.3228 32.1732,0 59.6693,8.48819 82.3307,25.4961 22.8346,16.9921 40.8346,44.1575 54.1732,81.4961zm-288 141.008l289.008 0c-3.84252,43.6535 -15.0079,76.3307 -33.1811,98.1575 -27.8268,33.8425 -64.1575,50.8346 -108.661,50.8346 -40.3307,0 -74.1575,-13.4961 -101.669,-40.5039 -27.3228,-26.9921 -42.4882,-63.1654 -45.4961,-108.488z"/>
+   <glyph unicode="X" horiz-adv-x="667" d="M4.33463 0l276.66 371.502 -243.66 344.503 112.83 0 130.499 -183.176c27.1652,-37.9959 46.0038,-66.9919 56.8344,-87.165 16.1692,25.0038 35.1731,51.673 56.9998,79.8422l143.007 190.499 103.83 0 -248.668 -340.333 267.66 -375.672 -116.326 0 -180.673 255.33c-10.3346,14.5039 -20.1613,29.0078 -29.3267,43.3345 -16.0039,-23.9999 -27.3306,-40.8305 -34.3345,-50.3266l-181.499 -248.338 -113.834 0z"/>
    <glyph unicode="в" horiz-adv-x="531" d="M66 519.008l202.504 0c49.6693,0 86.6614,-4.17323 110.992,-12.5039 24.1732,-8.33071 45.0079,-23.4961 62.3307,-45.6693 17.5118,-22.3307 26.1732,-48.8346 26.1732,-79.8268 0,-24.8346 -5.16535,-46.5039 -15.3386,-64.8346 -10.3307,-18.5039 -25.6535,-34 -46.3307,-46.3465 24.3307,-8.15748 44.5039,-23.3228 60.6772,-45.6535 16,-22.1732 24,-48.6772 24,-79.1654 -3.1811,-49.1811 -20.8346,-85.6693 -52.6772,-109.339 -31.8268,-23.8425 -78.1575,-35.6693 -138.835,-35.6693l-233.496 0 0 519.008zm88 -219.008l93.3386 0c37.1654,0 62.8346,2 76.6614,5.82677 14,4 26.5039,11.8425 37.4961,23.8425 11.0079,11.8268 16.5039,26.1575 16.5039,42.8346 0,27.4961 -9.66929,46.5039 -28.8346,57.3228 -19.3386,10.8346 -52.3307,16.1732 -98.9921,16.1732l-96.1732 0 0 -146zm0 -228l115.496 0c49.6693,0 83.8425,5.82677 102.331,17.3386 18.5039,11.6693 28.1732,31.4961 29.1811,60 0,16.4882 -5.33858,32 -16,46.1575 -10.8346,14.1732 -24.8346,23.1654 -42,26.8346 -17.1811,3.84252 -44.8346,5.66929 -82.8346,5.66929l-106.173 0 0 -156z"/>
    <glyph unicode="%" horiz-adv-x="889" d="M58.008 544.157c0,50.9986 12.8334,94.4981 38.6548,130.189 25.8472,35.8201 63.162,53.6529 112.176,53.6529 44.9942,0 82.3348,-16.0031 111.815,-48.0093 29.5065,-31.9804 44.35,-79.1651 44.35,-141.167 0,-60.4819 -14.9981,-107.151 -44.8396,-139.827 -29.8415,-32.6504 -66.6667,-48.9885 -110.321,-48.9885 -43.4995,0 -79.6805,16.1577 -108.517,48.3185 -28.8365,32.1866 -43.3192,80.8401 -43.3192,145.832zm153.331 122.845c-21.8271,0 -39.9948,-9.32869 -54.5033,-28.1665 -14.5084,-18.8378 -21.8271,-53.3436 -21.8271,-103.492 0,-45.6642 7.31864,-77.8508 21.9817,-96.3536 14.6888,-18.6574 32.8308,-27.9861 54.3487,-27.9861 22.1621,0 40.4845,9.32869 54.9929,28.1665 14.5084,18.8378 21.6725,53.1633 21.6725,103.002 0,45.9992 -7.34441,78.3404 -22.0075,96.8174 -14.6631,18.6832 -32.8308,28.0119 -54.6579,28.0119zm0.489628 -693.003l390.517 754.001 71.666 0 -389.512 -754.001 -72.671 0zm308.182 194.176c0,51.3336 12.8334,94.8331 38.6548,130.499 25.6668,35.4851 63.162,53.3179 112.331,53.3179 44.9942,0 82.3348,-16.0031 111.841,-47.9835 29.5065,-32.0062 44.1696,-79.1651 44.1696,-141.167 0,-60.5077 -14.8434,-107.177 -44.685,-139.827 -29.8157,-32.6762 -66.8213,-49.0143 -110.81,-49.0143 -43.3449,0 -79.3454,16.1577 -108.182,48.4989 -28.8365,32.3412 -43.3192,80.9947 -43.3192,145.677zm153.485 122.819c-22.1621,0 -40.3299,-9.32869 -54.8383,-28.1665 -14.4827,-18.8378 -21.6467,-53.3179 -21.6467,-103.492 0,-45.3292 7.31864,-77.3354 21.9817,-96.1732 14.5084,-18.8378 32.4958,-28.1665 54.0137,-28.1665 22.4971,0 40.8195,9.32869 55.3279,28.1665 14.5084,18.8378 21.6725,53.1633 21.6725,103.002 0,45.9992 -7.34441,78.3404 -22.0075,96.8432 -14.5084,18.6574 -32.6762,27.9861 -54.5033,27.9861z"/>
   </font>
   <style type="text/css">
    <![CDATA[
     @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-    .str9 {stroke:#E8ECEF;stroke-width:20;stroke-opacity:0.619608}
-    .str14 {stroke:#FEFEFE;stroke-width:20}
-    .str13 {stroke:#FEFEFE;stroke-width:20}
-    .str11 {stroke:#EBECEC;stroke-width:20}
+    .str12 {stroke:#E8ECEF;stroke-width:20;stroke-opacity:0.619608}
+    .str20 {stroke:#EBECEC;stroke-width:100}
+    .str3 {stroke:#8FC039;stroke-width:75}
+    .str1 {stroke:lime;stroke-width:75}
+    .str2 {stroke:#C7E3FF;stroke-width:75}
+    .str5 {stroke:#E53E3E;stroke-width:75}
+    .str4 {stroke:#FFDA22;stroke-width:75}
+    .str17 {stroke:#FEFEFE;stroke-width:20}
+    .str16 {stroke:#FEFEFE;stroke-width:20}
+    .str14 {stroke:#EBECEC;stroke-width:20}
     .str0 {stroke:#2B2A29;stroke-width:20}
-    .str6 {stroke:#FFED00;stroke-width:20}
-    .str15 {stroke:#FDF9F4;stroke-width:20}
-    .str16 {stroke:#FDFCFC;stroke-width:20}
-    .str3 {stroke:#8FC039;stroke-width:20}
-    .str1 {stroke:lime;stroke-width:20}
-    .str2 {stroke:#C7E3FF;stroke-width:20}
-    .str10 {stroke:#DD00DD;stroke-width:20}
-    .str5 {stroke:#E53E3E;stroke-width:20}
-    .str8 {stroke:#EAEAEA;stroke-width:20}
-    .str4 {stroke:#FFDA22;stroke-width:20}
-    .str12 {stroke:#2B2A29;stroke-width:7.62}
-    .str7 {stroke:#2B2A29;stroke-width:20;stroke-dasharray:40.000000 100.000000}
+    .str9 {stroke:#FFED00;stroke-width:20}
+    .str18 {stroke:#FDF9F4;stroke-width:20}
+    .str19 {stroke:#FDFCFC;stroke-width:20}
+    .str6 {stroke:lime;stroke-width:20}
+    .str8 {stroke:#C7E3FF;stroke-width:20}
+    .str13 {stroke:#DD00DD;stroke-width:20}
+    .str7 {stroke:#E53E3E;stroke-width:20}
+    .str11 {stroke:#EAEAEA;stroke-width:20}
+    .str15 {stroke:#2B2A29;stroke-width:7.62}
+    .str10 {stroke:#2B2A29;stroke-width:20;stroke-dasharray:40.000000 100.000000}
     .fil2 {fill:none}
     .fil16 {fill:#FEFEFE}
     .fil0 {fill:#FEFEFE}
@@ -110,8 +115,7 @@ viewBox="0 0 42000 32000"
    <stop offset="1" style="stop-opacity:1; stop-color:#FEFEFE"/>
   </linearGradient>
  </defs>
- <g id="Слой_x0020_1">
-   <title class="title_very_dificult">:-)</title>
+ <g id="Слой_x0020_1"><title class="title_very_dificult">:-)</title>
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <rect class="fil0 str0" x="22568" y="22582" width="1204" height="2320"/>
   <rect class="fil0 str0" x="29143" y="22575" width="1177" height="2326"/>
@@ -144,7 +148,7 @@ viewBox="0 0 42000 32000"
   <text x="21942" y="22579"  class="fil1 fnt0">C</text>
   <text x="27862" y="10088"  class="fil1 fnt1">0</text>
   <text x="29166" y="10072"  class="fil1 fnt0">mm</text>
-  <polyline class="fil2 str1" points="22568,22889 20209,22889 20209,28899 32664,28899 "/>
+  <polyline class="fil2 str1" points="22568,22829 20209,22829 20209,28839 32664,28839 "/>
   <polyline class="fil2 str1" points="30320,22912 32651,22912 32651,28899 "/>
   <polyline class="fil2 str1" points="22568,24593 21049,24593 21049,27053 31870,27053 31870,24566 30320,24566 "/>
   <polyline class="fil2 str2" points="24753,20270 24753,22926 23772,22926 "/>
@@ -175,68 +179,68 @@ viewBox="0 0 42000 32000"
   <polyline class="fil2 str5" points="26400,13317 26400,10085 24164,10085 24164,7616 18753,7616 18740,27740 16831,27737 "/>
   <line class="fil2 str5" x1="16831" y1="9792" x2="18752" y2= "9794" />
   <line class="fil2 str5" x1="16831" y1="18765" x2="18746" y2= "18766" />
-  <polyline class="fil2 str4" points="25227,11981 20380,11981 20380,3365 8585,3365 8585,16365 6085,16365 6085,16805 "/>
-  <g id="_1037765296">
+  <polyline class="fil2 str4" points="25227,11986 20380,11986 20380,3370 8585,3370 8585,16370 6085,16370 6085,16810 "/>
+  <g id="_1121539440">
    <polygon class="fil0 str0" points="20071,26093 20363,25602 20071,25602 20363,26093 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 20397.7 25927.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037772016">
+  <g id="_1121538864">
    <polygon class="fil0 str0" points="20903,26093 21195,25602 20903,25602 21195,26093 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 21229.7 25927.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037824336">
+  <g id="_1121538288">
    <polygon class="fil0 str0" points="25659,24732 25168,24440 25168,24732 25659,24440 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 25493.7 24405.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037798832">
+  <g id="_1121537712">
    <polygon class="fil0 str0" points="27778,24732 27286,24440 27286,24732 27778,24440 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 27612.6 24405.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037778288">
+  <g id="_1121537136">
    <polygon class="fil0 str0" points="31724,26092 32016,25601 31724,25601 32016,26092 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 32051.1 25926.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037787888">
+  <g id="_1121536560">
    <polygon class="fil0 str0" points="32520,26099 32812,25607 32520,25607 32812,26099 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 32846.8 25933.5)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037824848">
+  <g id="_1121535984">
    <polygon class="fil0 str0" points="33147,23826 33439,23334 33147,23334 33439,23826 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 33474 23660.2)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037803824">
+  <g id="_1121535408">
    <polygon class="fil0 str0" points="35951,23747 36243,23256 35951,23256 36243,23747 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 36277.8 23581.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037779216">
+  <g id="_1121531888">
    <polygon class="fil0 str0" points="33147,21800 33439,21309 33147,21309 33439,21800 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 33474.2 21634.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037792016">
+  <g id="_1121482800">
    <polygon class="fil0 str0" points="37546,21097 37055,20805 37055,21097 37546,20805 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 37380.9 20770)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037786224">
+  <g id="_1121486768">
    <polygon class="fil0 str0" points="38001,19736 38293,19244 38001,19244 38293,19736 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 38328.1 19570.3)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037779600">
+  <g id="_1121493072">
    <polygon class="fil0 str0" points="40815,19709 41107,19218 40815,19218 41107,19709 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 41141.5 19543.9)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037818224">
+  <g id="_1121497232">
    <polygon class="fil0 str0" points="37969,17786 38261,17294 37969,17294 38261,17786 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 38295.6 17620.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037787184">
+  <g id="_1121500880">
    <polygon class="fil0 str0" points="40801,17700 41093,17209 40801,17209 41093,17700 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 41128.2 17534.9)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037804432">
+  <g id="_1121505712">
    <polygon class="fil0 str0" points="34082,14931 33591,14638 33591,14931 34082,14638 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 33916.9 14603.6)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037813840">
+  <g id="_1121509776">
    <polygon class="fil0 str0" points="29583,14182 29092,13890 29092,14182 29583,13890 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 29417.6 13855.5)" width="401.02" height="56.22"/>
   </g>
@@ -246,8 +250,8 @@ viewBox="0 0 42000 32000"
   <polygon class="fil3 str0" points="37052,28906 36887,28824 36723,28742 36723,28906 36723,29071 36887,28989 "/>
   <polygon class="fil3 str0" points="39351,24823 39434,24988 39516,25152 39351,25152 39187,25152 39269,24988 "/>
   <polygon class="fil3 str0" points="33293,18310 33376,18146 33458,17981 33293,17981 33129,17981 33211,18146 "/>
-  <line class="fil2 str1" x1="36124" y1="20951" x2="36117" y2= "22086" />
-  <g id="_1037826256">
+  <line class="fil2 str6" x1="36124" y1="20951" x2="36117" y2= "22086" />
+  <g id="_1121527184">
    <polygon class="fil0 str0" points="35976,21750 36268,21259 35976,21259 36268,21750 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 36302.7 21584.6)" width="401.02" height="56.22"/>
   </g>
@@ -264,57 +268,57 @@ viewBox="0 0 42000 32000"
   <line class="fil2 str5" x1="7585" y1="4276" x2="5470" y2= "4289" />
   <polyline class="fil2 str5" points="5500,4574 6543,4574 6543,6365 5686,6365 "/>
   <polyline class="fil2 str5" points="5569,5242 6245,5242 6245,5903 5633,5903 "/>
-  <g id="_1037776176">
+  <g id="_1121480432">
    <polygon class="fil0 str0" points="34082,12892 33591,12600 33591,12892 34082,12600 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 33916.9 12564.9)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037777712">
+  <g id="_1121483600">
    <polygon class="fil0 str0" points="34082,10852 33591,10560 33591,10852 34082,10560 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 33916.9 10525.4)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037800816">
+  <g id="_1121484624">
    <polygon class="fil0 str0" points="34082,8750 33591,8457 33591,8750 34082,8457 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 33916.9 8422.72)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037772176">
+  <g id="_1121485168">
    <polygon class="fil0 str0" points="40576,14931 40085,14638 40085,14931 40576,14638 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 40410.9 14603.6)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037820304">
+  <g id="_1121485648">
    <polygon class="fil0 str0" points="40576,12892 40085,12600 40085,12892 40576,12600 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 40410.9 12564.9)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037774960">
+  <g id="_1121486352">
    <polygon class="fil0 str0" points="40576,10852 40085,10560 40085,10852 40576,10560 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 40410.9 10525.4)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1037822512">
+  <g id="_1121487376">
    <polygon class="fil0 str0" points="40576,8750 40085,8457 40085,8750 40576,8457 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 40410.9 8422.72)" width="401.02" height="56.22"/>
   </g>
   <line class="fil2 str5" x1="26072" y1="13317" x2="26727" y2= "13317" />
-  <circle class="fil5 str5" cx="17585" cy="5447" r="100"/>
-  <circle class="fil5 str5" cx="17585" cy="14419" r="100"/>
-  <circle class="fil5 str5" cx="18752" cy="9794" r="100"/>
-  <circle class="fil5 str5" cx="18746" cy="18766" r="100"/>
-  <circle class="fil6 str2" cx="19340" cy="9038" r="100"/>
-  <circle class="fil6 str2" cx="18105" cy="15725" r="100"/>
-  <circle class="fil6 str2" cx="19340" cy="17987" r="100"/>
-  <circle class="fil6 str2" cx="18149" cy="21825" r="100"/>
-  <circle class="fil4 str6" cx="7926" cy="11357" r="100"/>
-  <circle class="fil4 str6" cx="7926" cy="8290" r="100"/>
-  <line class="fil2 str7" x1="22765" y1="22582" x2="22765" y2= "24902" />
-  <line class="fil2 str7" x1="22956" y1="22582" x2="22956" y2= "24902" />
-  <line class="fil2 str7" x1="23170" y1="22582" x2="23170" y2= "24902" />
-  <line class="fil2 str7" x1="23386" y1="22582" x2="23386" y2= "24902" />
-  <line class="fil2 str7" x1="23585" y1="22582" x2="23585" y2= "24902" />
+  <circle class="fil5 str7" cx="17585" cy="5447" r="100"/>
+  <circle class="fil5 str7" cx="17585" cy="14419" r="100"/>
+  <circle class="fil5 str7" cx="18752" cy="9794" r="100"/>
+  <circle class="fil5 str7" cx="18746" cy="18766" r="100"/>
+  <circle class="fil6 str8" cx="19340" cy="9038" r="100"/>
+  <circle class="fil6 str8" cx="18105" cy="15725" r="100"/>
+  <circle class="fil6 str8" cx="19340" cy="17987" r="100"/>
+  <circle class="fil6 str8" cx="18149" cy="21825" r="100"/>
+  <circle class="fil4 str9" cx="7926" cy="11357" r="100"/>
+  <circle class="fil4 str9" cx="7926" cy="8290" r="100"/>
+  <line class="fil2 str10" x1="22765" y1="22582" x2="22765" y2= "24902" />
+  <line class="fil2 str10" x1="22956" y1="22582" x2="22956" y2= "24902" />
+  <line class="fil2 str10" x1="23170" y1="22582" x2="23170" y2= "24902" />
+  <line class="fil2 str10" x1="23386" y1="22582" x2="23386" y2= "24902" />
+  <line class="fil2 str10" x1="23585" y1="22582" x2="23585" y2= "24902" />
   <polyline class="fil2 str0" points="22568,22889 22870,22889 23314,23746 22864,24586 22568,24593 "/>
   <polyline class="fil2 str0" points="23772,22926 23469,22926 23026,23783 23476,24623 23772,24630 "/>
-  <line class="fil2 str7" x1="29326" y1="22579" x2="29326" y2= "24899" />
-  <line class="fil2 str7" x1="29518" y1="22579" x2="29518" y2= "24899" />
-  <line class="fil2 str7" x1="29731" y1="22579" x2="29731" y2= "24899" />
-  <line class="fil2 str7" x1="29948" y1="22579" x2="29948" y2= "24899" />
-  <line class="fil2 str7" x1="30146" y1="22579" x2="30146" y2= "24899" />
+  <line class="fil2 str10" x1="29326" y1="22579" x2="29326" y2= "24899" />
+  <line class="fil2 str10" x1="29518" y1="22579" x2="29518" y2= "24899" />
+  <line class="fil2 str10" x1="29731" y1="22579" x2="29731" y2= "24899" />
+  <line class="fil2 str10" x1="29948" y1="22579" x2="29948" y2= "24899" />
+  <line class="fil2 str10" x1="30146" y1="22579" x2="30146" y2= "24899" />
   <polyline class="fil2 str0" points="29130,22886 29432,22886 29875,23743 29425,24583 29130,24589 "/>
   <polyline class="fil2 str0" points="30333,22923 30031,22923 29588,23780 30038,24620 30333,24626 "/>
   <text x="25824" y="14417"  class="fil1 fnt4">R110</text>
@@ -323,7 +327,7 @@ viewBox="0 0 42000 32000"
   <text x="8892" y="22812"  class="fil7 fnt5">К030</text>
   <text x="22540" y="22358"  class="fil7 fnt6">Н211</text>
   <text x="29055" y="22357"  class="fil7 fnt6">Н212</text>
-  <circle class="fil4 str6" cx="8585" cy="11794" r="100"/>
+  <circle class="fil4 str9" cx="8585" cy="11794" r="100"/>
   <rect class="fil0 str0" x="36012" y="14530" width="2249" height="494"/>
   <text x="36541" y="14926"  class="fil1 fnt1">I </text>
   <text x="36776" y="14926"  class="fil1 fnt1">этаж</text>
@@ -333,31 +337,31 @@ viewBox="0 0 42000 32000"
   <rect class="fil0 str0" x="36012" y="10482" width="2249" height="494"/>
   <text x="36541" y="10887"  class="fil1 fnt1">III </text>
   <text x="37011" y="10887"  class="fil1 fnt1">этаж</text>
-  <rect id="_1068677936" class="fil0 str0" x="36012" y="8357" width="2249" height="494">
+  <rect id="_1121496016" class="fil0 str0" x="36012" y="8357" width="2249" height="494">
    <metadata id="CorelCorpID_1">
     <odm name="class" value="" type="0"/>
    </metadata>
   </rect>
   <text x="36541" y="8762"  class="fil1 fnt1">IV </text>
   <text x="37059" y="8762"  class="fil1 fnt1">этаж</text>
-  <line class="fil2 str8" x1="34895" y1="8299" x2="34895" y2= "8604" />
-  <line class="fil2 str8" x1="39317" y1="8299" x2="39317" y2= "8604" />
-  <line class="fil2 str8" x1="34895" y1="10365" x2="34895" y2= "10708" />
-  <line class="fil2 str8" x1="39317" y1="10365" x2="39317" y2= "10670" />
-  <line class="fil2 str8" x1="34895" y1="12365" x2="34895" y2= "12730" />
-  <line class="fil2 str8" x1="39317" y1="12365" x2="39317" y2= "12746" />
-  <line class="fil2 str8" x1="34895" y1="14365" x2="34895" y2= "14777" />
-  <line class="fil2 str8" x1="39317" y1="14365" x2="39317" y2= "14777" />
-  <line class="fil2 str8" x1="21585" y1="22660" x2="21585" y2= "22889" />
-  <line class="fil2 str8" x1="21585" y1="24347" x2="21585" y2= "24576" />
-  <line class="fil2 str8" x1="31408" y1="22665" x2="31408" y2= "22895" />
-  <line class="fil2 str8" x1="31353" y1="24330" x2="31353" y2= "24559" />
-  <line class="fil2 str8" x1="38119" y1="16759" x2="37990" y2= "16760" />
-  <line class="fil2 str8" x1="40939" y1="16769" x2="40704" y2= "16769" />
-  <line class="fil2 str8" x1="33518" y1="24408" x2="33293" y2= "24408" />
-  <line class="fil2 str8" x1="36324" y1="24366" x2="36097" y2= "24366" />
+  <line class="fil2 str11" x1="34895" y1="8299" x2="34895" y2= "8604" />
+  <line class="fil2 str11" x1="39317" y1="8299" x2="39317" y2= "8604" />
+  <line class="fil2 str11" x1="34895" y1="10365" x2="34895" y2= "10708" />
+  <line class="fil2 str11" x1="39317" y1="10365" x2="39317" y2= "10670" />
+  <line class="fil2 str11" x1="34895" y1="12365" x2="34895" y2= "12730" />
+  <line class="fil2 str11" x1="39317" y1="12365" x2="39317" y2= "12746" />
+  <line class="fil2 str11" x1="34895" y1="14365" x2="34895" y2= "14777" />
+  <line class="fil2 str11" x1="39317" y1="14365" x2="39317" y2= "14777" />
+  <line class="fil2 str11" x1="21585" y1="22660" x2="21585" y2= "22889" />
+  <line class="fil2 str11" x1="21585" y1="24347" x2="21585" y2= "24576" />
+  <line class="fil2 str11" x1="31408" y1="22665" x2="31408" y2= "22895" />
+  <line class="fil2 str11" x1="31353" y1="24330" x2="31353" y2= "24559" />
+  <line class="fil2 str11" x1="38119" y1="16759" x2="37990" y2= "16760" />
+  <line class="fil2 str11" x1="40939" y1="16769" x2="40704" y2= "16769" />
+  <line class="fil2 str11" x1="33518" y1="24408" x2="33293" y2= "24408" />
+  <line class="fil2 str11" x1="36324" y1="24366" x2="36097" y2= "24366" />
   <g class="compressor compressor-F0-S1">
-   <polygon class="status fil8 str9" points="8735,4961 16831,4961 16831,13049 8735,13049 "/>
+   <polygon class="status fil8 str12" points="8735,4961 16831,4961 16831,13049 8735,13049 "/>
    <polygon class="fil0 str0" points="15247,6824 16326,6831 16326,8345 15790,8848 15274,8312 "/>
    <g>
     <rect class="fil0 str0" x="9405" y="5185" width="1464" height="455" rx="123" ry="120"/>
@@ -390,32 +394,32 @@ viewBox="0 0 42000 32000"
     <line class="fil2 str0" x1="12616" y1="11443" x2="12616" y2= "11094" />
     <line class="fil2 str0" x1="12459" y1="11433" x2="12754" y2= "11433" />
    </g>
-   <line class="fil2 str10" x1="9114" y1="5644" x2="9114" y2= "6129" />
-   <line class="fil2 str10" x1="12785" y1="5870" x2="9114" y2= "5870" />
-   <polyline class="fil2 str5" points="12785,6226 12785,5413 14751,5413 14751,7170 15253,7170 "/>
-   <polyline class="fil2 str5" points="16831,5447 15788,5447 15788,6827 "/>
-   <polyline class="fil2 str10" points="9114,7767 9114,8006 12785,8006 "/>
-   <polyline class="fil2 str2" points="12785,7126 12785,9038 16831,9038 "/>
-   <line class="fil2 str10" x1="9114" y1="9196" x2="9114" y2= "9661" />
-   <polyline class="fil2 str10" points="9114,9429 12615,9429 12615,9792 "/>
-   <polyline class="fil2 str10" points="9114,12013 9114,12213 11866,12213 12615,11671 "/>
-   <polyline class="fil2 str10" points="12890,10865 13375,10133 16524,10133 16524,11856 13276,11856 12939,11533 "/>
+   <line class="fil2 str13" x1="9114" y1="5644" x2="9114" y2= "6129" />
+   <line class="fil2 str13" x1="12785" y1="5870" x2="9114" y2= "5870" />
+   <polyline class="fil2 str7" points="12785,6226 12785,5413 14751,5413 14751,7170 15253,7170 "/>
+   <polyline class="fil2 str7" points="16831,5447 15788,5447 15788,6827 "/>
+   <polyline class="fil2 str13" points="9114,7767 9114,8006 12785,8006 "/>
+   <polyline class="fil2 str8" points="12785,7126 12785,9038 16831,9038 "/>
+   <line class="fil2 str13" x1="9114" y1="9196" x2="9114" y2= "9661" />
+   <polyline class="fil2 str13" points="9114,9429 12615,9429 12615,9792 "/>
+   <polyline class="fil2 str13" points="9114,12013 9114,12213 11866,12213 12615,11671 "/>
+   <polyline class="fil2 str13" points="12890,10865 13375,10133 16524,10133 16524,11856 13276,11856 12939,11533 "/>
    <g>
     <circle class="dPressure1 fil0 str0" cx="16524" cy="11066" r="250"/>
     <text x="16288" y="11202"  class="fil1 fnt0">dP</text>
    </g>
-   <polyline class="fil2 str5" points="12615,10771 12615,9792 16831,9792 "/>
-   <polyline class="fil2 str2" points="12615,11668 12621,12848 16831,12848 "/>
-   <line class="fil2 str10" x1="10137" y1="5640" x2="10137" y2= "5870" />
-   <line class="fil2 str10" x1="11673" y1="5649" x2="11673" y2= "5870" />
-   <line class="fil2 str10" x1="11673" y1="7765" x2="11673" y2= "8006" />
-   <line class="fil2 str10" x1="10137" y1="7756" x2="10137" y2= "8006" />
-   <line class="fil2 str10" x1="10117" y1="9624" x2="10117" y2= "9429" />
-   <line class="fil2 str10" x1="11723" y1="9634" x2="11723" y2= "9429" />
-   <line class="fil2 str10" x1="10525" y1="11912" x2="10525" y2= "12213" />
-   <line class="fil2 str10" x1="15645" y1="10399" x2="15645" y2= "10133" />
-   <line class="fil2 str10" x1="13931" y1="10399" x2="13931" y2= "10133" />
-   <line class="fil2 str10" x1="14632" y1="11621" x2="14632" y2= "11856" />
+   <polyline class="fil2 str7" points="12615,10771 12615,9792 16831,9792 "/>
+   <polyline class="fil2 str8" points="12615,11668 12621,12848 16831,12848 "/>
+   <line class="fil2 str13" x1="10137" y1="5640" x2="10137" y2= "5870" />
+   <line class="fil2 str13" x1="11673" y1="5649" x2="11673" y2= "5870" />
+   <line class="fil2 str13" x1="11673" y1="7765" x2="11673" y2= "8006" />
+   <line class="fil2 str13" x1="10137" y1="7756" x2="10137" y2= "8006" />
+   <line class="fil2 str13" x1="10117" y1="9624" x2="10117" y2= "9429" />
+   <line class="fil2 str13" x1="11723" y1="9634" x2="11723" y2= "9429" />
+   <line class="fil2 str13" x1="10525" y1="11912" x2="10525" y2= "12213" />
+   <line class="fil2 str13" x1="15645" y1="10399" x2="15645" y2= "10133" />
+   <line class="fil2 str13" x1="13931" y1="10399" x2="13931" y2= "10133" />
+   <line class="fil2 str13" x1="14632" y1="11621" x2="14632" y2= "11856" />
    <g>
     <circle class="pressureSensor2 fil0 str0" cx="9114" cy="6379" r="250"/>
     <text x="8996" y="6553"  class="fil1 fnt7">P</text>
@@ -488,7 +492,7 @@ viewBox="0 0 42000 32000"
    <rect class="F0-S1-select fil2 str0" x="8737" y="4994" width="8096" height="8088"/>
   </g>
   <g class="compressor compressor-F0-S2">
-   <polygon class="status fil8 str9" points="8735,13933 16831,13933 16831,22021 8735,22021 "/>
+   <polygon class="status fil8 str12" points="8735,13933 16831,13933 16831,22021 8735,22021 "/>
    <polygon class="fil0 str0" points="15247,15796 16326,15803 16326,17318 15790,17820 15274,17285 "/>
    <g>
     <rect class="fil0 str0" x="9405" y="14157" width="1464" height="455" rx="123" ry="120"/>
@@ -521,32 +525,32 @@ viewBox="0 0 42000 32000"
     <line class="fil2 str0" x1="12616" y1="20415" x2="12616" y2= "20066" />
     <line class="fil2 str0" x1="12459" y1="20405" x2="12754" y2= "20405" />
    </g>
-   <line class="fil2 str10" x1="9114" y1="14616" x2="9114" y2= "15101" />
-   <line class="fil2 str10" x1="12785" y1="14842" x2="9114" y2= "14842" />
-   <polyline class="fil2 str5" points="12785,15198 12785,14386 14751,14386 14751,16142 15253,16142 "/>
-   <polyline class="fil2 str5" points="16831,14419 15788,14419 15788,15800 "/>
-   <polyline class="fil2 str10" points="9114,16739 9114,16979 12785,16979 "/>
-   <polyline class="fil2 str2" points="12785,16098 12785,18011 16831,18011 "/>
-   <line class="fil2 str10" x1="9114" y1="18168" x2="9114" y2= "18634" />
-   <polyline class="fil2 str10" points="9114,18401 12615,18401 12615,18765 "/>
-   <polyline class="fil2 str10" points="9114,20986 9114,21186 11866,21186 12615,20643 "/>
-   <polyline class="fil2 str10" points="12890,19837 13375,19105 16524,19105 16524,20828 13276,20828 12939,20505 "/>
+   <line class="fil2 str13" x1="9114" y1="14616" x2="9114" y2= "15101" />
+   <line class="fil2 str13" x1="12785" y1="14842" x2="9114" y2= "14842" />
+   <polyline class="fil2 str7" points="12785,15198 12785,14386 14751,14386 14751,16142 15253,16142 "/>
+   <polyline class="fil2 str7" points="16831,14419 15788,14419 15788,15800 "/>
+   <polyline class="fil2 str13" points="9114,16739 9114,16979 12785,16979 "/>
+   <polyline class="fil2 str8" points="12785,16098 12785,18011 16831,18011 "/>
+   <line class="fil2 str13" x1="9114" y1="18168" x2="9114" y2= "18634" />
+   <polyline class="fil2 str13" points="9114,18401 12615,18401 12615,18765 "/>
+   <polyline class="fil2 str13" points="9114,20986 9114,21186 11866,21186 12615,20643 "/>
+   <polyline class="fil2 str13" points="12890,19837 13375,19105 16524,19105 16524,20828 13276,20828 12939,20505 "/>
    <g>
     <circle class="dPressure1 fil0 str0" cx="16524" cy="20038" r="250"/>
     <text x="16288" y="20175"  class="fil1 fnt0">dP</text>
    </g>
-   <polyline class="fil2 str5" points="12615,19743 12615,18765 16831,18765 "/>
-   <polyline class="fil2 str2" points="12615,20640 12621,21821 16831,21821 "/>
-   <line class="fil2 str10" x1="10137" y1="14612" x2="10137" y2= "14842" />
-   <line class="fil2 str10" x1="11673" y1="14622" x2="11673" y2= "14842" />
-   <line class="fil2 str10" x1="11673" y1="16737" x2="11673" y2= "16979" />
-   <line class="fil2 str10" x1="10137" y1="16728" x2="10137" y2= "16979" />
-   <line class="fil2 str10" x1="10117" y1="18597" x2="10117" y2= "18401" />
-   <line class="fil2 str10" x1="11723" y1="18606" x2="11723" y2= "18401" />
-   <line class="fil2 str10" x1="10525" y1="20885" x2="10525" y2= "21186" />
-   <line class="fil2 str10" x1="15645" y1="19372" x2="15645" y2= "19105" />
-   <line class="fil2 str10" x1="13931" y1="19372" x2="13931" y2= "19105" />
-   <line class="fil2 str10" x1="14632" y1="20593" x2="14632" y2= "20828" />
+   <polyline class="fil2 str7" points="12615,19743 12615,18765 16831,18765 "/>
+   <polyline class="fil2 str8" points="12615,20640 12621,21821 16831,21821 "/>
+   <line class="fil2 str13" x1="10137" y1="14612" x2="10137" y2= "14842" />
+   <line class="fil2 str13" x1="11673" y1="14622" x2="11673" y2= "14842" />
+   <line class="fil2 str13" x1="11673" y1="16737" x2="11673" y2= "16979" />
+   <line class="fil2 str13" x1="10137" y1="16728" x2="10137" y2= "16979" />
+   <line class="fil2 str13" x1="10117" y1="18597" x2="10117" y2= "18401" />
+   <line class="fil2 str13" x1="11723" y1="18606" x2="11723" y2= "18401" />
+   <line class="fil2 str13" x1="10525" y1="20885" x2="10525" y2= "21186" />
+   <line class="fil2 str13" x1="15645" y1="19372" x2="15645" y2= "19105" />
+   <line class="fil2 str13" x1="13931" y1="19372" x2="13931" y2= "19105" />
+   <line class="fil2 str13" x1="14632" y1="20593" x2="14632" y2= "20828" />
    <g>
     <circle class="pressureSensor2 fil0 str0" cx="9114" cy="15351" r="250"/>
     <text x="8996" y="15526"  class="fil1 fnt7">P</text>
@@ -619,7 +623,7 @@ viewBox="0 0 42000 32000"
    <rect class="F0-S2-select fil2 str0" x="8735" y="13933" width="8096" height="8088"/>
   </g>
   <g class="compressor compressor-F0-S3">
-   <polygon class="status fil8 str9" points="8735,22906 16831,22906 16831,30993 8735,30993 "/>
+   <polygon class="status fil8 str12" points="8735,22906 16831,22906 16831,30993 8735,30993 "/>
    <polygon class="fil0 str0" points="15247,24769 16326,24775 16326,26290 15790,26793 15274,26257 "/>
    <g>
     <rect class="fil0 str0" x="9405" y="23129" width="1464" height="455" rx="123" ry="120"/>
@@ -652,32 +656,32 @@ viewBox="0 0 42000 32000"
     <line class="fil2 str0" x1="12616" y1="29388" x2="12616" y2= "29039" />
     <line class="fil2 str0" x1="12459" y1="29378" x2="12754" y2= "29378" />
    </g>
-   <line class="fil2 str10" x1="9114" y1="23588" x2="9114" y2= "24074" />
-   <line class="fil2 str10" x1="12785" y1="23814" x2="9114" y2= "23814" />
-   <polyline class="fil2 str5" points="12785,24170 12785,23358 14751,23358 14751,25114 15253,25114 "/>
-   <polyline class="fil2 str5" points="16831,23391 15788,23391 15788,24772 "/>
-   <polyline class="fil2 str10" points="9114,25711 9114,25951 12785,25951 "/>
-   <polyline class="fil2 str2" points="12785,25070 12785,26983 16831,26983 "/>
-   <line class="fil2 str10" x1="9114" y1="27140" x2="9114" y2= "27606" />
-   <polyline class="fil2 str10" points="9114,27373 12615,27373 12615,27737 "/>
-   <polyline class="fil2 str10" points="9114,29958 9114,30158 11866,30158 12615,29615 "/>
-   <polyline class="fil2 str10" points="12890,28809 13375,28078 16524,28078 16524,29801 13276,29801 12939,29477 "/>
+   <line class="fil2 str13" x1="9114" y1="23588" x2="9114" y2= "24074" />
+   <line class="fil2 str13" x1="12785" y1="23814" x2="9114" y2= "23814" />
+   <polyline class="fil2 str7" points="12785,24170 12785,23358 14751,23358 14751,25114 15253,25114 "/>
+   <polyline class="fil2 str7" points="16831,23391 15788,23391 15788,24772 "/>
+   <polyline class="fil2 str13" points="9114,25711 9114,25951 12785,25951 "/>
+   <polyline class="fil2 str8" points="12785,25070 12785,26983 16831,26983 "/>
+   <line class="fil2 str13" x1="9114" y1="27140" x2="9114" y2= "27606" />
+   <polyline class="fil2 str13" points="9114,27373 12615,27373 12615,27737 "/>
+   <polyline class="fil2 str13" points="9114,29958 9114,30158 11866,30158 12615,29615 "/>
+   <polyline class="fil2 str13" points="12890,28809 13375,28078 16524,28078 16524,29801 13276,29801 12939,29477 "/>
    <g>
     <circle class="dPressure1 fil0 str0" cx="16524" cy="29010" r="250"/>
     <text x="16288" y="29147"  class="fil1 fnt0">dP</text>
    </g>
-   <polyline class="fil2 str5" points="12615,28715 12615,27737 16831,27737 "/>
-   <polyline class="fil2 str2" points="12615,29612 12621,30793 16831,30793 "/>
-   <line class="fil2 str10" x1="10137" y1="23585" x2="10137" y2= "23814" />
-   <line class="fil2 str10" x1="11673" y1="23594" x2="11673" y2= "23814" />
-   <line class="fil2 str10" x1="11673" y1="25710" x2="11673" y2= "25951" />
-   <line class="fil2 str10" x1="10137" y1="25700" x2="10137" y2= "25951" />
-   <line class="fil2 str10" x1="10117" y1="27569" x2="10117" y2= "27373" />
-   <line class="fil2 str10" x1="11723" y1="27578" x2="11723" y2= "27373" />
-   <line class="fil2 str10" x1="10525" y1="29857" x2="10525" y2= "30158" />
-   <line class="fil2 str10" x1="15645" y1="28344" x2="15645" y2= "28078" />
-   <line class="fil2 str10" x1="13931" y1="28344" x2="13931" y2= "28078" />
-   <line class="fil2 str10" x1="14632" y1="29565" x2="14632" y2= "29801" />
+   <polyline class="fil2 str7" points="12615,28715 12615,27737 16831,27737 "/>
+   <polyline class="fil2 str8" points="12615,29612 12621,30793 16831,30793 "/>
+   <line class="fil2 str13" x1="10137" y1="23585" x2="10137" y2= "23814" />
+   <line class="fil2 str13" x1="11673" y1="23594" x2="11673" y2= "23814" />
+   <line class="fil2 str13" x1="11673" y1="25710" x2="11673" y2= "25951" />
+   <line class="fil2 str13" x1="10137" y1="25700" x2="10137" y2= "25951" />
+   <line class="fil2 str13" x1="10117" y1="27569" x2="10117" y2= "27373" />
+   <line class="fil2 str13" x1="11723" y1="27578" x2="11723" y2= "27373" />
+   <line class="fil2 str13" x1="10525" y1="29857" x2="10525" y2= "30158" />
+   <line class="fil2 str13" x1="15645" y1="28344" x2="15645" y2= "28078" />
+   <line class="fil2 str13" x1="13931" y1="28344" x2="13931" y2= "28078" />
+   <line class="fil2 str13" x1="14632" y1="29565" x2="14632" y2= "29801" />
    <g>
     <circle class="pressureSensor2 fil0 str0" cx="9114" cy="24324" r="250"/>
     <text x="8996" y="24498"  class="fil1 fnt7">P</text>
@@ -768,18 +772,18 @@ viewBox="0 0 42000 32000"
     <text x="27892" y="10088" class="level1 fil1 fnt1">0</text>
     <text x="29196" y="10072"  class="fil1 fnt0">mm</text>
    </g>
-   <rect class="fil0 str11" x="28675" y="10401" width="139" height="3259"/>
-   <ellipse class="LevelSensor2 fil0 str11" cx="29198" cy="10829" rx="169" ry="172"/>
-   <ellipse class="LevelSensor3 fil0 str11" cx="29198" cy="11648" rx="169" ry="172"/>
-   <ellipse class="LevelSensor1 fil0 str11" cx="28266" cy="10829" rx="169" ry="172"/>
-   <line class="fil2 str11" x1="28675" y1="10507" x2="27711" y2= "10507" />
-   <line class="fil2 str11" x1="28675" y1="13457" x2="27711" y2= "13457" />
+   <rect class="fil0 str14" x="28675" y="10401" width="139" height="3259"/>
+   <ellipse class="LevelSensor2 fil0 str14" cx="29198" cy="10829" rx="169" ry="172"/>
+   <ellipse class="LevelSensor3 fil0 str14" cx="29198" cy="11648" rx="169" ry="172"/>
+   <ellipse class="LevelSensor1 fil0 str14" cx="28266" cy="10829" rx="169" ry="172"/>
+   <line class="fil2 str14" x1="28675" y1="10507" x2="27711" y2= "10507" />
+   <line class="fil2 str14" x1="28675" y1="13457" x2="27711" y2= "13457" />
    <g class="motoGate">
-    <ellipse class="status fil0 str12" cx="24283" cy="11474" rx="197" ry="199"/>
-    <line class="fil2 str13" x1="24276" y1="11677" x2="24277" y2= "11972" />
+    <ellipse class="status fil0 str15" cx="24283" cy="11474" rx="197" ry="199"/>
+    <line class="fil2 str16" x1="24276" y1="11677" x2="24277" y2= "11972" />
     <text x="24136" y="11600"  class="fil1 fnt8">M</text>
-    <polygon class="status fil12 str12" points="24171,12031 24277,11972 24379,12028 24275,12163 "/>
-    <polygon class="status fil12 str12" points="24056,11850 24483,12085 24483,11857 24056,12095 "/>
+    <polygon class="status fil12 str15" points="24171,12031 24277,11972 24379,12028 24275,12163 "/>
+    <polygon class="status fil12 str15" points="24056,11850 24483,12085 24483,11857 24056,12095 "/>
     <g>
      <rect class="fil0 str0" x="23582" y="10749" width="1309" height="455" rx="110" ry="120"/>
      <text x="23660" y="11140" class="position1 fil1 fnt1">0</text>
@@ -792,23 +796,23 @@ viewBox="0 0 42000 32000"
     </g>
    </g>
    <g class="gate">
-    <polygon class="status fil0 str14" points="22578,12085 23035,11892 23037,12081 22576,11896 "/>
+    <polygon class="status fil0 str17" points="22578,12085 23035,11892 23037,12081 22576,11896 "/>
     <rect class="fil0 str0" transform="matrix(0.000587397 0.188628 -0.188628 0.000587397 22872.2 11426.3)" width="1799" height="741"/>
     <ellipse class="status fil0 str0" transform="matrix(0.488139 -0.00485259 0.00485259 0.488139 22797.3 11192.9)" rx="304" ry="324"/>
     <line class="fil2 str0" x1="22733" y1="11535" x2="22873" y2= "11644" />
-    <line class="fil2 str15" x1="22805" y1="11766" x2="22807" y2= "11988" />
-    <line class="fil2 str16" x1="22800" y1="11354" x2="22801" y2= "11427" />
+    <line class="fil2 str18" x1="22805" y1="11766" x2="22807" y2= "11988" />
+    <line class="fil2 str19" x1="22800" y1="11354" x2="22801" y2= "11427" />
     <g class="attention">
      <path class="fil9" d="M23002 10868c4,8 7,16 9,25 3,8 4,17 4,26 0,11 -2,21 -5,31 -3,9 -8,18 -15,26 -6,7 -14,13 -22,17 -8,4 -17,6 -26,6l-301 0c-9,0 -18,-2 -26,-6 -9,-4 -16,-10 -22,-17 -7,-8 -12,-17 -15,-26 -3,-10 -5,-20 -5,-31 0,-9 1,-18 3,-26 3,-9 6,-17 10,-25l0 0 139 -260c8,-14 18,-26 29,-33 11,-8 24,-12 37,-12 14,0 27,4 38,12 11,7 20,19 28,33l0 0 140 260 0 0zm-18 34c-2,-6 -4,-11 -7,-17l0 0 -139 -259 0 0c-6,-10 -12,-18 -19,-23 -7,-4 -14,-7 -23,-7 -8,0 -16,3 -22,7 -7,5 -13,13 -19,23l-139 259 0 0c-3,6 -5,11 -7,17 -1,6 -2,11 -2,17 0,7 1,13 3,18 2,6 5,11 9,16 3,4 7,7 12,10 4,2 9,3 15,3l301 0c5,0 11,-1 15,-3 4,-3 9,-6 12,-10 4,-5 7,-10 9,-16 2,-5 3,-11 3,-18 0,-6 -1,-11 -2,-17z"/>
      <path class="fil10" d="M22989 10876c8,14 11,29 11,43 0,18 -5,33 -15,45 -10,12 -23,19 -38,19l-301 0c-15,0 -28,-7 -38,-19 -10,-12 -15,-27 -15,-45 0,-14 3,-29 11,-43l139 -259c13,-25 31,-37 53,-37 23,0 41,12 54,37l139 259z"/>
      <path class="fil11" d="M22783 10872l-12 -162 0 -75 50 0 0 75 -11 162 -27 0zm-10 82l0 -61 47 0 0 61 -47 0z"/>
     </g>
    </g>
-   <line class="fil2 str11" x1="28434" y1="10829" x2="28675" y2= "10829" />
-   <line class="fil2 str11" x1="29030" y1="10829" x2="28814" y2= "10829" />
-   <line class="fil2 str11" x1="29030" y1="11648" x2="28814" y2= "11648" />
+   <line class="fil2 str14" x1="28434" y1="10829" x2="28675" y2= "10829" />
+   <line class="fil2 str14" x1="29030" y1="10829" x2="28814" y2= "10829" />
+   <line class="fil2 str14" x1="29030" y1="11648" x2="28814" y2= "11648" />
    <text x="25854" y="14417"  class="fil1 fnt4">R110</text>
-   <line class="fil2 str8" x1="26993" y1="8820" x2="26993" y2= "9113" />
+   <line class="fil2 str11" x1="26993" y1="8820" x2="26993" y2= "9113" />
   </g>
   <g class="receiver receiver-F0-R2">
    <rect class="F0-R2-select fil2 str0" transform="matrix(2.67405E-14 -1.00966 1 2.64845E-14 23421.2 20270.4)" width="2431" height="5767" rx="782" ry="782"/>
@@ -829,18 +833,18 @@ viewBox="0 0 42000 32000"
     <text x="21759" y="17050" class="level1 fil1 fnt1">0</text>
     <text x="23063" y="17034"  class="fil1 fnt0">mm</text>
    </g>
-   <rect class="fil0 str11" x="22542" y="17364" width="139" height="3259"/>
-   <ellipse class="LevelSensor2 fil0 str11" cx="23065" cy="17792" rx="169" ry="172"/>
-   <ellipse class="LevelSensor3 fil0 str11" cx="23065" cy="18611" rx="169" ry="172"/>
-   <ellipse class="LevelSensor1 fil0 str11" cx="22132" cy="17792" rx="169" ry="172"/>
-   <line class="fil2 str11" x1="24192" y1="17477" x2="22680" y2= "17477" />
-   <line class="fil2 str11" x1="24450" y1="20420" x2="22680" y2= "20420" />
+   <rect class="fil0 str14" x="22542" y="17364" width="139" height="3259"/>
+   <ellipse class="LevelSensor2 fil0 str14" cx="23065" cy="17792" rx="169" ry="172"/>
+   <ellipse class="LevelSensor3 fil0 str14" cx="23065" cy="18611" rx="169" ry="172"/>
+   <ellipse class="LevelSensor1 fil0 str14" cx="22132" cy="17792" rx="169" ry="172"/>
+   <line class="fil2 str14" x1="24192" y1="17477" x2="22680" y2= "17477" />
+   <line class="fil2 str14" x1="24450" y1="20420" x2="22680" y2= "20420" />
    <g class="motoGate">
-    <ellipse class="status fil0 str12" cx="30335" cy="18471" rx="197" ry="199"/>
-    <line class="fil2 str13" x1="30328" y1="18675" x2="30329" y2= "18969" />
+    <ellipse class="status fil0 str15" cx="30335" cy="18471" rx="197" ry="199"/>
+    <line class="fil2 str16" x1="30328" y1="18675" x2="30329" y2= "18969" />
     <text x="30188" y="18597"  class="fil1 fnt8">M</text>
-    <polygon class="status fil12 str12" points="30223,19028 30329,18969 30431,19025 30327,19160 "/>
-    <polygon class="status fil12 str12" points="30108,18847 30535,19082 30535,18854 30108,19092 "/>
+    <polygon class="status fil12 str15" points="30223,19028 30329,18969 30431,19025 30327,19160 "/>
+    <polygon class="status fil12 str15" points="30108,18847 30535,19082 30535,18854 30108,19092 "/>
     <g>
      <rect class="fil0 str0" x="29634" y="17746" width="1309" height="455" rx="110" ry="120"/>
      <text x="29712" y="18137" class="position1 fil1 fnt1">0</text>
@@ -853,27 +857,27 @@ viewBox="0 0 42000 32000"
     </g>
    </g>
    <g class="gate">
-    <polygon class="status fil0 str14" points="31619,19082 32076,18889 32078,19078 31617,18893 "/>
+    <polygon class="status fil0 str17" points="31619,19082 32076,18889 32078,19078 31617,18893 "/>
     <rect class="fil0 str0" transform="matrix(0.000587397 0.188628 -0.188628 0.000587397 31912.9 18423.4)" width="1799" height="741"/>
     <ellipse class="status fil0 str0" transform="matrix(0.488139 -0.00485259 0.00485259 0.488139 31837.9 18190)" rx="304" ry="324"/>
     <line class="fil2 str0" x1="31773" y1="18532" x2="31914" y2= "18641" />
-    <line class="fil2 str15" x1="31845" y1="18763" x2="31847" y2= "18986" />
-    <line class="fil2 str16" x1="31841" y1="18351" x2="31842" y2= "18424" />
+    <line class="fil2 str18" x1="31845" y1="18763" x2="31847" y2= "18986" />
+    <line class="fil2 str19" x1="31841" y1="18351" x2="31842" y2= "18424" />
     <g class="attention">
      <path class="fil9" d="M32042 17865c5,8 8,16 10,25 2,8 3,17 3,26 0,11 -1,21 -5,31 -3,9 -8,18 -14,26 -7,8 -14,13 -22,18 -8,4 -17,6 -27,6l-300 0c-10,0 -19,-2 -27,-6 -8,-5 -15,-10 -22,-18 -6,-8 -11,-17 -14,-26 -4,-10 -5,-20 -5,-31 0,-9 1,-18 3,-26 2,-9 6,-17 10,-25l0 0 139 -260c8,-14 17,-26 28,-33 12,-8 24,-12 38,-12 14,0 26,4 38,12 11,7 20,19 28,33l0 0 139 260 0 0zm-18 34c-1,-5 -4,-11 -7,-17l0 0 -139 -259 0 0c-5,-10 -11,-18 -18,-23 -7,-4 -14,-7 -23,-7 -9,0 -16,3 -23,7 -7,5 -13,13 -18,23l-139 259 0 0c-3,6 -6,12 -7,17 -1,6 -2,11 -2,17 0,7 1,13 3,18 2,6 4,11 8,16 4,4 8,8 12,10 5,2 10,3 16,3l300 0c6,0 11,-1 16,-3 4,-2 8,-6 12,-10 4,-5 7,-10 8,-16 2,-5 3,-11 3,-18 0,-6 0,-11 -2,-17z"/>
      <path class="fil10" d="M32030 17873c7,14 11,29 11,43 0,18 -5,33 -16,45 -10,13 -23,19 -38,19l-300 0c-15,0 -28,-6 -38,-19 -11,-12 -16,-27 -16,-45 0,-14 4,-29 11,-43l139 -259c14,-25 32,-37 54,-37 22,0 40,12 54,37l139 259z"/>
      <path class="fil11" d="M31824 17869l-12 -162 0 -75 50 0 0 75 -12 162 -26 0zm-10 82l0 -61 46 0 0 61 -46 0z"/>
     </g>
    </g>
-   <line class="fil2 str11" x1="22301" y1="17792" x2="22542" y2= "17792" />
-   <line class="fil2 str11" x1="22896" y1="17792" x2="22680" y2= "17792" />
-   <line class="fil2 str11" x1="22896" y1="18611" x2="22680" y2= "18611" />
+   <line class="fil2 str14" x1="22301" y1="17792" x2="22542" y2= "17792" />
+   <line class="fil2 str14" x1="22896" y1="17792" x2="22680" y2= "17792" />
+   <line class="fil2 str14" x1="22896" y1="18611" x2="22680" y2= "18611" />
    <text x="25833" y="19384"  class="fil1 fnt4">R210</text>
-   <line class="fil2 str8" x1="27797" y1="17523" x2="27797" y2= "17816" />
-   <line class="fil2 str11" x1="24192" y1="17477" x2="24198" y2= "17816" />
-   <line class="fil2 str11" x1="24450" y1="20420" x2="24450" y2= "20270" />
+   <line class="fil2 str11" x1="27797" y1="17523" x2="27797" y2= "17816" />
+   <line class="fil2 str14" x1="24192" y1="17477" x2="24198" y2= "17816" />
+   <line class="fil2 str14" x1="24450" y1="20420" x2="24450" y2= "20270" />
   </g>
-  <g class="pumpGroup pumpGroup-F0-P1">
+  <g class="pumpGroup pumpGroup-F0-P2">
    <g>
     <rect class="fil0 str0" x="34163" y="7817" width="1464" height="455" rx="123" ry="120"/>
     <g transform="matrix(1.00277 0 0 1 13157.7 -7828.53)">
@@ -970,9 +974,9 @@ viewBox="0 0 42000 32000"
      <path class="fil11" d="M40943 18562l-12 -162 0 -74 51 0 0 74 -12 162 -27 0zm-10 82l0 -61 47 0 0 61 -47 0z"/>
     </g>
    </g>
-   <rect class="F0-P1-select fil2 str0" x="36208" y="16313" width="5292" height="2687"/>
+   <rect class="F0-P2-select fil2 str0" x="36208" y="16313" width="5292" height="2687"/>
   </g>
-  <g class="pumpGroup pumpGroup-F0-P2">
+  <g class="pumpGroup pumpGroup-F0-P1">
    <g class="pump1">
     <circle class="fil0 str0" cx="33293" cy="22501" r="417"/>
     <polyline class="fil2 str0" points="32880,22493 33296,22909 33709,22548 "/>
@@ -1037,7 +1041,7 @@ viewBox="0 0 42000 32000"
     <text x="21834" y="24072"  class="fil1 fnt3">0</text>
     <text x="21942" y="24266"  class="fil1 fnt0">C</text>
    </g>
-   <rect class="F0-P2-select fil2 str0" x="32708" y="22000" width="5292" height="2687"/>
+   <rect class="F0-P1-select fil2 str0" x="32708" y="22000" width="5292" height="2687"/>
   </g>
   <g class="refrigerator refrigerator-F0-Rf1">
    <polygon class="status fil7 str0" points="2968,8742 2968,7481 3447,2902 5326,2902 5802,7481 5802,8723 "/>
@@ -1047,7 +1051,7 @@ viewBox="0 0 42000 32000"
    <polyline class="fil2 str0" points="5517,4781 4257,4781 4257,5217 3569,5217 3569,5505 4290,5505 4290,5839 3575,5839 3575,6130 4250,6130 4250,7175 5770,7167 "/>
    <line class="fil2 str0" x1="2968" y1="7481" x2="5802" y2= "7481" />
    <line class="fil2 str0" x1="5004" y1="7481" x2="4700" y2= "8730" />
-   <polyline class="fil2 str1" points="4968,4295 1604,4298 1604,8242 2968,8242 "/>
+   <polyline class="fil2 str6" points="4968,4295 1604,4298 1604,8242 2968,8242 "/>
    <g>
     <rect class="fil0 str0" x="5890" y="2466" width="1521" height="455" rx="128" ry="120"/>
     <text x="5930" y="2857" id="pressure" class="fil1 fnt1">0</text>
@@ -1082,42 +1086,47 @@ viewBox="0 0 42000 32000"
   </g>
   <g class="jar jar-F0-J1">
    <rect class="status fil7 str0" x="2255" y="12365" width="4855" height="2166" rx="893" ry="840"/>
-   <ellipse class="LevelSensor1 fil0 str11" cx="1338" cy="12693" rx="169" ry="172"/>
-   <ellipse class="LevelSensor2 fil0 str11" cx="1338" cy="14133" rx="169" ry="172"/>
-   <rect class="fil0 str11" x="1751" y="12379" width="139" height="2566"/>
-   <polyline class="fil2 str11" points="1820,12379 1820,12061 3057,12061 3057,12365 "/>
-   <polyline class="fil2 str11" points="1890,14797 3057,14797 3057,14529 "/>
-   <line class="fil2 str11" x1="1506" y1="12693" x2="1751" y2= "12693" />
-   <line class="fil2 str11" x1="1506" y1="14133" x2="1751" y2= "14133" />
+   <ellipse class="LevelSensor1 fil0 str14" cx="1338" cy="12693" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str14" cx="1338" cy="14133" rx="169" ry="172"/>
+   <rect class="fil0 str14" x="1751" y="12379" width="139" height="2566"/>
+   <polyline class="fil2 str14" points="1820,12379 1820,12061 3057,12061 3057,12365 "/>
+   <polyline class="fil2 str14" points="1890,14797 3057,14797 3057,14529 "/>
+   <line class="fil2 str14" x1="1506" y1="12693" x2="1751" y2= "12693" />
+   <line class="fil2 str14" x1="1506" y1="14133" x2="1751" y2= "14133" />
    <rect class="F0-J1-select fil2 str0" x="2255" y="12365" width="4855" height="2166" rx="893" ry="840"/>
   </g>
   <g class="jar jar-F0-J2">
    <rect class="status fil7 str0" x="2267" y="16805" width="4855" height="2166" rx="893" ry="840"/>
-   <ellipse class="LevelSensor1 fil0 str11" cx="1350" cy="17133" rx="169" ry="172"/>
-   <ellipse class="LevelSensor2 fil0 str11" cx="1350" cy="18573" rx="169" ry="172"/>
-   <rect class="fil0 str11" x="1764" y="16819" width="139" height="2566"/>
-   <polyline class="fil2 str11" points="1833,16819 1833,16501 3070,16501 3070,16805 "/>
-   <polyline class="fil2 str11" points="1903,19237 3070,19237 3070,18969 "/>
-   <line class="fil2 str11" x1="1519" y1="17133" x2="1764" y2= "17133" />
-   <line class="fil2 str11" x1="1519" y1="18573" x2="1764" y2= "18573" />
+   <ellipse class="LevelSensor1 fil0 str14" cx="1350" cy="17133" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str14" cx="1350" cy="18573" rx="169" ry="172"/>
+   <rect class="fil0 str14" x="1764" y="16819" width="139" height="2566"/>
+   <polyline class="fil2 str14" points="1833,16819 1833,16501 3070,16501 3070,16805 "/>
+   <polyline class="fil2 str14" points="1903,19237 3070,19237 3070,18969 "/>
+   <line class="fil2 str14" x1="1519" y1="17133" x2="1764" y2= "17133" />
+   <line class="fil2 str14" x1="1519" y1="18573" x2="1764" y2= "18573" />
    <rect class="F0-J2-select fil2 str0" x="2267" y="16805" width="4855" height="2166" rx="893" ry="840"/>
   </g>
   <text x="3217" y="17697"  class="fil1 fnt4">Линейный</text>
   <text x="3217" y="18406"  class="fil1 fnt4">ресивер</text>
   <g class="jar jar-F0-J3">
    <rect class="status fil7 str0" x="2255" y="22432" width="4855" height="2166" rx="893" ry="840"/>
-   <ellipse class="LevelSensor1 fil0 str11" cx="1338" cy="22761" rx="169" ry="172"/>
-   <ellipse class="LevelSensor2 fil0 str11" cx="1338" cy="24201" rx="169" ry="172"/>
-   <rect class="fil0 str11" x="1751" y="22447" width="139" height="2566"/>
-   <polyline class="fil2 str11" points="1820,22447 1820,22129 3057,22129 3057,22433 "/>
-   <polyline class="fil2 str11" points="1890,24865 3057,24865 3057,24597 "/>
-   <line class="fil2 str11" x1="1506" y1="22761" x2="1751" y2= "22761" />
-   <line class="fil2 str11" x1="1506" y1="24201" x2="1751" y2= "24201" />
+   <ellipse class="LevelSensor1 fil0 str14" cx="1338" cy="22761" rx="169" ry="172"/>
+   <ellipse class="LevelSensor2 fil0 str14" cx="1338" cy="24201" rx="169" ry="172"/>
+   <rect class="fil0 str14" x="1751" y="22447" width="139" height="2566"/>
+   <polyline class="fil2 str14" points="1820,22447 1820,22129 3057,22129 3057,22433 "/>
+   <polyline class="fil2 str14" points="1890,24865 3057,24865 3057,24597 "/>
+   <line class="fil2 str14" x1="1506" y1="22761" x2="1751" y2= "22761" />
+   <line class="fil2 str14" x1="1506" y1="24201" x2="1751" y2= "24201" />
    <rect class="F0-J3-select fil2 str0" x="2255" y="22432" width="4855" height="2166" rx="893" ry="840"/>
   </g>
   <text x="3200" y="23289"  class="fil1 fnt4">Дренажный</text>
   <text x="3200" y="23998"  class="fil1 fnt4">ресивер</text>
   <text x="3217" y="13352"  class="fil1 fnt4">Линейный</text>
   <text x="3217" y="14061"  class="fil1 fnt4">ресивер</text>
+  <g class="CManager CManager-F0-M1">
+   <rect class="status fil2 str20" x="22232" y="3457" width="18309" height="988"/>
+   <text x="22718" y="4254" class="text fil7 fnt5">X</text>
+   <rect class="F0-M1-select fil2 str15" x="22183" y="3407" width="18406" height="1085"/>
+  </g>
  </g>
 </svg>
