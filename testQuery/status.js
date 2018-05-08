@@ -428,7 +428,7 @@ var jsontable={
           "q_km": 0
         },
         "comp_con":{
-          "s": 2,
+          "s": 1,
           "i": 0
         }
       }

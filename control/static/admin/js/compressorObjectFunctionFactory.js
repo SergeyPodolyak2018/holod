@@ -914,8 +914,13 @@ function getNewObjectOfCManager(objectFromSvg,name){
 
 	let SVG = document.getElementById("start_compressor_button").getSVGDocument();
 
-	this.statrtButton = SVG.getElementsByClassName('startCompressor');
+	this.startButton = SVG.getElementsByClassName('startCompressor');
 	this.stopButton = SVG.getElementsByClassName('stopCompressor');
+
+
+	
+	this.startButton[0].addEventListener('click',function(){start_stop_mex(this.name,1);}.bind(this),false);
+	this.stopButton[0].addEventListener('click',function(){start_stop_mex(this.name,2);}.bind(this),false);
 
 
 	
@@ -939,6 +944,12 @@ function getNewObjectOfCManager(objectFromSvg,name){
 				  item.removeAttribute("style");
 				  item.innerHTML = 'Остановлен';
 				});
+				[...this.startButton].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");			  
+				});
+				[...this.stopButton].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");			  
+				});
 				break;
 			case 1:				
 				[...this.status].forEach(function(item, i, arr) {
@@ -947,6 +958,12 @@ function getNewObjectOfCManager(objectFromSvg,name){
 				[...this.statusText].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:black;';
 				  item.innerHTML = 'Вработе';
+				});
+				[...this.startButton].forEach(function(item, i, arr) {
+				  item.style.cssText='display:none;';				  
+				});
+				[...this.stopButton].forEach(function(item, i, arr) {
+				  item.style.cssText='display:block;';				  
 				});
 				break;
 			case 2:				
@@ -957,6 +974,12 @@ function getNewObjectOfCManager(objectFromSvg,name){
 				  item.style.cssText='fill:black;';
 				  item.innerHTML = 'Авария';
 				});
+				[...this.startButton].forEach(function(item, i, arr) {
+				  item.style.cssText='display:block;';				  
+				});
+				[...this.stopButton].forEach(function(item, i, arr) {
+				  item.style.cssText='display:none;';				  
+				});
 				break;
 			case 3:				
 				[...this.status].forEach(function(item, i, arr) {
@@ -965,6 +988,12 @@ function getNewObjectOfCManager(objectFromSvg,name){
 				[...this.statusText].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:black;';
 				  item.innerHTML = 'Подготовка';
+				});
+				[...this.startButton].forEach(function(item, i, arr) {
+				  item.style.cssText='display:block;';				  
+				});
+				[...this.stopButton].forEach(function(item, i, arr) {
+				  item.style.cssText='display:none;';				  
 				});
 				break;	
 			default:
