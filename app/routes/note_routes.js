@@ -1,5 +1,6 @@
 var menuBottons		= require('../../testQuery/takeMenuButtons');
 var settings		= require('../../testQuery/settings');
+var texSettings		= require('../../testQuery/texSettings');
 var deviceAdress	= require('../../testQuery/get_device_adress');
 module.exports = function(app, db) {	
 	
@@ -97,6 +98,13 @@ module.exports = function(app, db) {
 		/*console.log('qwery io_command name',req.query.name);
 		console.log('qwery io_command data',req.query.command);*/
 		let telegramm={'type':0,'message':'ok','data':settings.jsontable};			
+		res.send(JSON.stringify(telegramm));		
+		
+	});
+	app.get('/device_get_tex_settings/', function(req, res) {
+		/*console.log('qwery io_command name',req.query.name);
+		console.log('qwery io_command data',req.query.command);*/
+		let telegramm={'type':0,'message':'ok','data':texSettings.jsontable};			
 		res.send(JSON.stringify(telegramm));		
 		
 	});

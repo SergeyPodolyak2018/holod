@@ -3929,7 +3929,7 @@
              </div>
 
              <!-- Окно настройки камеры -->        
-          <div class="box_settings modal_box visible_datchiki draggable" style="display: none; min-width: 400px">
+          <div class="box_settings modal_box visible_datchiki draggable" style="display: none; min-width: 600px">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
                     <div class="modal_box_header_inner">
@@ -4102,12 +4102,12 @@
                  </div>                 
              </div>
 <!-- Окно технологических настроек камеры -->        
-          <div class="box_tex_settings modal_box visible_datchiki draggable" style="display: none; min-width: 400px">
+          <div class="box_tex_settings modal_box visible_datchiki draggable" style="display: none; min-width: 550px">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
                     <div class="modal_box_header_inner">
                       <span>Настройки технологические камеры</span>
-                      <span class="fool_name_of_device">чсаичсаисваи</span>
+                      <span class="fool_name_of_device">Имя устройства</span>
                       <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
                     </div>
                  </div>
@@ -4115,29 +4115,51 @@
                  <form method="POST" id="" name="cam" action="javascript:void(null);" onsubmit="">
                    <div class="modsl modal_box_body" style="float:left; width: 100%">                 
 
-                          <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
-                            <div class="sensors_header">Натстройки</div>
-                            <div class="sensors_colum5">Датчик температуры</div>
-                            <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="a_t" SIZE=4>
+                          <div style="display: block;float:left; width:90%;margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header">Настройки</div>
+                            <div class="sensors_colum6">Заданная температура</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_1" SIZE=4>
                             </div>
+                            <div class="sensors_colum1">грд С</div>
                             <div style="clear: both;"></div>
 
-                            <div class="sensors_colum5">Человек в камере</div>
-                            <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="a_i_hu" SIZE=4>
+                            <div class="sensors_colum6">Допустимые колебания температуры</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_2" SIZE=4>
                             </div>
-                            <div style="clear: both;"></div>
-                            <div class="sensors_colum5">Двери открыты</div>
-                            <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="a_i_do" SIZE=4>
-                            </div>
+                            <div class="sensors_colum1">грд С</div>
                             <div style="clear: both;"></div>
 
-                            <div class="sensors_colum5">В работе</div>
-                            <div class="sensors_colum3">
-                              <select name="eflags_7"><option value="0">0</option><option value="1">1</option></select>
-                            </div>                              
+                            <div class="sensors_colum6">Время предварительного обогрева дренажного трубопровада</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_3" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Температура ребра воздухоохладителя</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_4" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Задержка включения вентиляторов</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_5" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Задержка выключения обогрева дренажного трубопровода</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_6" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                                                        
                           </div>                                          
                           <div style="clear: both;"></div>
                     </div>
@@ -4148,7 +4170,259 @@
                     <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
                  </div>                 
              </div>
-            
+<!-- Окно технологических настроек компресссора -->        
+          <div class="compressor_tex_settings modal_box visible_datchiki draggable" style="display: none; min-width: 550px">
+
+                 <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
+                    <div class="modal_box_header_inner">
+                      <span>Настройки технологические компрессора</span>
+                      <span class="fool_name_of_device">Имя устройства</span>
+                      <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
+                    </div>
+                 </div>
+                 <div style="clear: both;width: 100%"></div>
+                 <form method="POST" id="" name="cam" action="javascript:void(null);" onsubmit="">
+                   <div class="modsl modal_box_body" style="float:left; width: 100%">                 
+
+                          <div style="display: block;float:left; width:90%;margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header">Настройки</div>
+                            <div class="sensors_colum6">Время задержки повторного пуска</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_1" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Время измерения давления на входе</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_2" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Рабочее давление</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_3" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">атм</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Колебание рабочего давления</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_4" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">атм</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Время последнего включения</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_5" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                          </div>                                          
+                          <div style="clear: both;"></div>
+                    </div>
+                 </form>
+                 <div style="clear: both;"></div>
+                 <div style="border-radius: 15px; margin-top: 10px" >
+                    <button class="modal_box_btn btn-save">Сохранить</button>
+                    <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
+                 </div>                 
+             </div>
+
+        <!-- Окно технологических настроек промежуточный сосуд -->        
+          <div class="receiver_tex_settings modal_box visible_datchiki draggable" style="display: none; min-width: 550px">
+
+                 <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
+                    <div class="modal_box_header_inner">
+                      <span>Настройки технологические компрессора</span>
+                      <span class="fool_name_of_device">Имя устройства</span>
+                      <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
+                    </div>
+                 </div>
+                 <div style="clear: both;width: 100%"></div>
+                 <form method="POST" id="" name="cam" action="javascript:void(null);" onsubmit="">
+                   <div class="modsl modal_box_body" style="float:left; width: 100%">                 
+
+                          <div style="display: block;float:left; width:90%;margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header">Настройки</div>
+                            <div class="sensors_colum6">Время закрытие клапана</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_1" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Уровень в сосуде</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_2" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">мм</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Отклонение от заданного уровня +/-</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_3" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">мм</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Рабочее давление</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_4" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">атм</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Колебание рабочего давления</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_5" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">атм</div>
+                            <div style="clear: both;"></div>
+
+                          </div>                                          
+                          <div style="clear: both;"></div>
+                    </div>
+                 </form>
+                 <div style="clear: both;"></div>
+                 <div style="border-radius: 15px; margin-top: 10px" >
+                    <button class="modal_box_btn btn-save">Сохранить</button>
+                    <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
+                 </div>                 
+             </div>
+
+             <!-- Окно технологических настроек промежуточный сосуд -->        
+          <div class="pumpGroup_tex_settings modal_box visible_datchiki draggable" style="display: none; min-width: 550px">
+
+                 <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
+                    <div class="modal_box_header_inner">
+                      <span>Настройки технологические компрессора</span>
+                      <span class="fool_name_of_device">Имя устройства</span>
+                      <span><a href="#" class="btn btn-default btn-back btn-close"><span></span></a></span>
+                    </div>
+                 </div>
+                 <div style="clear: both;width: 100%"></div>
+                 <form method="POST" id="" name="cam" action="javascript:void(null);" onsubmit="">
+                   <div class="modsl modal_box_body" style="float:left; width: 100%">                 
+
+                          <div style="display: block;float:left; width:90%;margin-left: 5px;margin-top: 10px">
+                            <div class="sensors_header">Настройки</div>
+                            <div class="sensors_colum6">Задержка перед повторным пуском насосов</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_1" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Длительность периода разгона насосов</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_2" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Допустимая длительность перегрева электродвигателей</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_3" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Задержка на стабилизацию температуры хладоносителя</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_4" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">сек</div>
+                            <div style="clear: both;"></div>
+
+                            <div class="sensors_colum6">Минимальное рабочее давление насосов</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_5" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">атм</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Максимально допустимая температура обмоток привода</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_6" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Аварийная температура обмоток привода</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_7" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимальное рабочее давление насосов</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_8" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">атм</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура1</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_9" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура2</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_10" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура3</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_11" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура4</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_12" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура5</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_13" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура6</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_14" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура7</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_15" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum6">Минимально допустимая температура8</div>
+                            <div class="sensors_colum1">
+                              <input class="checkable_data_form" name="a_tex_16" SIZE=4>
+                            </div>
+                            <div class="sensors_colum1">грд С</div>
+                            <div style="clear: both;"></div>
+                            
+
+                          </div>                                          
+                          <div style="clear: both;"></div>
+                    </div>
+                 </form>
+                 <div style="clear: both;"></div>
+                 <div style="border-radius: 15px; margin-top: 10px" >
+                    <button class="modal_box_btn btn-save">Сохранить</button>
+                    <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
+                 </div>                 
+             </div>
+                        
              
 
 
@@ -4224,6 +4498,7 @@
         <script src="/static/admin/js/showHideElements.js" defer></script>
         
         <!--Охладитель новенькое-->
+        <script src="/static/admin/js/help_functions_fore_objects.js" defer></script>
         <script src="/static/admin/js/florVisible.js" defer></script>
         <script src="/static/admin/js/floorObjectFunctionFactory.js" defer></script>
         <script src="/static/admin/js/compressorObjectFunctionFactory.js" defer></script>
@@ -4232,6 +4507,8 @@
         <script src="/static/admin/js/menu_creator.js" defer></script>
         <script src="/static/admin/js/messages_from_server.js" defer></script>
         <script src="/static/admin/js/settings_forms.js" defer></script>
+        
+        
 
   
 

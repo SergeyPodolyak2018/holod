@@ -25,6 +25,11 @@ function start_stop_mex(name,command){
     console.log(flor);
     globalObject[flor][name].get_settings();
   }
+  function open_tex_settings_window(name){
+    let flor='flor'+parseInt(name.match(/F([0-9]).*/)[1]);
+    console.log(flor);
+    globalObject[flor][name].get_tex_settings();
+  }
 /*function close_settings(name) {
     let flor='flor'+parseInt(name.match(/F[0-9]/));
     globalObject[flor][name].close_sensors();

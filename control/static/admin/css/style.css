@@ -672,7 +672,9 @@ a.menu_button:focus{
 .sensors_colum1{
     display     : block;
     float       :left;
-    width       :15%;
+    /* width       :20%; */
+    margin-top  :5px;
+    margin-left : 5px;
 }
 .sensors_colum2{
     display     : block;
@@ -696,6 +698,13 @@ a.menu_button:focus{
     display     : block;
     float       :left;
     width       :40%;
+    margin-top  :5px;
+    margin-left : 5px;
+}
+.sensors_colum6{
+    display     : block;
+    float       :left;
+    width       :75%;
     margin-top  :5px;
     margin-left : 5px;
 }
