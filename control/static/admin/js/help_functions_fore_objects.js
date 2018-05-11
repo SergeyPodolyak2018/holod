@@ -77,8 +77,10 @@ function settings_save(){
 	    let form        = this.window_settings.getElementsByTagName('form')[0];	    
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));
 	    let url_string  = '/device_save_settings/?name='+this.name;
+	    let context =this;
+	    let callback = function(response){context.close_settings(response)};
 	    //console.log(body);
- 		post_data_to_server(url_string,body,null,null);
+ 		post_data_to_server(url_string,body,callback,null);
     	
 	    
 }
