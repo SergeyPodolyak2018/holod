@@ -708,6 +708,13 @@ a.menu_button:focus{
     margin-top  :5px;
     margin-left : 5px;
 }
+.sensors_colum7{
+    display     : block;
+    float       :left;
+    width       :70%;
+    margin-top  :5px;
+    margin-left : 5px;
+}
 .sensors_header{    
     float:left;
     width:100%;

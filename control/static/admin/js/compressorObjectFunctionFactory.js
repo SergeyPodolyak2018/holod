@@ -656,7 +656,7 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 	this.pump1 					= new getNewObjectInsidePump(objectFromSvg.getElementsByClassName('pump1')[0]);
 	this.pump2 					= new getNewObjectInsidePump(objectFromSvg.getElementsByClassName('pump2')[0]);
 
-	
+	this.window_settings 		= document.getElementsByClassName('pumpGroup_settings')[0].cloneNode(true);
 	this.window_tex_settings 	= document.getElementsByClassName('pumpGroup_tex_settings')[0].cloneNode(true);
 	this.window_sensors 		= document.getElementsByClassName('pumpGroup1_sensors')[0].cloneNode(true);
 	this.intervalLockation;
@@ -732,6 +732,11 @@ getNewObjectOfPumpGroup.prototype.myStatus = function(state){
 };
 getNewObjectOfPumpGroup.prototype.open_sensors = sensors_open;
 getNewObjectOfPumpGroup.prototype.close_sensors = sensors_close;
+
+getNewObjectOfPumpGroup.prototype.open_settings = settings_open;
+getNewObjectOfPumpGroup.prototype.close_settings = settings_close;
+getNewObjectOfPumpGroup.prototype.save_settings = settings_save;
+getNewObjectOfPumpGroup.prototype.get_settings =settings_get;
 
 getNewObjectOfPumpGroup.prototype.open_tex_settings = tex_settings_open;
 getNewObjectOfPumpGroup.prototype.close_tex_settings = tex_settings_close;
