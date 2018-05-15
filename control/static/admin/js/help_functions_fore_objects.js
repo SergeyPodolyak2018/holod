@@ -78,19 +78,16 @@ function settings_save(){
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));
 	    let url_string  = '/device_save_settings/?name='+this.name;
 	    let context =this;
-	    let callback = function(response){context.close_settings(response)};
-	    //console.log(body);
+	    let callback = function(response){context.close_settings(response)};	    
  		post_data_to_server(url_string,body,callback,null);
     	
 	    
 }
 function settings_get(){
-	    /*let form        = this.window_settings.getElementsByTagName('form')[0];	    
-	    let body        = JSON.stringify(formSettingsToJSON(form.elements));*/
+	    
 	    let url_string  = '/device_get_settings/?name='+this.name;
 	    let context =this;
-	    let callback = function(response){context.open_settings(response)};
-	    //console.log(body);
+	    let callback = function(response){context.open_settings(response)};	    
  		get_data_to_server(url_string,callback,null);
 }
 
@@ -245,7 +242,7 @@ function tex_settings_close(){
 function tex_settings_save(){
 	    let form        = this.window_tex_settings.getElementsByTagName('form')[0];	    
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));
-	    let url_string  = '/device_save_tex_settings/?name='+this.name;
+	    let url_string  = '/device_save_task/?name='+this.name;
 	    //console.log(body);
  		post_data_to_server(url_string,body,null,null);
     	
@@ -254,7 +251,7 @@ function tex_settings_save(){
 function tex_settings_get(){
 	    /*let form        = this.window_settings.getElementsByTagName('form')[0];	    
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));*/
-	    let url_string  = '/device_get_tex_settings/?name='+this.name;
+	    let url_string  = '/device_get_task/?name='+this.name;
 	    let context =this;
 	    let callback = function(response){context.open_tex_settings(response)};
 	    //console.log(body);

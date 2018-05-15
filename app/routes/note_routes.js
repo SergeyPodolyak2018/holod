@@ -101,7 +101,7 @@ module.exports = function(app, db) {
 		res.send(JSON.stringify(telegramm));		
 		
 	});
-	app.get('/device_get_tex_settings/', function(req, res) {
+	app.get('/device_get_task/', function(req, res) {
 		/*console.log('qwery io_command name',req.query.name);
 		console.log('qwery io_command data',req.query.command);*/
 		let telegramm={'type':0,'message':'ok','data':texSettings.jsontable};			

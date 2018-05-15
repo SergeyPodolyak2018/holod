@@ -20,6 +20,7 @@ function createDivForeManagmentDevices(){
 
     this.hide=function(){
         if (divManageElement.style.display!='none') {
+               // divManageElement.style.transform='translate3d(0px, 0px, 0px)';
                 divManageElement.style.display='none';
         }        
     };

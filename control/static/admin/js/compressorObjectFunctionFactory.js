@@ -24,6 +24,8 @@ function getNewObjectOfCompressor(objectFromSvg,name){
 									'temperature4':objectFromSvg.getElementsByClassName('temperature4')[0]									
 									};
 	this.diferentialPressure	= objectFromSvg.getElementsByClassName('dPressure1')[0];
+
+	this.window_tex_settings 	= document.getElementsByClassName('compressor_tex_settings')[0].cloneNode(true);
 	
 	//this.window_sensors 	= document.getElementById('coller_sensors');
 	this.intervalLockation;	  
@@ -245,6 +247,11 @@ getNewObjectOfCompressor.prototype.myStatus = function(state){
 getNewObjectOfCompressor.prototype.open_sensors = sensors_open;
 getNewObjectOfCompressor.prototype.close_sensors = sensors_close;
 
+getNewObjectOfCompressor.prototype.open_tex_settings = tex_settings_open;
+getNewObjectOfCompressor.prototype.close_tex_settings = tex_settings_close;
+getNewObjectOfCompressor.prototype.save_tex_settings = tex_settings_save;
+getNewObjectOfCompressor.prototype.get_tex_settings =tex_settings_get;
+
 
 //-----------------------------------------------------------------------------------------------------------------------------------
 //Конструктор объектов ресивер
@@ -260,9 +267,10 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 	this.iconAlarm 				= objectFromSvg.querySelector('.attention');
 	this.valve 					= new getNewObjectInsideGate(objectFromSvg.getElementsByClassName('gate')[0]);
 	this.motoValve 				= new getNewObjectInsideMotoGate(objectFromSvg.getElementsByClassName('motoGate')[0]);
+	
 
-	
-	
+	this.window_settings 	= document.getElementsByClassName('receiver_settings')[0].cloneNode(true);
+	this.window_tex_settings 	= document.getElementsByClassName('receiver_tex_settings')[0].cloneNode(true);
 	this.window_sensors = document.getElementsByClassName('receiver_sensors')[0].cloneNode(true);
 	this.intervalLockation;
 
@@ -440,6 +448,16 @@ getNewObjectOfReceiver.prototype.myStatus = function(state){
 };
 getNewObjectOfReceiver.prototype.open_sensors = sensors_open;
 getNewObjectOfReceiver.prototype.close_sensors = sensors_close;
+
+getNewObjectOfReceiver.prototype.open_settings = settings_open;
+getNewObjectOfReceiver.prototype.close_settings = settings_close;
+getNewObjectOfReceiver.prototype.save_settings = settings_save;
+getNewObjectOfReceiver.prototype.get_settings =settings_get;
+
+getNewObjectOfReceiver.prototype.open_tex_settings = tex_settings_open;
+getNewObjectOfReceiver.prototype.close_tex_settings = tex_settings_close;
+getNewObjectOfReceiver.prototype.save_tex_settings = tex_settings_save;
+getNewObjectOfReceiver.prototype.get_tex_settings =tex_settings_get;
 
 //-------------------------------------------------------------------------------------------------------------------------
 //Конструктор объектов внутренних - клапан
@@ -639,8 +657,8 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 	this.pump2 					= new getNewObjectInsidePump(objectFromSvg.getElementsByClassName('pump2')[0]);
 
 	
-	
-	this.window_sensors = document.getElementsByClassName('pumpGroup1_sensors')[0].cloneNode(true);
+	this.window_tex_settings 	= document.getElementsByClassName('pumpGroup_tex_settings')[0].cloneNode(true);
+	this.window_sensors 		= document.getElementsByClassName('pumpGroup1_sensors')[0].cloneNode(true);
 	this.intervalLockation;
 
 
@@ -714,6 +732,11 @@ getNewObjectOfPumpGroup.prototype.myStatus = function(state){
 };
 getNewObjectOfPumpGroup.prototype.open_sensors = sensors_open;
 getNewObjectOfPumpGroup.prototype.close_sensors = sensors_close;
+
+getNewObjectOfPumpGroup.prototype.open_tex_settings = tex_settings_open;
+getNewObjectOfPumpGroup.prototype.close_tex_settings = tex_settings_close;
+getNewObjectOfPumpGroup.prototype.save_tex_settings = tex_settings_save;
+getNewObjectOfPumpGroup.prototype.get_tex_settings =tex_settings_get;
 //--------------------------------------------------------------------------------------------------------------------------------------
 //Конструктор объектов внутренних - motoклапан
 function getNewObjectInsidePump(objectFromSvg){	
@@ -924,7 +947,7 @@ function getNewObjectOfCManager(objectFromSvg,name){
 
 
 	
-	
+	this.window_tex_settings 	= document.getElementsByClassName('CManager_tex_settings')[0].cloneNode(true);
 	//this.window_sensors 	= document.getElementById('coller_sensors');
 
 	this.intervalLockation;	//хранилище циклической функции
@@ -1023,3 +1046,10 @@ getNewObjectOfCManager.prototype.myStatus = function(state){
 		}		
 	}
 };
+
+
+
+getNewObjectOfCManager.prototype.open_tex_settings = tex_settings_open;
+getNewObjectOfCManager.prototype.close_tex_settings = tex_settings_close;
+getNewObjectOfCManager.prototype.save_tex_settings = tex_settings_save;
+getNewObjectOfCManager.prototype.get_tex_settings =tex_settings_get;
