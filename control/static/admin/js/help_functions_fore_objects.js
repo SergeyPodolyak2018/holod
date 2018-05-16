@@ -53,7 +53,9 @@ function settings_open(response){
            }
       	}
 
-
+      	[...this.window_settings.getElementsByClassName('analog_settings_button')].forEach(function(item, i, arr) {			
+			item.addEventListener('click',function(e){analog_dat_settings_get.call(objectContext,e);},false);
+		});
 		[...this.window_settings.getElementsByClassName('btn-close')].forEach(function(item, i, arr) {
 			item.onclick= function(){objectContext.close_settings();};
 		});
@@ -158,6 +160,8 @@ function prepareForm(form){
 	        $(this).attr('title',"Канал выхода");
 	    }
 	});
+	
+	
 }
 
 
@@ -258,3 +262,18 @@ function tex_settings_get(){
  		get_data_to_server(url_string,callback,null);
 }
 
+function analog_dat_settings_get(e){	
+	let url_string  = '/analog_dat_get_settings/?index='+e.target.previousSibling.value;
+	let context =this;
+	let callback = function(response){context.analog_dat_settings_open(response)};	    
+ 	get_data_to_server(url_string,callback,null);
+}
+function analog_dat_settings_open(response){
+	console.log(response);
+}
+function analog_dat_settings_save(e){
+
+}
+function analog_dat_settings_close(e){
+
+}

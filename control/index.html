@@ -2926,6 +2926,7 @@
                  </div>
                 </form>
              </div>
+
 <!--___Настройки аналоговых датчиков____-->
 
             <div id="settings_analog_dat" class="draggable modal_box">
@@ -2984,19 +2985,13 @@
 
                             <tr><td>Не преобразовывать</td><td><select size="1" name="Analog_Dat_Flags_bit4"><option value="0">0</option><option value="1">1</option></select>
                             <tr><td>Симулятор</td><td><select size="1" name="Analog_Dat_Flags_bit3"><option value="0">0</option><option value="1">1</option></select>
-
+                            <tr><td>Задатчик значения</td><td><select size="1" name="Analog_Dat_Flags_bit2"><option value="0">0</option><option value="1">1</option></select>
                         </table>
                     </div>
                  </div>
-                 <div id="settings_analog_dat_footer" >
-                     <!--<table width="100%" cellspacing="2" cellpadding="1" border="0">-->
-                                   <!--<tr>-->
-                                           <!--<td width="50%" style="text-align: left" ></td>-->
-                                   <!--</tr>-->
-                     <!--</table>-->
+                 <div id="settings_analog_dat_footer" >                     
                      <button onclick="setings_universal_close(102)" class="modal_box_btn btn_push_right">Закрыть</button>
                      <button onclick="setings_universal_save(102)" class="modal_box_btn btn_push_right">Сохранить</button>
-
                  </div>
                 </form>
              </div>
@@ -3885,7 +3880,7 @@
                  </div>                 
              </div>
 
-             Окно настройки клапана        
+<!--              Окно настройки клапана     -->    
           <div class="gate_settings modal_box visible_datchiki draggable" style="display: none; min-width: 300px">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
@@ -3933,7 +3928,7 @@
                  </div>                 
              </div>
 
-             Окно настройки камеры        
+<!--              Окно настройки камеры      -->   
           <div class="box_settings modal_box visible_datchiki draggable" style="display: none; min-width: 600px">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
@@ -3981,7 +3976,7 @@
                  </div>                 
              </div>
 
-             Окно настройки охладителя        
+<!--              Окно настройки охладителя -->        
           <div class="coller_settings modal_box visible_datchiki draggable" style="display: none; max-width: 590px">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
@@ -4004,20 +3999,19 @@
                               <div class="sensors_header">Датчики темперратуры</div>
                               <div class="sensors_colum2">Датчик 1</div>
                                 <div class="sensors_colum3">
-                                  <input class="checkable_data_form adres_getable_Q" name="td[a_d1]" SIZE=4>
-                                </div>
+                                  <input class="checkable_data_form adres_getable_Q" name="td[a_d1]" SIZE=4><button class="analog_settings_button">d</button>
+                                </div>                                
                               <div style="clear: both;"></div>
 
                               <div class="sensors_colum2">Датчик 2</div>
                               <div class="sensors_colum3">
-                                <input class="checkable_data_form adres_getable" name="td[a_d2]" SIZE=4>
-                              </div>
+                                <input class="checkable_data_form adres_getable" name="td[a_d2]" SIZE=4><button class="analog_settings_button">d</button>
+                              </div>                              
                               <div style="clear: both;"></div>
                               <div class="sensors_colum2">Датчик 3</div>
                               <div class="sensors_colum3">
-                                <input class="checkable_data_form adres_getable" name="td[a_d3]" SIZE=4>
-                              </div>
-                            
+                                <input class="checkable_data_form adres_getable" name="td[a_d3]" SIZE=4><button class="analog_settings_button">d</button>
+                              </div>                                                        
                             <div style="clear: both;"></div>
                           </div>                                                                             
                           <div style="clear: both;"></div>                          
