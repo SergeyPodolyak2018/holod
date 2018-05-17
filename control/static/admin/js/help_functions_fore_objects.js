@@ -40,7 +40,7 @@ function settings_open(response){
 		this.window_settings.style.display = 'block';
 		this.window_settings.getElementsByClassName('fool_name_of_device')[0].innerHTML=this.name;
 		let objectContext=this;
-		prepareForm(this.window_settings);
+		//prepareForm(this.window_settings);
 
 		let myForm=this.window_settings.getElementsByTagName('form')[0];
 		console.log(prepareDataFromServer);
@@ -54,7 +54,7 @@ function settings_open(response){
       	}
 
       	[...this.window_settings.getElementsByClassName('analog_settings_button')].forEach(function(item, i, arr) {			
-			item.addEventListener('click',function(e){analog_dat_settings_get.call(objectContext,e);},false);
+			item.onclick=function(e){analog_dat_settings_get.call(objectContext,e);};
 		});
 		[...this.window_settings.getElementsByClassName('btn-close')].forEach(function(item, i, arr) {
 			item.onclick= function(){objectContext.close_settings();};
@@ -124,6 +124,7 @@ const formSettingsToJSON = elements => [].reduce.call(elements, (data, element) 
 
 function prepareForm(form){
 	$(form.getElementsByClassName('checkable_data_form')).bind("change keyup input click blur ", function() {
+
 	    if (this.value.match(/[^0-9]/g)) {
 	        this.value = this.value.replace(/[^0-9]/g, '');
 	    }   
@@ -136,7 +137,7 @@ function prepareForm(form){
 	});
 
 	$(form.getElementsByClassName('adres_getable')).hover(function() {
-
+		console.log('dfgydftftdfhdfhdfth');
 	    var abstrackt_value=$(this).val();
 	    if(abstrackt_value>=8){
 	    var a=Math.floor(abstrackt_value/8);
@@ -247,33 +248,66 @@ function tex_settings_save(){
 	    let form        = this.window_tex_settings.getElementsByTagName('form')[0];	    
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));
 	    let url_string  = '/device_save_task/?name='+this.name;
-	    //console.log(body);
+	    
  		post_data_to_server(url_string,body,null,null);
     	
 	    
 }
 function tex_settings_get(){
-	    /*let form        = this.window_settings.getElementsByTagName('form')[0];	    
-	    let body        = JSON.stringify(formSettingsToJSON(form.elements));*/
+	    
 	    let url_string  = '/device_get_task/?name='+this.name;
 	    let context =this;
 	    let callback = function(response){context.open_tex_settings(response)};
-	    //console.log(body);
+	    
  		get_data_to_server(url_string,callback,null);
 }
 
 function analog_dat_settings_get(e){	
 	let url_string  = '/analog_dat_get_settings/?index='+e.target.previousSibling.value;
 	let context =this;
-	let callback = function(response){context.analog_dat_settings_open(response)};	    
+	//let callback = function(response){analog_dat_settings_open.call(context,response)};
+	let callback = analog_dat_settings_open.bind(context);
+
  	get_data_to_server(url_string,callback,null);
 }
+
 function analog_dat_settings_open(response){
-	console.log(response);
+	let context=this;
+	let prepareDataFromServer=JsonToformSettings(response.data);	
+	document.getElementById('container').appendChild(this.window_analog_settings);	
+	$( this.window_analog_settings).draggable({appendTo:"body"});
+	
+	if(this.window_analog_settings.style.display == 'none'){
+		this.window_analog_settings.style.display = 'block';		
+		//prepareForm(this.window_analog_settings);
+		[...this.window_analog_settings.getElementsByClassName('btn-close')].forEach(function(item, i, arr) {
+			item.onclick= function(){analog_dat_settings_close.call(context);};
+				//item.addEventListener('click',function(){analog_dat_settings_close.call(context);},false);
+		});
+		[...this.window_analog_settings.getElementsByClassName('btn-save')].forEach(function(item, i, arr) {
+			item.onclick= function(){analog_dat_settings_save.call(context);};
+				//item.addEventListener('click',function(){analog_dat_settings_save.call(context);},false);
+		});
+	}
+	let myForm=this.window_analog_settings.getElementsByTagName('form')[0];
+	for (let i  in prepareDataFromServer) {
+        try {
+            myForm.elements[i].value =prepareDataFromServer[i];
+        } catch (err) {
+           	console.log(err);                
+        }
+    }
 }
-function analog_dat_settings_save(e){
-
+function analog_dat_settings_save(){
+	let form        = this.window_analog_settings.getElementsByTagName('form')[0];	    
+	let body        = JSON.stringify(formSettingsToJSON(form.elements));
+	let url_string  = '/analog_dat_save_settings/?name='+this.name;
+	    
+ 	post_data_to_server(url_string,body,null,null);
 }
-function analog_dat_settings_close(e){
-
+function analog_dat_settings_close(){
+	if(this.window_analog_settings.style.display == 'block'){
+		this.window_analog_settings.style.display = 'none';		
+		this.window_analog_settings.parentNode.removeChild(this.window_analog_settings);
+	}
 }

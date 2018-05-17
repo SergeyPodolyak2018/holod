@@ -155,6 +155,9 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.iconRemont 		= objectFromSvg.getElementsByClassName('remont-'+name);
 	this.window_sensors 	= document.getElementsByClassName('coller_sensors')[0].cloneNode(true);
 	this.window_settings 	= document.getElementsByClassName('coller_settings')[0].cloneNode(true);
+	this.window_analog_settings = document.getElementsByClassName('settings_analog_dat')[0].cloneNode(true);
+	prepareForm(this.window_analog_settings);
+	prepareForm(this.window_settings);
 	this.intervalLockation;	  
 	this.s 		= 0;																	//статус       
     this.e 		= 0;																	//ошибка

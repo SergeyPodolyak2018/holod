@@ -2929,7 +2929,7 @@
 
 <!--___Настройки аналоговых датчиков____-->
 
-            <div id="settings_analog_dat" class="draggable modal_box">
+            <div class="draggable modal_box settings_analog_dat" style="display: none;height: auto;position: absolute;top:5%;left:10%;">
                 <form method="POST" id="form_analog_dat_settings" name="form_analog_dat_settings" action="javascript:void(null);" onsubmit="">
                  <div id="settings_analog_dat_header" class="modal_box_header">
                      <table width="100%" cellspacing="1" cellpadding="1" border="0" style="padding-top: 7px;">
@@ -2990,8 +2990,8 @@
                     </div>
                  </div>
                  <div id="settings_analog_dat_footer" >                     
-                     <button onclick="setings_universal_close(102)" class="modal_box_btn btn_push_right">Закрыть</button>
-                     <button onclick="setings_universal_save(102)" class="modal_box_btn btn_push_right">Сохранить</button>
+                    <button class="btn_push_right modal_box_btn btn-close">Закрыть</button>
+                    <button class="btn_push_right modal_box_btn btn-save">Сохранить</button>
                  </div>
                 </form>
              </div>
@@ -3998,19 +3998,19 @@
                             
                               <div class="sensors_header">Датчики темперратуры</div>
                               <div class="sensors_colum2">Датчик 1</div>
-                                <div class="sensors_colum3">
-                                  <input class="checkable_data_form adres_getable_Q" name="td[a_d1]" SIZE=4><button class="analog_settings_button">d</button>
+                                <div >
+                                  <input class="checkable_data_form adres_getable_Q" name="td[a_d1]" SIZE=2><button class="analog_settings_button">d</button>
                                 </div>                                
                               <div style="clear: both;"></div>
 
                               <div class="sensors_colum2">Датчик 2</div>
-                              <div class="sensors_colum3">
-                                <input class="checkable_data_form adres_getable" name="td[a_d2]" SIZE=4><button class="analog_settings_button">d</button>
+                              <div >
+                                <input class="checkable_data_form adres_getable" name="td[a_d2]" SIZE=2><button class="analog_settings_button">d</button>
                               </div>                              
                               <div style="clear: both;"></div>
                               <div class="sensors_colum2">Датчик 3</div>
-                              <div class="sensors_colum3">
-                                <input class="checkable_data_form adres_getable" name="td[a_d3]" SIZE=4><button class="analog_settings_button">d</button>
+                              <div >
+                                <input class="checkable_data_form adres_getable" name="td[a_d3]" SIZE=2><button class="analog_settings_button">d</button>
                               </div>                                                        
                             <div style="clear: both;"></div>
                           </div>                                                                             
@@ -4021,76 +4021,52 @@
                                                  
                             <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
                               <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Тэн</div>
-                              <div class="sensors_header">Настройки</div>
+                              
                               <div class="sensors_colum2">Управление</div>
                               <div class="sensors_colum3">
-                                <input class="checkable_data_form adres_getable_Q" name="airch[a_q_km]" SIZE=4>
+                                <input class="checkable_data_form adres_getable_Q" name="airch[a_q_km]" SIZE=2>
                               </div>
                               <div style="clear: both;"></div>
 
                               <div class="sensors_colum2">Контроль</div>
                               <div class="sensors_colum3">
-                                <input class="checkable_data_form adres_getable" name="airch[a_i_km]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="airch[a_i_km]" SIZE=2>
                               </div>
-                              <div style="clear: both;"></div>                            
-
-                            </div>
-
-                            <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
-                              <div class="sensors_header" >Датчики</div>                            
+                              <div style="clear: both;"></div>
                               <div class="sensors_colum2">Питание</div>
                               <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="airch[a_i_po]" SIZE=2  title="Адрес датчика"></div>                            
                               <div style="clear: both;"></div>
-                              
                               <div class="sensors_colum2">Режим</div>
                               <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="airch[a_i_au]" SIZE=2  title="Адрес датчика"></div>
-                              <div style="clear: both;"></div> 
-                              
-                            </div>
-                                                                            
+                              <div style="clear: both;"></div>                             
+
+                            </div>                                          
                             <div style="clear: both;"></div>                        
                       </div>
                     
                     
-                    <div class="" style="float:left; width: 50%">
-                      
+                    <div class="" style="float:left; width: 70%">                      
                           <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
                             <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Вентиляторы</div>
-                            <div class="sensors_header">Настройки</div>
-                            <div class="sensors_colum2">Управление</div>
-                            <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable_Q" name="aircva[a_q_km]" SIZE=4>
+                            
+                            <div class="sensors_colum7">Управление</div>
+                            <div >
+                              <input class="checkable_data_form adres_getable_Q" name="aircva[a_q_km]" SIZE=2>
                             </div>
                             <div style="clear: both;"></div>
-                          </div>
-
-                          <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
-                            <div class="sensors_header" >Датчики</div>                            
-                            <div class="sensors_colum2">Питание</div>
-                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[a_i_po]" SIZE=2  title="Адрес датчика"></div>                            
+                            <div class="sensors_colum7">Питание</div>
+                            <div ><input class="checkable_data_form adres_getable" name="aircva[a_i_po]" SIZE=2  title="Адрес датчика"></div>                            
                             <div style="clear: both;"></div>
-
-                            
-                            <div class="sensors_colum2">Режим</div>
-                            <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[a_i_au]" SIZE=2  title="Адрес датчика"></div>
-                            <div style="clear: both;"></div>                            
-                          </div>
-                          <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
-                            
-                              <div class="sensors_header" >Вентилятор 1</div>                            
-                              <div class="sensors_colum2">Обратная связь</div>
-                              <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[aircvo1[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
-                              <div style="clear: both;"></div>
-                            
-                          </div>
-                          <div style="display: block;float:left; width:80%; margin-left: 5px;margin-top: 10px">
-                            
-                              <div class="sensors_header" >Вентилятор 2</div>                            
-                              <div class="sensors_colum2">Обратная связь</div>
-                              <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="aircva[aircvo2[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
-                              <div style="clear: both;"></div>
-                            
-                          </div>                                          
+                            <div class="sensors_colum7">Режим</div>
+                            <div ><input class="checkable_data_form adres_getable" name="aircva[a_i_au]" SIZE=2  title="Адрес датчика"></div>
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum7">Вентилятор 1 Обратная связь</div>
+                            <div ><input class="checkable_data_form adres_getable" name="aircva[aircvo1[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
+                            <div style="clear: both;"></div>
+                            <div class="sensors_colum7">Вентилятор 2 обратная связь</div>
+                            <div ><input class="checkable_data_form adres_getable" name="aircva[aircvo2[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
+                            <div style="clear: both;"></div>
+                          </div>                                   
                           <div style="clear: both;"></div>                          
                     </div>                    
                   </form>

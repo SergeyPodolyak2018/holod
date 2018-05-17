@@ -1,9 +1,10 @@
-var menuBottons		= require('../../testQuery/takeMenuButtons');
-var settings		= require('../../testQuery/settings');
-var texSettings		= require('../../testQuery/texSettings');
-var deviceAdress	= require('../../testQuery/get_device_adress');
-module.exports = function(app, db) {	
-	
+var menuBottons			= require('../../testQuery/takeMenuButtons');
+var settings			= require('../../testQuery/settings');
+var texSettings			= require('../../testQuery/texSettings');
+var analogDatSettings	= require('../../testQuery/analogDatSettings');
+var deviceAdress		= require('../../testQuery/get_device_adress');
+
+module.exports			= function(app, db) {	
 	
 	/*app.get('/', function(req, res) {
 		app.use("/static", express.static(__dirname + "/start/static"));
@@ -94,19 +95,14 @@ module.exports = function(app, db) {
 		
 	});
 
-	app.get('/device_get_settings/', function(req, res) {
-		/*console.log('qwery io_command name',req.query.name);
-		console.log('qwery io_command data',req.query.command);*/
+	app.get('/device_get_settings/', function(req, res) {		
 		let telegramm={'type':0,'message':'ok','data':settings.jsontable};			
 		res.send(JSON.stringify(telegramm));		
 		
 	});
-	app.get('/device_get_task/', function(req, res) {
-		/*console.log('qwery io_command name',req.query.name);
-		console.log('qwery io_command data',req.query.command);*/
+	app.get('/device_get_task/', function(req, res) {		
 		let telegramm={'type':0,'message':'ok','data':texSettings.jsontable};			
-		res.send(JSON.stringify(telegramm));		
-		
+		res.send(JSON.stringify(telegramm));
 	});
 
 	//Qwery on menu command
@@ -118,6 +114,10 @@ module.exports = function(app, db) {
        });		
 	});
 
+	app.get('/analog_dat_get_settings/', function(req, res) {		
+		let telegramm={'type':0,'message':'ok','data':analogDatSettings.jsontable};			
+		res.send(JSON.stringify(telegramm));
+	});
 
 
 };
