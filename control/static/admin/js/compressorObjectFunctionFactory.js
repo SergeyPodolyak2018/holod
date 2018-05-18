@@ -26,7 +26,8 @@ function getNewObjectOfCompressor(objectFromSvg,name){
 	this.diferentialPressure	= objectFromSvg.getElementsByClassName('dPressure1')[0];
 
 	this.window_tex_settings 	= document.getElementsByClassName('compressor_tex_settings')[0].cloneNode(true);
-	
+	this.window_settings 		= document.getElementsByClassName('all_settings')[0].cloneNode(true);
+	prepareForm(this.window_settings);
 	//this.window_sensors 	= document.getElementById('coller_sensors');
 	this.intervalLockation;	  
 	this.s 		= 0;																								//статус
@@ -247,6 +248,11 @@ getNewObjectOfCompressor.prototype.myStatus = function(state){
 getNewObjectOfCompressor.prototype.open_sensors = sensors_open;
 getNewObjectOfCompressor.prototype.close_sensors = sensors_close;
 
+getNewObjectOfCompressor.prototype.open_settings = settings_open;
+getNewObjectOfCompressor.prototype.close_settings = settings_close;
+getNewObjectOfCompressor.prototype.save_settings = settings_save;
+getNewObjectOfCompressor.prototype.get_settings =settings_get;
+
 getNewObjectOfCompressor.prototype.open_tex_settings = tex_settings_open;
 getNewObjectOfCompressor.prototype.close_tex_settings = tex_settings_close;
 getNewObjectOfCompressor.prototype.save_tex_settings = tex_settings_save;
@@ -271,7 +277,12 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 
 	this.window_settings 	= document.getElementsByClassName('receiver_settings')[0].cloneNode(true);
 	this.window_tex_settings 	= document.getElementsByClassName('receiver_tex_settings')[0].cloneNode(true);
+	this.window_analog_settings = document.getElementsByClassName('settings_analog_dat')[0].cloneNode(true);
+	prepareForm(this.window_analog_settings);
+	prepareForm(this.window_settings);
+
 	this.window_sensors = document.getElementsByClassName('receiver_sensors')[0].cloneNode(true);
+
 	this.intervalLockation;
 
 	this.s 		= 0;	 	//статус
@@ -658,7 +669,12 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 
 	this.window_settings 		= document.getElementsByClassName('pumpGroup_settings')[0].cloneNode(true);
 	this.window_tex_settings 	= document.getElementsByClassName('pumpGroup_tex_settings')[0].cloneNode(true);
+	this.window_analog_settings = document.getElementsByClassName('settings_analog_dat')[0].cloneNode(true);
+	prepareForm(this.window_analog_settings);
+	prepareForm(this.window_settings);
+
 	this.window_sensors 		= document.getElementsByClassName('pumpGroup1_sensors')[0].cloneNode(true);
+
 	this.intervalLockation;
 
 
@@ -853,7 +869,8 @@ function getNewObjectOfJar(objectFromSvg,name){
 									'i_lmin':objectFromSvg.getElementsByClassName('LevelSensor2')[0],
 									
 									};
-	
+	this.window_settings 		= document.getElementsByClassName('jar_settings')[0].cloneNode(true);
+	prepareForm(this.window_settings);
 	//this.window_sensors 	= document.getElementById('coller_sensors');
 
 	this.intervalLockation;	//хранилище циклической функции
@@ -928,11 +945,101 @@ getNewObjectOfJar.prototype.myStatus = function(state){
     }
 		
 };
-getNewObjectOfReceiver.prototype.open_sensors = sensors_open;
-getNewObjectOfReceiver.prototype.close_sensors = sensors_close;
+
+getNewObjectOfJar.prototype.open_settings = settings_open;
+getNewObjectOfJar.prototype.close_settings = settings_close;
+getNewObjectOfJar.prototype.save_settings = settings_save;
+getNewObjectOfJar.prototype.get_settings =settings_get;
+
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------
+//Конструктор объектов простой ресивер
+function getNewObjectOfRefrejerator(objectFromSvg,name){
 
+	this.name 					= name;
+	this.status		= objectFromSvg.getElementsByClassName('status');
+
+	
+	this.window_settings 		= document.getElementsByClassName('refrejirator_settings')[0].cloneNode(true);
+	prepareForm(this.window_settings);
+	//this.window_sensors 	= document.getElementById('coller_sensors');
+
+	this.intervalLockation;	//хранилище циклической функции
+
+      
+
+    this.sensors={	"s": 0,
+          			"i": 0,
+          			"i_ru": 0,
+          			"i_e": 0,
+          			"q_km": 0
+    			};    										
+
+	this.setStatus=function(){		
+		console.log('set status Motogate');
+
+		switch (this.s) {
+			case 0:				
+				
+				  this.status.removeAttribute("style");
+				
+				break;
+			case 1:				
+				
+				  this.status.style.cssText='fill:#00ff00;'
+				
+				break;
+			case 2:				
+				
+				  this.status.style.cssText='fill:#00ff00;'
+				
+				break;
+			case 3:				
+				
+				  this.status.style.cssText='fill:#ff0000;'
+				
+				break;	
+			default:
+				// statements_def
+				break;
+		}
+	}								
+
+	
+
+	
+	
+
+	
+}
+
+//Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
+getNewObjectOfJar.prototype.myStatus = function(state){	
+	for(let i in state){
+		if(i=='s'){
+			if (this.sensors[i] !== state[i]){
+				this.sensors[i] = state[i];
+				this.setStatus();
+				continue;
+			}	
+		}
+		
+		if (this.sensors[i] !== state[i]){			
+			this.sensors[i] = state[i]			
+		}
+	}
+		
+};
+
+getNewObjectOfRefrejerator.prototype.open_settings = settings_open;
+getNewObjectOfRefrejerator.prototype.close_settings = settings_close;
+getNewObjectOfRefrejerator.prototype.save_settings = settings_save;
+getNewObjectOfRefrejerator.prototype.get_settings =settings_get;
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------
 //Конструктор объектов управление компрессором
 function getNewObjectOfCManager(objectFromSvg,name){
 
@@ -950,7 +1057,8 @@ function getNewObjectOfCManager(objectFromSvg,name){
 	this.startButton[0].addEventListener('click',function(){start_stop_mex(this.name,1);}.bind(this),false);
 	this.stopButton[0].addEventListener('click',function(){start_stop_mex(this.name,2);}.bind(this),false);
 
-
+	this.window_settings 		= document.getElementsByClassName('all_settings')[0].cloneNode(true);
+	prepareForm(this.window_settings);
 	
 	this.window_tex_settings 	= document.getElementsByClassName('CManager_tex_settings')[0].cloneNode(true);
 	//this.window_sensors 	= document.getElementById('coller_sensors');
@@ -1052,7 +1160,10 @@ getNewObjectOfCManager.prototype.myStatus = function(state){
 	}
 };
 
-
+getNewObjectOfCManager.prototype.open_settings = settings_open;
+getNewObjectOfCManager.prototype.close_settings = settings_close;
+getNewObjectOfCManager.prototype.save_settings = settings_save;
+getNewObjectOfCManager.prototype.get_settings =settings_get;
 
 getNewObjectOfCManager.prototype.open_tex_settings = tex_settings_open;
 getNewObjectOfCManager.prototype.close_tex_settings = tex_settings_close;

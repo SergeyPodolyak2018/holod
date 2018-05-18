@@ -1,10 +1,10 @@
-var jsontable={	"analogIndex":8,
-				"Analog_Dat_Flags_bit0":1,
-				"Analog_Dat_Adr":1,
-				"Analog_Dat_Cycle":1,
-				"Analog_Dat_Device":1,
-				"Analog_Dat_P":1,
-				"Analog_Dat_Flags_bit4":1,
-				"Analog_Dat_Flags_bit3":1,					
+var jsontable={	"ad_i":8,
+				"ad_fb0":1,
+				"ad_a":1,
+				"ad_c":1,
+				"ad_d":1,
+				"ad_fb4":1,
+				"ad_fb3":1,
+				"ad_fb2":1,					
 				};
 exports.jsontable=jsontable;

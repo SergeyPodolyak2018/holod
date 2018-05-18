@@ -320,6 +320,10 @@ function createGlobalObject(){
                         globalObject[flor][key]=new getNewObjectOfCManager(oneTypeObjects[j],key);
                         // statements_4
                         break;
+                    case 'refrigerator':
+                        globalObject[flor][key]=new getNewObjectOfRefrejerator(oneTypeObjects[j],key);
+                        // statements_4
+                        break;
                         
                     default:
                         // statements_def

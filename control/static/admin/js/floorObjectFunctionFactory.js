@@ -529,6 +529,9 @@ function getNewObjectOfBox(objectFromSvg,name){
 	this.boxStausFon	= objectFromSvg.getElementsByClassName(name+'-status');
 	this.window_settings 		= document.getElementsByClassName('box_settings')[0].cloneNode(true);
 	this.window_tex_settings 	= document.getElementsByClassName('box_tex_settings')[0].cloneNode(true);
+	this.window_analog_settings = document.getElementsByClassName('settings_analog_dat')[0].cloneNode(true);
+	prepareForm(this.window_analog_settings);
+	prepareForm(this.window_settings);
 	this.s	 	= 3;    //статус
     this.e	 	= 3;    //ошибка
     this.t	 	= '0';  //температура

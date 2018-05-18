@@ -715,6 +715,13 @@ a.menu_button:focus{
     margin-top  :5px;
     margin-left : 5px;
 }
+.sensors_colum8{
+    display     : block;
+    float       :left;
+    width       :60%;
+    margin-top  :5px;
+    margin-left : 5px;
+}
 .sensors_header{    
     float:left;
     width:100%;
@@ -725,4 +732,51 @@ a.menu_button:focus{
     align-items: center;
     padding:5px;
     
+}
+/*Smol buttons*/
+/* Кнопки модальных окон*/
+.small_modal_box_btn{
+    color: #ccc;
+    background-color: #0e0e0e;
+    cursor: pointer;
+    border-color: #494949;
+    /*padding: 6px 16px;*/
+    /*border-radius: 10px;*/
+    -webkit-border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 3px;
+    /*margin-top: 5px;
+    margin-right: 5px;*/
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    /*line-height: 1.42857143;*/
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid #494949;
+    transition: all .218s ease 0s;
+    /*min-width:70px;*/
+}
+
+
+.small_modal_box_btn:hover:not(:active){
+    border:1px solid #efcd1f;
+    box-shadow: 0 0 10px rgba(239, 205, 31, 1);
+    color:#efcd1f;
+}
+.small_modal_box_btn:active {
+    /*border: none; !important;*/
+    top: 1px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(255,255,255,.1)) rgba(0,0,0,.5);
+    box-shadow:
+            0 0 1px rgba(0,0,0,.5) inset,
+            0 2px 3px rgba(0,0,0,.5) inset,
+            0 1px 1px rgba(255,255,255,.1);
+}
+
+.small_modal_box_btn:focus{
+    outline: none;
 }

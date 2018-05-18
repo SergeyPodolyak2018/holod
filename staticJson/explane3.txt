@@ -1,0 +1,115 @@
+type
+	TCamControlTask = packed record
+  	tempCam: Int; //Температура в камере, *С
+  	tempEdgeAirCooler: Int; //Температура ребра воздухоохладителя, при которой прекращается оттаивание, *С
+  	dtempCam: Int; //Допустимое колебание температуры в камере, *С
+  	intervalThawing: Int; //Интервал между оттаиваниями, ч
+  	timePreheating: Int; //Время предварительного обогрева дренажного трубопровода, мин
+  	delayOnVentAirCooler: Int; //Задержка включения вентиляторов воздухоохладителей, мин
+  	delayOffHeating: Int; //Задержка выключения обогрева дренажного трубопровода, мин
+  end; 
+
+
+type
+	TCompOneTask = packed record
+	  delayRestart: Int; //Время задержки повторного пуска, с
+	  timeMeasurementPressure: Int; //Время измерения давления на входе, с
+	  PressureWork: DWord; //Рабочее давление, атм
+	  wobblePressureWork: DWord; //Колебание рабочего давления, атм
+	  timeLastOn: Int; //Время последнего включения, с
+  end; 
+
+
+type
+	TVesselTask = packed record
+  	timeCloseValve: Int; //Время закрытия клапана, с
+  	levelInVesselWork: Int; //Рабочий уровень жидкости в промсосуде, мм
+  	levelInVesselLow: Int; //Нижний предельный уровень в промсосуде, мм
+  	deviationTaskLevel: Int; //Отклонение от заданного уровня, мм
+  	pressureMin: DWord; //Минимальное давление в промсосуде, атм
+  	pressureMax: DWord; //Максимальное давление в промсосуде, атм
+  end;
+
+
+type
+	TPumpsGroupTask = packed record
+  	delayBeforeRestart: Int; //Задержка перед повторным пуском насосов, с
+  	timeAccelerationPumps: Int; //Длительность периода разгона насосов, с
+  	timeOverheat: Int; //Допустимая длительность перегрева электродвигателей, с
+  	delayStabilizationTemp: Int; //Задержка на стабилизацию температуры хладоносителя, с
+  	pressureMin: DWord; //Минимальное рабочее давление насосов, атм
+  	tempWindingMax: Int; //Максимально допустимая температура обмоток привода, *С
+  	tempWindingAlarm: Int; //Аварийная температура обмоток привода, *С
+  	TempDat: array[1..CONST_MaxPumpsGroupTempDat] of Int; //Минимально допустимая температура, *С
+  end;
+
+
+type
+	TCompControlTask = packed record
+  	periodRegistrationParam: Int; //Периодичность регистрации параметров, с
+  	delayExitComp_1: Int; //Время ожидания выхода на режим 1-го компрессора, с
+  	delayExitComp_2: Int; //Время ожидания выхода на режим 2-го компрессора, с
+  	delayExitComp_3: Int; //Время ожидания выхода на режим 3-го компрессора, с
+  	delayAlarmLowProductivity: Int; //Время задержки перед сигналом о низкой холодопроизводительности, с
+  end;
+
+
+================================================================================================
+================================================================================================
+
+
+4:
+  //Блок управления камерой
+  begin
+    js_level_1.put('t_c', swap16S(PLC.Load.CamControl.Task.tempCam));
+    js_level_1.put('t_eac', swap16S(PLC.Load.CamControl.Task.tempEdgeAirCooler));
+    js_level_1.put('dt_c', swap16S(PLC.Load.CamControl.Task.dtempCam));
+    js_level_1.put('in_th', swap16(PLC.Load.CamControl.Task.intervalThawing));
+    js_level_1.put('t_ph', swap16(PLC.Load.CamControl.Task.timePreheating));
+    js_level_1.put('d_ovac', swap16(PLC.Load.CamControl.Task.delayOnVentAirCooler));
+    js_level_1.put('d_oh', swap16(PLC.Load.CamControl.Task.delayOffHeating));
+  end;
+5:
+  //Компрессор
+  begin
+    js_level_1.put('d_rs', swap16(PLC.Load.CompOne.Task.delayRestart));
+    js_level_1.put('t_mp', swap16(PLC.Load.CompOne.Task.timeMeasurementPressure));
+    js_level_1.put('pw', dwordtoreal(swap32(PLC.Load.CompOne.Task.PressureWork)));
+    js_level_1.put('w_pw', dwordtoreal(swap32(PLC.Load.CompOne.Task.wobblePressureWork)));
+    js_level_1.put('t_lo', swap16(PLC.Load.CompOne.Task.timeLastOn));
+  end;
+6:
+  //Промсосуд
+  begin
+    js_level_1.put('t_cv', swap16(PLC.Load.Vessel.Task.timeCloseValve));
+    js_level_1.put('l_ivw', swap16(PLC.Load.Vessel.Task.levelInVesselWork));
+    js_level_1.put('l_ivl', swap16(PLC.Load.Vessel.Task.levelInVesselLow));
+    js_level_1.put('d_tl', swap16(PLC.Load.Vessel.Task.deviationTaskLevel));
+    js_level_1.put('pmin', dwordtoreal(swap32(PLC.Load.Vessel.Task.pressureMin)));
+    js_level_1.put('pmax', dwordtoreal(swap32(PLC.Load.Vessel.Task.pressureMax)));
+  end;
+7:
+  //Группа насосов
+  begin
+    js_level_1.put('d_br', swap16(PLC.Load.PumpsGroup.Task.delayBeforeRestart));
+    js_level_1.put('t_ap', swap16(PLC.Load.PumpsGroup.Task.timeAccelerationPumps));
+    js_level_1.put('t_oh', swap16(PLC.Load.PumpsGroup.Task.timeOverheat));
+    js_level_1.put('d_st', swap16(PLC.Load.PumpsGroup.Task.delayStabilizationTemp));
+    js_level_1.put('pmin', dwordtoreal(swap32(PLC.Load.PumpsGroup.Task.pressureMin)));
+    js_level_1.put('t_wmax', swap16(PLC.Load.PumpsGroup.Task.tempWindingMax));
+    js_level_1.put('t_wala', swap16(PLC.Load.PumpsGroup.Task.tempWindingAlarm));
+    js_level_2_1:=TJSONObject.create;
+    for i:=1 to CONST_MaxPumpsGroupTempDat do begin
+    	js_level_2_1.put('d'+inttostr(i), swap16(PLC.Load.PumpsGroup.Task.TempDat[i]));
+    end;
+    js_level_1.put('td', js_level_2_1);
+  end;
+10:
+  //Блок управления компрессорной
+  begin
+    PLC.Load.CompControl.Task.periodRegistrationParam:=swap16(strtoint(jsdata2.getString('p_rp')));
+    PLC.Load.CompControl.Task.delayExitComp_1:=swap16(strtoint(jsdata2.getString('d_exc1')));
+    PLC.Load.CompControl.Task.delayExitComp_2:=swap16(strtoint(jsdata2.getString('d_exc2')));
+    PLC.Load.CompControl.Task.delayExitComp_3:=swap16(strtoint(jsdata2.getString('d_exc3')));
+    PLC.Load.CompControl.Task.delayAlarmLowProductivity:=swap16(strtoint(jsdata2.getString('d_alp')));
+  end;  
