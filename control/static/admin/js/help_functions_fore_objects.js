@@ -127,17 +127,20 @@ function prepareForm(form){
 
 	    if (this.value.match(/[^0-9]/g)) {
 	        this.value = this.value.replace(/[^0-9]/g, '');
-	    }   
+	    } 
+		if (this.value == '') {
+	        this.value = '0';
+	    }    
     
 	});
-	$(form.getElementsByClassName('checkable_data_form')).bind("blur", function() {    
+	/*$(form.getElementsByClassName('checkable_data_form')).bind("blur", function() {    
 	    if (this.value == '') {
 	        this.value = '0';
 	    }    
-	});
+	});*/
 
 	$(form.getElementsByClassName('adres_getable')).hover(function() {
-		console.log('dfgydftftdfhdfhdfth');
+		
 	    var abstrackt_value=$(this).val();
 	    if(abstrackt_value>=8){
 	    var a=Math.floor(abstrackt_value/8);

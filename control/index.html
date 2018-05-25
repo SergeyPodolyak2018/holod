@@ -3878,17 +3878,17 @@
                             <div style="clear: both;"></div>
                             <div class="sensors_colum8">Работа</div>
                             <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="i_ru" SIZE=4>
+                              <input class="checkable_data_form adres_getable" name="a_i_ru" SIZE=4>
                             </div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum8">Управление</div>
                             <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable_Q" name="q_km" SIZE=4>
+                              <input class="checkable_data_form adres_getable_Q" name="a_q_km" SIZE=4>
                             </div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum8">Авария</div>
                             <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="i_e" SIZE=4>
+                              <input class="checkable_data_form adres_getable" name="a_i_e" SIZE=4>
                             </div>
                             <div style="clear: both;"></div>                              
                           </div>                                          
@@ -3902,7 +3902,7 @@
                  </div>                 
              </div>
 
-             <!--              Окно настройки рефрежиратора     -->    
+             <!--              Окно настройки ресивера     -->    
           <div class="jar_settings modal_box visible_datchiki draggable" style="display: none; min-width: 300px">
 
                  <div class="modal_box_header" style="background:#0e0e0e; color:#ccc;">
@@ -3913,7 +3913,7 @@
                     </div>
                  </div>
                  <div style="clear: both;width: 100%"></div>
-                 <form method="POST" id="" name="iv" action="javascript:void(null);" onsubmit="">
+                 <form method="POST" id="" name="" action="javascript:void(null);" onsubmit="">
                    <div class="modsl modal_box_body" style="float:left; width: 100%">                 
 
                           <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">
@@ -3923,14 +3923,14 @@
                               <select name="eflags_7"><option value="0">0</option><option value="1">1</option></select>
                             </div>
                             <div style="clear: both;"></div>
-                            <div class="sensors_colum8">Уровень врхний</div>
+                            <div class="sensors_colum8">Уровень верхний</div>
                             <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable" name="i_lmin" SIZE=4>
+                              <input class="checkable_data_form adres_getable" name="a_i_lmin" SIZE=4>
                             </div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum8">Уравень нижний</div>
                             <div class="sensors_colum3">
-                              <input class="checkable_data_form adres_getable_Q" name="i_lmax" SIZE=4>
+                              <input class="checkable_data_form adres_getable" name="a_i_lmax" SIZE=4>
                             </div>
                                                      
                           </div>                                          
@@ -4218,29 +4218,29 @@
                             <div style="clear: both;"></div>
                             
                               
-                              <div class="sensors_colum7">Датчик уровня 171</div>
+                              <div class="sensors_colum7">Датчик уровня 1700 мм</div>
                                 <div >
-                                  <input class="checkable_data_form adres_getable" name="i_l171" SIZE=4>
+                                  <input class="checkable_data_form adres_getable" name="a_i_l171" SIZE=4>
                                 </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum7">Датчик уровня 172</div>
+                              <div class="sensors_colum7">Датчик уровня 1700 мм</div>
                                 <div >
-                                  <input class="checkable_data_form adres_getable" name="i_l172" SIZE=4>
+                                  <input class="checkable_data_form adres_getable" name="a_i_l172" SIZE=4>
                                 </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum7">Датчик уровня 175</div>
+                              <div class="sensors_colum7">Датчик уровня 1500 мм</div>
                                 <div>
-                                  <input class="checkable_data_form adres_getable" name="i_l175" SIZE=4>
+                                  <input class="checkable_data_form adres_getable" name="a_i_l175" SIZE=4>
                                 </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum7">Датчик давления аналоговый</div>
                                 <div>
-                                  <input class="checkable_data_form" name="i_l175" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                  <input class="checkable_data_form" name="a_i_pre" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                                 </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum7">Датчик уровня аналоговый</div>
                                 <div >
-                                  <input class="checkable_data_form" name="i_l175" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                  <input class="checkable_data_form" name="a_i_lel" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                                 </div>
                               <div style="clear: both;"></div>                            
                           </div>                                                                             
@@ -4250,34 +4250,34 @@
                       <div class="" style="float:left; width: 50%">                                                 
                             <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
                               <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Вентиль регулируемый</div>                              
-                              <div class="sensors_colum5">Питание</div>
+                              <div class="sensors_colum8">Питание</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="valr[i_po]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="valr[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Управление</div>
+                              <div class="sensors_colum8">Управление</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="valr[i_e]" SIZE=4>
+                                <input class="checkable_data_form adres_getable_Q" name="valr[a_i_e]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Управление</div>
+                              <div class="sensors_colum8">Открыт</div>
                               <div>
-                                <input class="checkable_data_form adres_getable" name="valr[i_op]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="valr[a_i_op]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Управление</div>
+                              <div class="sensors_colum8">Закрыт</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="valr[i_cl]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="valr[a_i_cl]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Управление</div>
+                              <div class="sensors_colum8">Положение</div>
                               <div >
-                                <input class="checkable_data_form" name="valr[i_pos]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form" name="valr[a_i_pos]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Управление</div>
+                              <div class="sensors_colum8">Установка положения</div>
                               <div >
-                                <input class="checkable_data_form" name="valr[i_spos]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form" name="valr[a_i_spos]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                             </div>                                                   
@@ -4288,17 +4288,17 @@
                               <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Клапан</div>                              
                               <div class="sensors_colum5">Питание</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="val[i_po]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="val[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum5">Режим</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="val[i_au]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="val[a_i_au]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum5">Управление</div>
                               <div >
-                                <input class="checkable_data_form adres_getable_Q" name="val[q_km]" SIZE=4>
+                                <input class="checkable_data_form adres_getable_Q" name="val[a_q_km]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>                              
                             </div>                                                   
@@ -4332,42 +4332,42 @@
                             <div style="clear: both;"></div>
                             <div class="sensors_colum8">Датчик температуры 1</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d1]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d1]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Датчик температуры 2</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d2]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d2]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Датчик температуры 3</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d3]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d3]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Датчик температуры 4</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d4]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d4]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Датчик температуры 5</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d5]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d5]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Датчик температуры 6</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d6]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d6]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Датчик температуры 7</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d7]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d7]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Датчик температуры 8</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="td[d8]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form adres_getable" name="td[a_d8]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                         </div>                                                                             
                         <div style="clear: both;"></div>                          
@@ -4376,34 +4376,34 @@
                       <div class="" style="float:left; width: 50%">                                                 
                             <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
                               <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Насос 1</div>                              
-                              <div class="sensors_colum5">Питание</div>
+                              <div class="sensors_colum8">Питание</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu1[i_po]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="pu1[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Режим</div>
+                              <div class="sensors_colum8">Режим</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu1[i_au]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="pu1[a_i_au]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Обратная связь</div>
+                              <div class="sensors_colum8">Обратная связь</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu1[i_km]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="pu1[a_i_km]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Управление</div>
+                              <div class="sensors_colum8">Управление</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu1[q_km]" SIZE=4>
+                                <input class="checkable_data_form adres_getable_Q" name="pu1[a_q_km]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Температура обмоток</div>
+                              <div class="sensors_colum8">Температура обмоток</div>
                               <div >
-                                <input class="checkable_data_form" name="pu1[i_tew]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form" name="pu1[a_i_tew]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Датчик давления</div>
+                              <div class="sensors_colum8">Датчик давления</div>
                               <div >
-                                <input class="checkable_data_form" name="pu1[i_pred]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form" name="pu1[a_i_pred]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                             </div>                                                   
@@ -4411,34 +4411,34 @@
                           <div class="" style="float:left; width: 50%">                                                 
                             <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
                               <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Насос 2</div>                              
-                              <div class="sensors_colum5">Питание</div>
+                              <div class="sensors_colum8">Питание</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu2[i_po]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="pu2[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Режим</div>
+                              <div class="sensors_colum8">Режим</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu2[i_au]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="pu2[a_i_au]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Обратная связь</div>
+                              <div class="sensors_colum8">Обратная связь</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu2[i_km]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="pu2[a_i_km]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Управление</div>
+                              <div class="sensors_colum8">Управление</div>
                               <div >
-                                <input class="checkable_data_form adres_getable" name="pu2[q_km]" SIZE=4>
+                                <input class="checkable_data_form adres_getable_Q" name="pu2[a_q_km]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Температура обмоток</div>
+                              <div class="sensors_colum8">Температура обмоток</div>
                               <div >
-                                <input class="checkable_data_form" name="pu2[i_tew]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form" name="pu2[a_i_tew]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Датчик давления</div>
+                              <div class="sensors_colum8">Датчик давления</div>
                               <div >
-                                <input class="checkable_data_form" name="pu2[i_pred]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
+                                <input class="checkable_data_form" name="pu2[a_i_pred]" SIZE=4><button class="analog_settings_button small_modal_box_btn">d</button>
                               </div>
                               <div style="clear: both;"></div>
                             </div>                                                   
@@ -4621,7 +4621,7 @@
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Нижний предельный уровень</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="l_ivw" SIZE=4>
+                              <input class="checkable_data_form" name="l_ivl" SIZE=4>
                             </div>
                             <div class="sensors_colum1">мм</div>
                             <div style="clear: both;"></div>
@@ -4719,13 +4719,7 @@
                               <input class="checkable_data_form" name="t_wala" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
-                            <div style="clear: both;"></div>
-                            <div class="sensors_colum6">Минимальное рабочее давление насосов</div>
-                            <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="a_tex_8" SIZE=4>
-                            </div>
-                            <div class="sensors_colum1">атм</div>
-                            <div style="clear: both;"></div>
+                            <div style="clear: both;"></div>                            
                             <div class="sensors_colum6">Минимально допустимая температура1</div>
                             <div class="sensors_colum1">
                               <input class="checkable_data_form" name="td1" SIZE=4>

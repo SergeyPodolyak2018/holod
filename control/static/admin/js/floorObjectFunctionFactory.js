@@ -8,6 +8,9 @@ function getNewObjectOfHiter(objectFromSvg,name){
 	this.iconAlarm = objectFromSvg.getElementsByClassName('icon');	
 	this.window_sensors = document.getElementsByClassName('hiter_sensors')[0].cloneNode(true);
 	this.window_settings 	= document.getElementsByClassName('heater_settings')[0].cloneNode(true);
+
+	prepareForm(this.window_settings);
+	
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
     this.e 		= 0;		//ошибка
