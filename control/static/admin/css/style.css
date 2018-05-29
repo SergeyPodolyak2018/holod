@@ -668,7 +668,15 @@ a.menu_button:focus{
     top:40%;
     left:40%;
 }
-
+#confirm_exit{
+    display: none;
+    width: 420px;
+    height: 400px;
+    position: absolute;
+    height: auto;    
+    top:40%;
+    left:40%;
+}
 .sensors_colum1{
     display     : block;
     float       :left;

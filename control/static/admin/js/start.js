@@ -45,9 +45,9 @@ function statusOfuser(user){
 		switch(userSatus){
             case 1:
             	document.getElementById('menu_button_setings_bell_open').addEventListener('click', setings_bell_open, false);
-            	document.getElementById('menu_button_device_settings').addEventListener('click', device_settings_open, false);
+            	/*document.getElementById('menu_button_device_settings').addEventListener('click', device_settings_open, false);
             	document.getElementById('menu_button_linck_open').addEventListener('click', linck_open, false);
-            	document.getElementById('menu_button_culture_open').addEventListener('click', culture_open, false);
+            	document.getElementById('menu_button_culture_open').addEventListener('click', culture_open, false);*/
             case 2:
 
             case 3:

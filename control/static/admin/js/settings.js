@@ -307,8 +307,7 @@ function settings_equipment_open(p1,p2,p3,index,type){
 $('.checkable_data_form').bind("change keyup input click blur ", function() {
     if (this.value.match(/[^0-9]/g)) {
         this.value = this.value.replace(/[^0-9]/g, '');
-    }   
-    
+    }
 });
 $('.checkable_data_form').bind("blur", function() {    
     if (this.value == '') {
@@ -316,6 +315,17 @@ $('.checkable_data_form').bind("blur", function() {    
     }    
 });
 
+$('.checkable_data_float').bind("change keyup input click blur ", function() {
+    if (this.value.match(/^(\d.\d{2})?/g)) {
+        console.log('regular');
+        this.value = this.value.replace(/\d+(\.\d{2})?/g, '');
+    }
+});
+$('.checkable_data_form').bind("blur", function() {    
+    if (this.value == '') {
+        this.value = '0';
+    }    
+});
 $('.adres_getable').hover(function() {
 
     var abstrackt_value=$(this).val();

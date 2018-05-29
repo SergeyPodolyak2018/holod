@@ -149,17 +149,23 @@ function showmenu() {
     function logOut() {
         header_menu.hide_button(exit_not_press);
         header_menu.show_button(exit_press);
+        document.getElementById('confirm_exit').style.display = 'block';
 
+}
+
+function logOut_yes() {        
       var url_string ='/exit/';
         $.ajax({
                 url: url_string,
                 data: {},
-                success: function( result ) {
-                    //document.open();
-                    //document.write(result);
-                    //document.close();
+                success: function( result ) {                    
                     window.location.reload()       
-                }              
-                
+                }
         });
+}
+function logOut_no() {
+        header_menu.hide_button(exit_press);
+        header_menu.show_button(exit_not_press);
+        document.getElementById('confirm_exit').style.display = 'none';
+      
 }

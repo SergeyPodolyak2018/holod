@@ -309,29 +309,29 @@
 <!-- Выпадающее меню архив-->
          <div id="archiv" class="hiden" style="width:170px!important;">
              <a href="#" class="menu_button" onclick="archiv_alarm()">Сообщения</a>
-             <a href="#" class="menu_button" onclick="archiv_rout()">Маршруты</a>
+             <!-- <a href="#" class="menu_button" onclick="archiv_rout()">Маршруты</a> -->
              <a href="#" class="menu_button" onclick="archiv_devices()">Журнал действий</a>
-             <a href="#" class="menu_button" onclick="archive_current_open(2)">Графики токов</a>
-             <a href="#" class="menu_button" onclick="archive_current_open(1)">Текущие графики токов</a>
-
+             <a href="#" class="menu_button" onclick="archive_current_open(2)">Графики</a>
+             <!-- <a href="#" class="menu_button" onclick="archive_current_open(1)">Текущие графики токов</a>
+              -->
          </div>
 <!-- Выпадающее меню сервис-->
          <div id="servis" class="hiden">
              <a href="#" class="menu_button" onclick="showmenu2(this,1)">Конфигурация        <span style="float: right;margin-right:-12px;">&#9658;</span></a>
-             <a href="#" class="menu_button" onclick="showmenu2(this,2)">Культура            <span style="float: right;margin-right:-12px;">&#9658;</span></a>
-             <a href="#" class="menu_button" onclick="showmenu2(this,3)">Настройки видимости <span style="float: right;margin-right:-12px;">&#9658;</span></a>
+             <!-- <a href="#" class="menu_button" onclick="showmenu2(this,2)">Культура            <span style="float: right;margin-right:-12px;">&#9658;</span></a>
+             <a href="#" class="menu_button" onclick="showmenu2(this,3)">Настройки видимости <span style="float: right;margin-right:-12px;">&#9658;</span></a> -->
              <a href="#" class="menu_button">О программе</a>             
          </div>
  <!-- Выпадающее меню настройки-->
          <div id="configuration" class="hiden">
              <a href="#" id="menu_button_setings_bell_open" class="menu_button">Настройки звонка</a>
-             <a href="#" id="menu_button_device_settings" class="menu_button">БД устройств</a>
+             <!-- <a href="#" id="menu_button_device_settings" class="menu_button">БД устройств</a>
              <a href="#" id="menu_button_linck_open" class="menu_button">БД связей</a>
              <a href="#" class="menu_button">БД тех. характеристик</a>
              <a href="#" class="menu_button">БД журнал ТО</a>
              <a href="#" class="menu_button">БД типы работ</a>
              <a href="#" class="menu_button">БД моточасы</a>
-             <a href="#" class="menu_button">БД пользователей</a>
+             <a href="#" class="menu_button">БД пользователей</a> -->
          </div>
          <!-- Выпадающее меню культура-->
          <div id="kulture" class="hiden">
@@ -4560,7 +4560,7 @@
 
                             <div class="sensors_colum6">Рабочее давление</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="pw" SIZE=4>
+                              <input class="checkable_data_float" name="pw" SIZE=4 >
                             </div>
                             <div class="sensors_colum1">атм</div>
                             <div style="clear: both;"></div>
@@ -4867,6 +4867,38 @@
                            <td  width="20%"></td>
                            <td >&nbsp</td>
                            <td width="80%"><button style="float:right;" class="modal_box_btn" onclick="confirmMessageFromServer()">OK</button>
+                           </td>
+                       </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+
+
+         <!-- Див с подьверждением выхода-->
+         <div id="confirm_exit" class="draggable modal_box">
+             <div class="modal_box_header">
+                 <table width="100%" cellspacing="2" cellpadding="1" border="0" style="padding-top: 7px;">
+                     <tr>
+                         <td width="90%">Cообщения<div class="header-wrap" style="float:right;margin-top:0px;margin-right: -5px;">
+                             <a href="#"  onclick="logOut_no()" class="btn btn-default btn-back"><span></span></a>
+                         </div>
+                        </td>
+                 </table>
+             </div>
+             <div class="" style="background-color:#f2ff00; color:#000; padding:5px; margin:5px; border-radius:10px; color:#000;">
+                 <p  style="font-size: 14px!important; padding:5px;
+                 margin:5px;border-radius:10px;"> Вы действительно хотите выйти?
+                 </p>
+             </div>
+             <div>
+                 <table width="100%" cellspacing="2" cellpadding="1" border="0">
+                     <tbody>
+                       <tr>
+                           <td  width="20%"></td>
+                           <td >&nbsp</td>
+                           <td width="80%"><button style="float:right;" class="modal_box_btn" onclick="logOut_yes()">OK</button>
+                           <button style="float:right;" class="modal_box_btn" onclick="logOut_no()">Отмена</button>
                            </td>
                        </tr>
                      </tbody>
