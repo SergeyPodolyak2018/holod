@@ -41,15 +41,29 @@ setInterval(function() {
 		let query=require('../../testQuery/status');		
 		tempObjet.data=query.jsontable;
 		tempObjet.identificator="status";
-		/*tempObjet2.data=query.jsontable;
-		tempObjet2.identificator="her";*/
+		
 		let a=JSON.stringify(tempObjet);
-		//let b=JSON.stringify(tempObjet2);			
+		
 		for (var key in clients) {
 	      clients[key].send(a);
-	      //clients[key].send(b);
+	     
 	   	}
 }, 2000);
+
+setInterval(function() {
+		db.table('alarm_arxiv').select('id','alarm','eqindex','color','date','time','device','text','ack')
+			.then(function(rows) {
+				let tempObjet={};
+				tempObjet.data=rows;
+				tempObjet.identificator="alarm";		
+				let a=JSON.stringify(tempObjet);
+		
+				for (var key in clients) {
+	      			clients[key].send(a);
+	   			}			
+			});
+		
+}, 10000);
 
 
 

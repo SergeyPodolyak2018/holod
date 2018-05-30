@@ -6,13 +6,15 @@ const socketMessageListener = (event) => {
   if(newData.identificator==="status"){	
   		worker2.postMessage([global_object_status,newData.data]);
 	}
-	if(newData.identificator==="menu"){	
-	  		//worker2.postMessage([global_object_status,newData.data]);
-	  		//console.log(newData);
+	if(newData.identificator==="menu"){	  		
         menu_kreator(newData);
 	}
   if(newData.identificator==="update"){    
     location.reload(true);
+  }
+  if(newData.identificator==="alarm"){     
+    alarm_build(newData);
+    
   }
 
 };

@@ -134,19 +134,15 @@ function prepareForm(form){
     
 	});
 
-	$(form.getElementsByClassName('checkable_data_float')).bind("change keyup", function() {
-		console.log(this.value.match(/[0-9]{1,3}([\.]{1}[0-9]{1,3}){0,1}/i));
-	   if (this.value.match(/[0-9]{1,3}([\.]{1}[0-9]{1,3}){0,1}/)) {
-        	console.log('regular');
-        this.value = this.value.replace(/([0-9]{1,3}[\.]{1}[0-9]{1,3})/i, '');
-       }
+	$(form.getElementsByClassName('checkable_data_float')).bind("change keyup", function() {		
+	   if (this.value.match(/^[0-9]{1,3}([\.]{1}[0-9]{1,2}){0,1}$/)) {        	
+        	this.style.backgroundColor = 'green';        
+       }else{
+			this.value = this.value.replace(/[^0-9|\.]/gi, '');
+			this.style.backgroundColor = 'red';
+		}
 	});
 	
-	/*$(form.getElementsByClassName('checkable_data_form')).bind("blur", function() {    
-	    if (this.value == '') {
-	        this.value = '0';
-	    }    
-	});*/
 
 	$(form.getElementsByClassName('adres_getable')).hover(function() {
 		

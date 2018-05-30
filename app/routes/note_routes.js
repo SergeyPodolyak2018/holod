@@ -42,24 +42,70 @@ module.exports			= function(app, db) {
   		});
 	});
 
-	app.get('/device_arxiv/', function(req, res) {		
+	/*app.get('/device_arxiv/', function(req, res) {		
 		if(parseInt(req.query.index)==0){
 			db.table('device').select('date','time','name','status')
 			.then(function(rows) {
 				res.send(JSON.stringify(rows));
 			});			
 		}		
-	});
+	});*/
 
 
-	app.get('/alarm_arxiv/', function(req, res) {		
-		if(parseInt(req.query.index)==0){
-			db.table('alarm_arxiv').select('color','date','time','device','text','ack')
-			.then(function(rows) { 
-				res.send(JSON.stringify(rows));
-			});			
+	app.get('/alarm_arxiv/', function(req, res) {	
+		console.log('трата та тра та та2');	
+		if(req.query.name){
+			db.table('alarm_arxiv').where('device', req.query.name).select('color','date','time','device','text','ack')
+			.then(function(rows) {
+				let telegramm={'type':0,'message':'ok','data':rows};			
+				res.send(JSON.stringify(telegramm));				
+			});	
+		}else{
+				db.table('alarm_arxiv').select('color','date','time','device','text','ack')
+							.then(function(rows) {
+								let telegramm={'type':0,'message':'ok','data':rows};			
+								res.send(JSON.stringify(telegramm));				
+							});
 		}		
 	});
+
+	app.get('/alarm/', function(req, res) {	
+			
+				db.table('alarm_arxiv').select('id','alarm','eqindex','color','date','time','device','text','ack')
+							.then(function(rows) {
+								let telegramm={'type':0,'message':'ok','data':rows};			
+								res.send(JSON.stringify(telegramm));				
+							});
+				
+	});
+	app.get('/alarm_ack/', function(req, res) {				
+		let telegramm={'type':0,'message':'ok','data':[]};			
+		res.send(JSON.stringify(telegramm));
+	});
+	app.get('/alarm_ack_all/', function(req, res) {				
+		let telegramm={'type':0,'message':'ok','data':[]};			
+		res.send(JSON.stringify(telegramm));
+	});
+
+	app.get('/device_arxiv/', function(req, res) {
+				
+		if(req.query.name){
+			console.log('трата та тра та та');
+			db.table('event_arxiv').where('name', req.query.name).select('date','time','name','status')
+			.then(function(rows) {
+				let telegramm={'type':0,'message':'ok','data':rows};			
+				res.send(JSON.stringify(telegramm));				
+			});	
+		}else{
+			console.log('трата та тра та та3');
+				db.table('event_arxiv').select('date','time','name','status')
+							.then(function(rows) {
+								let telegramm={'type':0,'message':'ok','data':rows};			
+								res.send(JSON.stringify(telegramm));				
+							});
+		}		
+	});
+
 //Qwery on menu buttons
 	app.get('/get_menu_buttons/', function(req, res) {		
 		db('device').where('NameShort', req.query.name).select('EType')
