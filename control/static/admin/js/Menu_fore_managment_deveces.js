@@ -8,21 +8,27 @@ function createDivForeManagmentDevices(){
    this.show=function(left,top){
     console.log('left',left);
     console.log('top',top);
-        if (divManageElement.style.display!='block') {
-                /*if(top>600){
-                    top=600;                    
-                }           */     
-                divManageElement.style.left=''+left+'px';
-                divManageElement.style.top=''+top+'px';
-                divManageElement.style.display='block';
-            }   
+    let topPos=top;
+    top>600?topPos=600:topPos=top;
+
+
+    
+        
+             
+            divManageElement.style.left=''+left+'px';
+            divManageElement.style.top=''+topPos+'px';
+            
+            document.getElementById('container').appendChild(divManageElement); 
+            $( divManageElement).draggable({
+                appendTo: "body"
+            });
+          
     };
 
     this.hide=function(){
-        if (divManageElement.style.display!='none') {
-               // divManageElement.style.transform='translate3d(0px, 0px, 0px)';
-                divManageElement.style.display='none';
-        }        
+        if(document.getElementById('windowManageDevice')){
+            divManageElement.parentNode.removeChild(divManageElement);          
+        } 
     };
 
     this.insertButtons=function(inerText){
@@ -44,14 +50,14 @@ function createDivForeManagmentDevices(){
 
     function createElements(){
         divManageElement=document.createElement('div');
+        divManageElement.style.display='block';
         headerText=document.createElement('div');
         bodyWithButtons=document.createElement('div');
         divManageElement.appendChild(headerText);
         divManageElement.appendChild(bodyWithButtons);
         divManageElement.classList.add('draggable');
         divManageElement.setAttribute('id','windowManageDevice');
-
-        document.getElementById("container").appendChild(divManageElement);
+        
     }
 	      
 }

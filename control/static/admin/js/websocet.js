@@ -16,6 +16,9 @@ const socketMessageListener = (event) => {
     alarm_build(newData);
     
   }
+  if(newData.identificator==="status_bar"){     
+    footerAndAlarmStatus(newData.data);    
+  }
 
 };
 

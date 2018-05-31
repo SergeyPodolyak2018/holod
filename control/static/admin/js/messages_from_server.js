@@ -16,9 +16,9 @@ function showMessageFromServer(response){
 		case 5:
 			addDeviceToDB(response);
 			break;
-		case 500:
+		/*case 500:
 			location.reload(true);
-			break;
+			break;*/
 		default:
 			// statements_def
 			break;

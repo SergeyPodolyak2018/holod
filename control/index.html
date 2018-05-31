@@ -2983,7 +2983,7 @@
                             </tr>
                             <tr>
                                 <td>Действительное значение датчика</td>
-                                <td><input name="ad_p" SIZE=1 class="checkable_data_form"></td>
+                                <td><input name="ad_p" SIZE=1 class="checkable_data_float"></td>
                             </tr>
                             <!--<tr
                             ><td colspan="2">&nbsp</td>
@@ -4218,19 +4218,19 @@
                             <div style="clear: both;"></div>
                             
                               
-                              <div class="sensors_colum7">Датчик уровня 1700 мм</div>
+                              <div class="sensors_colum7">Датчик уровня 1700 (1) мм</div>
                                 <div >
                                   <input class="checkable_data_form adres_getable" name="a_i_l171" SIZE=4>
                                 </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum7">Датчик уровня 1700 мм</div>
+                              <div class="sensors_colum7">Датчик уровня 1700 (2) мм</div>
                                 <div >
                                   <input class="checkable_data_form adres_getable" name="a_i_l172" SIZE=4>
                                 </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum7">Датчик уровня 1500 мм</div>
                                 <div>
-                                  <input class="checkable_data_form adres_getable" name="a_i_l175" SIZE=4>
+                                  <input class="checkable_data_form adres_getable" name="a_i_l15" SIZE=4>
                                 </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum7">Датчик давления аналоговый</div>
@@ -4722,49 +4722,49 @@
                             <div style="clear: both;"></div>                            
                             <div class="sensors_colum6">Минимально допустимая температура1</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td1" SIZE=4>
+                              <input class="checkable_data_form" name="d1" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура2</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td2" SIZE=4>
+                              <input class="checkable_data_form" name="d2" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура3</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td3" SIZE=4>
+                              <input class="checkable_data_form" name="d3" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура4</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td4" SIZE=4>
+                              <input class="checkable_data_form" name="d4" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура5</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td5" SIZE=4>
+                              <input class="checkable_data_form" name="d5" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура6</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td6" SIZE=4>
+                              <input class="checkable_data_form" name="d6" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура7</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td7" SIZE=4>
+                              <input class="checkable_data_form" name="d7" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура8</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="td8" SIZE=4>
+                              <input class="checkable_data_form" name="d8" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
@@ -4845,7 +4845,7 @@
 
 
       <!-- Див с сообщением от сервера-->
-         <div id="message_from_server" class="draggable modal_box">
+         <div id="message_from_server" class="draggable modal_box" style="z-index: 999999">
              <div id="message_from_server_header" class="modal_box_header">
                  <table width="100%" cellspacing="2" cellpadding="1" border="0" style="padding-top: 7px;">
                      <tr>
@@ -4897,8 +4897,8 @@
                        <tr>
                            <td  width="20%"></td>
                            <td >&nbsp</td>
-                           <td width="80%"><button style="float:right;" class="modal_box_btn" onclick="logOut_yes()">OK</button>
-                           <button style="float:right;" class="modal_box_btn" onclick="logOut_no()">Отмена</button>
+                           <td width="80%"><button style="float:right;" class="modal_box_btn" onclick="logOut_no()">Отмена</button>
+                                <button style="float:right;" class="modal_box_btn" onclick="logOut_yes()">OK</button>
                            </td>
                        </tr>
                      </tbody>
@@ -4957,6 +4957,8 @@
         <script src="/static/admin/js/menu_creator.js" defer></script>
         <script src="/static/admin/js/messages_from_server.js" defer></script>
         <script src="/static/admin/js/settings_forms.js" defer></script>
+        <script src="/static/admin/js/footerAndAlarmStatus.js" defer></script>
+       
         
         
 

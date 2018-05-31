@@ -256,8 +256,10 @@ function tex_settings_save(){
 	    let form        = this.window_tex_settings.getElementsByTagName('form')[0];	    
 	    let body        = JSON.stringify(formSettingsToJSON(form.elements));
 	    let url_string  = '/device_save_task/?name='+this.name;
-	    
- 		post_data_to_server(url_string,body,null,null);
+	    let context =this;
+		let callback = tex_settings_close.bind(context);   
+ 		
+ 		post_data_to_server(url_string,body,callback,null);
     	
 	    
 }
@@ -309,9 +311,10 @@ function analog_dat_settings_open(response){
 function analog_dat_settings_save(){
 	let form        = this.window_analog_settings.getElementsByTagName('form')[0];	    
 	let body        = JSON.stringify(formSettingsToJSON(form.elements));
-	let url_string  = '/analog_dat_save_settings/?name='+this.name;
-	    
- 	post_data_to_server(url_string,body,null,null);
+	let url_string  = '/analog_dat_save_settings/?name='+this.name+'&index='+form.elements.ad_i.value;
+	let context =this;
+	let callback = analog_dat_settings_close.bind(context);    
+ 	post_data_to_server(url_string,body,callback,null);
 }
 function analog_dat_settings_close(){
 	if(this.window_analog_settings.style.display == 'block'){

@@ -65,7 +65,28 @@ setInterval(function() {
 		
 }, 10000);
 
+setInterval(function() {
+	let tempObjet 			={};
+	let contentObject		={}
+	contentObject.time		='9:55';
+	contentObject.date		='31.05.2018';
+	contentObject.timer		='20000';	
+	contentObject.plc		=1;
+	contentObject.control	=1;
+	contentObject.login		='Оператор';
+	contentObject.message 	='Бла бла бла';
+	contentObject.help		='Тра та та';
+	contentObject.alarm		=1;
+	contentObject.bell		=0;
 
+
+	tempObjet.data=contentObject;
+	tempObjet.identificator="footer";		
+	let a=JSON.stringify(tempObjet);
+	for (var key in clients) {
+		clients[key].send(a);
+	}	
+}, 5000);
 
 
 };

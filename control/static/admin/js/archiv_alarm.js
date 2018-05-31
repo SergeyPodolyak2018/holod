@@ -124,7 +124,7 @@ function archiv_alarm_close(){
 
 //архив по всем устройствам
 function archiv_devices(){
-    var qwery = '/device_arxiv/?name='+''+'&type_m='+0+'&date_s='+0+'&date_p='+0;
+    var qwery = '/event_arxiv/?name='+''+'&type_m='+0+'&date_s='+0+'&date_p='+0;
     let callback = function(response){archiv_devices_build(response)};
     get_data_to_server(qwery,callback,null);
 }
@@ -148,7 +148,7 @@ function archiv_devices_build(response){
 //архив событий конкретного устройства
 function archiv_device(name){
     
-    var qwery = '/device_arxiv/?name='+name+'&type_m='+0+'&date_s='+0+'&date_p='+0;
+    var qwery = '/event_arxiv/?name='+name+'&type_m='+0+'&date_s='+0+'&date_p='+0;
     let callback = function(response){archiv_device_build(response)};
     get_data_to_server(qwery,callback,null);
 }
@@ -174,7 +174,7 @@ function archiv_device_build(response){
 
 
 function archiv_device_sort(name){
-    var qwery = '/device_arxiv/?name='+name+'&date_s='+$('#datepicker_device1').val()+'&date_p='+$('#datepicker_device2').val();
+    var qwery = '/event_arxiv/?name='+name+'&date_s='+$('#datepicker_device1').val()+'&date_p='+$('#datepicker_device2').val();
     let callback = function(response){archiv_device_build(response)};
     get_data_to_server(qwery,callback,null);
 }

@@ -87,7 +87,7 @@ module.exports			= function(app, db) {
 		res.send(JSON.stringify(telegramm));
 	});
 
-	app.get('/device_arxiv/', function(req, res) {
+	app.get('/event_arxiv/', function(req, res) {
 				
 		if(req.query.name){
 			console.log('трата та тра та та');
