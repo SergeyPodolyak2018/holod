@@ -14,7 +14,8 @@ var knex = require('knex')({									//построитель запросов �
     //host 	 : 'localhost',
     user 	 : 'e_holod',
     password : '12345',
-    database : 'e_holod'
+    database : 'e_holod',
+    dateStrings: 'date'
   }
 });
 

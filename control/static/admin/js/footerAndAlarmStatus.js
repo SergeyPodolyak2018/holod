@@ -6,8 +6,8 @@ function footerAndAlarmStatus(status){
     $("#Time").text(status.time);
     $("#footer_help").text(status.help); 
     $("#footer_message").text(status.message);
-    $("#footer_login").text(status.login);
-    $("#footer_control").text(status.control);
+    $("#footer_name").text(status.name);
+    
     
     switch(status.plc){
         case 0://$("#footer_plc_status").css('background-color','grey');
@@ -21,6 +21,32 @@ function footerAndAlarmStatus(status){
             break;
         case 3 ://$("#footer_plc_status").css('background-color','red');
                 document.getElementById('footer_plc_status').style.cssText='background-color:red; color:black';
+            break;
+        default:
+            //$("#footer_plc_status").css('background-color','grey');
+            break;
+    }
+    switch(status.drv){
+        case 0://$("#footer_plc_status").css('background-color','grey');
+              document.getElementById('footer_drv').removeAttribute("style");
+            break;
+        case 1 ://$("#footer_plc_status").css('background-color','#00ff00');
+                document.getElementById('footer_drv').style.cssText='background-color:yellow; color:black';
+            break;
+        case 2 ://$("#footer_plc_status").css('background-color','yellow');
+                document.getElementById('footer_drv').style.cssText='background-color:#00ff00; color:black';
+            break;
+        case 3 ://$("#footer_plc_status").css('background-color','red');
+                document.getElementById('footer_drv').style.cssText='background-color:red; color:black';
+            break;
+        case 4 ://$("#footer_plc_status").css('background-color','red');
+                document.getElementById('footer_drv').style.cssText='background-color:red; color:black';
+            break;
+        case 5 ://$("#footer_plc_status").css('background-color','red');
+                document.getElementById('footer_drv').removeAttribute("style");
+            break;
+        case 6 ://$("#footer_plc_status").css('background-color','red');
+                document.getElementById('footer_drv').style.cssText='background-color:#31d4e0; color:black';
             break;
         default:
             //$("#footer_plc_status").css('background-color','grey');

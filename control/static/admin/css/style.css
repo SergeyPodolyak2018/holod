@@ -18,6 +18,11 @@
     border: 1px solid #ababab;
     width:3%;
 }
+#footer_drv{
+    font-size:100%; 
+    border: 1px solid #ababab;
+    width:3%;
+}
 .left{
     float:left;
 }

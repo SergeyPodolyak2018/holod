@@ -72,8 +72,8 @@ setInterval(function() {
 	contentObject.date		='31.05.2018';
 	contentObject.timer		='20000';	
 	contentObject.plc		=1;
-	contentObject.control	=1;
-	contentObject.login		='Оператор';
+	contentObject.drv		=6;
+	contentObject.name		='Оператор';
 	contentObject.message 	='Бла бла бла';
 	contentObject.help		='Тра та та';
 	contentObject.alarm		=1;
@@ -81,12 +81,12 @@ setInterval(function() {
 
 
 	tempObjet.data=contentObject;
-	tempObjet.identificator="footer";		
+	tempObjet.identificator="status_bar";		
 	let a=JSON.stringify(tempObjet);
 	for (var key in clients) {
 		clients[key].send(a);
 	}	
-}, 5000);
+}, 1000);
 
 
 };

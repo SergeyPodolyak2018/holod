@@ -17,7 +17,7 @@ function archiv_alarm_build(response){
             	var temp_string='';
             	for (var i  in message) {
             		//temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td>'+message[i].id+'</td><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].device+'</td><td>'+message[i].text+'</td><td>'+message[i].ack+'</td></tr>'
-            	    temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 30%;">'+message[i].device+'</td><td style="width: 40%;">'+message[i].text+'</td><td>'+message[i].ack+'</td></tr>'
+            	    temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 30%;">'+message[i].device+'</td><td style="width: 40%;">'+message[i].text+'</td><td style="width: 5%;">'+message[i].ack+'</td></tr>'
 
             	}
             	var div_menu = document.getElementById('table_rchiv_message');
@@ -55,7 +55,7 @@ function archiv_alarm_device_build(response){
                 var temp_string='';
                 for (var i  in message) {
                     //temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td>'+message[i].id+'</td><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].device+'</td><td>'+message[i].text+'</td><td>'+message[i].ack+'</td></tr>'
-                    temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 30%;">'+message[i].device+'</td><td style="width: 40%;">'+message[i].text+'</td><td>'+message[i].ack+'</td></tr>'
+                    temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 30%;">'+message[i].device+'</td><td style="width: 40%;">'+message[i].text+'</td><td style="width: 5%;">'+message[i].ack+'</td></tr>'
 
                 }
                 var div_menu = document.getElementById('table_rchiv_message');
@@ -102,7 +102,7 @@ function archiv_alarm_sort_build(){
             	temp_string='';
             	for (var i  in message) {
             		//temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td>'+message[i].id+'</td><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].device+'</td><td>'+message[i].text+'</td><td>'+message[i].ack+'</td></tr>'
-            	    temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 30%;">'+message[i].device+'</td><td style="width: 40%;">'+message[i].text+'</td><td>'+message[i].ack+'</td></tr>'
+            	    temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 30%;">'+message[i].device+'</td><td style="width: 40%;">'+message[i].text+'</td><td style="width: 5%;">'+message[i].ack+'</td></tr>'
 
             	}
             	var div_menu = document.getElementById('table_rchiv_message');
@@ -135,7 +135,7 @@ function archiv_devices_build(response){
             
     temp_string='';
     for (var i  in message) {
-        temp_string=temp_string+'<tr><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
+        temp_string=temp_string+'<tr><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
     }
     var div_menu = document.getElementById('table_rchiv_device');
     div_menu.innerHTML = temp_string;
@@ -159,7 +159,7 @@ function archiv_device_build(response){
                 let temp_string='';
                 for (var i  in message) {
                     //temp_string=temp_string+'<tr><td>'+message[i].id+'</td><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].name+'</td><td>'+message[i].status+'</td></tr>';
-                    temp_string=temp_string+'<tr><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
+                    temp_string=temp_string+'<tr><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
 
                 }
                 var div_menu = document.getElementById('table_rchiv_device');
@@ -185,7 +185,7 @@ function archiv_device_sort_build(response){
             	temp_string='';
             	for (var i  in message) {
             		//temp_string=temp_string+'<tr><td>'+message[i].id+'</td><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].name+'</td><td>'+message[i].status+'</td></tr>';
-            	    temp_string=temp_string+'<tr><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
+            	    temp_string=temp_string+'<tr><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
 
             	}
             	var div_menu = document.getElementById('table_rchiv_device');
@@ -213,7 +213,7 @@ function alarm_build(response){
     let    temp_string='';
                 for (var i  in message) {
                     if (i!='quantity'){
-                       temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].device+'</td><td>'+message[i].text+'</td><td style="text-align:center;">'+message[i].ack+'</td><td>'+'<button style="padding-left: 5px;padding-right: 5px;padding-top: 1px;padding-bottom: 1px;margin-bottom: 5px;" class="modal_box_btn" onclick="alarm_confirmation(this,'+message[i].id+','+message[i].alarm+','+message[i].eqindex+')">Квитировать</button>'+'</td></tr>'
+                       temp_string=temp_string+'<tr style="background-color:'+message[i].color+'"><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].device+'</td><td>'+message[i].text+'</td><td style="text-align:center;">'+message[i].ack+'</td><td>'+'<button style="padding-left: 5px;padding-right: 5px;padding-top: 1px;padding-bottom: 1px;margin-bottom: 5px;" class="modal_box_btn" onclick="alarm_confirmation(this,'+message[i].id+','+message[i].alarm+','+message[i].eqindex+')">Квитировать</button>'+'</td></tr>'
                     }
                 }
                 let div_menu = document.getElementById('table_alarm_message');

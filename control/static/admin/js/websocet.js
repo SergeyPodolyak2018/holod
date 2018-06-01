@@ -13,8 +13,7 @@ const socketMessageListener = (event) => {
     location.reload(true);
   }
   if(newData.identificator==="alarm"){     
-    alarm_build(newData);
-    
+    alarm_build(newData);    
   }
   if(newData.identificator==="status_bar"){     
     footerAndAlarmStatus(newData.data);    
