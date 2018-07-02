@@ -45,7 +45,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 				  item.style.cssText='fill:#ff0000;'
 				});
 				[...this.autoElements].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;
 			case 3:
@@ -53,7 +53,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 				  item.style.cssText='fill:#ff0000;'
 				});
 				[...this.autoElements].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#00ff00;'
 				});
 				break;	
 			default:
@@ -201,12 +201,12 @@ function getNewObjectOfCooler(objectFromSvg,name){
 				break;
 			case 2:				
 				[...this.cooler].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;
 			case 3:				
 				[...this.cooler].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#ffff00;'
 				});
 				break;	
 			default:
@@ -248,7 +248,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 				  item.style.cssText='fill:#ff0000;'
 				});
 				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.removeAttribute("style");
 				});
 				break;
 			case 3:
@@ -256,7 +256,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 				  item.style.cssText='fill:#ff0000;'
 				});
 				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#00ff00;'
 				});
 				break;	
 			default:
@@ -289,7 +289,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 				  item.style.cssText='fill:#ff0000;'
 				});
 				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.removeAttribute("style");
 				});
 				break;
 			case 3:
@@ -297,7 +297,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 				  item.style.cssText='fill:#ff0000;'
 				});
 				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#00ff00;'
 				});
 				break;	
 			default:
@@ -308,6 +308,44 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.setStatusAircvo2=function(){		
 		console.log('set setStatusAircvo2');
 		this.set_sensores();
+		switch (this.aircvo2.s) {
+			case 0:
+				[...this.coolerVent2Manual].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");
+				});
+				[...this.coolerVent2Auto].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");
+				});
+				break;
+			case 1:
+				[...this.coolerVent2Manual].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#00ff00;'
+				});
+				[...this.coolerVent2Auto].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#00ff00;'
+				});
+				break;
+			case 2:
+				[...this.coolerVent2Manual].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#ff0000;'
+				});
+				[...this.coolerVent2Auto].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");
+				});
+				break;
+			case 3:
+				[...this.coolerVent2Manual].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#ff0000;'
+				});
+				[...this.coolerVent2Auto].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#00ff00;'
+				});
+				break;	
+			default:
+				// statements_def
+				break;
+		}
+
 	}
 
 	this.set_sensores=function(){
@@ -382,14 +420,17 @@ getNewObjectOfCooler.prototype.myStatus = function(state){
 	}
 	if(this.i_po!=state.aircva.i_po){
 		this.i_po=state.aircva.i_po;
+		this.set_sensores();
 		//this.setStatus();
 	}	
 	if(this.i_au!=state.aircva.i_au){
 		this.i_au=state.aircva.i_au;
+		this.set_sensores();
 		//this.setStatus();
 	}	
 	if(this.q_km!=state.aircva.q_km){
 		this.q_km=state.aircva.q_km;
+		this.set_sensores();
 		//this.setStatus();
 	}
 	if(JSON.stringify(this.td)!==JSON.stringify(state.td)){
@@ -450,12 +491,12 @@ function getNewObjectOfGate(objectFromSvg,name){
 				break;
 			case 2:				
 				[...this.autoElements].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;
 			case 3:				
 				[...this.autoElements].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#ffff00;'
 				});
 				break;	
 			default:
@@ -551,7 +592,7 @@ function getNewObjectOfBox(objectFromSvg,name){
 				  item.removeAttribute("style");
 				});
 				[...this.boxStausText].forEach(function(item, i, arr) {				  
-				  item.innerHTML='Her';
+				  item.innerHTML='Выключена';
 				});
 				
 				break;
@@ -560,7 +601,7 @@ function getNewObjectOfBox(objectFromSvg,name){
 				  item.style.cssText='fill:#00ff00;'
 				});
 				[...this.boxStausText].forEach(function(item, i, arr) {				  
-				  item.innerHTML='Piska';
+				  item.innerHTML='В работе';
 				});
 				
 				break;
@@ -569,7 +610,16 @@ function getNewObjectOfBox(objectFromSvg,name){
 				  item.style.cssText='fill:#ff0000;'
 				});
 				[...this.boxStausText].forEach(function(item, i, arr) {				  
-				  item.innerHTML='Siska';
+				  item.innerHTML='Авария';
+				});
+				
+				break;		
+			case 3:				
+				[...this.boxFon].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#ffff00;'
+				});
+				[...this.boxStausText].forEach(function(item, i, arr) {				  
+				  item.innerHTML='Разморозка';
 				});
 				
 				break;			

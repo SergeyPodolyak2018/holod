@@ -51,7 +51,8 @@ setInterval(function() {
 }, 2000);
 
 setInterval(function() {
-		db.table('alarm_arxiv').select('id','alarm','eqindex','color','date','time','device','text','ack')
+		//db.table('alarm_arxiv').select('id','alarm','eqindex','color','date','time','device','text','ack')
+		db.table('alarm_arxiv').select('id','alarm','color','date','time','device','text','ack')
 			.then(function(rows) {
 				let tempObjet={};
 				tempObjet.data=rows;

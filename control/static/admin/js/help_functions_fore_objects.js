@@ -135,10 +135,10 @@ function prepareForm(form){
 	});
 
 	$(form.getElementsByClassName('checkable_data_float')).bind("change keyup", function() {		
-	   if (this.value.match(/^[0-9]{1,3}([\.]{1}[0-9]{1,2}){0,1}$/)) {        	
+	   if (this.value.match(/^[-]{0,1}[0-9]{1,3}([\.]{1}[0-9]{1,2}){0,1}$/)) {        	
         	this.style.backgroundColor = 'green';        
        }else{
-			this.value = this.value.replace(/[^0-9|\.]/gi, '');
+			this.value = this.value.replace(/[^0-9|\.|-]/gi, '');
 			this.style.backgroundColor = 'red';
 		}
 	});

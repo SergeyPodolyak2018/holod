@@ -2983,8 +2983,15 @@
                                 <td  colspan="2" style="background-color: #0e0e0e; color: #ccc;">Калибровка</td>
                             </tr>
                             <tr>
-                                <td>Действительное значение датчика</td>
-                                <td><input name="ad_p" SIZE=1 class="checkable_data_float"></td>
+                                <td>Верхний предел датчика</td>
+                                <td><input name="ad_ph" SIZE=1 class="checkable_data_float"></td>
+                            </tr>
+                            <tr>
+                                <td>Нижний предел датчика</td>
+                                <td><input name="ad_pl" SIZE=1 class="checkable_data_float"></td>
+                            </tr>
+                            <tr><td>Биполярность</td><td><select size="1" name="ad_pb"><option value="0">0</option><option value="1">1</option></select>
+                            </td>
                             </tr>
                             <!--<tr
                             ><td colspan="2">&nbsp</td>
@@ -3496,7 +3503,7 @@
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp i_au"></div></td>
-                              <td>Авто</td>
+                              <td>Авт. режим</td>
                            </tr>
                          </tbody>
                      </table>
@@ -3504,8 +3511,8 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
+                            <tr><td class="q_km">Управление</td></tr>
                             <tr><td class="i_km">Контактор</td></tr>
-                            <tr><td class="q_km">Обратная связь</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3535,8 +3542,8 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
+                            <tr><td class="q_km">Управление</td></tr>
                             <tr><td class="i_km">Контактор</td></tr>
-                            <tr><td class="q_km">Обратная связь</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3583,7 +3590,7 @@
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp h_i_au"></div></td>
-                              <td>Режим</td>
+                              <td>Авт. режим</td>
                            </tr>                                                 
                          </tbody>
                      </table>
@@ -3591,8 +3598,8 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
+                            <tr><td class="h_q_km" >Управление</td></tr>
                             <tr><td class="h_i_km" >Контактор</td></tr>
-                            <tr><td class="h_q_km" >Обратная связь</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3606,7 +3613,7 @@
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp i_au"></div></td>
-                              <td>Режим</td>
+                              <td>Авт. режим</td>
                            </tr>                                                 
                          </tbody>
                      </table>
@@ -3614,9 +3621,9 @@
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
-                            <tr><td class="v1_i_km" >Контактор1</td></tr>
-                            <tr><td class="v2_i_km" >Контактор2</td></tr>
-                            <tr><td class="q_km" >Обратная связь</td></tr>
+                            <tr><td class="q_km" >Управление</td></tr>                         	
+                            <tr><td class="v1_i_km" >Контактор 1</td></tr>
+                            <tr><td class="v2_i_km" >Контактор 2</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3651,39 +3658,43 @@
                            </tr> 
                            <tr>
                               <td><div class="datchik_lamp i_l171"></div></td>
-                              <td>Уровень1 - 1700</td>
+                              <td>Уровень 1 - 1700 мм</td>
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp i_l172"></div></td>
-                              <td>Уровень2 - 1700</td>
+                              <td>Уровень 2 - 1700 мм</td>
                            </tr>
                            <tr>
-                              <td><div class="datchik_lamp i_l175"></div></td>
-                              <td>Уровень3 - 1500</td>
+                              <td><div class="datchik_lamp i_l15"></div></td>
+                              <td>Уровень 3 - 1500 мм</td>
                            </tr>                             
                          </tbody>                         
                      </table>
                  </div>
-                 <div class="modal_box_header" style="clear: both;width: 100%"><div class="modal_box_header_inner">Клапан</div></div>
+                 <div class="modal_box_header" style="clear: both;width: 100%"><div class="modal_box_header_inner">Разобщительный клапан</div></div>
                  <div class="modsl modal_box_body" style="float:left">
                      <table class="table" style="width: auto">
                          <tbody>
                            <tr>
                               <td><div class="datchik_lamp g-i_po"></div></td>
                               <td>Питание</td>
-                           </tr>                           
+                           </tr>
+                           <tr>
+                              <td><div class="datchik_lamp g-i_au"></div></td>
+                              <td>Авт. режим</td>
+                           </tr>                                                       
                          </tbody>
                      </table>
                  </div>
                  <div class="control" style="background: #0e0e0e;">
                      <table style="width: auto">
                          <tbody class="table_control">
-                            <tr><td class="g-i_au">Контактор</td></tr>
-                            <tr><td class="g-q_km">Обратная связь</td></tr>
+                            <tr><td class="g-q_km">Управление</td></tr>
+                            <!-- <tr><td class="g-i_km">Контактор</td></tr> -->
                          </tbody>
                      </table>
                  </div>
-                 <div class="modal_box_header" style="clear: both;width: 100%"><div class="modal_box_header_inner">Регулирующий вентиль</div></div>
+                 <div class="modal_box_header" style="clear: both;width: 100%"><div class="modal_box_header_inner">Регулирующий клапан</div></div>
                  <div class="modsl modal_box_body" style="float:left">
                      <table class="table" style="width: auto">
                          <tbody>
@@ -3701,7 +3712,7 @@
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp mg-i_e"></div></td>
-                              <td>Режим</td>
+                              <td>Авария</td>
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp mg-i_op"></div></td>
@@ -3777,7 +3788,7 @@
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp p1-i_au"></div></td>
-                              <td>Режим</td>
+                              <td>Авт. режим</td>
                            </tr>                           
                          </tbody>
                      </table>
@@ -3786,7 +3797,7 @@
                      <table style="width: auto">
                          <tbody class="table_control">
                             <tr><td class="p1-i_km">Контактор</td></tr>
-                            <tr><td class="p1-q_km">Обратная связь</td></tr>
+                            <tr><td class="p1-q_km">Управление</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3808,7 +3819,7 @@
                            </tr>
                            <tr>
                               <td><div class="datchik_lamp p2-i_au"></div></td>
-                              <td>Режим</td>
+                              <td>Авт. режим</td>
                            </tr>                           
                          </tbody>
                      </table>
@@ -3817,7 +3828,7 @@
                      <table style="width: auto">
                          <tbody class="table_control">
                             <tr><td class="p2-i_km">Контактор</td></tr>
-                            <tr><td class="p2-q_km">Обратная связь</td></tr>
+                            <tr><td class="p2-q_km">Управление</td></tr>
                          </tbody>
                      </table>
                  </div>
@@ -3987,7 +3998,7 @@
                             <div style="clear: both;"></div>
 
                             
-                            <div class="sensors_colum2">Режим</div>
+                            <div class="sensors_colum2">Авт. режим</div>
                             <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="a_i_au" SIZE=2  title="Адрес датчика"></div>
                             <div style="clear: both;"></div> 
                             
@@ -4029,7 +4040,7 @@
                             </div>
                             <div style="clear: both;"></div>
 
-                            <div class="sensors_colum2">Режим</div>
+                            <div class="sensors_colum2">Авт. режим</div>
                             <div class="sensors_colum3">
                               <input class="checkable_data_form adres_getable" name="a_i_au" SIZE=4>
                             </div>
@@ -4118,7 +4129,7 @@
                             </div>
                             <div style="clear: both;"></div>
                             
-                              <div class="sensors_header">Датчики темперратуры</div>
+                              <div class="sensors_header">Датчики температуры</div>
                               <div class="sensors_colum2">Датчик 1</div>
                                 <div >
                                   <input class="checkable_data_form adres_getable_Q" name="td[a_d1]" SIZE=2><button class="analog_settings_button small_modal_box_btn">d</button>
@@ -4142,7 +4153,7 @@
                       <div class="" style="float:left; width: 50%">
                                                  
                             <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
-                              <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Тэн</div>
+                              <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Нагреватель</div>
                               
                               <div class="sensors_colum2">Управление</div>
                               <div class="sensors_colum3">
@@ -4158,7 +4169,7 @@
                               <div class="sensors_colum2">Питание</div>
                               <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="airch[a_i_po]" SIZE=2  title="Адрес датчика"></div>                            
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum2">Режим</div>
+                              <div class="sensors_colum2">Авт. режим</div>
                               <div class="sensors_colum3"><input class="checkable_data_form adres_getable" name="airch[a_i_au]" SIZE=2  title="Адрес датчика"></div>
                               <div style="clear: both;"></div>                             
 
@@ -4179,13 +4190,13 @@
                             <div class="sensors_colum7">Питание</div>
                             <div ><input class="checkable_data_form adres_getable" name="aircva[a_i_po]" SIZE=2  title="Адрес датчика"></div>                            
                             <div style="clear: both;"></div>
-                            <div class="sensors_colum7">Режим</div>
+                            <div class="sensors_colum7">Авт. режим</div>
                             <div ><input class="checkable_data_form adres_getable" name="aircva[a_i_au]" SIZE=2  title="Адрес датчика"></div>
                             <div style="clear: both;"></div>
-                            <div class="sensors_colum7">Вентилятор 1 Обратная связь</div>
+                            <div class="sensors_colum7">Вентилятор 1 Контактор</div>
                             <div ><input class="checkable_data_form adres_getable" name="aircva[aircvo1[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
                             <div style="clear: both;"></div>
-                            <div class="sensors_colum7">Вентилятор 2 обратная связь</div>
+                            <div class="sensors_colum7">Вентилятор 2 Контактор</div>
                             <div ><input class="checkable_data_form adres_getable" name="aircva[aircvo2[a_i_km]]" SIZE=2  title="Адрес датчика"></div>                           
                             <div style="clear: both;"></div>
                           </div>                                   
@@ -4250,15 +4261,15 @@
                     
                       <div class="" style="float:left; width: 50%">                                                 
                             <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
-                              <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Вентиль регулируемый</div>                              
+                              <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Клапан регулируемый</div>                              
                               <div class="sensors_colum8">Питание</div>
                               <div >
                                 <input class="checkable_data_form adres_getable" name="valr[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum8">Управление</div>
+                              <div class="sensors_colum8">Авария</div>
                               <div >
-                                <input class="checkable_data_form adres_getable_Q" name="valr[a_i_e]" SIZE=4>
+                                <input class="checkable_data_form adres_getable" name="valr[a_i_e]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
                               <div class="sensors_colum8">Открыт</div>
@@ -4286,13 +4297,13 @@
 
                       <div class="" style="float:left; width: 50%">                                                 
                             <div style="display: block;float:left; width:80%;margin-left: 5px;margin-top: 10px">                          
-                              <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Клапан</div>                              
+                              <div class="sensors_header" style="width: 100%; margin-bottom: 10px">Разобщительный клапан</div>                              
                               <div class="sensors_colum5">Питание</div>
                               <div >
                                 <input class="checkable_data_form adres_getable" name="val[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum5">Режим</div>
+                              <div class="sensors_colum5">Авт. режим</div>
                               <div >
                                 <input class="checkable_data_form adres_getable" name="val[a_i_au]" SIZE=4>
                               </div>
@@ -4382,12 +4393,12 @@
                                 <input class="checkable_data_form adres_getable" name="pu1[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum8">Режим</div>
+                              <div class="sensors_colum8">Авт. режим</div>
                               <div >
                                 <input class="checkable_data_form adres_getable" name="pu1[a_i_au]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum8">Обратная связь</div>
+                              <div class="sensors_colum8">Контактор</div>
                               <div >
                                 <input class="checkable_data_form adres_getable" name="pu1[a_i_km]" SIZE=4>
                               </div>
@@ -4417,12 +4428,12 @@
                                 <input class="checkable_data_form adres_getable" name="pu2[a_i_po]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum8">Режим</div>
+                              <div class="sensors_colum8">Авт. режим</div>
                               <div >
                                 <input class="checkable_data_form adres_getable" name="pu2[a_i_au]" SIZE=4>
                               </div>
                               <div style="clear: both;"></div>
-                              <div class="sensors_colum8">Обратная связь</div>
+                              <div class="sensors_colum8">Контактор</div>
                               <div >
                                 <input class="checkable_data_form adres_getable" name="pu2[a_i_km]" SIZE=4>
                               </div>
@@ -4607,7 +4618,7 @@
 
                           <div style="display: block;float:left; width:90%;margin-left: 5px;margin-top: 10px">
                             <div class="sensors_header">Настройки</div>
-                            <div class="sensors_colum6">Время закрытие клапана</div>
+                            <div class="sensors_colum6">Время закрытия клапана</div>
                             <div class="sensors_colum1">
                               <input class="checkable_data_form" name="t_cv" SIZE=4>
                             </div>
@@ -4618,34 +4629,34 @@
                             <div class="sensors_colum1">
                               <input class="checkable_data_form" name="l_ivw" SIZE=4>
                             </div>
-                            <div class="sensors_colum1">мм</div>
+                            <div class="sensors_colum1">%</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Нижний предельный уровень</div>
                             <div class="sensors_colum1">
                               <input class="checkable_data_form" name="l_ivl" SIZE=4>
                             </div>
-                            <div class="sensors_colum1">мм</div>
+                            <div class="sensors_colum1">%</div>
                             <div style="clear: both;"></div>
 
                             <div class="sensors_colum6">Отклонение от заданного уровня +/-</div>
                             <div class="sensors_colum1">
                               <input class="checkable_data_form" name="d_tl" SIZE=4>
                             </div>
-                            <div class="sensors_colum1">мм</div>
+                            <div class="sensors_colum1">%</div>
                             <div style="clear: both;"></div>
 
                             <div class="sensors_colum6">Минимальное давление в промсосуде</div>
                             <div class="sensors_colum1">
                               <input class="checkable_data_float" name="pmin" SIZE=4>
                             </div>
-                            <div class="sensors_colum1">атм</div>
+                            <div class="sensors_colum1">бар</div>
                             <div style="clear: both;"></div>
 
                             <div class="sensors_colum6">Максимальное давление в промсосуде</div>
                             <div class="sensors_colum1">
                               <input class="checkable_data_float" name="pmax" SIZE=4>
                             </div>
-                            <div class="sensors_colum1">атм</div>
+                            <div class="sensors_colum1">бар</div>
                             <div style="clear: both;"></div>
 
                           </div>                                          
@@ -4723,49 +4734,49 @@
                             <div style="clear: both;"></div>                            
                             <div class="sensors_colum6">Минимально допустимая температура1</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d1" SIZE=4>
+                              <input class="checkable_data_form" name="td[d1]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура2</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d2" SIZE=4>
+                              <input class="checkable_data_form" name="td[d2]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура3</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d3" SIZE=4>
+                              <input class="checkable_data_form" name="td[d3]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура4</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d4" SIZE=4>
+                              <input class="checkable_data_form" name="td[d4]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура5</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d5" SIZE=4>
+                              <input class="checkable_data_form" name="td[d5]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура6</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d6" SIZE=4>
+                              <input class="checkable_data_form" name="td[d6]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура7</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d7" SIZE=4>
+                              <input class="checkable_data_form" name="td[d7]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>
                             <div class="sensors_colum6">Минимально допустимая температура8</div>
                             <div class="sensors_colum1">
-                              <input class="checkable_data_form" name="d8" SIZE=4>
+                              <input class="checkable_data_form" name="td[d8]" SIZE=4>
                             </div>
                             <div class="sensors_colum1">&#176 С</div>
                             <div style="clear: both;"></div>

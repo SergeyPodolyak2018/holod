@@ -290,7 +290,7 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 
     this.sensors={"i_l171": 0,		//Датчик уровня аварийный
         		  "i_l172": 0,		//Датчик уровня аварийный
-        		  "i_l175": 0,		//Датчик уровня аварийный
+        		  "i_l15": 0,		//Датчик уровня аварийный
         		  "i_pre": "0.00",	//давление
         		  "i_lel": "0.00"	//уровень
     			};    										
@@ -311,14 +311,14 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 				break;
 			case 2:				
 				
-				  this.status.style.cssText='fill:#00ff00;'
+				  this.status.style.cssText='fill:#ff0000;'
 				
 				break;
-			case 3:				
+			/*case 3:				
 				
 				  this.status.style.cssText='fill:#ff0000;'
 				
-				break;	
+				break;	*/
 			default:
 				// statements_def
 				break;
@@ -363,12 +363,12 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 
 	this.setLevelIndicator3=function(){		
 		
-		switch (this.sensors.i_l175) {
+		switch (this.sensors.i_l15) {
 			case 0:
-				  this.levelSensor3.style.cssText='fill:#ff0000;';
+				  this.levelSensor3.removeAttribute("style");
 				break;
 			case 1:
-				  this.levelSensor3.style.cssText='fill:#00ff00;';
+				  this.levelSensor3.style.cssText='fill:#ffff00;';
 				break;			
 			default:
 				// statements_def
@@ -449,7 +449,7 @@ getNewObjectOfReceiver.prototype.myStatus = function(state){
     }
 		this.sensors.i_l171 = state.i_l171;
 		this.sensors.i_l172 = state.i_l172;
-		this.sensors.i_l175 = state.i_l175;
+		this.sensors.i_l15 = state.i_l15;
 
 		this.valve.myStatus(state.val); 			
 		this.motoValve.myStatus(state.valr);
@@ -480,7 +480,7 @@ function getNewObjectInsideGate(objectFromSvg){
 	this.s 		= 0;		//статус       
     this.i 		= 0;		//ошибка
     this.sensors={'i_po':0,	//питание
-    			  'i_au':0,    			  
+    			  'i_au':0, //режим   			  
     			  'q_km':0	//обратная связь
     			};	
 
@@ -500,12 +500,12 @@ function getNewObjectInsideGate(objectFromSvg){
 				break;
 			case 2:				
 				[...this.gate].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;
 			case 3:				
 				[...this.gate].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#ffff00;'
 				});
 				break;	
 			default:
@@ -585,12 +585,12 @@ function getNewObjectInsideMotoGate(objectFromSvg){
 				break;
 			case 2:				
 				[...this.status].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;
 			case 3:				
 				[...this.status].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#ffff00;'
 				});
 				break;	
 			default:
@@ -691,7 +691,9 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 	
 	this.setStatusIndicator=function(name){		
 		console.log('set setStatusIndicator');
-		this.temperatureIndicators[name].innerHTML 	= this.sensors[name];	
+		if(this.temperatureIndicators[name]){
+			this.temperatureIndicators[name].innerHTML 	= this.sensors[name];
+		}	
 	}
 
 	this.set_sensores_status=function(){
@@ -792,12 +794,12 @@ function getNewObjectInsidePump(objectFromSvg){
 				break;
 			case 2:				
 				[...this.status].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;
 			case 3:				
 				[...this.status].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:magenta;'
 				});
 				break;	
 			default:
@@ -1078,7 +1080,7 @@ function getNewObjectOfCManager(objectFromSvg,name){
 				});
 				[...this.statusText].forEach(function(item, i, arr) {
 				  item.removeAttribute("style");
-				  item.innerHTML = 'Остановлен';
+				  item.innerHTML = 'Остановлена';
 				});
 				[...this.startButton].forEach(function(item, i, arr) {
 				  item.removeAttribute("style");			  
@@ -1089,11 +1091,11 @@ function getNewObjectOfCManager(objectFromSvg,name){
 				break;
 			case 1:				
 				[...this.status].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ffff00;'
 				});
 				[...this.statusText].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:black;';
-				  item.innerHTML = 'Вработе';
+				  item.innerHTML = 'Запускается...';
 				});
 				[...this.startButton].forEach(function(item, i, arr) {
 				  item.style.cssText='display:none;';				  
@@ -1119,21 +1121,20 @@ function getNewObjectOfCManager(objectFromSvg,name){
 				break;
 			case 3:				
 				[...this.status].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#00ff00;'
 				});
 				[...this.statusText].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:black;';
-				  item.innerHTML = 'Подготовка';
+				  item.innerHTML = 'В работе';
 				});
 				[...this.startButton].forEach(function(item, i, arr) {
-				  item.style.cssText='display:block;';				  
-				});
-				[...this.stopButton].forEach(function(item, i, arr) {
 				  item.style.cssText='display:none;';				  
 				});
-				break;	
+				[...this.stopButton].forEach(function(item, i, arr) {
+				  item.style.cssText='display:block;';				  
+				});
+				break;				
 			default:
-				// statements_def
 				break;
 		}
 	}	

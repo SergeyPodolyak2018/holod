@@ -147,7 +147,7 @@ viewBox="0 0 42000 32000"
   <text x="21834" y="22385"  class="fil1 fnt3">0</text>
   <text x="21942" y="22579"  class="fil1 fnt0">C</text>
   <text x="27862" y="10088"  class="fil1 fnt1">0</text>
-  <text x="29166" y="10072"  class="fil1 fnt0">mm</text>
+  <text x="29166" y="10072"  class="fil1 fnt0">%</text>
   <polyline class="fil2 str1" points="22568,22829 20209,22829 20209,28839 32664,28839 "/>
   <polyline class="fil2 str1" points="30320,22912 32651,22912 32651,28899 "/>
   <polyline class="fil2 str1" points="22568,24593 21049,24593 21049,27053 31870,27053 31870,24566 30320,24566 "/>
@@ -770,7 +770,7 @@ viewBox="0 0 42000 32000"
    <g>
     <rect class="fil0 str0" x="27844" y="9697" width="2039" height="455" rx="171" ry="120"/>
     <text x="27892" y="10088" class="level1 fil1 fnt1">0</text>
-    <text x="29196" y="10072"  class="fil1 fnt0">mm</text>
+    <text x="29196" y="10072"  class="fil1 fnt0">%</text>
    </g>
    <rect class="fil0 str14" x="28675" y="10401" width="139" height="3259"/>
    <ellipse class="LevelSensor2 fil0 str14" cx="29198" cy="10829" rx="169" ry="172"/>
@@ -831,7 +831,7 @@ viewBox="0 0 42000 32000"
    <g>
     <rect class="fil0 str0" x="21711" y="16660" width="2039" height="455" rx="171" ry="120"/>
     <text x="21759" y="17050" class="level1 fil1 fnt1">0</text>
-    <text x="23063" y="17034"  class="fil1 fnt0">mm</text>
+    <text x="23063" y="17034"  class="fil1 fnt0">%</text>
    </g>
    <rect class="fil0 str14" x="22542" y="17364" width="139" height="3259"/>
    <ellipse class="LevelSensor2 fil0 str14" cx="23065" cy="17792" rx="169" ry="172"/>

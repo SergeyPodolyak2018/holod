@@ -77,7 +77,7 @@ var jsontable={
           "e": 6,
           "tdc": 3,     
           "td": {       
-            "d1": "-30.00",
+            "d1": "-35.00",
             "d2": "-22.00",
             "d3": "-19.00"
           },
@@ -87,7 +87,7 @@ var jsontable={
             "i_po": 1,
             "i_au": 1,
             "i_km": 1,
-            "q_km": 0
+            "q_km": 1
           },
           "aircva": {       
             "aircvoc": 2,   
@@ -102,8 +102,8 @@ var jsontable={
               "i_km": 0
             },
             "i_po": 0,      
-            "i_au": 1,      
-            "q_km": 0       
+            "i_au": 0,      
+            "q_km": 1       
           } 
         },
         "airc2": {      
@@ -294,8 +294,8 @@ var jsontable={
           "i": 2,
           "i_l171": 1,
           "i_l172": 1,
-          "i_l175": 1,
-          "i_pre": "10.0",
+          "i_l15": 1,
+          "i_pre": "11.0",
           "i_lel": "15.0",
           "valr": {
             "s": 1,
