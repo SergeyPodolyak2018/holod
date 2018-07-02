@@ -13,7 +13,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 	
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
-    this.e 		= 0;		//ошибка
+    this.i 		= 0;		//ошибка
     this.sensors={'i_po':0,	//питание   
     			  'i_au':0,	//автоматический режим
     			  'i_km':0,	//контактор
@@ -75,7 +75,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 		console.log('setEror Hiter point1');	
 		let maskNorm=2;
 		let maskRemont=4;
-		if((this.e & maskNorm)>0){
+		if((this.i & maskNorm)>0){
 			console.log('setEror Hiter point2');	
 			[...this.iconAlarm].forEach(function(item, i, arr) {
 				  item.style.cssText='display:none;'
@@ -111,8 +111,8 @@ getNewObjectOfHiter.prototype.myStatus = function(state){
 		this.s=state.s;
 		this.setStatus();
 	}
-	if(this.e!=state.e){
-		this.e=state.e;
+	if(this.i!=state.i){
+		this.i=state.i;
 		this.setEror();
 	}
 	if(this.sensors.i_po!=state.i_po){
@@ -163,18 +163,18 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	prepareForm(this.window_settings);
 	this.intervalLockation;	  
 	this.s 		= 0;																	//статус       
-    this.e 		= 0;																	//ошибка
+    this.i 		= 0;																	//ошибка
     this.i_po 	= 0;    																//воздухоохладитель вентиляторы питание
     this.i_au 	= 0;    																//воздухоохладитель вентиляторы режим
     this.q_km 	= 0;    																//воздухоохладитель вентиляторы управление
     this.td		= {"d1": "0.00","d2": "0.00","d3": "0.00"};  							//датчики температуры
-    this.airch	= {"s": 0,"e": 0,"i_po": 0,"i_au": 0,"i_km": 0,"q_km": 0}; 				//обогрев воздухоохладителя
-    this.aircvo1= {"s": 0,"e": 0,"i_km": 0};    										//воздухоохладитель вентилятор1
-    this.aircvo2= {"s": 0,"e": 0,"i_km": 0};
+    this.airch	= {"s": 0,"i": 0,"i_po": 0,"i_au": 0,"i_km": 0,"q_km": 0}; 				//обогрев воздухоохладителя
+    this.aircvo1= {"s": 0,"i": 0,"i_km": 0,"i_po": 0};    								//воздухоохладитель вентилятор1
+    this.aircvo2= {"s": 0,"i": 0,"i_km": 0,"i_po": 0};
 
     this.sensors={'d1'		:0,
 				  'd2'		:0,
-				  'd3'		:0,    			  
+				  'd3'		:0, 
     			  'h_i_po'	:0,
     			  'h_i_au'	:0,
     			  'h_i_km'	:0,
@@ -182,8 +182,9 @@ function getNewObjectOfCooler(objectFromSvg,name){
     			  'i_au'	:0,
     			  'i_po'	:0,
     			  'v1_i_km'	:0,
+    			  'v1_i_po'	:0,
     			  'v2_i_km'	:0,
-
+    			  'v2_i_po'	:0,
     			};    										
 
 	this.setStatusMain=function(){		
@@ -361,7 +362,9 @@ function getNewObjectOfCooler(objectFromSvg,name){
     	this.sensors.i_au	=this.i_au;			//set sensor
     	this.sensors.i_po	=this.i_po;			//set sensor
     	this.sensors.v1_i_km=this.aircvo1.i_km;	//set sensor
+    	this.sensors.v1_i_po=this.aircvo1.i_po;	//set sensor
     	this.sensors.v2_i_km=this.aircvo2.i_km;	//set sensor
+    	this.sensors.v2_i_po=this.aircvo2.i_po;	//set sensor
 
 		console.log(this.sensors);		
 	}
@@ -384,7 +387,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.setEror=function(){		
 		let maskNorm=2;
 		let maskRemont=4;
-		if((this.e & maskNorm)>0){			
+		if((this.i & maskNorm)>0){			
 			[...this.iconAlarm].forEach(function(item, i, arr) {
 				item.style.cssText='display:none;'
 			});
@@ -393,7 +396,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 				item.removeAttribute("style");
 			});
 		}
-		if((this.e & maskRemont)>0){			
+		if((this.i & maskRemont)>0){			
 			[...this.iconRemont].forEach(function(item, i, arr) {				  
 				item.removeAttribute("style");
 			});
@@ -414,8 +417,8 @@ getNewObjectOfCooler.prototype.myStatus = function(state){
 		this.s=state.s;
 		this.setStatusMain();
 	}
-	if(this.e!=state.e){
-		this.e=state.e;
+	if(this.i!=state.i){
+		this.i=state.i;
 		this.setEror();
 	}
 	if(this.i_po!=state.aircva.i_po){
@@ -470,7 +473,7 @@ function getNewObjectOfGate(objectFromSvg,name){
 
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
-    this.e 		= 0;		//ошибка
+    this.i 		= 0;		//ошибка
     this.sensors={'i_po':0,	//питание    			  
     			  'q_km':0	//обратная связь
     			};	
@@ -520,7 +523,7 @@ function getNewObjectOfGate(objectFromSvg,name){
 	this.setEror=function(){		
 		let maskNorm=2;
 		let maskRemont=4;
-		if((this.e & maskNorm)>0){			
+		if((this.i & maskNorm)>0){			
 			[...this.iconAlarm].forEach(function(item, i, arr) {
 				  item.style.cssText='display:none;'
 			});
@@ -539,8 +542,8 @@ getNewObjectOfGate.prototype.myStatus = function(state){
 		this.s=state.s;
 		this.setStatus();
 	}
-	if(this.e!=state.e){
-		this.e=state.e;
+	if(this.i!=state.i){
+		this.i=state.i;
 		this.setEror();
 	}
 	if(this.sensors.i_po!=state.i_po){

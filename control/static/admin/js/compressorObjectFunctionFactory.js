@@ -700,6 +700,7 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 		console.log('привет из PumpGroup set_sensores_status');
 		let pump1Sensors = this.pump1.getSensors();
 		let pump2Sensors = this.pump2.getSensors();
+		
 		let re1=/i_tew/;
 		let re2=/i_pred/;
 		
@@ -720,9 +721,10 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 			}
 		}
 		for (let i in pump2Sensors) {
+			
 			if(i!=='s' && i!=='i'){
 				if(!i.match(re1) && !i.match(re2)){						
-					if (pump1Sensors[i] == 1) {
+					if (pump2Sensors[i] == 1) {
 						this.window_sensors.getElementsByClassName('p2-'+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
 																						  '-webkit-box-shadow:0 0 25px #00FF00';                    
 		            }else{                   	

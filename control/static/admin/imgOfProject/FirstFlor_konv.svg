@@ -333,7 +333,7 @@ viewBox="0 0 29700 21000"
    <title class="title_very_dificult">:-)</title>
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <g class="box box-F1-B7">
-   <polygon class="box box-F1-B7 fil0" points="21489,7780 24449,7780 24449,19647 21485,19647 "/>
+   <polygon class="F1-B7 fil0" points="21489,7780 24449,7780 24449,19647 21485,19647 "/>
    <g class="F1-B7-D-close">
     <rect class="fil1 str0" transform="matrix(-7.94536E-14 1 -1 -7.94536E-14 23745.5 19550.3)" width="96.88" height="936.63"/>
     <line class="fil2 str0" x1="23277" y1="19550" x2="23277" y2= "19647" />
@@ -1618,12 +1618,12 @@ viewBox="0 0 29700 21000"
      <text x="14850" y="10500" class="F1-B6-C1-T1-text fil5 str3 fnt3">-0</text>    
     </g>
    </g>
-   <g id="_1448804528">
+   <!-- <g id="_1448804528">
     <rect class="F1-B6-C1-T1 fil4 str1" x="25966" y="1851" width="754" height="243" rx="330" ry="210"/>
     <g transform="matrix(0.908188 0 0 1 12582.9 -8462.04)">
      <text x="14850" y="10500" class="F1-B6-C1-T1-text fil5 str3 fnt3">-0</text>     
     </g>
-   </g>
+   </g> -->
    <g id="_1448803664">
     <rect class="F1-B6-C1-T2 fil4 str1" x="25970" y="2208" width="754" height="243" rx="330" ry="210"/>
     <g transform="matrix(0.908188 0 0 1 12586.9 -8104.28)">
