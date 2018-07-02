@@ -264,7 +264,7 @@ getNewObjectOfCompressor.prototype.get_tex_settings =tex_settings_get;
 function getNewObjectOfReceiver(objectFromSvg,name){
 
 	this.name 					= name;	
-	this.status 				= objectFromSvg.querySelector('.status');
+	this.status 				= objectFromSvg.querySelectorAll('.status');
 	this.pressureIndicator 		= objectFromSvg.getElementsByClassName('pressure1')[0];
 	this.levelIndicator 		= objectFromSvg.getElementsByClassName('level1')[0];
 	this.levelSensor1			= objectFromSvg.getElementsByClassName('LevelSensor1')[0];
@@ -273,6 +273,8 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 	this.iconAlarm 				= objectFromSvg.querySelector('.attention');
 	this.valve 					= new getNewObjectInsideGate(objectFromSvg.getElementsByClassName('gate')[0]);
 	this.motoValve 				= new getNewObjectInsideMotoGate(objectFromSvg.getElementsByClassName('motoGate')[0]);
+	this.levelBar				= objectFromSvg.getElementsByClassName('levelBar')[0];
+
 	
 
 	this.window_settings 	= document.getElementsByClassName('receiver_settings')[0].cloneNode(true);
@@ -281,6 +283,7 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 	prepareForm(this.window_analog_settings);
 	prepareForm(this.window_settings);
 
+	this.levelBarInitialValue = parseInt(this.levelBar.getAttribute('height'));
 	this.window_sensors = document.getElementsByClassName('receiver_sensors')[0].cloneNode(true);
 
 	this.intervalLockation;
@@ -300,18 +303,25 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 
 		switch (this.s) {
 			case 0:				
-				
-				  this.status.removeAttribute("style");
+				[...this.status].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");
+				});
+				  //this.status.removeAttribute("style");
 				
 				break;
-			case 1:				
+			case 1:	
+				[...this.status].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#00ff00;'
+				});			
 				
-				  this.status.style.cssText='fill:#00ff00;'
+				 //this.status.style.cssText='fill:#00ff00;'
 				
 				break;
 			case 2:				
-				
-				  this.status.style.cssText='fill:#ff0000;'
+				[...this.status].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#ff0000;'
+				});	
+				 // this.status.style.cssText='fill:#ff0000;'
 				
 				break;
 			/*case 3:				
@@ -328,7 +338,11 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 	this.setStatusIndicator=function(){		
 		console.log('set setStatusIndicator');
 		this.pressureIndicator.innerHTML 	= this.sensors.i_pre;
-		this.levelIndicator.innerHTML 		= this.sensors.i_lel;		
+		this.levelIndicator.innerHTML 		= this.sensors.i_lel;
+		if(parseInt(i_lel)<100 && parseInt(i_lel)>0){
+			let value=this.levelBarInitialValue*100/parseInt(i_lel);
+			this.levelBar.setAttribute('height', value);
+		}		
 		//this.set_sensores();
 	}
 

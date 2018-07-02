@@ -64,7 +64,7 @@ var jsontable={
           "q_km": 1
         },
         "hp": {          
-          "s": 1,
+          "s": 0,
           "i": 2,
           "i_po": 0,
           "i_au": 1,
