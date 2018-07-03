@@ -264,7 +264,7 @@ getNewObjectOfCompressor.prototype.get_tex_settings =tex_settings_get;
 function getNewObjectOfReceiver(objectFromSvg,name){
 
 	this.name 					= name;	
-	this.status 				= objectFromSvg.querySelectorAll('.status');
+	this.status 				= objectFromSvg.querySelector('.status');
 	this.pressureIndicator 		= objectFromSvg.getElementsByClassName('pressure1')[0];
 	this.levelIndicator 		= objectFromSvg.getElementsByClassName('level1')[0];
 	this.levelSensor1			= objectFromSvg.getElementsByClassName('LevelSensor1')[0];
@@ -303,25 +303,25 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 
 		switch (this.s) {
 			case 0:				
-				[...this.status].forEach(function(item, i, arr) {
+				/*[...this.status].forEach(function(item, i, arr) {
 				  item.removeAttribute("style");
-				});
-				  //this.status.removeAttribute("style");
+				});*/
+				this.status.removeAttribute("style");
 				
 				break;
 			case 1:	
-				[...this.status].forEach(function(item, i, arr) {
+				/*[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#00ff00;'
-				});			
+				});	*/		
 				
-				 //this.status.style.cssText='fill:#00ff00;'
+				this.status.style.cssText='fill:#00ff00;'
 				
 				break;
 			case 2:				
-				[...this.status].forEach(function(item, i, arr) {
+				/*[...this.status].forEach(function(item, i, arr) {
 				  item.style.cssText='fill:#ff0000;'
-				});	
-				 // this.status.style.cssText='fill:#ff0000;'
+				});	*/
+				 this.status.style.cssText='fill:#ff0000;'
 				
 				break;
 			/*case 3:				
@@ -339,8 +339,9 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 		console.log('set setStatusIndicator');
 		this.pressureIndicator.innerHTML 	= this.sensors.i_pre;
 		this.levelIndicator.innerHTML 		= this.sensors.i_lel;
-		if(parseInt(i_lel)<100 && parseInt(i_lel)>0){
-			let value=this.levelBarInitialValue*100/parseInt(i_lel);
+		if(parseInt(this.sensors.i_lel)<100 && parseInt(this.sensors.i_lel)>0){
+			let value=this.levelBarInitialValue-(this.levelBarInitialValue*parseInt(this.sensors.i_lel)/100);
+
 			this.levelBar.setAttribute('height', value);
 		}		
 		//this.set_sensores();
