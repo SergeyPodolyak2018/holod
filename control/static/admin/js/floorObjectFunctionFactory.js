@@ -163,7 +163,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	prepareForm(this.window_settings);
 	this.intervalLockation;	  
 	this.s 		= 0;																	//статус       
-    this.i 		= 0;																	//ошибка
+    this.i 		= 255;																	//ошибка
     this.i_po 	= 0;    																//воздухоохладитель вентиляторы питание
     this.i_au 	= 0;    																//воздухоохладитель вентиляторы режим
     this.q_km 	= 0;    																//воздухоохладитель вентиляторы управление
@@ -387,7 +387,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.setEror=function(){		
 		let maskNorm=2;
 		let maskRemont=4;
-		if((this.i & maskNorm)>0){			
+		if((this.i & maskNorm)!=0){			
 			[...this.iconAlarm].forEach(function(item, i, arr) {
 				item.style.cssText='display:none;'
 			});
@@ -396,7 +396,7 @@ function getNewObjectOfCooler(objectFromSvg,name){
 				item.removeAttribute("style");
 			});
 		}
-		if((this.i & maskRemont)>0){			
+		if((this.i & maskRemont)!=0){			
 			[...this.iconRemont].forEach(function(item, i, arr) {				  
 				item.removeAttribute("style");
 			});
@@ -579,11 +579,11 @@ function getNewObjectOfBox(objectFromSvg,name){
 	this.window_analog_settings = document.getElementsByClassName('settings_analog_dat')[0].cloneNode(true);
 	prepareForm(this.window_analog_settings);
 	prepareForm(this.window_settings);
-	this.s	 	= 3;    //статус
-    this.e	 	= 3;    //ошибка
+	this.s	 	= 255;    //статус
+    this.i	 	= 0;    //ошибка
     this.t	 	= '0';  //температура
-    this.i_hu 	= 3;    //человек внутри
-    this.i_do 	= 3;    //двери открыты
+    this.i_hu 	= 255;    //человек внутри
+    this.i_do 	= 255;    //двери открыты
 
 
 	
@@ -604,7 +604,7 @@ function getNewObjectOfBox(objectFromSvg,name){
 				  item.style.cssText='fill:#00ff00;'
 				});
 				[...this.boxStausText].forEach(function(item, i, arr) {				  
-				  item.innerHTML='В работе';
+				  item.innerHTML='Охлаждение';
 				});
 				
 				break;
@@ -622,7 +622,7 @@ function getNewObjectOfBox(objectFromSvg,name){
 				  item.style.cssText='fill:#ffff00;'
 				});
 				[...this.boxStausText].forEach(function(item, i, arr) {				  
-				  item.innerHTML='Разморозка';
+				  item.innerHTML='Оттаивание';
 				});
 				
 				break;			

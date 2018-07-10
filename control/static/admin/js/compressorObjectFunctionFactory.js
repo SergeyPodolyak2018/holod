@@ -339,11 +339,19 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 		console.log('set setStatusIndicator');
 		this.pressureIndicator.innerHTML 	= this.sensors.i_pre;
 		this.levelIndicator.innerHTML 		= this.sensors.i_lel;
-		if(parseInt(this.sensors.i_lel)<100 && parseInt(this.sensors.i_lel)>0){
+		if(parseInt(this.sensors.i_lel)<=100 && parseInt(this.sensors.i_lel)>=0){
 			let value=this.levelBarInitialValue-(this.levelBarInitialValue*parseInt(this.sensors.i_lel)/100);
 
 			this.levelBar.setAttribute('height', value);
-		}		
+			this.levelBar.removeAttribute("style");
+		}
+		else
+		{
+			let value=this.levelBarInitialValue;
+			this.levelBar.setAttribute('height', value);
+			this.levelBar.style.cssText='fill:#ff0000;';
+		}
+
 		//this.set_sensores();
 	}
 

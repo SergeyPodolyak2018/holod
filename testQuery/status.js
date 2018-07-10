@@ -51,7 +51,7 @@ var jsontable={
       "camc": 1,
       "cam1": {
         "cam_con": {
-          "s": 1,
+          "s": 0,
           "e": 0,
           "t": "15",
           "i_hu": 1,
@@ -74,7 +74,7 @@ var jsontable={
         "aircc": 2,     
         "airc1": {      
           "s": 3,
-          "i": 2,
+          "i": 4,
           "tdc": 3,     
           "td": {       
             "d1": "-35.00",
@@ -145,7 +145,7 @@ var jsontable={
       },
       "cam6": {
         "cam_con": {
-          "s": 1,
+          "s": 2,
           "e": 0,
           "t": "15",
           "i_hu": 1,
@@ -237,7 +237,7 @@ var jsontable={
       },
       "cam7": {
         "cam_con": {
-          "s": 1,
+          "s": 2,
           "e": 0,
           "t": "15",
           "i_hu": 1,
