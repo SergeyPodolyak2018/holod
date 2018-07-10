@@ -4,53 +4,58 @@
 function getNewObjectOfCompressor(objectFromSvg,name){
 	this.name 					= name;	
 	this.compressor				= objectFromSvg.getElementsByClassName('status');									//статус
-	this.pressureSensors 		= { 'pressureSensor1':objectFromSvg.getElementsByClassName('pressureSensor1')[0],
-									'pressureSensor2':objectFromSvg.getElementsByClassName('pressureSensor2')[0],
-									'pressureSensor3':objectFromSvg.getElementsByClassName('pressureSensor3')[0],
-									'pressureSensor4':objectFromSvg.getElementsByClassName('pressureSensor4')[0],
-									'pressureSensor5':objectFromSvg.getElementsByClassName('pressureSensor5')[0],
-									'pressureSensor6':objectFromSvg.getElementsByClassName('pressureSensor6')[0]
+	this.IconSensors 			= { 'p_suc':objectFromSvg.getElementsByClassName('pressure1')[0],
+									'p_dis':objectFromSvg.getElementsByClassName('pressure2')[0],
+									'p_o':objectFromSvg.getElementsByClassName('pressure3')[0],
+									'p_cra':objectFromSvg.getElementsByClassName('pressure4')[0],
+									'p_int':objectFromSvg.getElementsByClassName('pressure5')[0],
+									'p_int':objectFromSvg.getElementsByClassName('pressure6')[0],
+									'p_int':objectFromSvg.getElementsByClassName('pressure7')[0],
+									
+									't_ig':objectFromSvg.getElementsByClassName('temperature1')[0],
+									't_fin':objectFromSvg.getElementsByClassName('temperature2')[0],
+									't_o':objectFromSvg.getElementsByClassName('temperature3')[0],
+									't_ind':objectFromSvg.getElementsByClassName('temperature4')[0],
+									
 									};																				//статус
-	this.pressureIndicators		= { 'pressure1':objectFromSvg.getElementsByClassName('pressure1')[0],
-									'pressure2':objectFromSvg.getElementsByClassName('pressure2')[0],
-									'pressure3':objectFromSvg.getElementsByClassName('pressure3')[0],
-									'pressure4':objectFromSvg.getElementsByClassName('pressure4')[0],
-									'pressure5':objectFromSvg.getElementsByClassName('pressure5')[0],
-									'pressure6':objectFromSvg.getElementsByClassName('pressure6')[0]
-									};																				//статус
-	this.temperatureIndicators	= { 'temperature1':objectFromSvg.getElementsByClassName('temperature1')[0],
-									'temperature2':objectFromSvg.getElementsByClassName('temperature2')[0],
-									'temperature3':objectFromSvg.getElementsByClassName('temperature3')[0],
-									'temperature4':objectFromSvg.getElementsByClassName('temperature4')[0]									
-									};
+	
 	this.diferentialPressure	= objectFromSvg.getElementsByClassName('dPressure1')[0];
 
 	this.window_tex_settings 	= document.getElementsByClassName('compressor_tex_settings')[0].cloneNode(true);
 	this.window_settings 		= document.getElementsByClassName('all_settings')[0].cloneNode(true);
 	prepareForm(this.window_settings);
-	//this.window_sensors 	= document.getElementById('coller_sensors');
+	this.window_sensors 	= document.getElementsByClassName('compressor_sensors')[0].cloneNode(true);
 	this.intervalLockation;	  
-	this.s 		= 0;																								//статус
-    this.i 		= 0;																								//ошибка
+
     
 
-    /*this.sensors={'d1'		:0,
-				  'd2'		:0,
-				  'd3'		:0,    			  
-    			  'h_i_po'	:0,
-    			  'h_i_au'	:0,
-    			  'h_i_km'	:0,
-    			  'q_km'	:0,
-    			  'i_au'	:0,
-    			  'i_po'	:0,
-    			  'v1_i_km'	:0,
-    			  'v2_i_km'	:0,
-
-    			};    			*/							
+    this.sensors={'s':255, 			//Status 					Статус
+				  'i':255, 			//Info 						Информационный тег
+				  'p_suc':"00.0",	//P_Suction 				Давление всасывания
+				  'p_dis':"00.0",	//P_Discharge 				Давление нагнетания
+				  'p_o':"00.0",	 	//P_Oil 					Давление масла
+				  'p_cra':"00.0",	//P_Crankcase 				Давление в картере
+				  'p_int':"00.0",	//P_Intermediate 			Давл. промежуточное
+				  't_ig':"00.0",	//T_Intake_Gas 				Температура всасываемого газа
+				  't_fin':"00.0",	//T_Final_Compression 		Конечная температура сжатия
+				  't_o':"00.0",	 	//T_Oil 					Температура масла
+				  't_ind':"00.0",	//T_Intermediate_ND Темп. 	промежуточная НД
+				  't_ivd':"00.0",	//T_Intermediate_VD Темп. 	промежуточная ВД
+				  'ts_ps':"00.0",	//T_Saturation_P_Suction  	Температура насыщения при давлении всасывания (To)
+				  'ts_pie':"00.0",	//T_Saturation_P_Intermediate 	Температура насыщения при давлении промежуточном (Tz)
+				  'ts_pin':"00.0",	//T_Saturation_P_Injection  Температура насыщения при давлении нагнетания (Tk)
+				  'pr_nd':"00.0",	//PR_ND 					Произв-ть (НД)
+				  'pr_vd':"00.0",	//PR_VD 					Произв-ть (ВД)
+				  'cm':"00.0",	 	//Carrent_Motor 			Ток двигателя
+				  't_ri':"00.0",	//T_Refrigerant_Input 		Температура хладагента на входе
+				  't_ro':"00.0",	//T_Refrigerant_Output 		Температура холодильного агента на выходе
+				  't_co':"00.0",	//T_Coolant_Output 			Температура теплоносителя на выходе
+				  't_o_r':"00.0",	//T_Oil_Return 				Температура возврата масла
+    			};    										
 
 	this.setStatusMain=function(){		
 		console.log('set setStatusMain');
-		switch (this.s) {
+		switch (this.sensors.s) {
 			case 0:				
 				[...this.compressor].forEach(function(item, i, arr) {
 				  item.removeAttribute("style");
@@ -77,157 +82,22 @@ function getNewObjectOfCompressor(objectFromSvg,name){
 		}
 
 	}
-	/*this.setStatusTd=function(){		
-		console.log('set setStatusTd');
-		this.set_sensores();
-		this.coolerTemperature1[0].innerHTML=this.td.d1;
-		this.coolerTemperature2[0].innerHTML=this.td.d2;
-		this.coolerTemperature3[0].innerHTML=this.td.d3;
 
-	}*/
-	/*this.setStatusAirch=function(){		
-		console.log('set setStatusAirch');
-		this.set_sensores();
-		switch (this.airch.s) {
-			case 0:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
-				break;
-			case 1:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 2:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 3:
-				[...this.coolerHiterManual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerHiterAuto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				break;	
-			default:
-				// statements_def
-				break;
+	this.setStatusIndicator=function(name){
+		if(this.IconSensors[name]){
+			this.IconSensors[name].innerHTML 	= this.sensors[name];
+		}	
+	}
+
+	this.set_sensores_status=function(){
+		for (let i in this.sensors) {
+			let element=this.window_sensors.getElementsByClassName(''+i)[0];
+			if(element){
+	        	this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i];
+	    	}
 		}
-	}*/
-	/*this.setStatusAircvo1=function(){		
-		console.log('set setStatusAircvo1');
-		this.set_sensores();
-		switch (this.aircvo1.s) {
-			case 0:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.removeAttribute("style");
-				});
-				break;
-			case 1:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 2:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
-				});
-				break;
-			case 3:
-				[...this.coolerVent1Manual].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				[...this.coolerVent1Auto].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
-				});
-				break;	
-			default:
-				// statements_def
-				break;
-		}
-	}*/
-	/*this.setStatusAircvo2=function(){		
-		console.log('set setStatusAircvo2');
-		this.set_sensores();
-	}*/
-
-	/*this.set_sensores=function(){
-		console.log('привет из cooler set_sensores');
-		this.sensors.d1		=this.td.d1;		//set sensor
-		this.sensors.d2		=this.td.d2;		//set sensor
-		this.sensors.d3		=this.td.d3;		//set sensor
-		this.sensors.h_i_po	=this.airch.i_po;	//set sensor
-    	this.sensors.h_i_au	=this.airch.i_au;	//set sensor
-    	this.sensors.h_i_km	=this.airch.i_km;	//set sensor
-    	this.sensors.h_q_km	=this.airch.q_km;	//set sensor
-    	this.sensors.q_km	=this.q_km;			//set sensor
-    	this.sensors.i_au	=this.i_au;			//set sensor
-    	this.sensors.i_po	=this.i_po;			//set sensor
-    	this.sensors.v1_i_km=this.aircvo1.i_km;	//set sensor
-    	this.sensors.v2_i_km=this.aircvo2.i_km;	//set sensor
-
-		console.log(this.sensors);		
-	}*/
-
-	/*this.set_sensores_status=function(){
-		console.log('привет из cooler set_sensores_status');
-		let re=/d[0-9]/;		
-		for (let i in this.sensors) {			
-			if(!i.match(re)){						
-				if (this.sensors[i] == 1) {
-					this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#00FF00;box-shadow:0 0 25px #00FF00;'+
-																					  '-webkit-box-shadow:0 0 25px #00FF00';                    
-	            }else{                   	
-	                this.window_sensors.getElementsByClassName(''+i)[0].style.cssText='background:#e9e9e9;box-shadow:0 0 25px #e9e9e9;'+
-	                																  '-webkit-box-shadow:0 0 25px #e9e9e9';
-	            }
-	        }else{this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i]}
-		}		
-	}*/
-
-	/*this.setEror=function(){		
-		let maskNorm=2;
-		let maskRemont=4;
-		if((this.e & maskNorm)>0){			
-			[...this.iconAlarm].forEach(function(item, i, arr) {
-				item.style.cssText='display:none;'
-			});
-		}else{			
-			[...this.iconAlarm].forEach(function(item, i, arr) {
-				item.removeAttribute("style");
-			});
-		}
-		if((this.e & maskRemont)>0){			
-			[...this.iconRemont].forEach(function(item, i, arr) {				  
-				item.removeAttribute("style");
-			});
-		}else{			
-			[...this.iconRemont].forEach(function(item, i, arr) {				  
-				item.style.cssText='display:none;'
-			});
-		}
-	}*/
+	}
+	
 }
 
 //Объявление метода через прототип для всех объектов метод сравнивает состояние объекта и меняет его
@@ -235,13 +105,16 @@ getNewObjectOfCompressor.prototype.myStatus = function(state){
 	console.log('привет из Compressor');
 	console.log(state);
 
-	if(this.s!=state.s){
-		this.s=state.s;
+	if(this.sensors.s!=state.s){
+		this.sensors.s=state.s;
 		this.setStatusMain();
 	}
-	if(this.i!=state.i){
-		this.i=state.i;
-		//this.setEror();
+	
+	for(let i in state){
+		if (this.sensors[i] !== state[i]){
+			this.sensors[i] = state[i]
+			this.setStatusIndicator(i);
+		}
 	}
 	
 };
