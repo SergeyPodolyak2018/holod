@@ -68,8 +68,8 @@ function Header_menu(userSatus){
 			//set_function_click_on_button(stop_rout_button,clic_on_stop_source,1);
 			//set_function_click_on_button(cancel_stop_rout_button,hide_source_receiver,1);
 
-	        set_function_click_on_button(extra_stop_rout_button, clic_on_extra_stop_source,1);
-	        set_function_click_on_button(cancel_extra_stop_rout_button, hide_source_receiver,1);
+	        // set_function_click_on_button(extra_stop_rout_button, clic_on_extra_stop_source,1);
+	        // set_function_click_on_button(cancel_extra_stop_rout_button, hide_source_receiver,1);
 
 			set_function_click_on_button(ring_grey,bell_command,1,1);
 			set_function_click_on_button(ring_grey,bell_command,2,4);
