@@ -24,7 +24,7 @@ function archiv_alarm_build(response){
         		div_menu.innerHTML = temp_string;
 
         		var filter_selector = document.getElementById('message_filter');
-        		filter_selector.innerHTML = '<select id="message_filter_select" required size = "1" width="30%" onchange="archiv_alarm_sort('+0+','+'this'+',1)">'+
+        		filter_selector.innerHTML = '<select id="message_filter_select" required size = "1" width="30%" onchange="archiv_alarm_sort('+'null'+','+'this'+',1)">'+
                                            '<option value="0" >Все</option>'+
                                            '<option value="1" >Аварийные</option>'+
                                            '<option value="2" >Предупрежнения</option>'+
@@ -62,7 +62,7 @@ function archiv_alarm_device_build(response){
                 div_menu.innerHTML = temp_string;
 
                 var filter_selector = document.getElementById('message_filter');
-                filter_selector.innerHTML = '<select id="message_filter_select" required size = "1" width="30%" onchange="archiv_alarm_sort('+0+','+'this'+',1)">'+
+                filter_selector.innerHTML = '<select id="message_filter_select" required size = "1" width="30%" onchange="archiv_alarm_sort('+'null'+','+'this'+',1)">'+
                                            '<option value="0" >Все</option>'+
                                            '<option value="1" >Аварийные</option>'+
                                            '<option value="2" >Предупрежнения</option>'+
@@ -92,12 +92,13 @@ function archiv_alarm_sort(name,type_m,selector_or_button){
         date_s=$('#datepicker_message1').val(); //значение календаря 1
         date_p=$('#datepicker_message2').val(); //значение календаря 2
     }
+
     let qwery = '/alarm_arxiv/?name='+name+'&type_m='+type+'&date_s='+date_s+'&date_p='+date_p;    
     let callback = function(response){archiv_alarm_sort_build(response)};
     get_data_to_server(qwery,callback,null);
 }
 	
-function archiv_alarm_sort_build(){
+function archiv_alarm_sort_build(response){
                 var  message=response.data;
             	temp_string='';
             	for (var i  in message) {
