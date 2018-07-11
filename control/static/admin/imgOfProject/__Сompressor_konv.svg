@@ -32,9 +32,9 @@ viewBox="0 0 55000 34000"
    <glyph unicode="й" horiz-adv-x="558" d="M66 519.008l88 0 0 -395.843 244.504 395.843 94.5039 0 0 -519.008 -88 0 0 393.339 -244.173 -393.339 -94.8346 0 0 519.008zm304 192l60 0c-4.83465,-41.1811 -19.8268,-72.8346 -44.8346,-94.8346 -24.9921,-22.1732 -58.1575,-33.1654 -99.6693,-33.1654 -41.6693,0 -74.9921,10.9921 -99.8268,32.8189 -24.8346,22 -39.8425,53.6693 -44.6614,95.1811l60 0c4.48819,-22.5039 13.6535,-39.3386 27.1654,-50.3465 13.4961,-11.1654 31.8268,-16.6614 54.6614,-16.6614 26.5039,0 46.5039,5.33858 60,16.1732 13.4961,10.6614 22.6614,27.6535 27.1654,50.8346z"/>
    <glyph unicode="Д" horiz-adv-x="677" d="M142 716l436 0 0 -632 64 0 0 -251.008 -84 0 0 167.008 -474 0 0 -167.008 -84 0 0 251.008 55.0079 0c58,87.0079 86.9921,262.835 86.9921,527.339l0 104.661zm341.008 -84l-250 0 0 -36.6614c0,-61.0079 -5.51181,-144.504 -16.5039,-250.331 -10.8346,-105.843 -32.5039,-192.835 -64.5039,-261.008l331.008 0 0 548z"/>
    <glyph unicode="ж" horiz-adv-x="669" d="M380.011 519.004l0 -224.01c28.3231,0 48.3311,5.33862 59.8115,15.8505 11.504,10.6536 28.016,41.8114 49.3468,93.8275 20.008,49.3232 38.1735,80.6699 54.4965,94.3236 15.9923,13.3466 41.3389,20.008 76.1581,20.008l32.1735 0 0 -72.4966 -23.8348 0.496067c-23.5041,0 -38.3389,-3.49609 -44.835,-10.3465 -6.82683,-7.15754 -17.3387,-28.4884 -31.3231,-63.9926 -13.0159,-33.9924 -25.0159,-57.3312 -36.0003,-70.4887 -11.008,-13.0159 -28.3467,-24.8506 -51.6618,-35.6696 37.9846,-10.1812 75.0006,-45.3311 111.166,-105.662l96.4968 -160.844 -96.6622 0 -94.0165 160.678c-19.1576,32.6459 -36.0003,53.9768 -50.15,64.158 -14.3387,10.1576 -31.3467,15.1655 -51.1658,15.1655l0 -240.002 -90.0007 0 0 240.002c-19.512,0 -36.3546,-5.00791 -50.5043,-15.0001 -14.3387,-9.9922 -31.016,-31.5121 -50.0083,-64.5123l-94.8196 -160.489 -96.6858 0 96.1661 160.844c36.52,60.3312 73.8431,95.4811 111.851,105.662 -26.0081,12.0001 -44.3389,25.1577 -54.6855,39.331 -10.4883,14.1733 -25.9845,48.0004 -46.8193,101.505 -7.18116,18.0001 -14.8348,28.9845 -23.0081,33.0003 -8.504,4.15751 -21.0002,6.1654 -37.6538,6.1654 -4.18114,0 -12.8505,-0.165356 -25.8427,-0.496067l0 72.9927 12.1655 0c33.9924,0 57.8272,-2.00789 71.6699,-6.1654 13.8426,-4.01578 26.1734,-12.6615 37.1578,-25.8427 10.8426,-13.1576 25.0159,-40.4885 42.331,-82.3235 21.1655,-51.1658 37.5121,-82.1817 48.8508,-93.1661 11.315,-11.008 31.3231,-16.5119 59.8351,-16.5119l0 224.01 90.0007 0z"/>
-   <glyph unicode="V" horiz-adv-x="666" d="M281.004 0l-276.664 716.002 102.668 0 185.99 -520.339c14.8289,-41.6696 27.4963,-80.664 37.5062,-117.16 11.0021,39.1716 23.8289,78.166 38.4983,117.16l193.005 520.339 96.6622 0 -279.179 -716.002 -98.487 0z"/>
    <glyph unicode="4" horiz-adv-x="556" d="M322.993 0l0 171.001 -310.999 0 0 81.0006 327.014 464 71.9829 0 0 -464 97.0165 0 0 -81.0006 -97.0165 0 0 -171.001 -87.9987 0zm0 252.002l0 322.16 -224.488 -322.16 224.488 0z"/>
    <glyph unicode="с" horiz-adv-x="500" d="M405.008 190l86 -12c-9.51181,-59.1654 -33.5118,-105.339 -72.3465,-138.835 -38.8346,-33.4961 -86.6614,-50.1732 -143.165,-50.1732 -70.8346,0 -127.827,23.1811 -170.835,69.5118 -43.1654,46.3307 -64.6614,112.661 -64.6614,198.992 0,56 9.33858,104.835 27.8268,146.835 18.5039,41.8425 46.6772,73.3386 84.6772,94.1732 37.8268,20.9921 78.9921,31.4961 123.669,31.4961 56.1575,0 102.331,-14.1732 138,-42.6614 35.8268,-28.5039 58.8346,-69.0079 68.8346,-121.339l-85.0079 -12.9921c-8.17323,34.8189 -22.5039,60.9921 -43.3386,78.6614 -20.6614,17.4961 -45.6535,26.3307 -74.9921,26.3307 -44.3307,0 -80.3307,-15.8268 -108.173,-47.4961 -27.6693,-31.8425 -41.4961,-81.8425 -41.4961,-150.504 0,-69.6693 13.3386,-120.173 40,-151.669 26.8346,-31.4961 61.6693,-47.3228 104.504,-47.3228 34.6614,0 63.4961,10.4882 86.5039,31.6535 23.1654,21.0079 37.8268,53.5118 44,97.3386z"/>
+   <glyph unicode="V" horiz-adv-x="666" d="M281.01 0l-276.687 715.99 102.686 0 186.001 -520.327c14.8348,-41.6696 27.4963,-80.6699 37.4885,-117.166 11.008,39.1657 23.8348,78.166 38.5042,117.166l192.994 520.327 96.6622 0 -279.168 -715.99 -98.4811 0z"/>
    <glyph unicode="а" horiz-adv-x="556" d="M405.003 65.0084c-32.6695,-27.8506 -64.1816,-47.339 -94.3472,-58.843 -30.1656,-11.504 -62.4808,-17.1734 -97.1582,-17.1734 -57.0004,0 -100.82,13.8426 -131.505,41.6696 -30.6617,27.6616 -45.9925,63.1659 -45.9925,106.347 0,25.323 5.83469,48.4964 17.3387,69.4966 11.6694,21.0002 26.8349,37.6538 45.4964,50.339 18.8269,12.6615 39.8271,22.323 63.3312,28.8191 17.3387,4.51185 43.4885,8.83472 78.3313,13.1812 71.0084,8.31503 123.497,18.4962 156.993,30.1656 0.330711,12.0001 0.519689,19.6537 0.519689,22.8191 0,35.6696 -8.33865,60.8273 -25.0159,75.4967 -22.4884,19.8427 -55.9847,29.6695 -100.324,29.6695 -41.5043,0 -72.1659,-7.32289 -91.8432,-21.8269 -19.8191,-14.5041 -34.3231,-40.1578 -43.8192,-77.1738l-86.0086 12.0001c7.84258,36.8271 20.6695,66.6619 38.6696,89.3393 18.0001,22.6773 44.0082,39.9924 78.0006,52.3232 33.827,12.1655 73.3234,18.3309 117.993,18.3309 44.3389,0 80.5046,-5.14965 108.332,-15.6615 27.6616,-10.4883 48.1657,-23.5041 61.1816,-39.331 12.9922,-15.8269 22.1577,-35.8349 27.4963,-60.0005 2.83467,-15.0001 4.32287,-42.0003 4.32287,-80.8353l0 -116.67c0,-81.4967 1.84253,-132.993 5.50398,-154.82 3.49609,-21.8269 10.8426,-42.6618 21.4962,-62.6698l-91.985 0c-8.83472,18.4962 -14.5041,40.1578 -17.008,65.0084zm-6.99218 195.002c-32.0081,-13.0159 -80.0085,-24.0002 -144.001,-33.0003 -36.3546,-5.17327 -62.0084,-11.008 -77.0085,-17.5041 -15.0001,-6.49611 -26.5041,-16.0159 -34.6774,-28.3467 -8.14967,-12.4962 -12.3308,-26.3152 -12.3308,-41.6696 0,-23.1498 8.83472,-42.6618 26.6695,-58.1579 17.8348,-15.4962 43.8429,-23.3388 78.0006,-23.3388 33.827,0 63.9926,7.34651 90.4968,22.1813 26.3388,14.6694 45.8508,34.8192 58.1816,60.3312 9.49614,19.8191 14.1497,48.9925 14.1497,87.4968l0.519689 32.0081z"/>
    <glyph unicode="d" horiz-adv-x="556" d="M401.005 0l0 65.842c-32.8308,-51.179 -81.1751,-76.8458 -145.007,-76.8458 -41.3349,0 -79.3197,11.3387 -113.826,34.1709 -34.6605,22.6775 -61.5127,54.5033 -80.6597,95.1681 -19.0182,40.8195 -28.5015,87.6691 -28.5015,140.652 0,51.6686 8.65868,98.5182 25.8214,140.678 17.3431,42.0049 43.1645,74.3461 77.6704,96.6628 34.3255,22.4971 73.0061,33.6812 115.501,33.6812 31.3362,0 59.1676,-6.6744 83.4944,-19.8428 24.3268,-13.1684 44.1696,-30.5115 59.5026,-51.6686l0 257.493 88.0041 0 0 -715.99 -81.9997 0zm-278.005 258.833c0,-66.3317 13.993,-115.836 42.1595,-148.666 28.0119,-32.8308 61.1777,-49.1689 99.3429,-49.1689 38.5002,0 71.1764,15.6681 98.1575,47.0043 26.8522,31.3362 40.3299,79.1651 40.3299,143.487 0,70.6868 -13.658,122.69 -41.1545,155.856 -27.3418,33.1658 -61.1777,49.6585 -101.327,49.6585 -39.1702,0 -71.8464,-15.8485 -98.1832,-47.6743 -26.1564,-31.8258 -39.3248,-81.9997 -39.3248,-150.496z"/>
    <glyph unicode=" " horiz-adv-x="277" d=""/>
@@ -162,67 +162,67 @@ viewBox="0 0 55000 34000"
   <line class="fil2 str5" x1="23450" y1="11085" x2="25370" y2= "11086" />
   <line class="fil2 str5" x1="23450" y1="20057" x2="25365" y2= "20058" />
   <polyline class="fil2 str4" points="31846,13278 26999,13278 26999,4662 9129,4656 9129,17656 6195,17662 6195,18102 "/>
-  <g id="_1284222208">
+  <g id="_1478863920">
    <polygon class="fil0 str0" points="26689,27385 26982,26894 26689,26894 26982,27385 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 27016.4 27219.8)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284198176">
+  <g id="_1478861936">
    <polygon class="fil0 str0" points="27521,27385 27814,26894 27521,26894 27814,27385 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 27848.4 27219.8)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284171584">
+  <g id="_1478862320">
    <polygon class="fil0 str0" points="32278,26024 31786,25732 31786,26024 32278,25732 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 32112.5 25697.2)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284175136">
+  <g id="_1478868432">
    <polygon class="fil0 str0" points="34397,26024 33905,25732 33905,26024 34397,25732 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 34231.3 25697.2)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284185664">
+  <g id="_1478865136">
    <polygon class="fil0 str0" points="38343,27384 38635,26893 38343,26893 38635,27384 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 38669.9 27218.8)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284181536">
+  <g id="_1478833520">
    <polygon class="fil0 str0" points="39139,27391 39431,26900 39139,26900 39431,27391 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 39465.6 27225.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284176480">
+  <g id="_1478831632">
    <polygon class="fil0 str0" points="44171,25451 44463,24960 44171,24960 44463,25451 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 44497.7 25285.9)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284195296">
+  <g id="_1478832848">
    <polygon class="fil0 str0" points="46973,25448 47265,24957 46973,24957 47265,25448 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 47299.6 25282.9)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284211616">
+  <g id="_1478843536">
    <polygon class="fil0 str0" points="44169,23092 44461,22601 44169,22601 44461,23092 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 44496 22926.8)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284188512">
+  <g id="_1478833872">
    <polygon class="fil0 str0" points="48568,22389 48077,22097 48077,22389 48568,22097 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 48402.6 22062.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284221984">
+  <g id="_1478834480">
    <polygon class="fil0 str0" points="48998,22041 49290,21549 48998,21549 49290,22041 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 49324.8 21875.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284188320">
+  <g id="_1478835152">
    <polygon class="fil0 str0" points="51811,22014 52103,21523 51811,21523 52103,22014 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 52138.2 21848.6)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284211232">
+  <g id="_1478835728">
    <polygon class="fil0 str0" points="48990,18768 49283,18276 48990,18276 49283,18768 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 49317.4 18602.6)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284193696">
+  <g id="_1478837072">
    <polygon class="fil0 str0" points="51807,18808 52099,18316 51807,18316 52099,18808 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 52134.1 18642.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284178944">
+  <g id="_1478838384">
    <polygon class="fil0 str0" points="45104,16223 44613,15930 44613,16223 45104,15930 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 44938.7 15895.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284192448">
+  <g id="_1478839792">
    <polygon class="fil0 str0" points="36202,15475 35710,15182 35710,15475 36202,15182 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 36036.4 15147.6)" width="401.02" height="56.22"/>
   </g>
@@ -233,7 +233,7 @@ viewBox="0 0 55000 34000"
   <polygon class="fil3 str0" points="50373,26116 50455,26280 50538,26444 50373,26444 50209,26444 50291,26280 "/>
   <polygon class="fil3 str0" points="44315,19602 44397,19438 44480,19273 44315,19273 44151,19273 44233,19438 "/>
   <line class="fil2 str6" x1="47145" y1="22243" x2="47139" y2= "23378" />
-  <g id="_1284182976">
+  <g id="_1478875280">
    <polygon class="fil0 str0" points="46997,23042 47290,22551 46997,22551 47290,23042 "/>
    <rect class="fil0 str0" transform="matrix(-0.866025 -0.5 -0.333956 0.578429 47324.4 22876.7)" width="401.02" height="56.22"/>
   </g>
@@ -250,31 +250,31 @@ viewBox="0 0 55000 34000"
   <line class="fil2 str5" x1="8148" y1="5568" x2="6033" y2= "5581" />
   <polyline class="fil2 str5" points="6063,5866 7106,5866 7106,7657 6249,7657 "/>
   <polyline class="fil2 str5" points="6132,6534 6808,6534 6808,7196 6196,7196 "/>
-  <g id="_1284193952">
+  <g id="_1478823440">
    <polygon class="fil0 str0" points="45104,14184 44613,13892 44613,14184 45104,13892 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 44938.7 13857.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284161632">
+  <g id="_1478825712">
    <polygon class="fil0 str0" points="45104,12145 44613,11852 44613,12145 45104,11852 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 44938.7 11817.6)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284206368">
+  <g id="_1478827408">
    <polygon class="fil0 str0" points="45104,10042 44613,9750 44613,10042 45104,9750 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 44938.7 9714.86)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284215584">
+  <g id="_1478829040">
    <polygon class="fil0 str0" points="51598,16223 51107,15930 51107,16223 51598,15930 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 51432.6 15895.7)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284164256">
+  <g id="_1478830928">
    <polygon class="fil0 str0" points="51598,14184 51107,13892 51107,14184 51598,13892 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 51432.6 13857.1)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284208128">
+  <g id="_1478881904">
    <polygon class="fil0 str0" points="51598,12145 51107,11852 51107,12145 51598,11852 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 51432.6 11817.6)" width="401.02" height="56.22"/>
   </g>
-  <g id="_1284171008">
+  <g id="_1478883056">
    <polygon class="fil0 str0" points="51598,10042 51107,9750 51107,10042 51598,9750 "/>
    <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 51432.6 9714.86)" width="401.02" height="56.22"/>
   </g>
@@ -311,19 +311,21 @@ viewBox="0 0 55000 34000"
   <text x="35673" y="23649"  class="fil7 fnt4">Н212</text>
   <circle class="fil4 str9" cx="9148" cy="13086" r="100"/>
   <rect class="fil0 str0" x="47033" y="15822" width="2249" height="494"/>
+  <text x="47563" y="16218"  class="fil1 fnt1">I </text>
+  <text x="47798" y="16218"  class="fil1 fnt1">этаж</text>
   <rect class="fil0 str0" x="47033" y="13791" width="2249" height="494"/>
+  <text x="47563" y="14196"  class="fil1 fnt1">II </text>
+  <text x="47916" y="14196"  class="fil1 fnt1">этаж</text>
   <rect class="fil0 str0" x="47033" y="11774" width="2249" height="494"/>
-  <text x="47504" y="12169"  class="fil1 fnt1">II </text>
-  <text x="47857" y="12169"  class="fil1 fnt1">этаж</text>
-  <rect id="_1091337120" class="fil0 str0" x="47033" y="9649" width="2249" height="494">
+  <text x="47563" y="12179"  class="fil1 fnt1">III </text>
+  <text x="48033" y="12179"  class="fil1 fnt1">этаж</text>
+  <rect id="_1478980960" class="fil0 str0" x="47033" y="9649" width="2249" height="494">
    <metadata id="CorelCorpID_1">
     <odm name="class" value="" type="0"/>
    </metadata>
   </rect>
-  <text x="47563" y="10044"  class="fil1 fnt1">I </text>
-  <text x="47798" y="10044"  class="fil1 fnt1">этаж</text>
-  <text x="47425" y="14186"  class="fil1 fnt1">III </text>
-  <text x="47896" y="14186"  class="fil1 fnt1">этаж</text>
+  <text x="47563" y="10054"  class="fil1 fnt1">IV </text>
+  <text x="48080" y="10054"  class="fil1 fnt1">этаж</text>
   <line class="fil2 str11" x1="45917" y1="9591" x2="45917" y2= "9896" />
   <line class="fil2 str11" x1="50339" y1="9591" x2="50339" y2= "9896" />
   <line class="fil2 str11" x1="45917" y1="11657" x2="45917" y2= "12001" />
@@ -351,12 +353,12 @@ viewBox="0 0 55000 34000"
     <path class="fil11" d="M33072 12941l-12 -161 0 -75 50 0 0 75 -11 161 -27 0zm-10 82l0 -61 47 0 0 61 -47 0z"/>
    </g>
    <g>
-    <rect class="pressure1status fil0 str0" x="33259" y="9483" width="2200" height="600" rx="184" ry="158"/>
+    <rect class="fil0 str0" x="33259" y="9483" width="2200" height="600" rx="184" ry="158"/>
     <text x="33307" y="10000" class="pressure1 fil1 fnt5">0</text>
     <text x="34765" y="9993"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="level1status fil0 str0" x="34448" y="10870" width="1800" height="600" rx="151" ry="158"/>
+    <rect class="fil0 str0" x="34448" y="10870" width="1800" height="600" rx="151" ry="158"/>
     <text x="34542" y="11382" class="level1 fil1 fnt5">0</text>
     <text x="35805" y="11306"  class="fil1 fnt6">%</text>
    </g>
@@ -373,7 +375,7 @@ viewBox="0 0 55000 34000"
     <polygon class="status fil12 str13" points="30751,13355 30915,13264 31072,13350 30911,13559 "/>
     <polygon class="status fil12 str13" points="30574,13076 31232,13439 31232,13086 30574,13454 "/>
     <g>
-     <rect class="position1status fil0 str0" x="30000" y="11558" width="1800" height="600" rx="151" ry="158"/>
+     <rect class="fil0 str0" x="30000" y="11558" width="1800" height="600" rx="151" ry="158"/>
      <text x="30093" y="12092" class="position1 fil1 fnt5">0</text>
      <text x="31396" y="12027"  class="fil1 fnt0">%</text>
     </g>
@@ -447,7 +449,7 @@ viewBox="0 0 55000 34000"
     <polygon class="status fil12 str13" points="37059,20369 37223,20277 37380,20364 37219,20572 "/>
     <polygon class="status fil12 str13" points="36882,20090 37540,20452 37540,20100 36882,20468 "/>
     <g>
-     <rect class="position1status fil0 str0" x="36308" y="18572" width="1800" height="600" rx="151" ry="158"/>
+     <rect class="fil0 str0" x="36308" y="18572" width="1800" height="600" rx="151" ry="158"/>
      <text x="36401" y="19105" class="position1 fil1 fnt5">0</text>
      <text x="37704" y="19041"  class="fil1 fnt0">%</text>
     </g>
@@ -458,12 +460,12 @@ viewBox="0 0 55000 34000"
     </g>
    </g>
    <g>
-    <rect class="pressure1status fil0 str0" x="33619" y="18292" width="2200" height="600" rx="184" ry="158"/>
+    <rect class="fil0 str0" x="33619" y="18292" width="2200" height="600" rx="184" ry="158"/>
     <text x="33667" y="18809" class="pressure1 fil1 fnt5">0</text>
     <text x="35124" y="18802"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="level1status fil0 str0" x="28421" y="17784" width="1800" height="600" rx="151" ry="158"/>
+    <rect class="fil0 str0" x="28421" y="17784" width="1800" height="600" rx="151" ry="158"/>
     <text x="28515" y="18296" class="level1 fil1 fnt5">0</text>
     <text x="29777" y="18221"  class="fil1 fnt6">%</text>
    </g>
@@ -471,84 +473,68 @@ viewBox="0 0 55000 34000"
   <g class="pumpGroup pumpGroup-F0-P2">
    <rect class="F0-P2-select fil2 str0" x="48387" y="19010" width="5087" height="1399"/>
    <g>
-    <rect class="temperature10status fil0 str0" x="49339" y="15103" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 21804.4 -1384.75)">
-     <text x="27500" y="17000" class="temperature10 fil1 fnt8">0</text>
-    </g>
-    <text x="50777" y="15374"  class="fil1 fnt9">0</text>
-    <text x="50884" y="15568"  class="fil1 fnt0">C</text>
-   </g>
-   <g>
-    <rect class="temperature9status fil0 str0" x="44917" y="15103" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 17382.5 -1384.75)">
-     <text x="27500" y="17000" class="temperature9 fil1 fnt8">0</text>
-    </g>
-    <text x="46355" y="15374"  class="fil1 fnt9">0</text>
-    <text x="46463" y="15568"  class="fil1 fnt0">C</text>
-   </g>
-   <g>
-    <rect class="temperature8status fil0 str0" x="49339" y="13103" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 21804.4 -3384.75)">
-     <text x="27500" y="17000" class="temperature8 fil1 fnt8">0</text>
-    </g>
-    <text x="50777" y="13374"  class="fil1 fnt9">0</text>
-    <text x="50884" y="13568"  class="fil1 fnt0">C</text>
-   </g>
-   <g>
-    <rect class="temperature7status fil0 str0" x="44917" y="13103" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 17382.5 -3384.75)">
-     <text x="27500" y="17000" class="temperature7 fil1 fnt8">0</text>
-    </g>
-    <text x="46355" y="13374"  class="fil1 fnt9">0</text>
-    <text x="46463" y="13568"  class="fil1 fnt0">C</text>
-   </g>
-   <g>
-    <rect class="temperature6status fil0 str0" x="49339" y="11103" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 21804.4 -5384.75)">
-     <text x="27500" y="17000" class="temperature6 fil1 fnt8">0</text>
-    </g>
-    <text x="50777" y="11374"  class="fil1 fnt9">0</text>
-    <text x="50884" y="11568"  class="fil1 fnt0">C</text>
-   </g>
-   <g>
-    <rect class="temperature5status fil0 str0" x="44917" y="11103" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 17382.5 -5384.75)">
-     <text x="27500" y="17000" class="temperature5 fil1 fnt8">0</text>
-    </g>
-    <text x="46355" y="11374"  class="fil1 fnt9">0</text>
-    <text x="46463" y="11568"  class="fil1 fnt0">C</text>
-   </g>
-   <g>
-    <rect class="temperature4status fil0 str0" x="49339" y="9037" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 21804.4 -7450.79)">
-     <text x="27500" y="17000" class="temperature4 fil1 fnt8">0</text>
-    </g>
-    <text x="50777" y="9308"  class="fil1 fnt9">0</text>
-    <text x="50884" y="9502"  class="fil1 fnt0">C</text>
-   </g>
-   <g>
-    <rect class="temperature3status fil0 str0" x="44917" y="9037" width="2000" height="600" rx="168" ry="158"/>
+    <rect class="fil0 str0" x="44917" y="9037" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 17382.5 -7450.79)">
-     <text x="27500" y="17000" class="temperature3 fil1 fnt8">0</text>
+     <text x="27500" y="17000" class="temperature1 fil1 fnt8">0</text>
     </g>
     <text x="46355" y="9308"  class="fil1 fnt9">0</text>
     <text x="46463" y="9502"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature2status fil0 str0" x="49339" y="7280" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 21804.4 -9208)">
+    <rect class="fil0 str0" x="49339" y="9037" width="2000" height="600" rx="168" ry="158"/>
+    <g transform="matrix(1.00277 0 0 1 21804.4 -7450.79)">
      <text x="27500" y="17000" class="temperature2 fil1 fnt8">0</text>
     </g>
-    <text x="50777" y="7550"  class="fil1 fnt9">0</text>
-    <text x="50884" y="7744"  class="fil1 fnt0">C</text>
+    <text x="50777" y="9308"  class="fil1 fnt9">0</text>
+    <text x="50884" y="9502"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature1status fil0 str0" x="44917" y="7280" width="2000" height="600" rx="168" ry="158"/>
-    <g transform="matrix(1.00277 0 0 1 17382.5 -9208)">
-     <text x="27500" y="17000" class="temperature1 fil1 fnt8">0</text>
+    <rect class="fil0 str0" x="44917" y="11103" width="2000" height="600" rx="168" ry="158"/>
+    <g transform="matrix(1.00277 0 0 1 17382.5 -5384.75)">
+     <text x="27500" y="17000" class="temperature3 fil1 fnt8">0</text>
     </g>
-    <text x="46355" y="7550"  class="fil1 fnt9">0</text>
-    <text x="46463" y="7744"  class="fil1 fnt0">C</text>
+    <text x="46355" y="11374"  class="fil1 fnt9">0</text>
+    <text x="46463" y="11568"  class="fil1 fnt0">C</text>
+   </g>
+   <g>
+    <rect class="fil0 str0" x="49339" y="11103" width="2000" height="600" rx="168" ry="158"/>
+    <g transform="matrix(1.00277 0 0 1 21804.4 -5384.75)">
+     <text x="27500" y="17000" class="temperature4 fil1 fnt8">0</text>
+    </g>
+    <text x="50777" y="11374"  class="fil1 fnt9">0</text>
+    <text x="50884" y="11568"  class="fil1 fnt0">C</text>
+   </g>
+   <g>
+    <rect class="fil0 str0" x="44917" y="13103" width="2000" height="600" rx="168" ry="158"/>
+    <g transform="matrix(1.00277 0 0 1 17382.5 -3384.75)">
+     <text x="27500" y="17000" class="temperature5 fil1 fnt8">0</text>
+    </g>
+    <text x="46355" y="13374"  class="fil1 fnt9">0</text>
+    <text x="46463" y="13568"  class="fil1 fnt0">C</text>
+   </g>
+   <g>
+    <rect class="fil0 str0" x="49339" y="13103" width="2000" height="600" rx="168" ry="158"/>
+    <g transform="matrix(1.00277 0 0 1 21804.4 -3384.75)">
+     <text x="27500" y="17000" class="temperature6 fil1 fnt8">0</text>
+    </g>
+    <text x="50777" y="13374"  class="fil1 fnt9">0</text>
+    <text x="50884" y="13568"  class="fil1 fnt0">C</text>
+   </g>
+   <g>
+    <rect class="fil0 str0" x="44917" y="15103" width="2000" height="600" rx="168" ry="158"/>
+    <g transform="matrix(1.00277 0 0 1 17382.5 -1384.75)">
+     <text x="27500" y="17000" class="temperature7 fil1 fnt8">0</text>
+    </g>
+    <text x="46355" y="15374"  class="fil1 fnt9">0</text>
+    <text x="46463" y="15568"  class="fil1 fnt0">C</text>
+   </g>
+   <g>
+    <rect class="fil0 str0" x="49339" y="15103" width="2000" height="600" rx="168" ry="158"/>
+    <g transform="matrix(1.00277 0 0 1 21804.4 -1384.75)">
+     <text x="27500" y="17000" class="temperature8 fil1 fnt8">0</text>
+    </g>
+    <text x="50777" y="15374"  class="fil1 fnt9">0</text>
+    <text x="50884" y="15568"  class="fil1 fnt0">C</text>
    </g>
    <g class="pump2">
     <circle class="status fil0 str0" cx="51967" cy="19712" r="617"/>
@@ -561,7 +547,7 @@ viewBox="0 0 55000 34000"
      <path class="fil11" d="M51967 19712l-12 -162 0 -75 50 0 0 75 -12 162 -26 0zm-10 82l0 -61 47 0 0 61 -47 0z"/>
     </g>
     <g>
-     <rect class="pressure1status fil0 str0" x="52223" y="17615" width="2200" height="600" rx="184" ry="158"/>
+     <rect class="fil0 str0" x="52223" y="17615" width="2200" height="600" rx="184" ry="158"/>
      <text x="52271" y="18132" class="pressure1 fil1 fnt5">0</text>
      <text x="53728" y="18124"  class="fil1 fnt0">bar</text>
     </g>
@@ -577,7 +563,7 @@ viewBox="0 0 55000 34000"
      <path class="fil11" d="M49166 19728l-12 -161 0 -75 50 0 0 75 -11 161 -27 0zm-10 82l0 -61 47 0 0 61 -47 0z"/>
     </g>
     <g>
-     <rect class="pressure1status fil0 str0" x="46729" y="17594" width="2200" height="600" rx="184" ry="158"/>
+     <rect class="fil0 str0" x="46729" y="17594" width="2200" height="600" rx="184" ry="158"/>
      <text x="46777" y="18111" class="pressure1 fil1 fnt5">0</text>
      <text x="48235" y="18104"  class="fil1 fnt0">bar</text>
     </g>
@@ -586,7 +572,7 @@ viewBox="0 0 55000 34000"
   <g class="pumpGroup pumpGroup-F0-P1">
    <rect class="F0-P1-select fil2 str0" x="43411" y="23292" width="5173" height="1390"/>
    <g>
-    <rect class="temperature3status fil0 str0" x="27068" y="25131" width="2000" height="600" rx="168" ry="158"/>
+    <rect class="fil0 str0" x="27068" y="25131" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -465.777 8642.87)">
      <text x="27500" y="17000" class="temperature3 fil1 fnt8">0</text>
     </g>
@@ -594,7 +580,7 @@ viewBox="0 0 55000 34000"
     <text x="28614" y="25595"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature1status fil0 str0" x="27068" y="23351" width="2000" height="600" rx="168" ry="158"/>
+    <rect class="fil0 str0" x="27068" y="23351" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -465.777 6862.65)">
      <text x="27500" y="17000" class="temperature1 fil1 fnt8">0</text>
     </g>
@@ -602,7 +588,7 @@ viewBox="0 0 55000 34000"
     <text x="28614" y="23815"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature2status fil0 str0" x="37173" y="23418" width="2000" height="600" rx="168" ry="158"/>
+    <rect class="fil0 str0" x="37173" y="23418" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 9638.56 6930.04)">
      <text x="27500" y="17000" class="temperature2 fil1 fnt8">0</text>
     </g>
@@ -610,7 +596,7 @@ viewBox="0 0 55000 34000"
     <text x="38719" y="23882"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature4status fil0 str0" x="37162" y="25131" width="2000" height="600" rx="168" ry="158"/>
+    <rect class="fil0 str0" x="37162" y="25131" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 9628.15 8642.87)">
      <text x="27500" y="17000" class="temperature4 fil1 fnt8">0</text>
     </g>
@@ -628,7 +614,7 @@ viewBox="0 0 55000 34000"
      <path class="fil11" d="M47109 23963l-12 -162 0 -75 50 0 0 75 -12 162 -26 0zm-10 82l0 -61 46 0 0 61 -46 0z"/>
     </g>
     <g>
-     <rect class="pressure1status fil0 str0" x="47364" y="25625" width="2200" height="600" rx="184" ry="158"/>
+     <rect class="fil0 str0" x="47364" y="25625" width="2200" height="600" rx="184" ry="158"/>
      <text x="47412" y="26142" class="pressure1 fil1 fnt5">0</text>
      <text x="48870" y="26134"  class="fil1 fnt0">bar</text>
     </g>
@@ -644,7 +630,7 @@ viewBox="0 0 55000 34000"
      <path class="fil11" d="M44344 24000l-12 -162 0 -75 50 0 0 75 -11 162 -27 0zm-10 82l0 -61 47 0 0 61 -47 0z"/>
     </g>
     <g>
-     <rect class="pressure1status fil0 str0" x="41907" y="25625" width="2200" height="600" rx="184" ry="158"/>
+     <rect class="fil0 str0" x="41907" y="25625" width="2200" height="600" rx="184" ry="158"/>
      <text x="41955" y="26142" class="pressure1 fil1 fnt5">0</text>
      <text x="43413" y="26134"  class="fil1 fnt0">bar</text>
     </g>
@@ -689,7 +675,7 @@ viewBox="0 0 55000 34000"
      <path class="fil11" d="M2118 9620l-12 -162 0 -75 50 0 0 75 -12 162 -26 0zm-10 82l0 -61 46 0 0 61 -46 0z"/>
     </g>
    </g>
-   <polygon id="F0-Rf1-select_69" class="fil2 str0" points="3531,10034 3531,8773 4010,4194 5889,4194 6365,8773 6365,10015 "/>
+   <polygon id="F0-Rf1-select_58" class="fil2 str0" points="3531,10034 3531,8773 4010,4194 5889,4194 6365,8773 6365,10015 "/>
   </g>
   <g class="jar jar-F0-J1">
    <rect class="status fil7 str0" x="2818" y="13657" width="4855" height="2166" rx="893" ry="840"/>
@@ -948,7 +934,7 @@ viewBox="0 0 55000 34000"
     <text x="10334" y="20350"  class="fil1 fnt12">P</text>
    </g>
    <g>
-    <rect class="temperature1status fil0 str0" x="11305" y="16347" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature1status_82" class="fil0 str0" x="11305" y="16347" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16228.7 -141.45)">
      <text x="27500" y="17000" class="temperature1 fil1 fnt8">0</text>
     </g>
@@ -956,12 +942,12 @@ viewBox="0 0 55000 34000"
     <text x="12851" y="16811"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="pressure1status fil0 str0" x="14170" y="16347" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure1status_84" class="fil0 str0" x="14170" y="16347" width="2481" height="600" rx="208" ry="158"/>
     <text x="14215" y="16864" class="pressure1 fil1 fnt5">0</text>
     <text x="15957" y="16856"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="temperature2status fil0 str0" x="11305" y="17497" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature2status_86" class="fil0 str0" x="11305" y="17497" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16228.7 1009.49)">
      <text x="27500" y="17000" class="temperature2 fil1 fnt8">0</text>
     </g>
@@ -969,7 +955,7 @@ viewBox="0 0 55000 34000"
     <text x="12851" y="17962"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature3status fil0 str0" x="11317" y="19887" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature3status_88" class="fil0 str0" x="11317" y="19887" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16217.5 3398.55)">
      <text x="27500" y="17000" class="temperature3 fil1 fnt8">0</text>
     </g>
@@ -977,7 +963,7 @@ viewBox="0 0 55000 34000"
     <text x="12863" y="20351"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature4status fil0 str0" x="11317" y="21587" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature4status_90" class="fil0 str0" x="11317" y="21587" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16217.5 5099.49)">
      <text x="27500" y="17000" class="temperature4 fil1 fnt8">0</text>
     </g>
@@ -986,32 +972,32 @@ viewBox="0 0 55000 34000"
    </g>
    <line class="fil2 str20" x1="12317" y1="22177" x2="12317" y2= "22478" />
    <g>
-    <rect class="pressure2status fil0 str0" x="14170" y="17497" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure2status_92" class="fil0 str0" x="14170" y="17497" width="2481" height="600" rx="208" ry="158"/>
     <text x="14215" y="18014" class="pressure2 fil1 fnt5">0</text>
     <text x="15957" y="18006"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure3status fil0 str0" x="14194" y="19898" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure3status_94" class="fil0 str0" x="14194" y="19898" width="2481" height="600" rx="208" ry="158"/>
     <text x="14239" y="20415" class="pressure3 fil1 fnt5">0</text>
     <text x="15981" y="20407"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure4status fil0 str0" x="14211" y="21577" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure4status_96" class="fil0 str0" x="14211" y="21577" width="2481" height="600" rx="208" ry="158"/>
     <text x="14256" y="22094" class="pressure4 fil1 fnt5">0</text>
     <text x="15998" y="22086"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure5status fil0 str0" x="17811" y="20747" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure5status_98" class="fil0 str0" x="17811" y="20747" width="2481" height="600" rx="208" ry="158"/>
     <text x="17856" y="21264" class="pressure5 fil1 fnt5">0</text>
     <text x="19598" y="21256"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure6status fil0 str0" x="20391" y="20747" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure6status_100" class="fil0 str0" x="20391" y="20747" width="2481" height="600" rx="208" ry="158"/>
     <text x="20436" y="21264" class="pressure6 fil1 fnt5">0</text>
     <text x="22178" y="21256"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure7status fil0 str0" x="18611" y="22247" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure7status_102" class="fil0 str0" x="18611" y="22247" width="2481" height="600" rx="208" ry="158"/>
     <text x="18656" y="22764" class="pressure7 fil1 fnt5">0</text>
     <text x="20398" y="22756"  class="fil1 fnt0">bar</text>
    </g>
@@ -1085,7 +1071,7 @@ viewBox="0 0 55000 34000"
     <text x="10334" y="29322"  class="fil1 fnt12">P</text>
    </g>
    <g>
-    <rect class="temperature1status fil0 str0" x="11305" y="25319" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature1status_112" class="fil0 str0" x="11305" y="25319" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16228.7 8830.84)">
      <text x="27500" y="17000" class="temperature1 fil1 fnt8">0</text>
     </g>
@@ -1093,12 +1079,12 @@ viewBox="0 0 55000 34000"
     <text x="12851" y="25783"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="pressure1status fil0 str0" x="14170" y="25319" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure1status_114" class="fil0 str0" x="14170" y="25319" width="2481" height="600" rx="208" ry="158"/>
     <text x="14215" y="25836" class="pressure1 fil1 fnt5">0</text>
     <text x="15957" y="25828"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="temperature2status fil0 str0" x="11305" y="26470" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature2status_116" class="fil0 str0" x="11305" y="26470" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16228.7 9981.78)">
      <text x="27500" y="17000" class="temperature2 fil1 fnt8">0</text>
     </g>
@@ -1106,7 +1092,7 @@ viewBox="0 0 55000 34000"
     <text x="12851" y="26934"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature3status fil0 str0" x="11317" y="28859" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature3status_118" class="fil0 str0" x="11317" y="28859" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16217.5 12370.8)">
      <text x="27500" y="17000" class="temperature3 fil1 fnt8">0</text>
     </g>
@@ -1114,7 +1100,7 @@ viewBox="0 0 55000 34000"
     <text x="12863" y="29323"  class="fil1 fnt0">C</text>
    </g>
    <g>
-    <rect class="temperature4status fil0 str0" x="11317" y="30560" width="2000" height="600" rx="168" ry="158"/>
+    <rect id="temperature4status_120" class="fil0 str0" x="11317" y="30560" width="2000" height="600" rx="168" ry="158"/>
     <g transform="matrix(1.00277 0 0 1 -16217.5 14071.8)">
      <text x="27500" y="17000" class="temperature4 fil1 fnt8">0</text>
     </g>
@@ -1123,54 +1109,36 @@ viewBox="0 0 55000 34000"
    </g>
    <line class="fil2 str20" x1="12317" y1="31149" x2="12317" y2= "31450" />
    <g>
-    <rect class="pressure2status fil0 str0" x="14170" y="26469" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure2status_122" class="fil0 str0" x="14170" y="26469" width="2481" height="600" rx="208" ry="158"/>
     <text x="14215" y="26986" class="pressure2 fil1 fnt5">0</text>
     <text x="15957" y="26978"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure3status fil0 str0" x="14194" y="28870" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure3status_124" class="fil0 str0" x="14194" y="28870" width="2481" height="600" rx="208" ry="158"/>
     <text x="14239" y="29387" class="pressure3 fil1 fnt5">0</text>
     <text x="15981" y="29380"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure4status fil0 str0" x="14211" y="30549" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure4status_126" class="fil0 str0" x="14211" y="30549" width="2481" height="600" rx="208" ry="158"/>
     <text x="14256" y="31066" class="pressure4 fil1 fnt5">0</text>
     <text x="15998" y="31059"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure5status fil0 str0" x="17811" y="29719" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure5status_128" class="fil0 str0" x="17811" y="29719" width="2481" height="600" rx="208" ry="158"/>
     <text x="17856" y="30236" class="pressure5 fil1 fnt5">0</text>
     <text x="19598" y="30228"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure6status fil0 str0" x="20391" y="29719" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure6status_130" class="fil0 str0" x="20391" y="29719" width="2481" height="600" rx="208" ry="158"/>
     <text x="20436" y="30236" class="pressure6 fil1 fnt5">0</text>
     <text x="22178" y="30228"  class="fil1 fnt0">bar</text>
    </g>
    <g>
-    <rect class="pressure7status fil0 str0" x="18611" y="31219" width="2481" height="600" rx="208" ry="158"/>
+    <rect id="pressure7status_132" class="fil0 str0" x="18611" y="31219" width="2481" height="600" rx="208" ry="158"/>
     <text x="18656" y="31736" class="pressure7 fil1 fnt5">0</text>
     <text x="20398" y="31728"  class="fil1 fnt0">bar</text>
    </g>
    <rect class="F0-S3-select fil2 str0" x="9952" y="24231" width="13500" height="8088"/>
   </g>
-  <line class="fil2 str1" x1="44315" y1="8233" x2="51961" y2= "8233" />
-  <g id="_1081365728">
-   <polygon class="fil0 str0" points="45104,8377 44613,8085 44613,8377 45104,8085 "/>
-   <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 44938.7 8050.02)" width="401.02" height="56.22"/>
-  </g>
-  <g id="_1081348256">
-   <polygon class="fil0 str0" points="51598,8377 51107,8085 51107,8377 51598,8085 "/>
-   <rect class="fil0 str0" transform="matrix(-0.5 0.866025 0.578429 0.333956 51432.6 8050.02)" width="401.02" height="56.22"/>
-  </g>
-  <rect class="fil0 str0" x="47033" y="8006" width="2249" height="494"/>
-  <text x="47543" y="8381"  class="fil1 fnt1">I </text>
-  <text x="47778" y="8381"  class="fil1 fnt1">этаж</text>
-  <text x="47457" y="16218"  class="fil1 fnt1">IV </text>
-  <text x="47974" y="16218"  class="fil1 fnt1">этаж</text>
-  <line class="fil2 str11" x1="45917" y1="7889" x2="45917" y2= "8233" />
-  <line class="fil2 str11" x1="50339" y1="7889" x2="50339" y2= "8194" />
-  <line class="fil2 str1" x1="51961" y1="8233" x2="51961" y2= "9896" />
-  <line class="fil2 str1" x1="44315" y1="8233" x2="44315" y2= "9896" />
  </g>
 </svg>

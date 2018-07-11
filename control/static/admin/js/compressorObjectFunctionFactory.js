@@ -139,7 +139,9 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 	this.name 					= name;	
 	this.status 				= objectFromSvg.querySelector('.status');
 	this.pressureIndicator 		= objectFromSvg.getElementsByClassName('pressure1')[0];
+	this.pressureIndicatorStatus= objectFromSvg.getElementsByClassName('pressure1status')[0];
 	this.levelIndicator 		= objectFromSvg.getElementsByClassName('level1')[0];
+	this.levelIndicatorStatus	= objectFromSvg.getElementsByClassName('level1status')[0];
 	this.levelSensor1			= objectFromSvg.getElementsByClassName('LevelSensor1')[0];
 	this.levelSensor2			= objectFromSvg.getElementsByClassName('LevelSensor2')[0];
 	this.levelSensor3			= objectFromSvg.getElementsByClassName('LevelSensor3')[0];
@@ -210,19 +212,29 @@ function getNewObjectOfReceiver(objectFromSvg,name){
 
 	this.setStatusIndicator=function(){		
 		console.log('set setStatusIndicator');
+
 		this.pressureIndicator.innerHTML 	= this.sensors.i_pre;
 		this.levelIndicator.innerHTML 		= this.sensors.i_lel;
-		if(parseInt(this.sensors.i_lel)<=100 && parseInt(this.sensors.i_lel)>=0){
+		let re1=/(---|-V-)|(-M-)/;
+			
+		if(parseInt(this.sensors.i_lel)<=100 && parseInt(this.sensors.i_lel)>=0 && !this.sensors.i_lel.toString(10).match(re1)){
 			let value=this.levelBarInitialValue-(this.levelBarInitialValue*parseInt(this.sensors.i_lel)/100);
-
 			this.levelBar.setAttribute('height', value);
 			this.levelBar.removeAttribute("style");
+			this.levelIndicatorStatus.removeAttribute("style");
 		}
-		else
-		{
+		else{
 			let value=this.levelBarInitialValue;
 			this.levelBar.setAttribute('height', value);
 			this.levelBar.style.cssText='fill:#ff0000;';
+			this.levelIndicatorStatus.style.cssText='fill:#ff0000;';
+		}
+
+		if(!this.sensors.i_pre.match(re1)){			
+			this.pressureIndicatorStatus.removeAttribute("style");
+		}
+		else{			
+			this.pressureIndicatorStatus.style.cssText='fill:#ff0000;';
 		}
 
 		//this.set_sensores();
@@ -452,9 +464,10 @@ getNewObjectInsideGate.prototype.myStatus = function(state){
 //Конструктор объектов внутренних - motoклапан
 function getNewObjectInsideMotoGate(objectFromSvg){	
 	
-	this.status		= objectFromSvg.getElementsByClassName('status');
-	this.iconAlarm 	= objectFromSvg.getElementsByClassName('attention');	
-	this.position 	= objectFromSvg.getElementsByClassName('position1')[0];
+	this.status			= objectFromSvg.getElementsByClassName('status');
+	this.iconAlarm 		= objectFromSvg.getElementsByClassName('attention');	
+	this.position 		= objectFromSvg.getElementsByClassName('position1')[0];
+	this.positionStatus	= objectFromSvg.getElementsByClassName('position1status')[0];
 	this.s 		= 0;		//статус       
     this.i 		= 0;		//ошибка
     this.sensors={"i_po": 0,
@@ -518,6 +531,13 @@ function getNewObjectInsideMotoGate(objectFromSvg){
 	this.setStatusIndicator=function(){		
 		console.log('set setStatusIndicator');		
 		this.position.innerHTML = this.sensors.i_pos;
+		let re1=/(---|-V-)|(-M-)/;
+		if(!this.sensors.i_pos.toString(10).match(re1)){							
+			this.positionStatus.removeAttribute("style");
+		}else{
+			this.positionStatus.style.cssText='fill:#ff0000;';			
+		}	
+
 		//this.set_sensores();
 	}
 }
@@ -557,7 +577,21 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
 									'd5':objectFromSvg.getElementsByClassName('temperature5')[0],
 									'd6':objectFromSvg.getElementsByClassName('temperature6')[0],
 									'd7':objectFromSvg.getElementsByClassName('temperature7')[0],
-									'd8':objectFromSvg.getElementsByClassName('temperature8')[0]
+									'd8':objectFromSvg.getElementsByClassName('temperature8')[0],
+									'd9':objectFromSvg.getElementsByClassName('temperature9')[0],
+									'd10':objectFromSvg.getElementsByClassName('temperature10')[0]
+									};
+	this.temperatureIndicatorsStatus={
+									'status1':objectFromSvg.getElementsByClassName('temperature1status')[0],
+									'status2':objectFromSvg.getElementsByClassName('temperature2status')[0],
+									'status3':objectFromSvg.getElementsByClassName('temperature3status')[0],
+									'status4':objectFromSvg.getElementsByClassName('temperature4status')[0],
+									'status5':objectFromSvg.getElementsByClassName('temperature5status')[0],
+									'status6':objectFromSvg.getElementsByClassName('temperature6status')[0],
+									'status7':objectFromSvg.getElementsByClassName('temperature7status')[0],
+									'status8':objectFromSvg.getElementsByClassName('temperature8status')[0],
+									'status9':objectFromSvg.getElementsByClassName('temperature9status')[0],
+									'status10':objectFromSvg.getElementsByClassName('temperature10status')[0]
 									};																				
 	
 	this.pump1 					= new getNewObjectInsidePump(objectFromSvg.getElementsByClassName('pump1')[0]);
@@ -581,14 +615,26 @@ function getNewObjectOfPumpGroup(objectFromSvg,name){
           		  "d5": "0.00",		//Индикатор температуры
           		  "d6": "0.00",		//Индикатор температуры
           		  "d7": "0.00",		//Индикатор температуры
-          		  "d8": "0.00" 		//Индикатор температуры
+          		  "d8": "0.00", 		//Индикатор температуры
+          		  "d9": "0.00", 		//Индикатор температуры
+          		  "d10": "0.00", 		//Индикатор температуры
     			};    										
 
 	
 	this.setStatusIndicator=function(name){		
 		console.log('set setStatusIndicator');
 		if(this.temperatureIndicators[name]){
-			this.temperatureIndicators[name].innerHTML 	= this.sensors[name];
+			let re1=/(---|-V-)|(-M-)/;
+			if(!this.sensors[name].match(re1)){
+				this.temperatureIndicators[name].innerHTML 	= this.sensors[name];
+				console.log('статусы индикатора');
+				console.log(name.match(/d([0-9]+)/));
+				console.log(parseInt(name.match(/d([0-9]+)/)[1]));
+				this.temperatureIndicatorsStatus['status'+parseInt(name.match(/d([0-9]+)/)[1])].removeAttribute("style");
+			}else{
+				this.temperatureIndicatorsStatus['status'+parseInt(name.match(/d([0-9]+)/)[1])].style.cssText='fill:#ff0000;';
+				this.temperatureIndicators[name].innerHTML 	= this.sensors[name];
+			}
 		}	
 	}
 
@@ -662,9 +708,10 @@ getNewObjectOfPumpGroup.prototype.get_tex_settings =tex_settings_get;
 //Конструктор объектов внутренних - motoклапан
 function getNewObjectInsidePump(objectFromSvg){	
 	
-	this.status		= objectFromSvg.getElementsByClassName('status');
-	this.iconAlarm 	= objectFromSvg.getElementsByClassName('attention')[0];	
-	this.pressure 	= objectFromSvg.getElementsByClassName('pressure1')[0];
+	this.status			= objectFromSvg.getElementsByClassName('status');
+	this.iconAlarm 		= objectFromSvg.getElementsByClassName('attention')[0];	
+	this.pressure 		= objectFromSvg.getElementsByClassName('pressure1')[0];
+	this.pressureStatus	= objectFromSvg.getElementsByClassName('pressure1status')[0];
 	
     this.sensors={"s": 0,
           		  "i": 0,
@@ -722,9 +769,15 @@ function getNewObjectInsidePump(objectFromSvg){
 		return this.sensors;
 	}
 
-	this.setStatusIndicator=function(){		
-		console.log('set setStatusIndicator');		
-		this.pressure.innerHTML = this.sensors.i_pred;		
+	this.setStatusIndicator=function(){
+		let re1=/(---|-V-)|(-M-)/;
+		if(!this.sensors.i_pred.match(re1)){
+			this.pressure.innerHTML = this.sensors.i_pred;				
+			this.pressureStatus.removeAttribute("style");
+		}else{
+			this.pressureStatus.style.cssText='fill:#ff0000;';
+			this.pressure.innerHTML = this.sensors.i_pred;
+		}	
 	}
 }
 

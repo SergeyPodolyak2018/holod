@@ -154,21 +154,21 @@ function archiv_device(name){
 }
 
 function archiv_device_build(response){
-                objectMenuManager.hide();                
-                var  message=response.data;                
-                let temp_string='';
-                for (var i  in message) {
-                    //temp_string=temp_string+'<tr><td>'+message[i].id+'</td><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].name+'</td><td>'+message[i].status+'</td></tr>';
-                    temp_string=temp_string+'<tr><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
+    objectMenuManager.hide();                
+    var  message=response.data;                
+    let temp_string='';
+    for (var i  in message) {
+        //temp_string=temp_string+'<tr><td>'+message[i].id+'</td><td>'+message[i].date+'</td><td>'+message[i].time+'</td><td>'+message[i].name+'</td><td>'+message[i].status+'</td></tr>';
+        temp_string=temp_string+'<tr><td style="width: 20%;">'+message[i].date+'</td><td>'+message[i].time+'</td><td style="width: 60%;">'+message[i].name+'</td><td style="width: 30%;">'+message[i].status+'</td></tr>';
 
-                }
-                var div_menu = document.getElementById('table_rchiv_device');
-                div_menu.innerHTML = temp_string;
-                var filter_button = document.getElementById('archiv_device_filter_button');
-                filter_button.innerHTML = '<button class="modal_box_btn" onclick="archiv_device_sort(\''+message[i].name+'\')">Сортировать</button>';
+    }
+    var div_menu = document.getElementById('table_rchiv_device');
+    div_menu.innerHTML = temp_string;
+    var filter_button = document.getElementById('archiv_device_filter_button');
+    filter_button.innerHTML = '<button class="modal_box_btn" onclick="archiv_device_sort(\''+message[i].name+'\')">Сортировать</button>';
 
-                $('#archiv_device').show();
-                universalTableBuilder('#table_head_rchiv_device','#table_rchiv_device>tbody');      
+    $('#archiv_device').show();
+    universalTableBuilder('#table_head_rchiv_device','#table_rchiv_device>tbody');      
 }
 
 
