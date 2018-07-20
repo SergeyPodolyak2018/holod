@@ -13,7 +13,7 @@ function getNewObjectOfHiter(objectFromSvg,name){
 	
 	this.intervalLockation;
 	this.s 		= 0;		//статус       
-    this.i 		= 0;		//ошибка
+    this.i 		= 255;		//ошибка
     this.sensors={'i_po':0,	//питание   
     			  'i_au':0,	//автоматический режим
     			  'i_km':0,	//контактор
@@ -151,9 +151,12 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.coolerVent2Auto 	= objectFromSvg.getElementsByClassName(name+'-V2');			//статус
 	this.coolerVent1Manual 	= objectFromSvg.getElementsByClassName(name+'-V1-manual');	//статус
 	this.coolerVent2Manual 	= objectFromSvg.getElementsByClassName(name+'-V2-manual');	//статус
-	this.coolerTemperature1 = objectFromSvg.getElementsByClassName(name+'-T1-text');	//статус	
-	this.coolerTemperature2 = objectFromSvg.getElementsByClassName(name+'-T2-text');	//статус
-	this.coolerTemperature3 = objectFromSvg.getElementsByClassName(name+'-T3-text');	//статус
+	this.coolerTemperature1 = objectFromSvg.getElementsByClassName('temperature1')[0];	//статус	
+	this.coolerTemperature2 = objectFromSvg.getElementsByClassName('temperature2')[0];	//статус
+	this.coolerTemperature3 = objectFromSvg.getElementsByClassName('temperature3')[0];	//статус
+	this.coolerTemperature1Status = objectFromSvg.getElementsByClassName('temperature1status')[0];	//статус	
+	this.coolerTemperature2Status = objectFromSvg.getElementsByClassName('temperature2status')[0];	//статус
+	this.coolerTemperature3Status = objectFromSvg.getElementsByClassName('temperature3status')[0];	//статус
 	this.iconAlarm 			= objectFromSvg.getElementsByClassName('attention-'+name);
 	this.iconRemont 		= objectFromSvg.getElementsByClassName('remont-'+name);
 	this.window_sensors 	= document.getElementsByClassName('coller_sensors')[0].cloneNode(true);
@@ -219,9 +222,21 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	this.setStatusTd=function(){		
 		console.log('set setStatusTd');
 		this.set_sensores();
-		this.coolerTemperature1[0].innerHTML=this.td.d1;
-		this.coolerTemperature2[0].innerHTML=this.td.d2;
-		this.coolerTemperature3[0].innerHTML=this.td.d3;
+		// this.coolerTemperature1[0].innerHTML=this.td.d1;
+		// this.coolerTemperature2[0].innerHTML=this.td.d2;
+		// this.coolerTemperature3[0].innerHTML=this.td.d3;
+		for (let i = 1; i < 4; i++) {
+			this['coolerTemperature'+i].innerHTML=this.td['d'+i];
+		
+			let re1=/(---|-V-)|(-M-)|(666)/;
+			if(!this.td['d'+i].match(re1)){			
+				this['coolerTemperature'+i+'Status'].removeAttribute("style");
+			}
+			else{			
+				this['coolerTemperature'+i+'Status'].style.cssText='fill:#ff0000;';
+			}
+		}	
+
 
 	}
 	this.setStatusAirch=function(){		
@@ -380,7 +395,10 @@ function getNewObjectOfCooler(objectFromSvg,name){
 	            }else{                   	
 	                this.window_sensors.getElementsByClassName(''+i)[0].removeAttribute("style");
 	            }
-	        }else{this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i]}
+	        }else{
+	        	this.window_sensors.getElementsByClassName(''+i)[0].innerHTML=this.sensors[i];
+
+	        }
 		}		
 	}
 
@@ -571,9 +589,11 @@ function getNewObjectOfBox(objectFromSvg,name){
 	this.boxFon			= objectFromSvg.getElementsByClassName(name);
 	this.boxDorOpen		= objectFromSvg.getElementsByClassName(name+'-D-open');
 	this.boxDorClose	= objectFromSvg.getElementsByClassName(name+'-D-close');
-	this.boxTemperature = objectFromSvg.getElementsByClassName(name+'-T1-text');
-	this.boxStausText	= objectFromSvg.getElementsByClassName(name+'-statusText');
-	this.boxStausFon	= objectFromSvg.getElementsByClassName(name+'-status');
+	this.human 			= objectFromSvg.getElementsByClassName('human');
+	this.boxTemperature = objectFromSvg.getElementsByClassName('temperature1');
+	this.boxTemperatureStatus = objectFromSvg.getElementsByClassName('temperature1status');
+	this.boxStausText	= objectFromSvg.getElementsByClassName('infoText');
+	this.boxStausFon	= objectFromSvg.getElementsByClassName('infoStatus');
 	this.window_settings 		= document.getElementsByClassName('box_settings')[0].cloneNode(true);
 	this.window_tex_settings 	= document.getElementsByClassName('box_tex_settings')[0].cloneNode(true);
 	this.window_analog_settings = document.getElementsByClassName('settings_analog_dat')[0].cloneNode(true);
@@ -632,8 +652,15 @@ function getNewObjectOfBox(objectFromSvg,name){
 		}
 	}
 	this.setTemperatura=function(){		
-		console.log('box set setTemperatura');
+		console.log('box set setTemperatura');		
 		this.boxTemperature[0].innerHTML=this.t;
+		let re1=/(---|-V-)|(-M-)|(666)/;
+		if(!this.t.match(re1)){			
+			this.boxTemperatureStatus[0].removeAttribute("style");
+		}
+		else{			
+			this.boxTemperatureStatus[0].style.cssText='fill:#ff0000;';
+		}		
 	}
 	this.setDors=function(){		
 		console.log('box set setDors');
@@ -652,6 +679,24 @@ function getNewObjectOfBox(objectFromSvg,name){
 				});
 				[...this.boxDorClose].forEach(function(item, i, arr) {
 				  item.style.cssText='display:none;'
+				});
+				break;			
+			default:
+				// statements_def
+				break;
+		}
+	}
+	this.setHuman=function(){		
+		console.log('box set setHuman');
+		switch (this.i_hu) {
+			case 0:				
+				[...this.human].forEach(function(item, i, arr) {
+				  item.removeAttribute("style");
+				});				
+				break;
+			case 1:				
+				[...this.human].forEach(function(item, i, arr) {
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;			
 			default:
@@ -680,7 +725,7 @@ getNewObjectOfBox.prototype.myStatus = function(state){
 	}	
 	if(this.i_hu!=state.i_hu){
 		this.i_hu=state.i_hu;
-		//this.setStatus();
+		this.setHuman();
 	}
 	if(this.i_do!=state.i_do){
 		this.i_do=state.i_do;

@@ -4,19 +4,16 @@
 function getNewObjectOfCompressor(objectFromSvg,name){
 	this.name 					= name;	
 	this.compressor				= objectFromSvg.getElementsByClassName('status');									//статус
-	this.IconSensors 			= { 'p_suc':objectFromSvg.getElementsByClassName('pressure1')[0],
-									'p_dis':objectFromSvg.getElementsByClassName('pressure2')[0],
-									'p_o':objectFromSvg.getElementsByClassName('pressure3')[0],
-									'p_cra':objectFromSvg.getElementsByClassName('pressure4')[0],
-									'p_int':objectFromSvg.getElementsByClassName('pressure5')[0],
-									'p_int':objectFromSvg.getElementsByClassName('pressure6')[0],
-									'p_int':objectFromSvg.getElementsByClassName('pressure7')[0],
+	this.IconSensors 			= { 'p_dis':objectFromSvg.getElementsByClassName('pressure1')[0],
+									'p_int':objectFromSvg.getElementsByClassName('pressure2')[0],									
+									'p_suc':objectFromSvg.getElementsByClassName('pressure4')[0],									
+									'p_o':objectFromSvg.getElementsByClassName('pressure6')[0],
+									'p_cra':objectFromSvg.getElementsByClassName('pressure7')[0],
 									
-									't_ig':objectFromSvg.getElementsByClassName('temperature1')[0],
-									't_fin':objectFromSvg.getElementsByClassName('temperature2')[0],
-									't_o':objectFromSvg.getElementsByClassName('temperature3')[0],
-									't_ind':objectFromSvg.getElementsByClassName('temperature4')[0],
-									
+									't_ivd':objectFromSvg.getElementsByClassName('temperature1')[0],
+									't_ind':objectFromSvg.getElementsByClassName('temperature2')[0],
+									't_fin':objectFromSvg.getElementsByClassName('temperature3')[0],
+									't_ig':objectFromSvg.getElementsByClassName('temperature4')[0],
 									};																				//статус
 	
 	this.diferentialPressure	= objectFromSvg.getElementsByClassName('dPressure1')[0];
@@ -68,12 +65,12 @@ function getNewObjectOfCompressor(objectFromSvg,name){
 				break;
 			case 2:				
 				[...this.compressor].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#00ff00;'
+				  item.style.cssText='fill:#ff0000;'
 				});
 				break;
 			case 3:				
 				[...this.compressor].forEach(function(item, i, arr) {
-				  item.style.cssText='fill:#ff0000;'
+				  item.style.cssText='fill:#ffff00;'
 				});
 				break;	
 			default:

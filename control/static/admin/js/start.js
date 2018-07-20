@@ -19,9 +19,9 @@ const svg_type_id        = ["flor0","flor1","flor2","flor3","flor4"];//суще�
 
 const structura          = {"flor0":['compressor','receiver','pumpGroup','jar','refrigerator','CManager'],
                             "flor1":['hiter','cooler','gate','box'],
-                            "flor2":['hiter','cooler','gate','box'],
-                            "flor3":['hiter','cooler','gate','box'],
-                            "flor4":['hiter','cooler','gate','box'],
+                            // "flor2":['hiter','cooler','gate','box'],
+                            // "flor3":['hiter','cooler','gate','box'],
+                            // "flor4":['hiter','cooler','gate','box'],
                           };
 var globalObject={};
 
@@ -525,7 +525,9 @@ function herHer(data){
         for(let j in tempDataStorage[i]){
             console.log(i);
             console.log(j);
-            globalObject[i][j].myStatus(tempDataStorage[i][j]);
+            if(globalObject[i]){
+                globalObject[i][j].myStatus(tempDataStorage[i][j]);
+            }
         }
     }
 }
