@@ -331,14 +331,7 @@ var jsontable={
         "i_km": 1,       
         "q_km": 0        
       },
-      "hl4": {           
-        "s": 0,          
-        "i": 2,          
-        "i_po": 0,       
-        "i_au": 0,       
-        "i_km": 0,       
-        "q_km": 0        
-      },
+      
       "camc": 1,
       "cam1": {
         "cam_con": {
@@ -434,7 +427,7 @@ var jsontable={
           } 
         }
       },
-      "cam6": {
+      "cam2": {
         "cam_con": {
           "s": 2,
           "e": 0,
@@ -526,7 +519,7 @@ var jsontable={
           } 
         }
       },
-      "cam7": {
+      "cam3": {
         "cam_con": {
           "s": 2,
           "e": 0,
